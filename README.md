@@ -1,7 +1,8 @@
 # Fully-responsive-church-website
 This is a website I constructed using css html javascript and several libraries
 
-Live website can be viewed here
+# Live website can be viewed here
+https://peter-kimanzi.github.io/Fully-responsive-church-website/
 
 
  <br>
