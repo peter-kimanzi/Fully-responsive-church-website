@@ -1,4 +1,4 @@
-/* Saddleback.com Base Stylesheet */
+/* dc Base Stylesheet */
 /* COMPASS IMPORTS */
 @import "https://fonts.googleapis.com/css?family=Lato:300,400,700,900|PT+Serif:400,700";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -926,7 +926,7 @@ html {
 }
 
 html.grid {
-  background: url("../../../Frontend/saddleback.com/images/grid-11.png") repeat-y;
+  background: url("../../../Frontend/dc/images/grid-11.png") repeat-y;
 }
 
 .v2 {
@@ -3025,7 +3025,7 @@ span.postThumbnailTitle {
 }
 
 html.grid {
-  background: url("../../../Frontend/saddleback.com/images/grid-11.png") repeat 0 0;
+  background: url("../../../Frontend/dc/images/grid-11.png") repeat 0 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -4538,7 +4538,7 @@ input[type=checkbox]:checked {
 
 input[type=checkbox]:checked:after {
   background-color: transparent;
-  background: url(https://s3-us-west-1.amazonaws.com/sb-web/saddleback.com/visit/locations/new-campus-icons/group-7-copy-2.svg);
+  background: url(https://s3-us-west-1.amazonaws.com/sb-web/dc/visit/locations/new-campus-icons/group-7-copy-2.svg);
   border: 2px solid #00aeef;
   -moz-box-sizing: unset;
        box-sizing: unset;

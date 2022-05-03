@@ -732,7 +732,7 @@
 }
 
 .works-wear-ad {
-  background: url("../../../../../../s3-us-west-1.amazonaws.com/sb-web/saddleback.com/connect/ministry/workplace-ministry/works-ads/works-wear-ad-full-image-small.jpg") no-repeat;
+  background: url("../../../../../../s3-us-west-1.amazonaws.com/sb-web/dc/connect/ministry/workplace-ministry/works-ads/works-wear-ad-full-image-small.jpg") no-repeat;
 }
 .works-wear-ad:before {
   content: " ";
@@ -745,7 +745,7 @@
 }
 
 .works-reach-ad {
-  background: url("../../../../../../s3-us-west-1.amazonaws.com/sb-web/saddleback.com/connect/ministry/workplace-ministry/works-ads/Reachyourcollegues_ad.jpg") no-repeat;
+  background: url("../../../../../../s3-us-west-1.amazonaws.com/sb-web/dc/connect/ministry/workplace-ministry/works-ads/Reachyourcollegues_ad.jpg") no-repeat;
 }
 .works-reach-ad .works-ad-info .works-ad-text {
   margin-bottom: 10px;
@@ -1315,7 +1315,7 @@
   }
 
   .works-wear-ad {
-    background: url("../../../../../../s3-us-west-1.amazonaws.com/sb-web/saddleback.com/connect/ministry/workplace-ministry/works-ads/WorkplaceAds_wear-your-faith_4.jpg") no-repeat;
+    background: url("../../../../../../s3-us-west-1.amazonaws.com/sb-web/dc/connect/ministry/workplace-ministry/works-ads/WorkplaceAds_wear-your-faith_4.jpg") no-repeat;
   }
 
   .works-acronym-container {

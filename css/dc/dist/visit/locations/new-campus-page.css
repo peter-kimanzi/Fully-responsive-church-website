@@ -3196,7 +3196,7 @@ body {
   display: inline-block;
 }
 .class-checkbox-container .class-checkbox-item .class-input:checked:after {
-  background: url(https://s3-us-west-1.amazonaws.com/sb-web/saddleback.com/visit/locations/new-campus-icons/group-7-copy-2.svg);
+  background: url(https://s3-us-west-1.amazonaws.com/sb-web/dc/visit/locations/new-campus-icons/group-7-copy-2.svg);
   border: 2px solid #00aeef;
 }
 .class-checkbox-container .class-checkbox-item .class-label {

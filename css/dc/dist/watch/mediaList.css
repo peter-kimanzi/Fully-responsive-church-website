@@ -228,11 +228,11 @@
 }
 
 .series-block-view .grid .thumbContainer .audio-thumb {
-  background: url("../../../../../s3-us-west-1.amazonaws.com/sb-web/saddleback.com/watch/media/series/thumbnails/AudioOnly_Thumbnail.jpg") no-repeat;
+  background: url("../../../../../s3-us-west-1.amazonaws.com/sb-web/dc/watch/media/series/thumbnails/AudioOnly_Thumbnail.jpg") no-repeat;
 }
 
 .series-list-view .grid .thumbContainer .audio-thumb {
-  background: url("../../../../../s3-us-west-1.amazonaws.com/sb-web/saddleback.com/watch/media/series/thumbnails/AudioOnly_ListView_Thumbnail.jpg") no-repeat;
+  background: url("../../../../../s3-us-west-1.amazonaws.com/sb-web/dc/watch/media/series/thumbnails/AudioOnly_ListView_Thumbnail.jpg") no-repeat;
 }
 
 /* watch page prefs */

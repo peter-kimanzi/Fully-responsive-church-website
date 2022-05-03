@@ -552,7 +552,7 @@
 }
 
 .give-header {
-  background: url("../../../../../sb-web.s3-us-west-1.amazonaws.com/saddleback.com/give/giving-header.jpg") no-repeat center top, rgba(141, 141, 141, 0.5);
+  background: url("../../../../../sb-web.s3-us-west-1.amazonaws.com/dc/give/giving-header.jpg") no-repeat center top, rgba(141, 141, 141, 0.5);
   background-size: cover;
   background-blend-mode: multiply;
   margin-bottom: 32px;
@@ -739,7 +739,7 @@
   padding: 13px 16px;
 }
 .beyond-tithe-section .featured-giving-opportunity .featured-giving-opportunity-inner .img-container {
-  background: url("../../../../../sb-web.s3-us-west-1.amazonaws.com/saddleback.com/give/saddleback-relief.jpg") no-repeat center top, rgba(141, 141, 141, 0.5);
+  background: url("../../../../../sb-web.s3-us-west-1.amazonaws.com/dc/give/saddleback-relief.jpg") no-repeat center top, rgba(141, 141, 141, 0.5);
   background-size: cover;
 }
 .beyond-tithe-section .featured-giving-opportunity .featured-giving-opportunity-inner .img-container .aspectPlaceHolder1-1 {
@@ -1177,7 +1177,7 @@
 }
 
 .manage-give-online-section {
-  background: url("../../../../../sb-web.s3-us-west-1.amazonaws.com/saddleback.com/give/manage-giving.jpg") no-repeat center top;
+  background: url("../../../../../sb-web.s3-us-west-1.amazonaws.com/dc/give/manage-giving.jpg") no-repeat center top;
   background-size: cover;
   color: white;
 }

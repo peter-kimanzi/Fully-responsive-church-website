@@ -29,15 +29,15 @@ h1 {
   padding: 40px 20px;
 }
 .response-content .response-info-section .response-info-image.get-help {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../../../../../../sb-web.s3-us-west-1.amazonaws.com/saddleback.com/connect/ministry/coronavirus-response/Get%2bHelp.png) top center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../../../../../../sb-web.s3-us-west-1.amazonaws.com/dc/connect/ministry/coronavirus-response/Get%2bHelp.png) top center no-repeat;
   background-size: cover;
 }
 .response-content .response-info-section .response-info-image.give-help {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../../../../../../sb-web.s3-us-west-1.amazonaws.com/saddleback.com/connect/ministry/coronavirus-response/Give%2bHelp.png) top center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../../../../../../sb-web.s3-us-west-1.amazonaws.com/dc/connect/ministry/coronavirus-response/Give%2bHelp.png) top center no-repeat;
   background-size: cover;
 }
 .response-content .response-info-section .response-info-image.get-connected {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../../../../../../sb-web.s3-us-west-1.amazonaws.com/saddleback.com/connect/ministry/coronavirus-response/SmallGroups.jpg) top center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../../../../../../sb-web.s3-us-west-1.amazonaws.com/dc/connect/ministry/coronavirus-response/SmallGroups.jpg) top center no-repeat;
   background-size: cover;
 }
 .response-content .response-info-section .response-info-image .response-info-header {

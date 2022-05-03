@@ -2494,7 +2494,7 @@
     height: 100%;
   }
   .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container .chat-icon {
-    background: url(http://sb-web.s3.amazonaws.com/saddleback.com/visit/locations/online/chat.svg) no-repeat top left;
+    background: url(http://sb-web.s3.amazonaws.com/dc/visit/locations/online/chat.svg) no-repeat top left;
     background-size: contain;
     position: absolute;
     top: 16px;
