@@ -1,0 +1,2490 @@
+@font-face {
+  font-family: 'SB-Icons';
+  src: url("../../../../fonts/rebrand/SB-Icons134c.eot?itbk42");
+  src: url("../../../../fonts/rebrand/SB-Icons134c.eot?itbk42#iefix") format("embedded-opentype"), url("../../../../fonts/rebrand/SB-Icons134c.ttf?itbk42") format("truetype"), url("../../../../fonts/rebrand/SB-Icons134c.woff?itbk42") format("woff"), url("../../../../fonts/rebrand/SB-Icons134c.svg?itbk42#SB-Icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'SB-Icons' !important;
+  speak: none !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1 !important;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-back-10:before {
+  content: "\e953";
+}
+
+.icon-forward-10:before {
+  content: "\e954";
+}
+
+.icon-share:before {
+  content: "\e97b";
+}
+
+.icon-more:before {
+  content: "\e97a";
+}
+
+.icon-respond:before {
+  content: "\e900";
+}
+
+.icon-view:before {
+  content: "\e901";
+}
+
+.icon-subscribe:before {
+  content: "\e902";
+}
+
+.icon-heart:before {
+  content: "\e903";
+}
+
+.icon-print-outline:before {
+  content: "\e904";
+}
+
+.icon-printer-glyph:before {
+  content: "\e905";
+}
+
+.icon-pdf:before {
+  content: "\e906";
+}
+
+.icon-email-glyph:before {
+  content: "\e907";
+}
+
+.icon-email-outline:before {
+  content: "\e908";
+}
+
+.icon-download:before {
+  content: "\e909";
+}
+
+.icon-cloud:before {
+  content: "\e90a";
+}
+
+.icon-settings:before {
+  content: "\e90b";
+}
+
+.icon-tools:before {
+  content: "\e90c";
+}
+
+.icon-phone-glyph:before {
+  content: "\e90d";
+}
+
+.icon-phone-outline:before {
+  content: "\e90e";
+}
+
+.icon-mobile-phone-glyph:before {
+  content: "\e90f";
+}
+
+.icon-mobile-phone-outline:before {
+  content: "\e910";
+}
+
+.icon-bible:before {
+  content: "\e911";
+}
+
+.icon-map:before {
+  content: "\e912";
+}
+
+.icon-computer-outline:before {
+  content: "\e913";
+}
+
+.icon-computer-glyph:before {
+  content: "\e914";
+}
+
+.icon-glasses:before {
+  content: "\e915";
+}
+
+.icon-info:before {
+  content: "\e916";
+}
+
+.icon-alert:before {
+  content: "\e917";
+}
+
+.icon-conversation:before {
+  content: "\e918";
+}
+
+.icon-chat:before {
+  content: "\e919";
+}
+
+.icon-location-glyph:before {
+  content: "\e91a";
+}
+
+.icon-location-outline:before {
+  content: "\e91b";
+}
+
+.icon-location-finder:before {
+  content: "\e93e";
+}
+
+.icon-controls:before {
+  content: "\e91c";
+}
+
+.icon-badge:before {
+  content: "\e91d";
+}
+
+.icon-search-big:before {
+  content: "\e91e";
+}
+
+.icon-search:before {
+  content: "\e91f";
+}
+
+.icon-copy:before {
+  content: "\e920";
+}
+
+.icon-television:before {
+  content: "\e921";
+}
+
+.icon-volunteer:before {
+  content: "\e922";
+}
+
+.icon-friends:before {
+  content: "\e923";
+}
+
+.icon-travel:before {
+  content: "\e924";
+}
+
+.icon-lock-opened:before {
+  content: "\e925";
+}
+
+.icon-lock:before {
+  content: "\e926";
+}
+
+.icon-curriculum:before {
+  content: "\e927";
+}
+
+.icon-calendar:before {
+  content: "\e928";
+}
+
+.icon-profile-incomplete:before {
+  content: "\e929";
+}
+
+.icon-profile-1-star:before {
+  content: "\e930";
+}
+
+.icon-profile-2-star:before {
+  content: "\e931";
+}
+
+.icon-profile-complete:before {
+  content: "\e932";
+}
+
+.icon-check-mark:before {
+  content: "\e93d";
+}
+
+.icon-close:before {
+  content: "\e942";
+}
+
+.icon-add:before {
+  content: "\e943";
+}
+
+.icon-add-item:before {
+  content: "\e944";
+}
+
+.icon-decline:before {
+  content: "\e93c";
+}
+
+.icon-add-outline:before {
+  content: "\e956";
+}
+
+.icon-subtract:before {
+  content: "\e945";
+}
+
+.icon-remove-outline:before {
+  content: "\e957";
+}
+
+.icon-resend:before {
+  content: "\e93b";
+}
+
+.icon-arrow-down:before {
+  content: "\e946";
+}
+
+.icon-arrow-left:before {
+  content: "\e947";
+}
+
+.icon-arrow-right:before {
+  content: "\e948";
+}
+
+.icon-arrow-up:before {
+  content: "\e949";
+}
+
+.icon-camera:before {
+  content: "\e940";
+}
+
+.icon-play-circle:before {
+  content: "\e94a";
+}
+
+.icon-play-big:before {
+  content: "\e94b";
+}
+
+.icon-play:before {
+  content: "\e94c";
+}
+
+.icon-pause:before {
+  content: "\e94d";
+}
+
+.icon-pause-circle:before {
+  content: "\e94e";
+}
+
+.icon-last-track:before {
+  content: "\e94f";
+}
+
+.icon-next-track:before {
+  content: "\e952";
+}
+
+.icon-full-screen-outline:before {
+  content: "\e959";
+}
+
+.icon-full-screen-glyph:before {
+  content: "\e95a";
+}
+
+.icon-volume-none:before {
+  content: "\e95b";
+}
+
+.icon-volume:before {
+  content: "\e95c";
+}
+
+.icon-volume-raise:before {
+  content: "\e95d";
+}
+
+.icon-facebook:before {
+  content: "\e960";
+}
+
+.icon-facebook-box:before {
+  content: "\e961";
+}
+
+.icon-googleplus:before {
+  content: "\e962";
+}
+
+.icon-googleplus-box:before {
+  content: "\e963";
+}
+
+.icon-instagram:before {
+  content: "\e964";
+}
+
+.icon-instagram-box:before {
+  content: "\e965";
+}
+
+.icon-linkedin:before {
+  content: "\e966";
+}
+
+.icon-linkedin-box:before {
+  content: "\e967";
+}
+
+.icon-pinterest:before {
+  content: "\e968";
+}
+
+.icon-pinterest-box:before {
+  content: "\e969";
+}
+
+.icon-podcast:before {
+  content: "\e96a";
+}
+
+.icon-podcast-box:before {
+  content: "\e96b";
+}
+
+.icon-rss:before {
+  content: "\e970";
+}
+
+.icon-rss-box:before {
+  content: "\e971";
+}
+
+.icon-skype:before {
+  content: "\e972";
+}
+
+.icon-skype-box:before {
+  content: "\e973";
+}
+
+.icon-twitter:before {
+  content: "\e974";
+}
+
+.icon-twitter-box:before {
+  content: "\e975";
+}
+
+.icon-whatsapp:before {
+  content: "\e976";
+}
+
+.icon-whatsapp-box:before {
+  content: "\e977";
+}
+
+.icon-youtube:before {
+  content: "\e978";
+}
+
+.icon-youtube-box:before {
+  content: "\e979";
+}
+
+.icon-email-box:before {
+  content: "\e93f";
+}
+
+.icon-delete:before {
+  content: "\e97c";
+}
+
+.icon-clock:before {
+  content: "\e97e";
+}
+
+.icon-building:before {
+  content: "\e97f";
+}
+
+.icon-language-select:before {
+  content: "\e955";
+}
+
+.icon-language:before {
+  content: "\e92d";
+}
+
+.icon-demographic:before {
+  content: "\e92e";
+}
+
+.icon-down-icon:before {
+  content: "\e92a";
+}
+
+.icon-copy-link:before {
+  content: "\e92b";
+}
+
+.icon-list-view:before {
+  content: "\e92c";
+}
+
+.icon-grid-view:before {
+  content: "\e92f";
+}
+
+.icon-cash:before {
+  content: "\e933";
+}
+
+.icon-check:before {
+  content: "\e934";
+}
+
+.icon-star:before {
+  content: "\e935";
+}
+
+.icon-blog:before {
+  content: "\e936";
+}
+
+.icon-events:before {
+  content: "\e937";
+}
+
+.icon-next-steps:before {
+  content: "\e938";
+}
+
+.icon-serve:before {
+  content: "\e939";
+}
+
+.icon-staff:before {
+  content: "\e93a";
+}
+
+.icon-shopping-cart:before {
+  content: "\e941";
+}
+
+.icon-resources:before {
+  content: "\e950";
+}
+
+.icon-steps:before {
+  content: "\e951";
+}
+
+.icon-sb-logo:before {
+  content: "\e958";
+}
+
+.icon-sk:before {
+  content: "\e96c";
+}
+
+.icon-jhm:before {
+  content: "\e95e";
+}
+
+.icon-hsm:before {
+  content: "\e96d";
+}
+
+.icon-cm:before {
+  content: "\e95f";
+}
+
+.giveTitheButton, .daringFaithButton {
+  display: block;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.v2 {
+  min-height: initial !important;
+}
+.v2 h4, .v2 p, .v2 label, .v2 th, .v2 td, .v2 td span, .v2 button {
+  font-family: 'Lato' !important;
+}
+.v2 a {
+  color: #00aeef !important;
+}
+.v2 .btn {
+  background: #00aeef !important;
+  border-radius: 0 !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+}
+.v2 .btn:hover {
+  background: #0093c6 !important;
+}
+
+.manageTabs {
+  transition: none;
+}
+.manageTabs > ul {
+  margin-bottom: 3em;
+}
+.manageTabs > ul li {
+  margin-bottom: 1.5em;
+}
+.manageTabs .tabsContent {
+  padding: 2.25em 0;
+}
+.manageTabs .tabsContent .btn {
+  font-style: italic;
+  width: 100%;
+}
+.manageTabs h3 {
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+.manageTabs .pagination {
+  text-align: center;
+}
+.manageTabs .pagination ul, .manageTabs .pagination li {
+  display: inline-block;
+}
+.manageTabs .pagination ul {
+  margin-top: 22px;
+}
+.manageTabs .pagination li i {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .giveTitheButton {
+    display: inline-block;
+    margin-right: 11px;
+  }
+
+  .daringFaithButton {
+    display: inline-block;
+  }
+
+  .manageTabs.tabs.arrows > ul {
+    margin-bottom: auto;
+  }
+}
+@media screen and (min-width: 960px) {
+  .manageTabs.tabs.arrows > ul {
+    margin-bottom: auto;
+  }
+  .manageTabs.tabs.arrows > ul li.ui-tabs-active {
+    border-left: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    background: #0093c6;
+  }
+  .manageTabs.tabs.arrows > ul li.ui-tabs-active a {
+    color: #fff;
+  }
+  .manageTabs.tabs.arrows > ul li:first-of-type {
+    border-left: none;
+  }
+  .manageTabs.tabs.arrows > .tabsContent {
+    padding: 22px;
+    margin-bottom: 22px;
+  }
+  .manageTabs.tabs.arrows > .tabsContent .btn {
+    font-size: 1.25em;
+    line-height: 1.2em;
+    width: auto;
+  }
+  .manageTabs.tabs.arrows > h3 {
+    margin-top: 4.5em;
+  }
+}
+/* Header Image Height Fix */
+.mainMasthead {
+  height: 190px;
+}
+
+@media screen and (min-width: 450px) {
+  .staticHeightImageContainer {
+    height: 290px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .staticHeightImageContainer {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .staticHeightImageContainer {
+    height: 390px;
+  }
+}
+.givingTabs .international-giving-tab {
+  width: 50% !important;
+}
+
+.mfp-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.mfp-content #TrainingSlider .rsBullets {
+  margin-right: -57px;
+  bottom: 0px !important;
+  right: 58px !important;
+  height: 35px !important;
+  background-color: white;
+  border-bottom: 1px solid white;
+  padding: 5px 8px 0px 7px !important;
+}
+.mfp-content #TrainingSlider .rsBullet {
+  width: 20px !important;
+  height: 6px !important;
+}
+.mfp-content #TrainingSlider .rsBullet span {
+  width: 14px !important;
+  height: 14px !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.mfp-content #TrainingSlider .rsBullet.rsNavSelected span {
+  background: #4d4d4f !important;
+}
+.mfp-content #TrainingSlider #slider-control-container .Image {
+  width: auto !important;
+  height: 100%;
+}
+.mfp-content #TrainingSlider .rsArrowRight {
+  right: 0 !important;
+  bottom: 50% !important;
+  margin-bottom: -43px;
+  width: auto;
+  height: 86px !important;
+  margin-right: inherit;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 28px 3px;
+}
+.mfp-content #TrainingSlider .rsArrowLeft {
+  right: inherit !important;
+  left: 0 !important;
+  bottom: 50% !important;
+  margin-bottom: -43px;
+  width: auto;
+  height: 86px !important;
+  margin-right: inherit;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 28px 3px;
+}
+.mfp-content #TrainingSlider .rsArrowIcn {
+  background: none !important;
+  border: none;
+}
+.mfp-content #TrainingSlider .rsArrowRight:after {
+  top: 30px;
+  font-size: 25px;
+  font-family: 'sb-im-default';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  color: whitesmoke;
+  content: '\e00c';
+}
+.mfp-content #TrainingSlider .rsArrowLeft:after {
+  display: block;
+  top: 27px;
+  font-size: 25px;
+  font-family: 'sb-im-default';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  color: whitesmoke;
+  content: '\e00c';
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+.basket-item-row .row.form-group .col-md-3.col-xs-3 {
+  float: unset !important;
+}
+
+.billing-tab .checkout-buttons a, .payment-tab .checkout-buttons a, .basket-tab .checkout-buttons a, .row .checkout-buttons a, .v2 .checkout-buttons a {
+  width: 100% !important;
+}
+.billing-tab .checkout-buttons a:first-of-type, .payment-tab .checkout-buttons a:first-of-type, .basket-tab .checkout-buttons a:first-of-type, .row .checkout-buttons a:first-of-type, .v2 .checkout-buttons a:first-of-type {
+  margin-bottom: 15px;
+}
+.billing-tab .checkout-buttons a:last-of-type, .payment-tab .checkout-buttons a:last-of-type, .basket-tab .checkout-buttons a:last-of-type, .row .checkout-buttons a:last-of-type, .v2 .checkout-buttons a:last-of-type {
+  margin: 0 !important;
+}
+
+.row.form-group .col-md-12 button:first-of-type {
+  margin-bottom: 15px;
+}
+
+.mobileHide {
+  display: none;
+}
+
+.tabsContent #manage .giveTitheButton {
+  line-height: 36px;
+  padding: 0;
+  border: none;
+}
+.tabsContent #manage .intro-container {
+  margin-bottom: 32px;
+}
+.tabsContent #manage .manageTabs {
+  border: none !important;
+}
+.tabsContent #manage .manageTabs > ul li {
+  color: #4d4d4f;
+  background: #fff;
+  border-left: none;
+  border: solid 1px #f6f6f6;
+  box-shadow: inset 0px -20px 40px -20px rgba(0, 0, 0, 0.1);
+  width: 33.333333333333333333333333333%;
+}
+.tabsContent #manage .manageTabs > ul li:after {
+  display: none;
+}
+.tabsContent #manage .manageTabs > ul li.ui-state-hover, .tabsContent #manage .manageTabs > ul li .ui-state-focus {
+  outline: none;
+}
+.tabsContent #manage .manageTabs > ul li.ui-state-active {
+  margin-top: -5px;
+  background: #fff;
+  border: none;
+  border-left: none;
+  border-top: solid 5px #00aeef;
+  box-shadow: 5px 0 15px -9px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 5px 0 15px -9px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+.tabsContent #manage .manageTabs > ul li.ui-state-active a {
+  padding: 13px 0;
+}
+.tabsContent #manage .manageTabs > ul li.ui-state-active:nth-child(2) {
+  box-shadow: 5px 0 12px -9px rgba(0, 0, 0, 0.15), -5px 0 12px -9px rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: 5px 0 12px -9px rgba(0, 0, 0, 0.15), -5px 0 12px -9px rgba(0, 0, 0, 0.15) !important;
+}
+.tabsContent #manage .manageTabs > ul li.ui-state-active:last-of-type {
+  box-shadow: -5px 0 15px -9px rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: -5px 0 15px -9px rgba(0, 0, 0, 0.15) !important;
+}
+.tabsContent #manage .manageTabs > ul li.ui-state-active:focus {
+  outline: none;
+}
+.tabsContent #manage .manageTabs > ul li:first-of-type {
+  border-left: none;
+}
+.tabsContent #manage .manageTabs > ul li a {
+  display: block;
+  padding: 12px 0;
+  margin-top: 0px;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #4d4d4f;
+}
+.tabsContent #manage .manageTabs > ul li:hover {
+  background: #fff;
+}
+
+.icon-step-backward:before, .icon-step-forward:before {
+  content: '\e009';
+}
+
+.icon-step-backward {
+  display: block;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.loadOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background: #ffffff;
+}
+
+#ImageWait {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -20px;
+}
+
+label {
+  font-family: 'Lato';
+}
+
+.v2 a {
+  color: #00aeef !important;
+  font-family: 'Lato';
+  font-style: normal;
+}
+.v2 a:hover {
+  color: #0093c6 !important;
+}
+.v2 .btn {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #00aeef !important;
+  border-radius: 2px !important;
+  border: none !important;
+  color: white !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  font: 900 14px 'Lato' !important;
+  height: 36px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  letter-spacing: 1px;
+  padding: 0 !important;
+  width: 200px !important;
+}
+.v2 .btn:hover {
+  background: #0093c6 !important;
+  color: white !important;
+}
+.v2 .btn.project-search-view-all-btn {
+  display: none;
+}
+.v2 .btn .glyphicon {
+  display: none !important;
+}
+.v2 #V2SButtonSearch {
+  font-family: 'SB-Icons' !important;
+  color: #00aeef;
+}
+.v2 #V2SButtonSearch:hover {
+  background: #4d4d4f !important;
+}
+.v2 #V2SButtonSearch .glyphicon {
+  display: inline !important;
+  top: 2px;
+  padding-right: 10px;
+}
+.v2 .project-browse-row {
+  margin-bottom: 50px;
+}
+
+.v2 #V2SButtonSearch:before {
+  /* display: none !important; */
+}
+
+.v2 .btn-success {
+  width: 100%;
+}
+
+.tabsSection {
+  max-width: 1254px;
+}
+.tabsSection .tabs {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+}
+.tabsSection .tabs > .ui-tabs-nav {
+  border: none;
+  padding-left: 0;
+}
+.tabsSection .tabs > .ui-tabs-nav.fixed {
+  width: 100%;
+  position: fixed;
+  top: -16px;
+  left: 0;
+  z-index: 1001;
+  height: 40px;
+}
+.tabsSection .tabs > .ui-tabs-nav.fixed li {
+  height: 40px;
+}
+.tabsSection .tabs > .ui-tabs-nav.fixed .ui-tabs-nav {
+  height: 40px;
+}
+.tabsSection .tabs > .ui-tabs-nav.fixed .ui-tabs-nav a .titleFull {
+  display: none;
+}
+.tabsSection .tabs > .ui-tabs-nav.fixed .ui-tabs-nav a .titleShort {
+  display: block;
+  padding: 12px 0;
+  margin-top: 0px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #4d4d4f;
+}
+.tabsSection .tabs > .ui-tabs-nav.fixed .ui-tabs-active {
+  height: 45px;
+  border-bottom: solid 5px #00aeef !important;
+}
+.tabsSection .tabs > .ui-tabs-nav.fixed .ui-tabs-active a .titleFull {
+  display: none;
+}
+.tabsSection .tabs > .ui-tabs-nav.fixed .ui-tabs-active a .titleShort {
+  display: block;
+  padding: 13px 0;
+  margin-top: 0px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #4d4d4f;
+}
+.tabsSection .tabs > .ui-tabs-nav li {
+  color: #4d4d4f;
+  background: #fff;
+  border-left: none;
+  border: solid 1px #f6f6f6;
+  box-shadow: inset 0px -20px 40px -20px rgba(0, 0, 0, 0.1);
+  width: 33.333333333333333333333333333%;
+}
+.tabsSection .tabs > .ui-tabs-nav li:after {
+  display: none;
+}
+.tabsSection .tabs > .ui-tabs-nav li.ui-tabs-active {
+  margin-top: -5px;
+  background: #fff;
+  border: none;
+  border-left: none;
+  border-top: solid 5px #00aeef;
+  box-shadow: 5px 0 15px -9px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 5px 0 15px -9px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+.tabsSection .tabs > .ui-tabs-nav li.ui-tabs-active a .titleShort {
+  padding: 13px 0;
+}
+.tabsSection .tabs > .ui-tabs-nav li.ui-tabs-active:nth-child(2) {
+  box-shadow: 5px 0 12px -9px rgba(0, 0, 0, 0.15), -5px 0 12px -9px rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: 5px 0 12px -9px rgba(0, 0, 0, 0.15), -5px 0 12px -9px rgba(0, 0, 0, 0.15) !important;
+}
+.tabsSection .tabs > .ui-tabs-nav li.ui-tabs-active:last-of-type {
+  box-shadow: -5px 0 15px -9px rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: -5px 0 15px -9px rgba(0, 0, 0, 0.15) !important;
+}
+.tabsSection .tabs > .ui-tabs-nav li:first-of-type {
+  border-left: none;
+}
+.tabsSection .tabs > .ui-tabs-nav li a .titleFull {
+  display: none;
+}
+.tabsSection .tabs > .ui-tabs-nav li a .titleShort {
+  display: block;
+  padding: 12px 0;
+  margin-top: 0px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #4d4d4f;
+}
+.tabsSection .tabs > .ui-tabs-nav li:hover {
+  background: #fff;
+}
+.tabsSection .tabs > .tabsContent {
+  padding: 11px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel {
+  width: 100%;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel .mail-address-notification .mail-title {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel .mail-address-notification .mail-title .icon-mail-check {
+  margin-right: 16px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel .mail-address-notification .meta {
+  color: #bcbec0;
+  font: 13px 'Lato';
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel .mail-address-notification .mail-address-line {
+  display: block;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .intro {
+  margin-bottom: 33px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer {
+  padding: 22px;
+  padding-left: 0;
+  margin: 0 0 22px 0;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .arrowedButton {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .icon-plus, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .icon-close, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .icon-calculate {
+  margin-left: 5px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons .btn {
+  margin-bottom: 11px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #ItemType, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .askLadder + div > p, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .askLadder + div > p + input {
+  display: none;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .askLadder + div > p[style*='padding-left'] {
+  padding-left: 0 !important;
+  display: block;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .date.input-small {
+  margin-bottom: 0 !important;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span6 {
+  padding: 0 !important;
+  position: relative;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span6 > div:first-of-type {
+  margin-bottom: 22px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span6 > .btn.btn-info {
+  margin-bottom: 11px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span6 > .date {
+  margin-bottom: 5px !important;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span6 > .btn.btn-info.btn-mini {
+  position: relative;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span6 + .span6 h4 {
+  background: #4d4d4f;
+  color: #ffffff;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  margin-bottom: 0;
+  padding: 11px !important;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span6 + .span6 table {
+  background: #4d4d4f;
+  padding: 11px !important;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span6 + .span6 table td {
+  font-family: Georgia;
+  color: #ffffff;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span6 + .span6 table td span {
+  color: #ffffff;
+  font-family: Georgia;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .btn.btn-info, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .btn.btn-danger {
+  width: 100%;
+  text-align: center;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span10 .bold.italic {
+  text-align: center;
+  margin-bottom: 11px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .well .span12 a, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .well .span12 input {
+  width: 100%;
+  font-weight: normal;
+  text-align: center;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .well .span12 a:last-of-type {
+  margin-bottom: 0;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer h3.span12 {
+  background: white;
+  font-size: 26px;
+  margin: 0 auto -22px auto;
+  position: relative;
+  text-align: center;
+  top: -38px;
+  width: 220px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer input[type=text], .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer textarea {
+  border: none;
+  border: 1px solid #4d4d4f;
+  color: #4d4d4f;
+  font: 14px "Lato", Arial;
+  font-style: normal;
+  height: 40px;
+  letter-spacing: 1px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer input[type=text]::-webkit-input-placeholder, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer textarea::-webkit-input-placeholder {
+  color: #bcbec0;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.9px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer input[type=text]::-moz-placeholder, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer textarea::-moz-placeholder {
+  color: #bcbec0;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.9px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer input[type=text]:-ms-input-placeholder, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer textarea:-ms-input-placeholder {
+  color: #bcbec0;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.9px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer input[type=text]:focus, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer textarea:focus {
+  border-bottom: none;
+  border: 1px solid #00aeef;
+  color: #4d4d4f;
+  outline: none;
+  padding: 5px 10px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .btn {
+  height: 36px;
+  padding: 11px;
+  font-style: normal;
+  text-transform: none;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span10 > .bold.italic {
+  text-align: center;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span10 > .bold.italic a > span {
+  font-size: 20px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer .span10 > .bold.italic a > span:after {
+  content: ':';
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .thanksContainer .thanksTitle {
+  margin: 77px 0 33px;
+  font-size: 3.1875em;
+  line-height: 1.411764705882353em;
+  text-align: center;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .thanksContainer .thanksCopy {
+  font-family: 'Lato';
+  font-weight: 900;
+  text-align: center;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .storyContainer .blogItem {
+  position: relative;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .storyContainer .blogItem .blogInfoContainer {
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  left: 50%;
+  margin-left: -50px;
+  text-align: center;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .storyContainer .blogItem .blogInfoContainer .blogHeadlineShort a {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-family: 'Lato';
+  text-shadow: -1px 1px 5px black;
+  color: #ffffff;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .storyContainer .blogItem .blogInfoContainer .blogExcerptShort p {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: 'Lato';
+  font-style: normal;
+  text-shadow: -1px 1px 5px black;
+  color: #ffffff;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .storyContainer .blogItem .blogImage a {
+  display: block;
+  height: 315px;
+  position: relative;
+  overflow: hidden;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .storyContainer .blogItem .blogImage a img {
+  display: block;
+  height: 100%;
+  left: 50%;
+  margin-left: -50%;
+  position: absolute;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .promotionalContainer {
+  margin-bottom: 7.5em;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .promotionalContainer .promoList .promoItem {
+  position: relative;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .promotionalContainer .promoList .promoItem img {
+  display: block;
+  width: 100%;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .promotionalContainer .promoList .promoItem .promoInfo {
+  padding: 22px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .promotionalContainer .promoList .promoItem .promoInfo h3 {
+  padding: 10px 0;
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .promotionalContainer .promoList .promoItem .promoInfo .promoActions {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 230px;
+  margin: 0 auto;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .promotionalContainer .promoList .promoItem .promoInfo .promoActions .btn {
+  height: 33px;
+  padding-top: 5px;
+  font-style: italic;
+  text-transform: none;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .promotionalContainer .promoList .promoItem .promoInfo .promoActions .btn.giveLearn {
+  background: #f6f6f6;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .promotionalContainer .promoList .promoItem .promoInfo .promoActions .btn.giveLearn:hover {
+  background: #878787;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .row.project-browse-row .project-browse-project-img-column {
+  position: relative;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .row.project-browse-row .project-browse-project-img-column .project-browse-project-img {
+  border: 0 !important;
+  display: block;
+  width: 100%;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 {
+  width: 100%;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .col-md-8.col-xs-8 {
+  width: 100%;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .col-md-4.col-xs-4 {
+  padding: 0;
+  position: absolute;
+  width: auto;
+  left: 15px;
+  top: -3px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .col-md-4.col-xs-4 button {
+  float: right;
+  background: none !important;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .col-md-4.col-xs-4 button .glyphicon {
+  font-size: 18px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse h3 {
+  padding: 0 !important;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text] {
+  border: none;
+  border-bottom: 1px solid #4d4d4f;
+  color: #4d4d4f;
+  box-shadow: none;
+  border-radius: 0;
+  height: 36px;
+  caret-color: #00aeef;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  font-weight: 300;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]::-webkit-input-placeholder {
+  color: #bcbec0;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  font-weight: 300;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]::-moz-placeholder {
+  color: #bcbec0;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  font-weight: 300;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]:-ms-input-placeholder {
+  color: #bcbec0;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  font-weight: 300;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]:focus {
+  color: #4d4d4f;
+  outline: none;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse button[type=submit] {
+  -webkit-appearance: none;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #4d4d4f;
+  border: none;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+  padding: 0 0 0 4px;
+  text-align: center;
+  width: 36px !important;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse button[type=submit] span {
+  display: none;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse button[type=submit] i {
+  color: #bcbec0;
+  font-size: 24px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs {
+  margin-bottom: 22px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-statements {
+  margin-bottom: 11px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-statements .col-md-2 {
+  display: block;
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-paymentHistory, .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-commitments, .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-recurring {
+  clear: left;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-profileFundingMethods > form > div {
+  margin: 0 1%;
+  max-width: 768px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-profileFundingMethods input[type=radio] {
+  margin-right: 5px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-profileFundingMethods .well.well-small {
+  margin-bottom: 22px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-profileFundingMethods .control-group label {
+  float: left;
+  line-height: 33px;
+  margin-right: 10px;
+  width: 200px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-profileFundingMethods .control-group .controls {
+  float: left;
+  width: 300px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-profileFundingMethods .span4[style*=text-align], .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-profileFundingMethods .well[style*=text-align] {
+  margin-bottom: 22px;
+  text-align: left !important;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .giving-goal-progress .row[data-bind] .col-md-3 {
+  float: none;
+  margin-bottom: 11px;
+}
+.tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .giving-goal-progress .row[data-bind] .col-md-3.text-right {
+  margin-bottom: 33px;
+  text-align: left;
+}
+
+.footerAdContainer {
+  background: #f6f6f6;
+  padding: 44px 10px;
+}
+.footerAdContainer img {
+  display: block;
+  margin: 0 auto;
+}
+.footerAdContainer .appInfo {
+  text-align: center;
+}
+.footerAdContainer .appInfo h2 {
+  color: #ffffff;
+  margin: 0 auto;
+  width: 70%;
+}
+.footerAdContainer .appInfo p {
+  color: #ffffff;
+}
+.footerAdContainer .appInfo .btn.download {
+  background: #a9c1cf;
+  float: left;
+  padding: 5px 10px;
+  text-transform: none;
+}
+.footerAdContainer .appInfo .btn.download.itunes {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  float: right;
+  width: 119px;
+}
+.footerAdContainer .appInfo .icon-apple {
+  float: left;
+  font-size: 20px;
+  line-height: 10px;
+  margin: 5px 10px -5px 0;
+}
+.footerAdContainer .appInfo .appstoreTop {
+  float: right;
+  font-family: 'Lato';
+  font-size: 9px;
+  line-height: 8px;
+}
+.footerAdContainer .appInfo .appstoreBottom {
+  float: right;
+  font-family: 'Lato';
+  font-size: 15px;
+  line-height: 10px;
+}
+
+#profileFundingMethodsid1View div .well.well-sm .row .col-md-9 {
+  margin-bottom: 15px;
+}
+#profileFundingMethodsid1View div .well.well-sm .row .col-md-3 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  width: 100% !important;
+}
+#profileFundingMethodsid1View div .well.well-sm .row .col-md-3 .saved-payment-method-edit-btn {
+  margin: 0 10px 15px 0;
+}
+#profileFundingMethodsid1View div .well.well-sm .row .col-md-3 .saved-payment-method-edit-btn, #profileFundingMethodsid1View div .well.well-sm .row .col-md-3 .saved-payment-method-delete-btn {
+  width: 50% !important;
+}
+
+.giveInfo .email, .giveInfo .phone {
+  margin-bottom: 6px;
+}
+
+.icon-email-glyph:before, .icon-phone-glyph:before {
+  margin-right: 11px;
+  vertical-align: middle;
+}
+
+#givingGoalProgressid1View div span {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+#givingGoalProgressid1View div .btn.btn-info {
+  margin-bottom: 15px;
+}
+
+.v2Module.v2-recurring #recurringView div .row.form-group .col-md-12 button:first-of-type {
+  margin-bottom: 15px;
+}
+
+#saddleback-contact-form .SubmitForm.btn.blue {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#paymentHistoryid1 div .row .col-md-12 .form-horizontal .form-group .col-md-4 {
+  margin-bottom: 0;
+}
+#paymentHistoryid1 div .row .col-md-12 .form-horizontal .form-group .col-md-4 .form-control {
+  margin-bottom: 15px !important;
+}
+#paymentHistoryid1 div .row .col-md-12 .form-horizontal .form-group .col-md-2 {
+  margin-bottom: 0;
+}
+#paymentHistoryid1 div .row .col-md-12 .form-horizontal .form-group .col-md-2 .form-control {
+  margin-bottom: 15px;
+}
+#paymentHistoryid1 div div .row {
+  margin-bottom: 30px;
+}
+#paymentHistoryid1 div div .row .col-md-12 {
+  display: -ms-flexbox;
+  display: flex;
+}
+#paymentHistoryid1 div div .row .col-md-12 .show-donor-name-btn {
+  margin: 0 10px 0 0;
+  width: 50% !important;
+}
+#paymentHistoryid1 div div .row .col-md-12 .hide-donor-name-btn {
+  width: 50% !important;
+}
+
+.v2-recurring div .row {
+  margin-bottom: 15px;
+}
+.v2-recurring div .row .col-md-12 {
+  display: -ms-flexbox;
+  display: flex;
+}
+.v2-recurring div .row .col-md-12 .show-donor-name-btn {
+  margin: 0 10px 0 0;
+  width: 50% !important;
+}
+.v2-recurring div .row .col-md-12 .hide-donor-name-btn {
+  width: 50% !important;
+}
+
+#history #statementsid1 {
+  margin-bottom: 0;
+  padding-top: 0;
+}
+#history #statementsid1 #statementsid1StatementView .row .col-md-4 .pdf-statement-btn {
+  width: 100% !important;
+}
+#history #paymentHistoryid1 .row .col-md-2 .payment-search-btn {
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
+#history #paymentHistoryid1 .row .col-md-12 .download-btn {
+  width: 100% !important;
+  margin-bottom: 30px;
+}
+#history #paymentHistoryid1 .row.form-group .col-md-12 .simple-search-btn {
+  width: 100% !important;
+}
+#history #paymentHistoryid1 .row.form-group .col-md-12 .advanced-search-btn {
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+#history #paymentHistoryid1 .row.form-group .col-md-12 .advanced-payment-search-btn {
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+#history #paymentHistoryid1 .row.form-group .col-md-2 {
+  margin-bottom: 30px;
+}
+#history #paymentHistoryid1 .row.form-group .col-md-2 input:first-of-type {
+  margin-bottom: 10px;
+}
+#history #paymentHistoryid1 .row.form-group .col-md-2 label {
+  font-weight: normal;
+}
+#history #paymentHistoryid1 .row.form-group .col-md-2 label:first-of-type {
+  font-weight: 900;
+}
+#history #paymentHistoryid1 .row.form-group .col-md-4 {
+  margin-bottom: 15px;
+}
+#history #paymentHistoryid1 div .table {
+  font-size: 10px;
+}
+#history #paymentHistoryid1 div .row.form-group .col-md-12 {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+#history #paymentHistoryid1 div .row.form-group .col-md-12 .show-donor-name-btn {
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+#history #paymentHistoryid1 div .row.form-group .col-md-12 .hide-donor-name-btn {
+  width: 100% !important;
+}
+
+#profileFundingMethodsid1 .well.well-sm .row .col-md-3 .saved-payment-method-edit-btn {
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+#profileFundingMethodsid1 .well.well-sm .row .col-md-3 .saved-payment-method-delete-btn {
+  width: 100% !important;
+}
+
+#commitments .giving-goal-header {
+  margin-bottom: 15px;
+}
+#commitments #givingGoalProgressid1View div .btn-info {
+  width: 100% !important;
+}
+#commitments #givingGoalProgressid1View .row .col-md-3 .btn-info {
+  width: 100% !important;
+}
+#commitments #givingGoalProgressid1View .row .col-md-4 .btn-info {
+  width: 100% !important;
+}
+
+#recurring #recurringView p {
+  margin-bottom: 30px;
+}
+#recurring #recurringView div .row.form-group .col-md-12 {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+#recurring #recurringView div .row.form-group .col-md-12 .show-donor-name-btn {
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+#recurring #recurringView div .row.form-group .col-md-12 .hide-donor-name-btn {
+  width: 100% !important;
+}
+
+.international-giving-popup .international-giving-inner .language-switch {
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1.57;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-info {
+  margin-bottom: 60px;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-info .international-giving-header {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto 15px;
+  color: #4d4d4f;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-info .international-giving-header span {
+  display: block;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-info .international-giving-header-info {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #4d4d4f;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-info .international-giving-header-info .header-info-sidenote {
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: 0.7px;
+  text-align: center;
+  margin-top: 10px;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-info .btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 7px;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-cta-info {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4d4d4f;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-cta-info .international-campus-name {
+  display: inline-block;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container {
+  margin-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option {
+  max-width: 180px;
+  margin-bottom: 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option:hover .icon-computer-outline {
+  color: #0093c6;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .international-giving-option-header {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.38;
+  letter-spacing: 1.07px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #4d4d4f;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .icon-computer-outline, .international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .icon-check, .international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .icon-cash {
+  color: #00aeef;
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .international-giving-option-text {
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0;
+  color: #4d4d4f;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .wire-title, .international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .wire-number {
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .wire-title {
+  font-weight: 700;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .wire-number:last-of-type {
+  margin-bottom: 0;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option.wire-transfer .international-giving-option-text {
+  margin-bottom: 10px;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-address-container p {
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 0;
+  color: #4d4d4f;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-address-container .giving-address-title {
+  font-weight: 900;
+  color: #4d4d4f;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-us-giving-container .international-giving-header-info {
+  padding-top: 30px;
+  border-top: solid 1px #00aeef;
+  margin: 30px 0 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #4d4d4f;
+}
+.international-giving-popup .international-giving-inner .international-giving-container .international-us-giving-container .international-giving-header-info .header-info-sidenote {
+  display: block;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-info {
+  margin-bottom: 32px;
+}
+#srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container {
+  padding-top: 32px;
+  background: #f2f2f2;
+}
+#srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container {
+  margin: 0;
+}
+#srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option {
+  max-width: 225px;
+}
+#srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .international-giving-option-number {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  letter-spacing: 1.00571px;
+  border-radius: 50%;
+  background: #56c4c4;
+  color: #fff;
+  margin: 0 0 16px;
+  height: 42px;
+  width: 42px;
+}
+#srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .international-giving-option-header {
+  margin-bottom: 24px;
+}
+#srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option .btn {
+  height: 46px;
+  border-radius: 15px;
+}
+#srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option:last-of-type {
+  margin: 0;
+}
+#srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option:last-of-type .international-giving-option-header {
+  margin-bottom: 12px;
+}
+#srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-address-container {
+  padding-top: 32px;
+  background: #fff;
+}
+#srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-address-container .international-giving-address-header {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.38;
+  letter-spacing: 1.07px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #4d4d4f;
+}
+
+@media screen and (min-width: 450px) {
+  #history #paymentHistoryid1 div .table {
+    font-size: unset;
+  }
+
+  .tabsContent #manage .manageTabs > ul li a {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .col-md-4.col-xs-4 {
+    top: -6px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .col-md-4.col-xs-4 button .glyphicon {
+    font-size: 26px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text] {
+    padding-left: 35px;
+    font-size: 26px;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]::-webkit-input-placeholder {
+    font-size: 26px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]::-moz-placeholder {
+    font-size: 26px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]:-ms-input-placeholder {
+    font-size: 26px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]:focus {
+    font-size: 26px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 568px) {
+  .mobileHide {
+    display: inline-block;
+  }
+
+  .tabsSection .tabs > .tabsContent {
+    padding: 22px;
+    border: none !important;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span {
+    display: inline-block;
+    margin-right: -4px;
+    padding-right: 11px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:first-child, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:last-child {
+    width: 28%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:nth-child(2) {
+    width: 44%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:last-child {
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .projectInformation {
+    margin: 0 -4px 0 0;
+    padding-left: 22px;
+    width: 75%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .projectInformation a {
+    display: inline-block;
+    margin: 5px 11px 0 0 !important;
+  }
+
+  .ui-tabs-panel#manage .manageTabs ul .ui-state-default {
+    height: 50px;
+  }
+  .ui-tabs-panel#manage .manageTabs ul .ui-state-default a {
+    padding: 17px 0;
+  }
+  .ui-tabs-panel#manage .manageTabs ul .ui-state-default:last-of-type a {
+    padding: 9px 0;
+  }
+  .ui-tabs-panel#manage .manageTabs ul .ui-state-default.ui-state-active a {
+    padding: 18px 0;
+  }
+  .ui-tabs-panel#manage .manageTabs ul .ui-state-default.ui-state-active:last-of-type a {
+    max-width: 270px;
+  }
+  .ui-tabs-panel#manage .manageTabs ul .ui-state-default.ui-state-active:last-of-type a:last-of-type {
+    padding: 10px 0;
+  }
+
+  #ContactSection {
+    margin-bottom: 3em;
+    margin-top: 4.5em;
+    max-width: 1254px;
+  }
+
+  #ContactForm .Field1, #ContactForm .Field2, #ContactForm .Field3, #ContactForm .Field4, #ContactForm .Field5, #ContactForm .Field6 {
+    clear: left;
+    float: left;
+    width: 50%;
+  }
+  #ContactForm .Field7 {
+    height: 297px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48%;
+  }
+  #ContactForm .SubmitForm {
+    width: auto;
+  }
+
+  .giveInfo {
+    margin-top: 22px;
+  }
+  .giveInfo .email, .giveInfo .phone {
+    margin-bottom: 6px;
+  }
+
+  .row.form-group .col-md-12 button:first-of-type {
+    margin-bottom: 15px;
+  }
+
+  #paymentHistoryid1 div .row .col-md-12 .form-horizontal .form-group .col-md-4 {
+    margin-bottom: 0;
+  }
+  #paymentHistoryid1 div .row .col-md-12 .form-horizontal .form-group .col-md-2 {
+    margin-bottom: 0;
+  }
+
+  #profileFundingMethodsid1View div .well.well-sm .row .col-md-9 {
+    margin-bottom: 15px;
+    width: auto;
+  }
+  #profileFundingMethodsid1View div .well.well-sm .row .col-md-3 {
+    width: 100%;
+    text-align: right;
+  }
+  #profileFundingMethodsid1View div .well.well-sm .row .col-md-3 .saved-payment-method-edit-btn {
+    margin-bottom: 0;
+  }
+
+  .v2Module.v2-recurring #recurringView div .row.form-group .col-md-12 button:first-of-type {
+    margin-bottom: 0px;
+    margin-right: 15px;
+  }
+
+  #saddleback-contact-form .SubmitForm.btn.blue {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .opportunitiesContainer {
+    margin: 0;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .form-group {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  .billing-tab .checkout-buttons, .payment-tab .checkout-buttons, .basket-tab .checkout-buttons, .row .checkout-buttons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+  .billing-tab .checkout-buttons a, .payment-tab .checkout-buttons a, .basket-tab .checkout-buttons a, .row .checkout-buttons a {
+    width: 260px !important;
+  }
+  .billing-tab .checkout-buttons a:first-of-type, .payment-tab .checkout-buttons a:first-of-type, .basket-tab .checkout-buttons a:first-of-type, .row .checkout-buttons a:first-of-type {
+    margin-bottom: 0 !important;
+    margin-right: 15px;
+  }
+
+  .v2 .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 650px) {
+  #history #statementsid1 #statementsid1StatementView .row .col-md-4 .pdf-statement-btn {
+    width: 200px !important;
+  }
+  #history #paymentHistoryid1 .row .col-md-2 .payment-search-btn {
+    width: 200px !important;
+  }
+  #history #paymentHistoryid1 .row .col-md-12 .download-btn {
+    width: 200px !important;
+  }
+  #history #paymentHistoryid1 .row.form-group .col-md-12 .simple-search-btn {
+    width: 200px !important;
+  }
+  #history #paymentHistoryid1 .row.form-group .col-md-12 .advanced-search-btn {
+    width: 200px !important;
+  }
+  #history #paymentHistoryid1 .row.form-group .col-md-12 .advanced-payment-search-btn {
+    width: 200px !important;
+  }
+  #history #paymentHistoryid1 div .row.form-group .col-md-12 {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  #history #paymentHistoryid1 div .row.form-group .col-md-12 .show-donor-name-btn {
+    width: 200px !important;
+    margin-bottom: 0px;
+    margin-right: 15px;
+  }
+  #history #paymentHistoryid1 div .row.form-group .col-md-12 .hide-donor-name-btn {
+    width: 200px !important;
+  }
+
+  #profileFundingMethodsid1 .well.well-sm .row .col-md-9 {
+    margin-bottom: 30px;
+  }
+  #profileFundingMethodsid1 .well.well-sm .row .col-md-3 {
+    text-align: left;
+    width: 100% !important;
+  }
+  #profileFundingMethodsid1 .well.well-sm .row .col-md-3 .saved-payment-method-edit-btn {
+    width: 200px !important;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  #profileFundingMethodsid1 .well.well-sm .row .col-md-3 .saved-payment-method-delete-btn {
+    width: 200px !important;
+  }
+
+  #commitments .giving-goal-header {
+    margin-bottom: 15px;
+  }
+  #commitments #givingGoalProgressid1View div .btn-info {
+    width: 200px !important;
+  }
+  #commitments #givingGoalProgressid1View .row .col-md-3 .btn-info {
+    width: 300px !important;
+  }
+  #commitments #givingGoalProgressid1View .row .col-md-4 .btn-info {
+    width: 200px !important;
+  }
+
+  #recurring #recurringView div .row.form-group .col-md-12 {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  #recurring #recurringView div .row.form-group .col-md-12 .show-donor-name-btn {
+    width: 200px !important;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  #recurring #recurringView div .row.form-group .col-md-12 .hide-donor-name-btn {
+    width: 200px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tabsSection .tabs > .ui-tabs-nav {
+    height: 85px;
+  }
+  .tabsSection .tabs > .ui-tabs-nav.fixed {
+    height: 40px;
+  }
+  .tabsSection .tabs > .ui-tabs-nav.fixed li {
+    height: 40px;
+    background: #fff;
+  }
+  .tabsSection .tabs > .ui-tabs-nav.fixed li a .titleFull {
+    display: none;
+    padding: 8px 0;
+  }
+  .tabsSection .tabs > .ui-tabs-nav.fixed li a .titleShort {
+    display: block;
+    padding: 8px 0;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    color: #4d4d4f;
+  }
+  .tabsSection .tabs > .ui-tabs-nav.fixed li.ui-tabs-active a .titleFull {
+    display: none;
+    padding: 9px 0;
+  }
+  .tabsSection .tabs > .ui-tabs-nav.fixed li.ui-tabs-active a .titleShort {
+    display: block;
+    padding: 9px 0;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    color: #4d4d4f;
+  }
+  .tabsSection .tabs > .ui-tabs-nav.fixed .ui-tabs-nav {
+    height: 40px;
+  }
+  .tabsSection .tabs > .ui-tabs-nav.fixed .ui-tabs-active {
+    height: 45px;
+  }
+  .tabsSection .tabs > .ui-tabs-nav li {
+    height: 85px;
+  }
+  .tabsSection .tabs > .ui-tabs-nav li a .titleShort {
+    display: none;
+  }
+  .tabsSection .tabs > .ui-tabs-nav li a .titleFull {
+    display: block;
+    margin-top: 0px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    line-height: normal;
+    color: #4d4d4f;
+    padding: 30px 0;
+  }
+  .tabsSection .tabs > .ui-tabs-nav li.ui-tabs-active {
+    height: 85px;
+  }
+  .tabsSection .tabs > .ui-tabs-nav li.ui-tabs-active a .titleFull {
+    padding: 31px 0;
+  }
+  .tabsSection .tabs > .tabsContent {
+    padding: 44px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manage-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manage-grid .intro-container {
+    margin-bottom: 0;
+    width: 70%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manage-grid .notification-container {
+    width: 20%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs {
+    margin-bottom: 22px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs > ul li {
+    color: #4d4d4f;
+    height: 85px;
+    background: #fff;
+    border-left: none;
+    border: solid 1px #f6f6f6;
+    box-shadow: inset 0px -20px 40px -20px rgba(0, 0, 0, 0.1);
+    width: 33.333333333333333333333333333%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs > ul li:after {
+    display: none;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs > ul li.ui-state-active {
+    margin-top: -5px;
+    background: #fff;
+    border: none;
+    border-left: none;
+    border-top: solid 5px #00aeef;
+    box-shadow: 5px 0 15px -9px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 5px 0 15px -9px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs > ul li.ui-state-active a {
+    padding: 35px 0;
+    font-size: 16px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs > ul li.ui-state-active:nth-child(2) {
+    box-shadow: 5px 0 12px -9px rgba(0, 0, 0, 0.15), -5px 0 12px -9px rgba(0, 0, 0, 0.15) !important;
+    -webkit-box-shadow: 5px 0 12px -9px rgba(0, 0, 0, 0.15), -5px 0 12px -9px rgba(0, 0, 0, 0.15) !important;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs > ul li.ui-state-active:last-of-type {
+    box-shadow: -5px 0 15px -9px rgba(0, 0, 0, 0.15) !important;
+    -webkit-box-shadow: -5px 0 15px -9px rgba(0, 0, 0, 0.15) !important;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs > ul li:first-of-type {
+    border-left: none;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs > ul li a {
+    display: block;
+    padding: 34px 0;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    color: #4d4d4f;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs > ul li:hover {
+    background: #fff;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs > ul li:last-of-type a:last-of-type {
+    padding: 20px 0;
+    max-width: 270px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .manageTabs > ul li.ui-state-active:last-of-type a:last-of-type {
+    padding: 21px 0;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-profileFundingMethods > form > div {
+    margin: 0 auto;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-profileFundingMethods > form > div .nav {
+    text-align: center;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#manage .v2-profileFundingMethods > form > div .nav li {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 22px;
+  }
+
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .form-group {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .col-md-4.col-xs-4 {
+    position: unset;
+    width: 80px;
+    height: 60px;
+    background-color: #00aeef;
+    border-radius: 4px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .col-md-4.col-xs-4:hover {
+    background-color: #0093c6;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .col-md-4.col-xs-4 button {
+    width: 80px !important;
+    height: 60px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse .project-search .col-xs-12 .col-md-4.col-xs-4 button .glyphicon {
+    font-size: 32px;
+    color: #fff;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text] {
+    padding-left: 0;
+    height: 60px;
+    margin-right: 95px;
+    font-size: 32px;
+    letter-spacing: 0.6px;
+    padding-top: 10px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]::-webkit-input-placeholder {
+    font-size: 32px;
+    letter-spacing: 0.6px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]::-moz-placeholder {
+    font-size: 32px;
+    letter-spacing: 0.6px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]:-ms-input-placeholder {
+    font-size: 32px;
+    letter-spacing: 0.6px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#browse .v2-projectBrowse input[type=text]:focus {
+    font-size: 32px;
+    letter-spacing: 0.6px;
+  }
+
+  .international-giving-popup .international-giving-inner {
+    padding: 30px 60px !important;
+  }
+  .international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
+  .international-giving-popup .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option {
+    margin-bottom: 0;
+  }
+
+  #deGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container, #srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  #deGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option, #srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option {
+    max-width: 100%;
+  }
+
+  #srGivingPageEnglish .international-giving-inner {
+    padding: 30px 0px !important;
+  }
+  #srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-info {
+    padding: 0 60px;
+  }
+  #srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container {
+    padding-bottom: 32px;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  #srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option {
+    max-width: 225px;
+  }
+  #srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-icons-container .international-giving-option:last-of-type .international-giving-option-text {
+    margin-bottom: 0 !important;
+  }
+  #srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-address-container {
+    padding-top: 32px;
+    background: #fff;
+  }
+  #srGivingPageEnglish .international-giving-inner .international-giving-container .international-giving-cta-container .international-giving-address-container .international-giving-address-header {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.38;
+    letter-spacing: 1.07px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #4d4d4f;
+  }
+  #srGivingPageEnglish .international-giving-inner .international-giving-container .international-us-giving-container {
+    padding: 0 60px;
+  }
+  #srGivingPageEnglish .international-giving-inner .international-giving-container .international-us-giving-container .international-giving-header-info .header-info-sidenote {
+    max-width: 420px;
+    margin: 16px auto 0;
+  }
+}
+@media screen and (min-width: 840px) {
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .introContainer {
+    float: left;
+    margin-right: 5%;
+    width: 45%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer {
+    float: right;
+    position: relative;
+    top: 15px;
+    width: 50%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:first-child, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:last-child {
+    width: 100%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:nth-child(2) {
+    width: 100%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:last-child {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  #paymentHistoryid1 div .row .col-md-12 .form-horizontal .form-group .col-md-4 {
+    margin-bottom: 0;
+  }
+  #paymentHistoryid1 div .row .col-md-12 .form-horizontal .form-group .col-md-4 .form-control {
+    margin-bottom: 15px !important;
+  }
+  #paymentHistoryid1 div .row .col-md-12 .form-horizontal .form-group .col-md-2 {
+    margin-bottom: 0;
+  }
+  #paymentHistoryid1 div .row .col-md-12 .form-horizontal .form-group .col-md-2 .form-control {
+    margin-bottom: 15px;
+  }
+  #paymentHistoryid1 div div .row .col-md-12 {
+    display: block;
+  }
+  #paymentHistoryid1 div div .row .col-md-12 .show-donor-name-btn {
+    width: 200px !important;
+  }
+  #paymentHistoryid1 div div .row .col-md-12 .hide-donor-name-btn {
+    width: 200px !important;
+  }
+
+  #profileFundingMethodsid1View div .well.well-sm .row .col-md-3 {
+    text-align: right;
+  }
+  #profileFundingMethodsid1View div .well.well-sm .row .col-md-3 .saved-payment-method-edit-btn, #profileFundingMethodsid1View div .well.well-sm .row .col-md-3 .saved-payment-method-delete-btn {
+    width: 200px !important;
+  }
+
+  .v2-recurring div .row .col-md-12 {
+    display: block;
+  }
+  .v2-recurring div .row .col-md-12 .show-donor-name-btn {
+    width: 200px !important;
+  }
+  .v2-recurring div .row .col-md-12 .hide-donor-name-btn {
+    width: 200px !important;
+  }
+}
+@media screen and (min-width: 853px) {
+  #history #paymentHistoryid1 .row .col-md-12 .col-md-2 {
+    width: auto !important;
+  }
+  #history #paymentHistoryid1 .row.form-group .col-md-2 {
+    width: auto !important;
+  }
+  #history #paymentHistoryid1 .row.form-group .col-md-2 input:first-of-type {
+    margin-bottom: 10px;
+  }
+  #history #paymentHistoryid1 .row.form-group .col-md-2 label {
+    font-weight: normal;
+  }
+  #history #paymentHistoryid1 .row.form-group .col-md-2 label:first-of-type {
+    font-weight: 900;
+  }
+  #history #paymentHistoryid1 .row.form-group .col-md-4 label {
+    margin-bottom: 31px;
+  }
+
+  #commitments #givingGoalProgressid1View .row .col-md-6 {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span {
+    display: inline-block;
+    margin-right: -4px;
+    padding-right: 11px;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:first-child, .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:last-child {
+    width: 28%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:nth-child(2) {
+    width: 44%;
+  }
+  .tabsSection .tabs > .tabsContent .ui-tabs-panel#tithe .titheContainer #v2AddItemActionButtons span:last-child {
+    margin-right: 0;
+    padding-right: 0;
+  }
+}

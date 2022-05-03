@@ -1,0 +1,595 @@
+h1 {
+  font-family: "Lato", Arial;
+  letter-spacing: 0.8px;
+  font-style: normal;
+  margin: 0 0 30px;
+}
+
+.sectionContainer {
+  margin: 0 15px;
+}
+
+/* Header */
+.recommended-books-header {
+  position: relative;
+  margin-bottom: 30px;
+}
+.recommended-books-header .books-header-image {
+  height: 350px;
+  margin: 0;
+}
+.recommended-books-header .books-header-verse {
+  position: absolute;
+  width: 100%;
+  padding: 0 30px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  text-align: center;
+}
+.recommended-books-header .books-header-verse p {
+  font-family: "Lato", Arial;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-heigh: 1.63;
+  margin-bottom: 5px;
+}
+.recommended-books-header .books-header-verse p:last-of-type {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Book of the Month Container */
+.bom-section {
+  margin-bottom: 60px;
+}
+
+.bom-container {
+  background: linear-gradient(148deg, #56c4c4, #6dcff6);
+  padding: 15px;
+}
+.bom-container .book-of-the-month {
+  background: #fff;
+  padding: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.bom-container .book-of-the-month .bom-image-container {
+  width: 105px;
+  max-width: 40%;
+  max-height: 157px;
+}
+.bom-container .book-of-the-month .bom-image-container .bom-image {
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.bom-container .book-of-the-month .bom-info-container {
+  max-width: 55%;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  padding-left: 15px;
+}
+.bom-container .book-of-the-month .bom-info-container .bom-info {
+  font-family: "Lato", Arial;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.43;
+  letter-spacing: 0.7px;
+  color: #f99e49;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.bom-container .book-of-the-month .bom-info-container .bom-title {
+  font-family: "Lato", Arial;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  color: #4d4d4f;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.bom-container .book-of-the-month .bom-info-container .bom-author {
+  font-family: "Lato", Arial;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.7px;
+  color: #878787;
+}
+.bom-container .book-of-the-month .bom-description {
+  font-family: "Lato", Arial;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin: 15px 0;
+}
+.bom-container .book-of-the-month .bom-btns-container {
+  width: 100%;
+}
+.bom-container .book-of-the-month .bom-btn {
+  font-family: "Lato", Arial;
+  background: #00aeef;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 2px;
+  width: 100%;
+  height: 36px;
+  line-height: 14px;
+  margin-top: 30px;
+}
+.bom-container .book-of-the-month .bom-btn:hover {
+  background: #0093c6;
+}
+
+/* Primary Slider Styling */
+.our-books {
+  font-family: "Lato", Arial;
+  font-size: 20px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #4d4d4f;
+  margin-bottom: 30px;
+}
+.our-books:before {
+  content: '';
+  display: block;
+  border: solid 2px #56c4c4;
+  margin-bottom: 15px;
+}
+
+.books-slider-container .main-books-slider {
+  width: 100%;
+  background: none;
+}
+.books-slider-container .main-books-slider .rsOverflow {
+  margin-top: 183px;
+  background: none;
+  padding-top: 10px;
+}
+.books-slider-container .main-books-slider .rsOverflow:after {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #f6f6f6;
+  margin-left: -12px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  content: '';
+}
+.books-slider-container .main-books-slider .rsOverflow .rsContainer .rsSlide {
+  background: transparent;
+  border: none;
+}
+.books-slider-container .main-books-slider .rsNav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: none;
+}
+.books-slider-container .main-books-slider .rsNav .rsNavItem, .books-slider-container .main-books-slider .rsNav rsTab, .books-slider-container .main-books-slider .rsNav .rsNavSelected {
+  width: 100%;
+  max-width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+  border-radius: 0;
+  background: #f6f6f6;
+  color: #4d4d4f;
+}
+.books-slider-container .main-books-slider .rsNav .rsNavItem .rsTmb, .books-slider-container .main-books-slider .rsNav rsTab .rsTmb, .books-slider-container .main-books-slider .rsNav .rsNavSelected .rsTmb {
+  font-family: "Lato", Arial;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+}
+.books-slider-container .main-books-slider .rsNav .rsNavSelected .rsTmb {
+  color: #0093c6;
+}
+.books-slider-container .main-books-slider .rsTabs {
+  position: absolute;
+  padding: 0;
+}
+
+/* End Primary Slider Styling */
+/* Royalslider Book Styling */
+.books-slider .book-information-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px 15px;
+  border-bottom: solid 1px #bcbec0;
+}
+.books-slider .book-information-container .book-image-container {
+  width: 65px;
+  max-width: 40%;
+}
+.books-slider .book-information-container .book-image-container .book-image {
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.books-slider .book-information-container .book-description {
+  width: 100%;
+  max-width: 60%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding-left: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.books-slider .book-information-container .book-description .book-title {
+  font-family: "Lato", Arial;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  font-weight: 900;
+  margin-bottom: 5px;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+.books-slider .book-information-container .book-description .book-author {
+  font-family: "Lato", Arial;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.7px;
+  color: #878787;
+  margin-bottom: 0;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+.books-slider .book-information-container .book-description .book-buy-btn {
+  font-family: "Lato", Arial;
+  letter-spacing: 1px;
+  display: block;
+  margin-left: 100%;
+  margin-top: auto;
+  color: #00aeef;
+  font-style: normal;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+.books-slider .book-information-container .book-description .book-buy-btn:hover {
+  color: #0093c6;
+}
+.books-slider .book-information-container .book-description .book-full-description {
+  display: none;
+}
+
+/* Read More Toggles */
+.bom-container .book-of-the-month .bom-description {
+  max-height: 100px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+.bom-container .book-of-the-month .bom-description.open {
+  max-height: 1500px;
+}
+.bom-container .book-of-the-month .read-more-toggle {
+  text-decoration: none;
+  width: 100%;
+  font-family: "Lato", Arial;
+  letter-spacing: 1px;
+  color: #00aeef;
+  font-style: normal;
+  position: relative;
+}
+.bom-container .book-of-the-month .read-more-toggle:hover {
+  color: #0093c6;
+  text-decoration: underline;
+}
+.bom-container .book-of-the-month .read-more-toggle:after {
+  content: " More";
+}
+.bom-container .book-of-the-month .read-more-toggle.open:after {
+  content: " Less";
+}
+.bom-container .book-of-the-month .icon-arrow-down {
+  color: #00aeef;
+  position: absolute;
+  left: 92px;
+  top: 3px;
+}
+.bom-container .book-of-the-month .icon-arrow-down:hover {
+  color: #0093c6;
+}
+
+.flip {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: 83px !important;
+}
+
+/* Media Queries */
+@media screen and (min-width: 430px) {
+  .bom-container .book-of-the-month .bom-info-container {
+    max-width: 70%;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .bom-container .book-of-the-month .bom-info-container .bom-title {
+    font-size: 20px;
+  }
+
+  .books-slider .book-information-container .book-description {
+    max-width: 70%;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .books-slider .book-information-container .book-description .book-title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .books-slider .book-information-container .book-description .book-author {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .sectionContainer {
+    margin: 0 30px;
+  }
+}
+@media screen and (min-width: 605px) {
+  .bom-container .book-of-the-month .bom-info-container {
+    max-width: 80%;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+  .bom-container .book-of-the-month .bom-info-container .bom-title {
+    font-size: 26px;
+  }
+
+  .books-slider .book-information-container .book-description {
+    max-width: 70%;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .books-slider .book-information-container .book-description .book-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .books-slider-container .main-books-slider .rsOverflow {
+    margin-top: 64px;
+  }
+  .books-slider-container .main-books-slider .rsOverflow:after {
+    top: 9px;
+  }
+  .books-slider-container .main-books-slider .rsNav {
+    /* flex-wrap: nowrap; */
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .books-slider-container .main-books-slider .rsNav .rsNavItem, .books-slider-container .main-books-slider .rsNav rsTab, .books-slider-container .main-books-slider .rsNav .rsNavSelected {
+    width: 100%;
+    max-width: 20%;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+
+  .recommended-books-header {
+    margin-bottom: 90px;
+  }
+  .recommended-books-header .books-header-image {
+    height: 357px;
+  }
+  .recommended-books-header .books-header-verse {
+    width: 250px;
+  }
+
+  .bom-section {
+    margin: 0 3% 60px;
+  }
+
+  .bom-container {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1080px;
+  }
+  .bom-container .book-of-the-month {
+    padding: 30px 75px;
+  }
+  .bom-container .book-of-the-month .bom-image-container {
+    width: 175px;
+    max-width: 40%;
+  }
+  .bom-container .book-of-the-month .bom-info-container {
+    max-width: 66%;
+    -ms-flex-preferred-size: 66%;
+        flex-basis: 66%;
+    padding-left: 60px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .bom-container .book-of-the-month .bom-info-container .bom-info {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .bom-container .book-of-the-month .bom-info-container .bom-title {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .bom-container .book-of-the-month .bom-info-container .bom-author {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin-bottom: 0;
+  }
+  .bom-container .book-of-the-month .bom-description {
+    max-height: 75px;
+    padding-left: 235px;
+  }
+  .bom-container .book-of-the-month .bom-btns-container {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    /* width: 100%; */
+    padding-left: 235px;
+  }
+  .bom-container .book-of-the-month .bom-btn {
+    margin-left: auto;
+  }
+  .bom-container .book-of-the-month .read-more-toggle {
+    padding-left: 235px;
+    max-width: 62%;
+  }
+  .bom-container .book-of-the-month .icon-arrow-down {
+    left: 327px;
+  }
+
+  .books-slider {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .books-slider .book-information-container {
+    width: 100%;
+    max-width: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .books-slider .book-information-container .book-image-container {
+    width: 100px;
+    max-height: 155px;
+  }
+  .books-slider .book-information-container .book-description {
+    max-width: 69%;
+    -ms-flex-preferred-size: 69%;
+        flex-basis: 69%;
+  }
+  .books-slider .book-information-container .book-description .book-title {
+    font-size: 20px;
+  }
+  .books-slider .book-information-container .book-description .book-full-description {
+    display: block;
+    height: 70px;
+    overflow: hidden;
+    font-family: "Lato", Arial;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #4d4d4f;
+  }
+  .books-slider .book-information-container .book-description .book-full-description.open {
+    max-height: 1500px;
+  }
+  .books-slider .book-information-container .book-description .book-buy-btn {
+    font-weight: 900;
+    width: 140px;
+    text-align: center;
+    margin-left: auto;
+    background: #00aeef;
+    color: #fff;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 2px;
+  }
+  .books-slider .book-information-container .book-description .book-buy-btn:hover {
+    background: #0093c6;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .flip {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    left: 318px !important;
+  }
+}
+@media screen and (min-width: 870px) {
+  .bom-section {
+    margin: 0 8% 60px;
+  }
+
+  .bom-container .book-of-the-month .bom-info-container {
+    max-width: 67%;
+    -ms-flex-preferred-size: 67%;
+        flex-basis: 67%;
+  }
+  .bom-container .book-of-the-month .bom-btns-container {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+  .bom-container .book-of-the-month .bom-btn {
+    line-height: 26px;
+    width: 140px;
+    margin-left: 32px;
+  }
+}
+@media screen and (min-width: 948px) {
+  .books-slider-container .main-books-slider .rsOverflow {
+    margin-top: 25px;
+    padding-top: 30px;
+    border-top: solid 1px #f6f6f6;
+  }
+  .books-slider-container .main-books-slider .rsOverflow:after {
+    display: none;
+  }
+  .books-slider-container .main-books-slider .rsNav {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .books-slider-container .main-books-slider .rsNav .rsNavItem, .books-slider-container .main-books-slider .rsNav rsTab, .books-slider-container .main-books-slider .rsNav .rsNavSelected {
+    width: auto;
+    max-width: 100%;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    background: none;
+    padding: 0;
+  }
+  .books-slider-container .main-books-slider .rsNav .rsNavItem .rsTmb, .books-slider-container .main-books-slider .rsNav rsTab .rsTmb, .books-slider-container .main-books-slider .rsNav .rsNavSelected .rsTmb {
+    font-size: 12px;
+  }
+  .books-slider-container .main-books-slider .rsNav .rsNavItem .rsTmb:hover, .books-slider-container .main-books-slider .rsNav rsTab .rsTmb:hover, .books-slider-container .main-books-slider .rsNav .rsNavSelected .rsTmb:hover {
+    color: #0093c6;
+  }
+  .books-slider-container .main-books-slider .rsNav .rsNavSelected:after {
+    content: '';
+    display: block;
+    border-bottom: solid 2px #0093c6;
+    width: 50px;
+    margin: 5px auto 0;
+  }
+}
+@media screen and (min-width: 1061px) {
+  .bom-container .book-of-the-month .bom-info-container {
+    max-width: 74%;
+  }
+}
+@media screen and (min-width: 1263px) {
+  .bom-container .book-of-the-month .bom-info-container {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .sectionContainer {
+    margin: 0;
+  }
+}

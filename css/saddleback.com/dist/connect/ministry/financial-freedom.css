@@ -1,0 +1,97 @@
+/* COMPASS IMPORTS */
+body, p, span, li {
+  font-family: "Lato", Arial !important;
+}
+
+.blogContent article #content-slider-1 {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+}
+.blogContent article #content-slider-1 .rsOverflow {
+  border: none;
+}
+.blogContent article #content-slider-1 .rsNav .rsNavItem, .blogContent article #content-slider-1 .rsNav .rsTab, .blogContent article #content-slider-1 .rsTabs .rsNavItem, .blogContent article #content-slider-1 .rsTabs .rsTab {
+  color: #4d4d4f !important;
+  background: #fff !important;
+  border-left: none !important;
+  border: solid 1px #f6f6f6 !important;
+  box-shadow: inset 0px -20px 40px -20px rgba(0, 0, 0, 0.1) !important;
+}
+.blogContent article #content-slider-1 .rsNav .rsNavItem:after, .blogContent article #content-slider-1 .rsNav .rsTab:after, .blogContent article #content-slider-1 .rsTabs .rsNavItem:after, .blogContent article #content-slider-1 .rsTabs .rsTab:after {
+  display: none;
+}
+.blogContent article #content-slider-1 .rsNav .rsNavItem .rsTmb, .blogContent article #content-slider-1 .rsNav .rsTab .rsTmb, .blogContent article #content-slider-1 .rsTabs .rsNavItem .rsTmb, .blogContent article #content-slider-1 .rsTabs .rsTab .rsTmb {
+  margin-top: 0px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.blogContent article #content-slider-1 .rsNav .rsTab > span, .blogContent article #content-slider-1 .rsTabs .rsTab > span {
+  height: auto !important;
+}
+.blogContent article #content-slider-1 .rsNav .rsNavSelected, .blogContent article #content-slider-1 .rsTabs .rsNavSelected {
+  margin-top: -5px;
+  background: #fff !important;
+  border: none !important;
+  border-left: none !important;
+  border-top: solid 5px #00aeef !important;
+  box-shadow: 5px 0 15px -9px rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: 5px 0 15px -9px rgba(0, 0, 0, 0.15) !important;
+  z-index: 1;
+}
+.blogContent article #content-slider-1 .rsNav .rsNavSelected:after, .blogContent article #content-slider-1 .rsTabs .rsNavSelected:after {
+  display: none;
+}
+.blogContent article #content-slider-1 .rsNav .rsNavSelected:nth-child(2), .blogContent article #content-slider-1 .rsTabs .rsNavSelected:nth-child(2) {
+  box-shadow: 5px 0 12px -9px rgba(0, 0, 0, 0.15), -5px 0 12px -9px rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: 5px 0 12px -9px rgba(0, 0, 0, 0.15), -5px 0 12px -9px rgba(0, 0, 0, 0.15) !important;
+}
+.blogContent article #content-slider-1 .rsNav .rsNavSelected:last-of-type, .blogContent article #content-slider-1 .rsTabs .rsNavSelected:last-of-type {
+  box-shadow: -5px 0 15px -9px rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: -5px 0 15px -9px rgba(0, 0, 0, 0.15) !important;
+}
+.blogContent article #content-slider-1 .rsNav .rsNavSelected .rsTmb, .blogContent article #content-slider-1 .rsTabs .rsNavSelected .rsTmb {
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 575px) {
+  .contentSlider .pull {
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  .contentSlider .first-video {
+    margin-top: 90px;
+  }
+  .contentSlider .seriesInfo {
+    margin-bottom: 60px;
+  }
+
+  .rsContent {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  hr {
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blogContent article #content-slider-1 .rsOverflow .rsContainer .rsSlide .rsContent {
+    padding-top: 90px;
+  }
+  .blogContent article #content-slider-1 .rsNav .rsNavItem, .blogContent article #content-slider-1 .rsNav .rsTab, .blogContent article #content-slider-1 .rsTabs .rsNavItem, .blogContent article #content-slider-1 .rsTabs .rsTab {
+    height: 85px !important;
+  }
+  .blogContent article #content-slider-1 .rsNav .rsNavItem .rsTmb, .blogContent article #content-slider-1 .rsNav .rsTab .rsTmb, .blogContent article #content-slider-1 .rsTabs .rsNavItem .rsTmb, .blogContent article #content-slider-1 .rsTabs .rsTab .rsTmb {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .blogContent article #content-slider-1 .rsNav .rsNavSelected, .blogContent article #content-slider-1 .rsTabs .rsNavSelected {
+    height: 90px !important;
+  }
+  .blogContent article #content-slider-1 .rsNav .rsNavSelected .rsTmb, .blogContent article #content-slider-1 .rsTabs .rsNavSelected .rsTmb {
+    margin-top: 0px;
+  }
+}

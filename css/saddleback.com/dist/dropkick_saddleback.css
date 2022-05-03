@@ -1,0 +1,140 @@
+/**
+ * Saddleback.com theme
+ *
+ * Standard theme for Saddleback.com select lists.
+ *
+ */
+/* COMPASS IMPORTS */
+/* Define our base font size and line height */
+/* Define some standard colors in variables */
+/* Container */
+.dk_theme_saddleback.dk_container {
+  width: 100%;
+  height: 33px;
+}
+
+.dk_theme_saddleback a {
+  width: 100%;
+  font-size: 1.125em;
+  line-height: 1.2222222222222223em;
+  font-family: Georgia, Times New Roman, serif;
+  font-style: italic;
+  background: white;
+  color: #303030;
+  cursor: pointer;
+}
+
+/* Toggle */
+.dk_theme_saddleback .dk_toggle {
+  height: 33px;
+  border: 1px solid #819aa9;
+  padding: 0.225em;
+  background-image: url("../../../Frontend/Images/dropkick/arrows_saddleback.png");
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  background-size: 12px;
+}
+.dk_theme_saddleback .dk_toggle:hover {
+  text-decoration: none;
+}
+.dk_theme_saddleback .dk_toggle span {
+  padding-left: 4px;
+  font-size: 1em;
+  line-height: 1.2222222222222223em;
+  color: black;
+}
+
+/* Focus State */
+/* Open State */
+/* Options Menu */
+.dk_theme_saddleback .dk_options {
+  background: white;
+  border-left: 1px solid #819aa9;
+  border-right: 1px solid #819aa9;
+  border-bottom: 1px solid #819aa9;
+}
+.dk_theme_saddleback .dk_options a {
+  padding-left: 8px;
+  font-size: 1.125em;
+  line-height: 1.2222222222222223em;
+}
+.dk_theme_saddleback .dk_options a:hover {
+  background: #819aa9;
+  text-decoration: none;
+}
+
+/* Inner options */
+.dk_theme_saddleback .dk_options_inner {
+  max-height: 188px;
+}
+
+/* Set a width property here */
+/***** Critical to the continued enjoyment of working dropdowns ******/
+.dk_container {
+  /*display: none;*/
+  /*position: relative;*/
+}
+
+.dk_container a {
+  outline: 0;
+}
+
+.dk_toggle {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  position: relative;
+  zoom: 1;
+}
+
+.dk_open {
+  position: relative;
+}
+
+.dk_open .dk_options {
+  display: block;
+}
+
+.dk_open .dk_label {
+  color: inherit;
+}
+
+.dk_options {
+  display: none;
+  width: 100%;
+  margin-top: 0;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+}
+
+.dk_options a,
+.dk_options a:link,
+.dk_options a:visited {
+  display: block;
+}
+
+.dk_options_inner {
+  border-top: 1px solid #eaeaea;
+  overflow: auto;
+  padding-top: 11px;
+  position: relative;
+}
+
+.dk_touch .dk_options {
+  overflow: hidden;
+}
+
+.dk_touch .dk_options_inner {
+  max-height: none;
+  overflow: visible;
+}
+
+.dk_fouc select {
+  position: relative;
+  top: -99999em;
+  visibility: hidden;
+  display: none;
+}
+
+/***** End Critical to the continued enjoyment of working dropdowns ******/

@@ -1,0 +1,628 @@
+h1 {
+  padding-left: 15px;
+}
+
+.response-content .response-header-section .response-header {
+  margin-bottom: 30px;
+}
+.response-content .response-header-section .response-letter-container {
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.response-content .response-info-section {
+  padding: 0 15px;
+  display: grid;
+  grid-gap: 24px;
+  margin-bottom: 60px;
+}
+.response-content .response-info-section .response-info-image {
+  position: relative;
+  border-radius: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 40px 20px;
+}
+.response-content .response-info-section .response-info-image.get-help {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../../../../../../sb-web.s3-us-west-1.amazonaws.com/saddleback.com/connect/ministry/coronavirus-response/Get%2bHelp.png) top center no-repeat;
+  background-size: cover;
+}
+.response-content .response-info-section .response-info-image.give-help {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../../../../../../sb-web.s3-us-west-1.amazonaws.com/saddleback.com/connect/ministry/coronavirus-response/Give%2bHelp.png) top center no-repeat;
+  background-size: cover;
+}
+.response-content .response-info-section .response-info-image.get-connected {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../../../../../../sb-web.s3-us-west-1.amazonaws.com/saddleback.com/connect/ministry/coronavirus-response/SmallGroups.jpg) top center no-repeat;
+  background-size: cover;
+}
+.response-content .response-info-section .response-info-image .response-info-header {
+  z-index: 1;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 41px;
+  margin: 0 0 10px;
+  letter-spacing: 1px;
+  color: white;
+}
+.response-content .response-info-section .response-info-image .response-info-mobile-header {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 1;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 41px;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  display: none;
+}
+.response-content .response-info-section .response-info-text-below {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  margin: 0;
+}
+.response-content .response-info-section .response-info-text-below p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+.response-content .response-info-section .response-info-text-below .note {
+  font-size: 13px;
+}
+.response-content .response-info-section .response-info-text-below .btn {
+  border-radius: 15px;
+  min-width: 250px;
+}
+.response-content .get-help-container {
+  margin-bottom: 40px;
+}
+.response-content .response-stay-informed-section {
+  padding: 0 15px;
+}
+.response-content .response-stay-informed-section .response-stay-informed-container .response-stay-informed-header {
+  margin-bottom: 60px;
+}
+.response-content .response-stay-informed-section .response-stay-informed-container .response-stay-informed-header h4 {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 30px;
+}
+.response-content .response-stay-informed-section .response-stay-informed-container .response-stay-informed-header p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  color: #4d4d4f;
+}
+.response-content .response-stay-informed-section .response-stay-informed-container .response-stay-informed-item {
+  margin-bottom: 60px;
+}
+.response-content .response-stay-informed-section .response-stay-informed-container .response-stay-informed-item a {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.response-content .response-stay-informed-section .response-stay-informed-container .response-stay-informed-item p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  color: #4d4d4f;
+}
+.response-content .subscription-container {
+  background: rgba(96, 195, 194, 0.1);
+  padding: 30px 15px;
+  margin-bottom: 60px;
+}
+.response-content .subscription-container .subscription-title {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 28px;
+  color: #4d4d4f;
+  display: block;
+  margin-bottom: 15px;
+}
+.response-content .subscription-container .subscription-inner-container .subscription-description {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 10px;
+}
+.response-content .subscription-container .subscription-inner-container .subscription-label {
+  font-size: 13px;
+  line-height: 24px;
+  color: #4d4d4f;
+  margin-bottom: 5px;
+}
+.response-content .subscription-container .subscription-inner-container .subscription-form {
+  display: -ms-flexbox;
+  display: flex;
+}
+.response-content .subscription-container .subscription-inner-container .subscription-form .subscription-input {
+  width: 75%;
+  margin-right: 15px;
+}
+.response-content .subscription-container .subscription-inner-container .subscription-form .btn {
+  width: 25%;
+}
+.response-content .subscription-container .subscription-inner-container .subscription-feedback {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #56c4c4;
+}
+.response-content .subscription-container .subscription-inner-container .subscription-feedback.failure {
+  color: #F15B4E;
+}
+
+.mfp-content .popup {
+  border: none;
+}
+.mfp-content .popup .popup-inner {
+  padding: 0 0 15px;
+}
+.mfp-content .popup .popup-inner .response-popup-image {
+  margin-bottom: 30px;
+  height: 210px;
+  transition: .5s all;
+}
+.mfp-content .popup .popup-inner .response-popup-image .response-popup-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 26px;
+  letter-spacing: 1.43px;
+  color: #fff;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container {
+  padding: 0 15px;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-main-header {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: #4d4d4f;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option {
+  margin-bottom: 40px;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option:focus {
+  outline: none;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option .ui-accordion-content {
+  border: none;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option h4 {
+  border-bottom: solid 1px #4d4d4f;
+  padding-bottom: 5px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option h4:focus {
+  outline: none;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option h4 .icon-arrow-down {
+  margin-left: auto;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4d4d4f;
+  margin-bottom: 15px;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option .response-popup-subheader {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option .btn {
+  border-radius: 15px;
+  height: 40px;
+  margin: 0 0 20px;
+  width: 100%;
+  max-width: 180px;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option .response-donate-lists li {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: #4d4d4f;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option .response-popup-address {
+  font-size: 16px;
+  line-height: 14px;
+  margin: 0 0 7px;
+  color: #4d4d4f;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option .response-popup-address-street {
+  font-weight: 900;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option .response-popup-verse {
+  font-style: italic;
+}
+.mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option .response-popup-verse span {
+  font-style: normal;
+}
+
+.atHomeBlog {
+  display: none;
+}
+.atHomeBlog .blogListWidget .blogListMoreButtonContainer {
+  display: none;
+}
+.atHomeBlog .btnContainer a.btn {
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 36px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 0;
+}
+
+.response-info-text-container .note {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.shareSection {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 0 90px;
+  padding: 60px 30px;
+  background: #f0f9f9;
+}
+.shareSection h3 {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #004F74;
+  text-transform: none;
+}
+.shareSection p {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 600px;
+}
+.shareSection .shareGridContainer {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 175px;
+  width: 100%;
+  max-width: 650px;
+}
+.shareSection .shareGridContainer .shareContainer .share:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.shareSection .shareGridContainer .shareContainer .download {
+  display: block;
+  text-align: center;
+}
+
+.intern-signup-section {
+  margin-bottom: 80px;
+}
+.intern-signup-section .intern-signup-container .intern-signup-inner .intern-signup-image {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.intern-signup-section .intern-signup-container .intern-signup-inner .intern-signup-info {
+  padding: 0 16px;
+}
+.intern-signup-section .intern-signup-container .intern-signup-inner .intern-signup-info .intern-signup-header {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  color: #f47a46;
+  margin-bottom: 24px;
+}
+.intern-signup-section .intern-signup-container .intern-signup-inner .intern-signup-info .intern-signup-text p {
+  color: #4d4d4f;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.intern-signup-section .intern-signup-container .intern-signup-inner .intern-signup-info .intern-signup-text p:last-of-type {
+  margin: 0 0 32px;
+}
+.intern-signup-section .intern-signup-container .intern-signup-inner .intern-signup-info .intern-signup-text .btn {
+  height: 46px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+#santaRosaResponse .response-info-section .response-info-image {
+  min-height: 159px;
+}
+#santaRosaResponse .response-info-section .response-info-text-below .btn {
+  width: 100%;
+  height: 46px;
+}
+#santaRosaResponse .response-info-section .response-info-text-below .btn:first-of-type {
+  margin-bottom: 40px;
+}
+#santaRosaResponse #ministryBlogAnchor2 {
+  margin: -40px auto 60px;
+}
+#santaRosaResponse .sr-blog-updates-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-bottom: 60px;
+}
+#santaRosaResponse .sr-blog-updates-container .sr-blog-link-item {
+  margin-bottom: 32px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 1px;
+  max-width: 130px;
+}
+#santaRosaResponse .sr-blog-updates-container .sr-blog-link-item:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 575px) {
+  .intern-signup-section .intern-signup-container .intern-signup-inner .intern-signup-info {
+    padding: 0 32px;
+  }
+
+  .response-content .response-header-section .response-letter-container {
+    padding: 0 30px;
+  }
+  .response-content .response-info-section {
+    padding: 0 30px;
+  }
+  .response-content .response-info-section .response-info-container .response-info-inner-container .response-info-text-container {
+    padding: 0 30px;
+  }
+  .response-content .subscription-container {
+    padding: 30px;
+  }
+  .response-content .response-stay-informed-section {
+    padding: 0 30px;
+  }
+  .response-content .response-stay-informed-section .subscription-title {
+    max-width: 350px;
+  }
+
+  .mfp-content .popup .popup-inner .response-popup-info-container {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .response-content .response-info-section .response-info-image.give-help .response-info-text-container {
+    padding: 0;
+  }
+
+  .response-content .response-info-section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 1fr;
+  }
+  .response-content .response-info-section .response-info-image .response-info-header {
+    font-size: 40px;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+  }
+  .response-content .response-info-section .response-info-container .response-info-inner-container .response-info-text-container .btn {
+    max-width: 230px;
+  }
+
+  .mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option .btn {
+    max-width: 230px;
+  }
+
+  #santaRosaResponse .response-info-section {
+    grid-template-rows: minmax(300px, 400px) 1fr;
+  }
+  #santaRosaResponse .response-info-section .response-info-image {
+    min-height: 300px;
+  }
+  #santaRosaResponse .sr-blog-updates-container {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 -16px 100px;
+  }
+  #santaRosaResponse .sr-blog-updates-container .sr-blog-link-item {
+    padding: 0 16px;
+    max-width: 162px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .intern-signup-section .intern-signup-container .intern-signup-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0 32px;
+  }
+  .intern-signup-section .intern-signup-container .intern-signup-inner .intern-signup-image {
+    width: 374px;
+    height: 268px;
+    margin-bottom: 0;
+  }
+  .intern-signup-section .intern-signup-container .intern-signup-inner .intern-signup-info {
+    width: 100%;
+    max-width: 439px;
+    padding: 0 0 0 80px;
+  }
+  .intern-signup-section .intern-signup-container .intern-signup-inner .intern-signup-info .intern-signup-text .btn {
+    max-width: 230px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .response-content .response-header-section .response-header {
+    margin-bottom: 60px;
+  }
+  .response-content .response-header-section .response-letter-container {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    padding: 0;
+  }
+  .response-content .response-info-section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 1fr;
+  }
+  .response-content .response-info-section .response-info-image.give-help {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .response-content .response-info-section .response-info-image.get-connected {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .response-content .response-info-section .response-info-container {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .response-content .response-info-section .response-info-container .response-info-inner-container .response-info-text-container {
+    padding: 0 45px;
+  }
+  .response-content .response-info-section .response-info-text-below {
+    position: relative;
+    padding-bottom: 36px;
+  }
+  .response-content .response-info-section .response-info-text-below .btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .response-content .response-stay-informed-section {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    padding: 0;
+  }
+  .response-content .subscription-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 0 90px;
+    padding: 60px 30px;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
+  .response-content .subscription-container .subscription-title {
+    max-width: 400px;
+    padding: 0 30px 0 0;
+  }
+  .response-content .subscription-container .subscription-inner-container {
+    padding: 0 0 0 30px;
+  }
+
+  .mfp-content .popup .popup-inner .response-popup-image {
+    height: 250px;
+  }
+  .mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option .response-donate-lists {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mfp-content .popup .popup-inner .response-popup-info-container .response-popup-option .response-donate-lists ul {
+    padding: 0 15px;
+  }
+
+  #santaRosaResponse .response-info-section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 1fr;
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
+  #santaRosaResponse .response-info-section .response-info-text-below .btn {
+    position: unset;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #ministryBlogAnchor2 {
+    max-width: unset !important;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .response-content .response-info-section {
+    padding: 0;
+  }
+
+  #santaRosaResponse .response-info-section {
+    padding: 0 30px;
+  }
+  #santaRosaResponse #ministryBlogAnchor2 {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1460px) {
+  #santaRosaResponse .response-info-section {
+    padding: 0;
+  }
+  #santaRosaResponse #ministryBlogAnchor2 {
+    padding: 0;
+  }
+}

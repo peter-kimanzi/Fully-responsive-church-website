@@ -1,0 +1,2178 @@
+<!DOCTYPE html ><html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head><title>
+	Deliverance church 
+</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta name="description" content="" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta name="msapplication-TileColor" content="#084d7e" /><meta name="msapplication-TileImage" content="" /><meta property="og:url" content="new-here.html" /><meta property="og:title" content=" " /><meta property="og:description" content="" /><meta property="og:image" content="" /><link rel="shortcut icon" href="../../kim\2bg.png" type="image/x-icon"></link><link rel="stylesheet" type="text/css" href="../../css/saddleback.com/dist/basic28e3.css?v=1391"></link><link rel="stylesheet" type="text/css" href="../../css/saddleback.com/dist/nav-menu-style.css"></link><link id="dropkick-css-include" rel="stylesheet" type="text/css" href="../../css/saddleback.com/dist/dropkick.css"></link>
+
+<link rel="stylesheet" href="/style2.css">
+
+
+<script type="text/javascript"> window.v2sjwt = { "token": "", "idp": "sidp" }; </script><script id="sb-jquery-1.9.1" src="../../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script id="sb-jquery-ui-1.10.1" src="../../../code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script><script id="sb-jquery-cookie" src="../../Frontend/js/jquery.cookie.js"></script><script src="../../js/saddleback.com/dist/dropkick.min.js"></script><script src="../../js/saddleback.com/dist/global.min28e3.js?v=1391"></script><script src="../../Frontend/js/modernizr-3.6.js"></script><script type="text/javascript">
+        /*<![CDATA[ */
+        var individualId = -1;
+
+       
+        var ministryUserProfile = {
+            'individualId': -1,
+            'firstName': '',
+            'lastName': '',
+            "email": ''
+        };
+
+        $(document).ready(function () {
+            $('.subscriptionInput').focus(function () {
+                if ($(this).val() == "Enter your email address")
+                    $(this).val("");
+            });
+
+            $('.subscriptionInput').blur(function () {
+                if ($(this).val() == "")
+                    $(this).val("Enter your email address");
+            });
+
+            $('#SearchForm').submit(function () {
+                if ($("#TextSearch").val() == "") {
+                    $("#TextSearch").attr("placeholder", "Search");
+                    return false;
+                }
+
+                window.location = "/search/?q=" + encodeURIComponent($('#TextSearch').val());
+                return false;
+            });
+
+            
+
+            $('#SelectNavVenues').change(function()
+                {
+                    window.location = $(this).val();
+                })
+                .dropkick({
+                    theme: '',
+                    width: '100%',
+                    mobile: true,
+                });
+
+            $('#languageSelectorHeader, #languageSelectorFooter').change(function() {
+                SB.i18n.swapPageByLanguage($(this).val());
+            }).dropkick({
+                mobile: true
+            });
+
+            var resized;
+
+            //check window size
+            resizeCheck();
+
+            // Windows 8 Snap feature
+            if (navigator.userAgent.match("NT")) {
+                var msViewportStyle = document.createElement("style");
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        "@-ms-viewport{width:device-width!important}"
+                    )
+                );
+                document.getElementsByTagName("head")[0].
+                    appendChild(msViewportStyle);
+            }
+
+            //mobile nav toggle
+            $('.menuBtn.mobile').click(function () {
+                $('.dropdown.open').slideUp().toggleClass("closed open");
+
+                toggleMainNav('mobile');
+            });
+
+            // Opted-in Desktop Nav Links
+            $('navRowWide div.navMiddle > a').click(function (e) {
+                var link = $(this);
+                var CampusId = -1;
+
+                if (link.text().toString().toLowerCase() == "give")
+                {
+                    if(CampusId == 22 && window.location.href.indexOf("zh-HK") > -1) {
+                        window.location = '/zh-HK' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 20 && window.location.href.indexOf("es-AR") > -1) {
+                        window.location = '/es-AR' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 19 && window.location.href.indexOf("de-DE") > -1) {
+                        window.location = '/de-DE' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    else {
+                        window.location = '../../give.html';
+                        e.preventDefault();
+                        return;
+                    }
+                }
+            });
+
+            // Opted-in Mobile Nav Links
+            $('ul .inner .primary-nav-links-container div.primary-nav-links-inner > .primary-nav-link').click(function (e) {
+                var link = $(this);
+                var CampusId = -1;
+
+                if (link.text().toString().toLowerCase() == "give")
+                {
+                    if(CampusId == 22 && window.location.href.indexOf("zh-HK") > -1) {
+                        window.location = '/zh-HK' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 20 && window.location.href.indexOf("es-AR") > -1) {
+                        window.location = '/es-AR' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 19 && window.location.href.indexOf("de-DE") > -1) {
+                        window.location = '/de-DE' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    else {
+                        window.location = '../../give.html';
+                        e.preventDefault();
+                        return;
+                    }
+                }
+            });
+
+            //mobile subnav toggles
+            $('nav > ul div.navItem > a').click(function (e) {
+                var link = $(this);
+                var CampusId = -1;
+
+                if (link.text().toString().toLowerCase() == "give")
+                {
+                    if(CampusId == 22 && window.location.href.indexOf("zh-HK") > -1) {
+                        window.location = '/zh-HK' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 20 && window.location.href.indexOf("es-AR") > -1) {
+                        window.location = '/es-AR' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 19 && window.location.href.indexOf("de-DE") > -1) {
+                        window.location = '/de-DE' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    else {
+                        window.location = '../../give.html';
+                        e.preventDefault();
+                        return;
+                    }
+                }
+                else if (link.text().toString().toLowerCase() == "grow") {
+                    window.location = '../../learn.html';
+                    e.preventDefault();
+                    return;
+                }
+                else if (link.text().toString().toLowerCase() == "watch") {
+                    window.location = '../../watch.html';
+                    e.preventDefault();
+                    return;
+                }
+                else if (link.text().toString().toLowerCase() == "care") {
+                    window.location = '../../care.html';
+                    e.preventDefault();
+                    return;
+                }
+
+                var dd = link.parents('li:first').find('.dropdown');
+                var navArrow = $('.navMiddle .arrow').detach();
+
+                if (dd.hasClass("open")) {
+                    //if the parent section is already open, close it and move along
+                    dd.slideUp(function () {
+                        scrollNav($('.searchContainer'));
+                    });
+                    dd.toggleClass("open closed");
+                }
+                else if ($('.dropdown.open').length > 0) {
+                    //close the *other* open section and animate the new one after that one finishes
+                    $('.dropdown.open').slideUp(function () {
+                        $(this).toggleClass("open closed");
+
+                        dd.slideDown(function () {
+                            scrollNav(link);
+                        });
+                        dd.toggleClass("open closed");
+                        $('.navMiddle a[data-nav=' + link.attr("data-nav") + ']').after('<div class="arrowContainer"><div class="arrow"></div></div>');
+                    });
+                }   
+                else {
+                    //nothing is open, so just animate normally
+                    dd.slideDown(function () {
+                        scrollNav(link);
+                    });
+                    dd.toggleClass("open closed");
+                    $('.navMiddle a[data-nav=' + link.attr("data-nav") + ']').after('<div class="arrowContainer"><div class="arrow"></div></div>');
+                }
+
+                if ($('.mobile .dropdown').hasClass("closed")) {
+                    $('li.nav-dropdown').removeClass("open-dropshadow");
+                }
+
+                if ($('.mobile .dropdown').hasClass("open")) {
+                    $(this).closest('li.nav-dropdown').addClass("open-dropshadow");
+                }
+            });
+
+            //standard navigation
+            $('.navMiddle > a').click(function (e) {
+                var link = $(this);
+                var CampusId = -1
+
+                if (link.text().toString().toLowerCase() == "give")
+                {
+                    if(CampusId == 22 && window.location.href.indexOf("zh-HK") > -1) {
+                        window.location = '/zh-HK' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 20 && window.location.href.indexOf("es-AR") > -1) {
+                        window.location = '/es-AR' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 19 && window.location.href.indexOf("de-DE") > -1) {
+                        window.location = '/de-DE' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    else {
+                        window.location = '../../give.html';
+                        e.preventDefault();
+                        return;
+                    }
+                }
+                else if (link.text().toString().toLowerCase() == "grow") {
+                    window.location = '../../learn.html';
+                    e.preventDefault();
+                    return;
+                }
+                else if (link.text().toString().toLowerCase() == "watch") {
+                    window.location = '../../watch.html';
+                    e.preventDefault();
+                    return;
+                }
+                else if (link.text().toString().toLowerCase() == "care") {
+                    window.location = '../../care.html';
+                    e.preventDefault();
+                    return;
+                }
+
+                var navArrow = $('.navMiddle .arrow').detach();
+                var li = $('li#Nav' + link.text());
+                var dd = $(li).find(".dropdown");
+
+                $('ul.standard > li').hide();
+                li.show();
+
+                if ($("ul.standard").hasClass("closed")) {
+                    //open the main nav and subsection
+                    dd.toggleClass("open closed");
+                    toggleMainNav("standard");
+                    link.after('<div class="arrowContainer"><div class="arrow"></div></div>');
+                }
+                else if ($("ul.standard").hasClass("open") && dd.hasClass("open")) {
+                    //existing link is already open, so close it and move on
+                    toggleMainNav("standard", function () { dd.toggleClass("open closed"); });
+                }
+                else {
+                    //just open the sub nav section
+                    $('.dropdown.open').toggleClass("open closed").attr("style", "");
+                    dd.toggleClass("open closed");
+                    link.after('<div class="arrowContainer"><div class="arrow"></div></div>');
+                }
+            });
+
+            $(window).resize(function () {
+                resized = true;
+            });
+
+            setInterval(function () {
+                if (resized) {
+                    resized = false;
+                    resizeCheck();
+
+                    if (window.matchMedia("(min-width: 750px)").matches) {
+                        $('.filterBar, .filterToggle').removeClass("active");
+                    }
+                }
+            }, 500);
+        });
+
+        $(document).ready(function () {
+            $('.navMiddle > a').click(function (e) {
+
+                if ($('li .dropdown').hasClass("open")) {
+                    $('li .dropdown').parent().addClass("dropdown-list-width");
+                }
+
+                if ($('li .dropdown').hasClass("closed")) {
+                    $('.dropdown.closed').parent().removeClass("dropdown-list-width");
+                }
+            });
+        });
+
+        $(document).ready(function () {
+
+            $('.navMiddle a').click(function (e) {
+                
+                $('.navMiddle a').addClass("navmiddle-deselected");
+                $(this).addClass("navmiddle-selected");
+
+                if ($('.navMiddle a').hasClass("navmiddle-selected")) {
+                    $('.navMiddle a').addClass("navmiddle-deselected");
+                    $(this).removeClass("navmiddle-deselected");
+                }
+                if ($('ul.standard').hasClass("closed")) {
+                    $('.navMiddle a').removeClass("navmiddle-deselected");
+                    $('.navMiddle a').removeClass("navmiddle-selected");
+                }
+            });
+        });
+
+        function toggleMainNav(navType, callback) {
+            var nav = $('ul.' + navType);
+
+            if (nav.hasClass("closed")) {
+                nav.slideDown(callback);
+            } else {
+                nav.slideUp(callback);
+            }
+
+            nav.toggleClass("closed open");
+        }
+
+        function scrollNav(sectionLink) {
+            $('html, body').animate({ scrollTop: sectionLink.offset().top }, 250, 'swing');
+        }
+
+        function resizeCheck() {
+            var mainNav = $('nav ul:first');
+                
+                if (window.matchMedia("(min-width: 575px)").matches) {
+                    transitionNav(mainNav, "mobile", "standard");
+                }
+                else {
+                    transitionNav(mainNav, "standard", "mobile");
+                }
+                
+        }
+
+        function transitionNav(navSection, fromStyle, toStyle) {
+            if (navSection.hasClass(fromStyle)) {
+                var searchContainer;
+                navSection.removeClass(fromStyle).addClass(toStyle);
+                if (fromStyle == "mobile") {
+                    searchContainer = $('nav .searchContainer');
+                    searchContainer.detach();
+                    $('.topLinks > li:last').before(searchContainer);
+                    searchContainer.wrap("<li>");
+                    $('.topLinks > div:last').before(searchContainer);
+                    searchContainer.wrap("<div class='campus-page-searchContainer' /></div>");
+
+                    if (navSection.hasClass("open") && navSection.find('li .dropdown.open').length < 1)
+                        navSection.toggleClass("open closed").hide();
+                }
+                else {
+                    searchContainer = $('.topLinks .searchContainer');
+                    searchContainer.unwrap();
+                    searchContainer.detach();
+                    $('nav ul.mobile > .inner').prepend(searchContainer);
+                }
+
+                //remove any leftover styling done by animations
+                $('ul.' + toStyle + ' li .dropdown[style*=display]').css("display", "");
+            }
+
+            navSection.find('.dropdown[style="display: none;"]').attr("style", "");
+        }
+
+        function toggleGrid() {
+            $('html').toggleClass("grid");
+        }
+        /*]]>*/
+    </script><script>
+        //<![CDATA[
+        (function () {
+            if (typeof window.SB === "undefined") {
+                window.SB = {};
+                window.SB.EventTracker = {};
+            }
+            else if (typeof window.SB.EventTracker === "undefined") {
+                window.SB.EventTracker = {};
+            }
+
+            window.SB.EventTracker.registerEvent = function (params) {
+                $(document).on(params.pageEvent, params.selector, function () {
+                    window.SB.EventTracker.trackEvent(params, this);
+                });
+            }
+
+            window.SB.EventTracker.registerEvents = function (params) {
+                for (var i = 0; i < params.length; i++) {
+                    window.SB.EventTracker.registerEvent(params[i]);
+                }
+            }
+
+            window.SB.EventTracker.trackEvent = function (params, element) {
+                params = $.extend({}, params);
+                var paramsToCalculate = ['label', 'gaEvent'];
+                var param;
+                for (var i = 0; i < paramsToCalculate.length; i++) {
+                    param = params[paramsToCalculate[i]];
+                    if ('function' === typeof (param)) {
+                        params[paramsToCalculate[i]] = param.call(element);
+                    }
+                };
+
+                gtag('event', 'event', {'event_category': params.gaEvent, 'event_action': location.pathname, 'event_label': params.label, 'value': 1});
+            }
+        })();
+        //]]></script><script async="true" src="https://www.googletagmanager.com/gtag/js?id=UA-1141682-7"></script><script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-1141682-7');
+
+    var eventTracking = setInterval(function () {
+        if ("object" === typeof window.SB) {
+            if ("object" === typeof window.SB.EventTracker) {
+                clearInterval(eventTracking);
+                $(document).ready(function () {
+                    window.SB.EventTracker.registerEvents([
+                    ])
+                })
+            }   
+        }
+    }, 100);
+    </script><script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','../../../connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '475241515997859'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script><script>!function(t){var e,a,n;t.attachEvent?(e="attachEvent",a="detachEvent",n="onreadystatechange"):(e="addEventListener",a="removeEventListener",n="readystatechange");var d=function(){var e=t.createElement("script");e.type="text/javascript",e.async=!0,e.src="../../../embed.gloo.us/scripts/online.js",e.id="__gloo-online-loader",e.setAttribute("data-ldid","2f0541cc-c791-11ea-ab3f-9fb693b3691f"),e.setAttribute("data-lid","463383fc-51b4-11ea-a311-5b00ee031de3"),e.setAttribute("data-oid","46323db2-51b4-11ea-a311-5be61e21d38a"),t.body.appendChild(e),t[a](n,d)};t[e](n,d)}(document)</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=GTM-KHXJPB2"></script><script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GTM-KHXJPB2');
+        gtag('config', 'AW-860179273');
+    </script><script id="sbw-config-script-include" type="text/javascript" src="../../js/sb-core/sbwidget-config-1.0.1.js"></script><script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbb00HGT1--A0SlEhXJ-fDf-vRojF5wOI&amp;sensor=true"></script><script>
+            //<![CDATA[   
+            //global for origin location
+            var originAddress;
+
+            //global for destination location
+            var destinationCampus;
+
+            //distance variables for mobile functionality
+            var distanceService = new google.maps.DistanceMatrixService();
+            var distanceArray = new Array();
+
+            //global variable for the tablet -> desktop locations
+            var map;
+
+            //global handle for the Geocoder
+            var geoCoderCampusSelect = new google.maps.Geocoder();
+
+            //handle for the InfoWindow
+            var campusInfoWindow = new google.maps.InfoWindow();
+            campusInfoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -44) });
+
+            //directions variables for tablet -> desktop functionality
+            var directionsService = new google.maps.DirectionsService();
+            var directionsRenderer = new google.maps.DirectionsRenderer();
+            directionsRenderer.suppressMarkers = true;
+
+            //global variable for campus locations
+            var campusLocations;
+            var campusLocationsUS = new Array();
+            var campusLocationsInternational = new Array();
+
+            //global variable for location markers for tablet -> desktop
+            var locationMarkers = new Array();
+
+            var windowResized = false;
+
+            $(document).ready(function () {
+                //initialize the location list
+                initializeLocations();
+
+                //AUTOMAGIC location search with geolocator button
+                $(window).on('load', function () {
+                //geolocation for origin
+                    $('#homeCampusName').on('click', function() {
+
+                        //destination array
+                        var destinationCampuses = createDestinationsArray();
+
+                        if (navigator.geolocation) {
+                            $('#ImageWait').show();                            
+
+                            navigator.geolocation.getCurrentPosition(function (position) {
+                                //geolocation is asynchronous so get the distances array AFTER it succeeds
+                                var latitude = position.coords.latitude;
+                                var longitude = position.coords.longitude;
+                                originAddress = new google.maps.LatLng(latitude, longitude);
+
+                                //convert the LatLng into an address(zipcode?) for the user's input
+                                geoCoderCampusSelect.geocode({ location: originAddress }, function (results) {
+                                    //mobile version finds distances and reorders the campuses
+                                    getDistancesArray(originAddress, getCountryName(results[0]), destinationCampuses);
+                                });
+                            },function (error) {
+                                switch(error.code) {
+                                    case error.PERMISSION_DENIED:
+                                        console.log('location services blocked');
+                                        $('#ImageWait').hide();
+                                        $('#locationSort').hide();
+                                    break;
+                                    case error.POSITION_UNAVAILABLE:
+                                        console.log('position unavailable');
+                                    break;
+                                    case error.TIMEOUT:
+                                        console.log('timeout');
+                                    break;
+                                    case error.UNKNOWN_ERROR:
+                                        console.log('unknown error');
+                                    break;
+                                }
+                            });
+                        }
+                        else {
+                            alert("Your browser does not support using GeoLocation services. Please enter an address manually");
+                        }
+                    });
+
+                    return false;
+                });
+            });
+
+            /************************
+            SHARED FUNCTIONS
+            ************************/
+            //creates the location listing after pulling the relevant information from the REST service
+            //DESKTOP AND MOBILE BOTH
+            function initializeLocations() {
+                $.get(
+                
+                function (campusListing) {
+                    var newCampus;
+                    
+                    campusLocations = campusListing;
+                    
+                    campusLocations.sort(function (a, b) {
+                        return a.name < b.name ? -1 : 1;
+                    });
+
+                    
+
+                    $.each(campusLocations, function (campus, campusData) {
+                        if (campusData.id > 0 && campusData.churchEntityTypeId != 2) {
+                            newCampus = $(
+                            '<li id="Campus_' + campusData.url.replace(" ", "_") + '" class="location-item">' +
+                                '<div class="campusInfoContainer">' +
+                                    '<div class="campusNameContainer">' +
+                                        '<p class="toggleInfo">' + campusData.name + '</p>' +
+                                    '</div>' +
+                                    '<span class="campusDistance"><!--contains distance value--></span>' +
+                                    '<input class="campus-url-hidden" style="display:none;" value="' + campusData.url.replace(" ", "_") +  '" />' + 
+                                    '<input class="campus-name-hidden" style="display:none;" value="' + campusData.name +  '" />' + 
+                                    '<input class="campus-id-hidden" style="display:none;" value="' + campusData.id +  '" />' + 
+                                    '<a href="javascript:;" class="sign-in-needed-btn btn">' + 'Set as Home Campus' + '</a>' + 
+                                    '<a href="/visit/locations/' +  campusData.url.replace(" ", "_") + '" class="campus-home-link">' + 'View Campus Page' + '</a>' + 
+                                '</div>' +
+                            '</li>');
+                        }
+                        else {
+                            newCampus = null;
+                        }
+
+                        if (newCampus != null && campusData.country.toUpperCase() == "UNITED STATES" || campusData.country == "US") {
+                            campusLocationsUS.push(campusData);
+                            newCampus.appendTo('#LocationListUS');
+                        }
+                        else if (newCampus != null) {
+                            newCampus.appendTo('#LocationListInternational');
+                            campusLocationsInternational.push(campusData);
+                        }
+
+                        if (newCampus != null) {
+                            newCampus.find('a.toggleInfo, a.arrow').click(function () {
+                                $(this).parent().toggleClass("active");
+                                $(this).parent().prev().find('.campusInfoLinksContainer').toggleClass("active");
+                            });
+                        }
+                    });
+                });
+            }
+
+            //helper function to get the country name from a geoCoded address
+            function getCountryName(geoAddress) {
+                var countryName;
+                $.each(geoAddress.address_components, function (componentIndex, componentData) {
+                    if (componentData.types[0] == "country") {
+                        countryName = componentData.long_name;
+                        return false;
+                    }
+                });
+
+                return countryName;
+            }
+            /*****************************
+            END SHARED FUNCTIONS
+            *****************************/
+
+            /****************************
+            MOBILE FUNCTIONS
+            ****************************/
+            //creates an array of destinations given a collection of campusLocation objects
+            //THIS IS FOR MOBILE ONLY
+            function createDestinationsArray() {
+                var destinations = new Array();
+
+                $.each(campusLocationsUS, function (campus, campusData) {
+                    //if no address, create a LatLng object instead           
+                    if (campusData.name != "Online Campus") {
+                        if (typeof campusData.address1 != "undefined") {
+                            destinations.push(campusData.address1);
+                        }
+                        else {
+                            if (typeof campusData.latitude != "undefined")
+                                destinations.push(new google.maps.LatLng(campusData.latitude, campusData.longitude));
+                        }
+                    }
+                    else {
+                        destinations.push('');
+                    }
+                });
+
+                $.each(campusLocationsInternational, function (campus, campusData) {
+                    //if no address, create a LatLng object instead           
+                    if (campusData.name != "Online Campus") {
+                        if (typeof campusData.address1 != "undefined") {
+                            destinations.push(campusData.address1);
+                        }
+                        else {
+                            if (typeof campusData.latitude != "undefined")
+                                destinations.push(new google.maps.LatLng(campusData.latitude, campusData.longitude));
+                        }
+                    }
+                    else {
+                        destinations.push('');
+                    }
+                });
+
+                return destinations;
+            }
+
+            //calculates distances for a single origin address with n destination addresses
+            //THIS IS FOR MOBILE ONLY
+            function getDistancesArray(origin, originCountry, destinations) {
+                var distances = new Array();
+
+                distanceService.getDistanceMatrix(
+                {
+                    origins: [origin],
+                    destinations: destinations,
+                    travelMode: google.maps.TravelMode.DRIVING,
+                    avoidHighways: false,
+                    avoidTolls: false,
+                    unitSystem: originCountry == "United States" ? google.maps.UnitSystem.IMPERIAL : google.maps.UnitSystem.METRIC
+                },
+                function (response, status) {
+                    //we only get one row back because there's only one origin
+                    $.each(response.rows[0].elements, function (distanceIndex, distanceData) {
+                        if (distanceIndex < campusLocationsUS.length) {
+                            //check each campus location until we find the address
+                            $.each(campusLocationsUS, function (campusIndex, campusData) {
+                                if (campusData.address1 == destinations[distanceIndex]) {
+                                    if (typeof distanceData.distance == "undefined") {
+                                        distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                        return false;
+                                    }
+                                    else {
+                                        distances.push({ campusName: campusLocationsUS[campusIndex].name, titleUrl: campusData.url, distance: distanceData.distance, address: campusData.address1 });
+                                        return false;
+                                    }
+                                }
+                                else {
+                                    if(campusData.id == 5) {
+                                        distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                    }
+                                    if (campusData.latitude && Object.prototype.toString.call(destinations[distanceIndex]) != "[object String]") {
+                                        if (campusData.latitude == destinations[distanceIndex].lat() && campusData.longitude == destinations[distanceIndex].lng()) {
+                                            if (typeof distanceData.distance == "undefined") {
+                                                distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                                return false;
+                                            }
+                                            else {
+                                                distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: distanceData.distance, address: campusData.address1 });
+                                                return false;
+                                            }
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                        else {
+                            $.each(campusLocationsInternational, function (campusIndex, campusData) {
+                                if (campusData.address1 == destinations[distanceIndex]) {
+                                    if (typeof distanceData.distance == "undefined") {
+                                        distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                        return false;
+                                    }
+                                    else {
+                                        distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: distanceData.distance, address: campusData.address1 });
+                                        return false;
+                                    }
+                                }
+                                else {
+                                    if(campusData.id == 5) {
+                                        distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                    }
+                                    if (campusData.latitude && Object.prototype.toString.call(destinations[distanceIndex]) != "[object String]") {
+                                        if (campusData.latitude == destinations[distanceIndex].lat() && campusData.longitude == destinations[distanceIndex].lng()) {
+                                            if (typeof distanceData.distance == "undefined") {
+                                                distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                                return false;
+                                            }
+                                            else {
+                                                distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: distanceData.distance, address: campusData.address1 });
+                                                return false;
+                                            }
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                    });
+
+                    //sort the distance array based on the distance object in each entry
+                    distances.sort(function (a, b) {
+                        if (originCountry == "United States")
+                            return parseFloat(a.distance.text.replace(/\smi|ft/, "")) < parseFloat(b.distance.text.replace(/\smi|ft/, "")) ? -1 : 1;
+                        else
+                            return parseFloat(a.distance.text.replace(/\skm|m/, "")) < parseFloat(b.distance.text.replace(/\skm|m/, "")) ? -1 : 1;
+                    });
+
+                    //sort locations with new distances array
+                    sortLocationList(distances, originCountry);
+
+                    
+                    $('#ImageWait').hide();
+                    $('#locationSort').hide();
+
+                    return distances;
+                });
+            }
+
+            //reorders the locations list based on distance from the origin address
+            //MOBILE ONLY
+            function sortLocationList(distances, originCountry) {
+                //put the existing locations into the sorting container
+                $('#LocationListUS li').detach().appendTo(".sortContainer");
+
+                //reorganize the locations based on distance
+                $.each(distances, function (idx, val) {
+                    $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.campusDistance').html(val.distance.text == "100000 mi" || val.distance.text == "100000 km" ? "No route available" : val.distance.text);
+                    $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.directions').attr("href", "http://maps.google.com/maps?f=d&hl=en&saddr=" + originAddress + "&daddr=" + encodeURIComponent(val.address) + "&ie=UTF8&z=7");
+                    $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).appendTo('#LocationListUS');
+                });
+
+                $('#LocationListInternational li').detach().appendTo(".sortContainer");
+                $.each(distances, function (idx, val) {
+                    if (originCountry != "United States") {
+                        if (idx < distances.length - campusLocationsUS.length) {
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.campusDistance').html(val.distance.text == "100000 mi" || val.distance.text == "100000 km" ? "No route available" : val.distance.text);
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.directions').attr("href", "http://maps.google.com/maps?f=d&hl=en&saddr=" + originAddress + "&daddr=" + encodeURIComponent(val.address) + "&ie=UTF8&z=7");
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).appendTo('#LocationListInternational');
+                        }
+                    }
+                    else {
+                        if (idx >= campusLocationsUS.length) {
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.campusDistance').html(val.distance.text == "100000 mi" || val.distance.text == "100000 km" ? "No route available" : val.distance.text);
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.directions').attr("href", "http://maps.google.com/maps?f=d&hl=en&saddr=" + originAddress + "&daddr=" + encodeURIComponent(val.address) + "&ie=UTF8&z=7");
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).appendTo('#LocationListInternational');
+                        }
+                    }
+                });
+
+                if (originCountry != "United States") {
+                    $('.locationsContainerInternational').detach().prependTo('.locationListsContainer');
+                }
+                else {
+                    $('.locationsContainerInternational').detach().appendTo('.locationListsContainer');
+                }
+            }
+            /****************************
+            END MOBILE FUNCTIONS
+            ****************************/
+
+            /****************************
+            DESKTOP FUNCTIONS
+            ****************************/
+            //Creates InfoWindow content and Marker objects to attach to the map and CampusLocations
+
+            //calculates the driving directions for the selected address from
+            //the input address (through geolocation or through manual input)
+            //if no destination address exists, then it finds the nearest marker
+            //to the origin address and sets that as the destination
+            function calcRoute() {
+
+                if (!destinationCampus) {
+                    findClosestMarker(originAddress, calcRoute);
+                }
+                else {
+                    var request =
+                    {
+                        origin: originAddress,
+                        destination: destinationCampus.address1,
+                        travelMode: google.maps.DirectionsTravelMode.DRIVING
+                    };
+
+                    directionsService.route(request, function (result, status) {
+                        if (status == google.maps.DirectionsStatus.OK) {
+                            directionsRenderer.setDirections(result);
+                        }
+                    });
+
+                    $('.directionsHeader').html('<h3 class="std">DRIVING DIRECTIONS TO<br />' + destinationCampus.address1 + '</h3>');
+                    directionsRenderer.setPanel(document.getElementById("DirectionsRenderer"));
+
+                    //allow the user to view the directions for the current campus in Google Maps
+                    $('#ButtonViewInGoogle').attr("href", "http://maps.google.com/maps?f=d&hl=en&saddr=" + originAddress + "&daddr=" + destinationCampus.address1 + "&ie=UTF8&z=7");
+
+                    if (parseInt($('#DirectionsSidebar').css("right")) < 0)
+                        toggleSidebar();
+                }
+
+                //geolocation will need to swap the icons
+                
+                $('#ImageWait').hide();
+                $('#locationSort').hide();
+            }
+
+            //helper functions for calculating nearest map marker to the position on the map
+            function rad(x) { return x * Math.PI / 180; }
+
+            function findClosestMarker(address, callback) {
+                if (!(address instanceof google.maps.LatLng)) {
+                    //geocode a temp address and use that for finding the nearest marker
+                    geoCoderCampusSelect.geocode({ 'address': address }, function (results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            map.setCenter(results[0].geometry.location);
+
+                            //set the temp address to the geocoded location
+                            address = new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng());
+
+                            findClosestMarkerHelper(address);
+                            if (callback) {
+                                callback.call();
+                            }
+                        }
+                        else {
+                            alert("Cannot find address entered");
+                        }
+                    });
+                }
+                else {
+                    //already in lat/long form, so just go with that
+                    findClosestMarkerHelper(address);
+                    if (callback) {
+                        callback.call();
+                    }
+                }
+            }
+
+            //internal helper function for finding the closest marker with a lat/long value
+            function findClosestMarkerHelper(position) {
+                var lat = position.lat();
+                var lng = position.lng();
+
+                var R = 6371;
+                var distances = [];
+                var closest = -1;
+                for (i = 0; i < locationMarkers.length; i++) {
+                    var mlat = locationMarkers[i].position.lat();
+                    var mlng = locationMarkers[i].position.lng();
+                    var dLat = rad(mlat - lat);
+                    var dLong = rad(mlng - lng);
+                    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                    Math.cos(rad(lat)) * Math.cos(rad(lat)) * Math.sin(dLong / 2) * Math.sin(dLong / 2);
+                    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                    var d = R * c;
+                    distances[i] = d;
+                    if (closest == -1 || d < distances[closest]) {
+                        closest = i;
+                    }
+                }
+
+                google.maps.event.trigger(locationMarkers[closest], 'click');
+            }
+
+            //helper function for displaying InfoWindow content
+            //DESKTOP ONLY
+            function showInfoWindow(index) {
+                campusInfoWindow.setContent(campusLocations[index].InfoWindowContent);
+                campusInfoWindow.setPosition(campusLocations[index].Marker.getPosition());
+                campusInfoWindow.open(map);
+                map.setCenter(campusLocations[index].Marker.getPosition());
+
+                destinationCampus = campusLocations[index];
+            }
+
+            //function to toggle the directions sidebar
+            function toggleSidebar() {
+                if (parseInt($('#DirectionsSidebar').css("right")) < 0) {
+                    $('#DirectionsSidebar').animate(
+                    {
+                        right: 0
+                    }, 500, function () {
+                        if ($('.toggleTab a').hasClass("rotate180")) {
+                            $('.toggleTab a').removeClass("rotate180");
+                        }
+                    });
+                }
+                else {
+                    $('#DirectionsSidebar').animate(
+                    {
+                        right: -335
+                    }, 500, function () {
+                        if (!$('.toggleTab a').hasClass("rotate180")) {
+                            $('.toggleTab a').addClass("rotate180");
+                        }
+                    });
+                }
+            }
+
+            //function to print directions
+            function printDirections() {
+                var windowObject = window.open('', 'PrintWindow', 'width=750,height=650,top=50,left=50,toolbars=no,scrollbars=yes,status=no,resizable=yes');
+                windowObject.document.writeln($("#DirectionsRenderer").html());
+                windowObject.document.close();
+                windowObject.focus();
+                windowObject.print();
+                windowObject.close();
+            }
+            /****************************
+            END DESKTOP FUNCTIONS
+            ****************************/
+            //]]></script><!-- Win8 Start Screen -->
+<!--Google Analytics-->
+<!-- Facebook Pixel Code -->
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=475241515997859&amp;ev=PageView&amp;noscript=1" /></noscript><!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+<!-- Gloo Pixel Code -->
+<!-- End Gloo Pixel Code -->
+<!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+ <script src="https://saddleback.v2sapi.co/script/APIScript?v2wsid=5901&amp;includeDemoCss=true" type="text/javascript"></script> <style id="loginStyle" type="text/css">
+        .signInInfo .name {
+            font-weight: bold;
+        }
+    </style><style>
+            .modal {
+                position: fixed; /* Stay in place */
+                z-index: 1000; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button */
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style><style>
+        @charset "UTF-8";
+#firstTimeForm {s
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+}
+#firstTimeForm .popup .popup-inner iframe {
+  min-height: 700px;
+}
+#firstTimeForm .mfp-close {
+  top: 5px;
+}
+
+.new-here-container .new-here-header-section .new-here-header-image {
+  height: 479px;
+  position: relative;
+}
+.new-here-container .new-here-header-section .new-here-header-image:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4d4d4f;
+  background-blend-mode: multiply;
+  opacity: 0.4;
+}
+.new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner {
+  position: absolute;
+  bottom: 48px;
+  padding: 0 15px;
+}
+.new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner .new-here-header {
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: 1.24px;
+  color: #fff;
+  margin-bottom: 77px;
+}
+.new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner .intro-link-container {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    align-items: center;
+}
+.new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner .new-here-video-btn {
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+justify-content: flex-start;
+background: none;
+border: none;
+padding: 0;
+}
+.new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner .new-here-video-btn .icon-play-circle {
+  color: #00aeef;
+  margin-right: 20px;
+  font-size: 24px;
+  position: relative;
+  cursor: pointer;
+}
+.new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner .new-here-video-btn .icon-play-circle:after {
+  content: '';
+  display: inline-block !important;
+  width: 0;
+  height: 0;
+  border-left: 9px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner .new-here-video-btn.play-icon:hover {
+    text-decoration: none;
+}
+.new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner .new-here-video-btn:hover .icon-play-circle {
+  text-decoration: none;
+	display: inline-block;
+}
+.new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner .new-here-video-btn:hover .icon-play-circle:after {
+  text-decoration: none;
+}
+.new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner .new-here-video-btn:hover {
+  text-decoration: underline;
+}
+.new-here-container .newstart-details-tabs {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 18px 0 16px 0;
+  z-index: 100;
+  border-bottom: solid 1px #bcbec0;
+}
+.new-here-container .newstart-details-tabs .newstart-details-tab-labels {
+  scrollbar-width: none;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  position: relative;
+  margin: 0;
+}
+.new-here-container .newstart-details-tabs .newstart-details-tab-labels li {
+  padding: 0 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.new-here-container .newstart-details-tabs .newstart-details-tab-labels li a {
+  color: #4d4d4f;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  padding-bottom: 9px;
+}
+.new-here-container .newstart-details-tabs .newstart-details-tab-labels li a:hover {
+  text-decoration: none;
+}
+.new-here-container .newstart-details-tabs .newstart-details-tab-labels li.active a {
+  color: #00aeef;
+  padding-bottom: 7px;
+  border-bottom: solid 2px #00aeef;
+}
+.new-here-container .newstart-details-tabs:after {
+  content: '';
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 30px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, white 100%);
+  position: absolute;
+  pointer-events: none;
+}
+.new-here-container .newstart-details-tabs:before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 30px;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 30%, white 100%);
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+.new-here-container .newstart-details-tab-labels::-webkit-scrollbar {
+  display: none;
+}
+.new-here-container .newstart-separator-section {
+  position: relative;
+}
+.new-here-container .newstart-separator-section.visit-us-section .visit-us-container {
+  margin-bottom: 56px;
+}
+.new-here-container .newstart-separator-section.get-connected-section {
+  margin-bottom: 74px;
+}
+.new-here-container .newstart-separator-section.get-connected-section .get-connected-container {
+  margin-bottom: 71px;
+}
+.new-here-container .newstart-separator-section.make-a-difference-section {
+  margin-bottom: 88px;
+}
+.new-here-container .newstart-separator-section.make-a-difference-section .make-a-difference-container {
+  margin-bottom: 56px;
+}
+.new-here-container .newstart-separator-section .newstart-separator-container {
+  width: 100%;
+  padding: 48px 16px 70px;
+  height: 734px;
+}
+.new-here-container .newstart-separator-section .newstart-separator-container h3 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.new-here-container .newstart-separator-section .newstart-separator-container:before {
+  content: " ";
+  width: 100%;
+  height: 734px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4d4d4f;
+  background-blend-mode: multiply;
+  opacity: 0.4;
+}
+.new-here-container .newstart-separator-section .newstart-separator-container .newstart-separator-container-inner {
+  position: absolute;
+  padding-right: 16px;
+}
+.new-here-container .newstart-separator-section .newstart-separator-container .newstart-separator-container-inner .newstart-separator-inner .newstart-separator-header {
+  color: #fff;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: 1.24px;
+  margin-bottom: 24px;
+}
+.new-here-container .newstart-separator-section .newstart-separator-container .newstart-separator-container-inner .newstart-separator-inner .newstart-separator-info {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 30px;
+}
+.new-here-container .newstart-separator-section .newstart-separator-container .newstart-separator-container-inner .newstart-separator-inner .new-here-video-btn {
+    width: 100%;
+    height: 46px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.new-here-container .newstart-separator-section .newstart-separator-container .newstart-separator-social-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  height: 32px;
+}
+.new-here-container .newstart-separator-section .newstart-separator-container .newstart-separator-social-container a {
+  font-size: 32px;
+  line-height: 1;
+  padding: 0 24px;
+  position: relative;
+}
+.new-here-container .newstart-separator-section .newstart-separator-container .newstart-separator-social-container a span {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.new-here-container .newstart-separator-section .newstart-desktop-social-container {
+  display: none;
+}
+.new-here-container .first-time-section {
+  padding: 24px 20px;
+  background: linear-gradient(88.15deg, #00AEEF 28.9%, #56C4C4 68.64%);
+}
+.new-here-container .first-time-section .first-time-container .first-time-header {
+  color: #fff;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 1.07px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.new-here-container .first-time-section .first-time-container .first-time-info {
+  color: #fff;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+.new-here-container .first-time-section .first-time-container .btn {
+  height: 46px;
+  border-radius: 15px;
+  background-color: unset;
+  display: flex;
+  margin: 0 auto;
+}
+.new-here-container .first-time-section .first-time-container .btn:hover {
+  background-color: #0093c6;
+}
+.new-here-container .rick-welcome-section {
+  margin-bottom: 64px;
+}
+.new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-image-container {
+  position: relative;
+  padding-left: 58px;
+  max-width: 428px;
+  margin: 0 auto 20px;
+}
+.new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-image-container img:first-of-type {
+  position: absolute;
+  height: 117px;
+  width: 117px;
+  top: 15px;
+  left: 0;
+}
+.new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-image-container img:last-of-type {
+  width: 100%;
+  max-width: 428px;
+  height: 100%;
+  max-height: 428px;
+}
+.new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container {
+  padding: 0 15px;
+}
+.new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container .rick-welcome-info-inner .rick-welcome-sub-header {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #4d4d4f;
+  margin-bottom: 32px;
+}
+.new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container .rick-welcome-info-inner .rick-welcome-header {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: 1px;
+  color: #f35a49;
+  margin-bottom: 32px;
+  font-family: PT Serif;
+  position: relative;
+  max-width: 330px;
+  quotes: "“" "”" "‘" "’";
+}
+.new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container .rick-welcome-info-inner .rick-welcome-header:before {
+  content: open-quote;
+  color: #f35a49;
+  font-size: 200px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  opacity: 0.2;
+  font-family: Lato;
+}
+.new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container .rick-welcome-info-inner .rick-welcome-header:after {
+  content: close-quote;
+  color: #f35a49;
+  font-size: 200px;
+  position: absolute;
+  bottom: -30px;
+  right: 30px;
+  opacity: 0.2;
+  font-family: Lato;
+}
+.new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container .rick-welcome-info-inner .rick-welcome-info {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 32px;
+}
+.new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container .rick-welcome-info-inner .btn {
+  height: 46px;
+  border-radius: 15px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+.new-here-container .newstart-split-container {
+  position: relative;
+  margin-bottom: 64px;
+}
+.new-here-container .newstart-split-container.welcome-nations-container {
+  background: #f2fbfe;
+}
+.new-here-container .newstart-split-container.welcome-nations-container .newstart-split-inner .newstart-split-info {
+  color: #00aeef;
+}
+.new-here-container .newstart-split-container.welcome-nations-container .newstart-split-inner .newstart-split-header {
+  color: #00aeef;
+}
+.new-here-container .newstart-split-container.vision-values-container {
+  background: #fffaf5;
+}
+.new-here-container .newstart-split-container.vision-values-container .newstart-split-inner .newstart-split-info {
+  color: #fb9f3e;
+}
+.new-here-container .newstart-split-container.vision-values-container .newstart-split-inner .newstart-split-header {
+  color: #fb9f3e;
+}
+.new-here-container .newstart-split-container .newstart-split-inner {
+  padding: 61px 16px 81px;
+  min-height: 446px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new-here-container .newstart-split-container .newstart-split-inner .newstart-split-info-container {
+  max-width: 288px;
+  margin: 0 auto;
+}
+.new-here-container .newstart-split-container .newstart-split-inner .newstart-split-info-container .newstart-split-info {
+  font-size: 44px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+.new-here-container .newstart-split-container .newstart-split-inner .newstart-split-info-container .newstart-split-header {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.new-here-container .newstart-staff-section {
+  margin-bottom: 48px;
+}
+.new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff-headers {
+  margin-bottom: 16px;
+}
+.new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff-headers h2 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 16px;
+}
+.new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff-headers p {
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #878787;
+}
+.new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff .newstart-staff-item {
+  width: 50%;
+  margin-bottom: 16px;
+  position: relative;
+}
+.new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff .newstart-staff-item:before {
+  content: "";
+  display: block;
+  width: 135px;
+  height: 135px;
+  background: linear-gradient(224.87999999999997deg, #00AEEF 14.34%, #56C4C4 85.2%);
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff .newstart-staff-item .newstart-staff-photo {
+  width: 125px;
+  height: 125px;
+  margin: 0 auto 11px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+}
+.new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff .newstart-staff-item .newstart-staff-name {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #4d4d4f;
+  margin-bottom: 8px;
+}
+.new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff .newstart-staff-item a {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.new-here-container .vision-values-section {
+  margin-bottom: 88px;
+}
+.new-here-container .vision-values-section .vision-values-item {
+  margin-bottom: 50px;
+}
+.new-here-container .vision-values-section .vision-values-item:last-of-type {
+  margin: 0;
+}
+.new-here-container .vision-values-section .vision-values-item .vision-values-img {
+  height: 180px;
+  margin-bottom: 16px;
+}
+.new-here-container .vision-values-section .vision-values-item .vision-values-info-container {
+  padding: 0 15px;
+}
+.new-here-container .vision-values-section .vision-values-item .vision-values-info-container .vision-values-header {
+  font-size: 44px;
+  line-height: 48px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 16px;
+}
+.new-here-container .vision-values-section .vision-values-item .vision-values-info-container .vision-values-info {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4d4d4f;
+  margin-bottom: 32px;
+}
+.new-here-container .vision-values-section .vision-values-item .vision-values-info-container .btn {
+  height: 46px;
+  border-radius: 15px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+.new-here-container .newstart-item-container.visit-us-items {
+  margin-bottom: 88px;
+}
+.new-here-container .newstart-item-container .newstart-item {
+  margin-bottom: 56px;
+}
+.new-here-container .newstart-item-container .newstart-item:last-of-type {
+  margin: 0;
+}
+.new-here-container .newstart-item-container .newstart-item .newstart-item-img {
+  height: 180px;
+  margin-bottom: 24px;
+}
+.new-here-container .newstart-item-container .newstart-item .newstart-item-info-container {
+  padding: 0 15px;
+}
+.new-here-container .newstart-item-container .newstart-item .newstart-item-info-container .newstart-item-header {
+  font-size: 44px;
+  line-height: 48px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 32px;
+}
+.new-here-container .newstart-item-container .newstart-item .newstart-item-info-container .newstart-item-info {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4d4d4f;
+  margin-bottom: 32px;
+}
+.new-here-container .newstart-item-container .newstart-item .newstart-item-info-container .btn {
+  height: 46px;
+  border-radius: 15px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 575px) {
+  .new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner {
+    padding: 0 30px;
+  }
+  .new-here-container .newstart-details-tabs .newstart-details-tab-labels li {
+    padding: 0 20px;
+  }
+  .new-here-container .newstart-separator-section .newstart-separator-container {
+    padding: 48px 30px 70px;
+  }
+  .new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container {
+    padding: 0 30px;
+  }
+  .new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff-headers p {
+    margin-bottom: 24px;
+  }
+  .new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff {
+    padding: 0;
+  }
+  .new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff .newstart-staff-item {
+    width: 33.3333%;
+  }
+  .new-here-container .newstart-item-container .newstart-item .newstart-item-img {
+    height: 275px;
+  }
+  .new-here-container .newstart-item-container .newstart-item .newstart-item-info-container {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .new-here-container .new-here-header-section .new-here-header-image {
+    height: 600px;
+  }
+  .new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner {
+    max-width: 768px;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+  }
+  .new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner .new-here-header {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: 1.24px;
+    margin-bottom: 40px;
+  }
+  .new-here-container .new-here-header-section .new-here-header-image .new-here-header-inner .btn {
+    max-width: 200px;
+  }
+  .new-here-container .newstart-details-tabs .newstart-details-tab-labels {
+    justify-content: center;
+  }
+  .new-here-container .newstart-separator-section {
+    align-items: center;
+  }
+  .new-here-container .newstart-separator-section.know-us-section {
+    position: relative;
+    display: block;
+    margin-bottom: 85px;
+  }
+  .new-here-container .newstart-separator-section.visit-us-section {
+    margin-bottom: 104px;
+  }
+  .new-here-container .newstart-separator-section.get-connected-section .newstart-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -25px;
+  }
+  .new-here-container .newstart-separator-section.get-connected-section .newstart-item-container .newstart-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 25px;
+    margin: 0;
+  }
+  .new-here-container .newstart-separator-section.get-connected-section .newstart-item-container .newstart-item:first-of-type {
+    margin-bottom: 56px;
+  }
+  .new-here-container .newstart-separator-section.get-connected-section .newstart-item-container .newstart-item .newstart-item-img {
+    width: 100%;
+  }
+  .new-here-container .newstart-separator-section.get-connected-section .newstart-item-container .newstart-item .newstart-item-info-container {
+    width: 100%;
+    padding: 0;
+  }
+  .new-here-container .newstart-separator-section.make-a-difference-section .newstart-item-container {
+    display: flex;
+    margin: 0 -25px;
+  }
+  .new-here-container .newstart-separator-section.make-a-difference-section .newstart-item-container .newstart-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 25px;
+    margin: 0;
+  }
+  .new-here-container .newstart-separator-section.make-a-difference-section .newstart-item-container .newstart-item .newstart-item-img {
+    width: 100%;
+  }
+  .new-here-container .newstart-separator-section.make-a-difference-section .newstart-item-container .newstart-item .newstart-item-info-container {
+    width: 100%;
+    padding: 0;
+  }
+  .new-here-container .newstart-separator-section .newstart-separator-container {
+    padding: 92px 0px 92px 81px;
+  }
+  .new-here-container .newstart-separator-section .newstart-separator-container .newstart-separator-container-inner .newstart-separator-inner .newstart-separator-header {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: 1.24px;
+    max-width: 540px;
+  }
+  .new-here-container .newstart-separator-section .newstart-separator-container .newstart-separator-container-inner .newstart-separator-inner .newstart-separator-info {
+    max-width: 600px;
+  }
+  .new-here-container .newstart-separator-section .newstart-separator-container .newstart-separator-container-inner .newstart-separator-inner .new-here-video-btn {
+        max-width: 200px;
+        margin-bottom: 0;
+    }
+  .new-here-container .newstart-separator-section .newstart-separator-container .newstart-separator-social-container {
+    display: none;
+  }
+  .new-here-container .newstart-separator-section .visit-us-items {
+    margin: 0 -25px 108px;
+    display: flex;
+  }
+  .new-here-container .newstart-separator-section .visit-us-items .newstart-item {
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 25px;
+    margin: 0;
+  }
+  .new-here-container .newstart-separator-section .visit-us-items .newstart-item .newstart-item-img {
+    width: 100%;
+  }
+  .new-here-container .newstart-separator-section .visit-us-items .newstart-item .newstart-item-info-container {
+    width: 100%;
+    padding: 0;
+  }
+  .new-here-container .newstart-separator-section .newstart-desktop-social-container {
+    display: block;
+    padding-top: 64px;
+    margin: 0 auto;
+    border-top: solid 1px #D8D8D8;
+  }
+  .new-here-container .newstart-separator-section .newstart-desktop-social-container .newstart-desktop-social-header {
+    max-width: 600px;
+    margin: 0 auto 16px;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 35px;
+    color: #4d4d4f;
+    text-align: center;
+  }
+  .new-here-container .newstart-separator-section .newstart-desktop-social-container .newstart-desktop-social-info {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4d4d4f;
+    margin: 0 auto 32px;
+    text-align: center;
+  }
+  .new-here-container .newstart-separator-section .newstart-desktop-social-container .newstart-separator-social-container {
+    max-width: 600px;
+    margin: 24px auto 0;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+  }
+  .new-here-container .newstart-separator-section .newstart-desktop-social-container .newstart-separator-social-container a {
+    font-size: 32px;
+    line-height: 1;
+    padding: 0 24px;
+    position: relative;
+  }
+  .new-here-container .newstart-separator-section .newstart-desktop-social-container .newstart-separator-social-container a span {
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .new-here-container .rick-welcome-section .rick-welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-image-container {
+    margin: 0;
+  }
+  .new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-image-container img.top-image {
+    width: 190px;
+    height: 190px;
+    top: 24px;
+    left: -37px;
+  }
+  .new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-image-container img:last-of-type {
+    width: 100%;
+    max-width: 428px;
+    height: 100%;
+    max-height: 428px;
+  }
+  .new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container {
+    padding: 0 30px 0 80px;
+  }
+  .new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container .rick-welcome-info-inner .rick-welcome-header:before {
+    font-size: 288px;
+    top: 75px;
+    left: -22px;
+  }
+  .new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container .rick-welcome-info-inner .rick-welcome-header:after {
+    font-size: 288px;
+    bottom: -65px;
+    right: -10px;
+  }
+  .new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container .rick-welcome-info-inner .rick-welcome-info {
+    max-width: 440px;
+  }
+  .new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container .rick-welcome-info-inner .btn {
+    margin: 0;
+    max-width: 200px;
+  }
+  .new-here-container .newstart-split-container .newstart-split-inner .newstart-split-info-container {
+    max-width: 100%;
+  }
+  .new-here-container .newstart-split-container .newstart-split-inner .newstart-split-info-container .newstart-split-header {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff-headers p {
+    margin-bottom: 68px;
+  }
+  .new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff .newstart-staff-item {
+    width: 25%;
+    margin-bottom: 45px;
+  }
+  .new-here-container .newstart-item-container {
+    padding: 0 30px;
+  }
+  .new-here-container .newstart-item-container.vision-values-section .newstart-item {
+    flex-direction: row-reverse;
+  }
+  .new-here-container .newstart-item-container.vision-values-section .newstart-item .newstart-item-info-container {
+    padding: 0 64px 0 0;
+  }
+  .new-here-container .newstart-item-container .newstart-item {
+    display: flex;
+    justify-content: center;
+  }
+  .new-here-container .newstart-item-container .newstart-item .newstart-item-img {
+    width: 50%;
+    max-width: 618px;
+  }
+  .new-here-container .newstart-item-container .newstart-item .newstart-item-info-container {
+    padding: 0 0 0 64px;
+    width: 50%;
+  }
+  .new-here-container .newstart-item-container .newstart-item .newstart-item-info-container .btn {
+    width: 200px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .new-here-container .newstart-separator-section.know-us-section {
+    display: flex;
+  }
+  .new-here-container .first-time-section {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 23px 64px;
+    width: 100%;
+    max-width: 1120px;
+  }
+  .new-here-container .first-time-section .first-time-container {
+    display: flex;
+    align-items: center;
+  }
+  .new-here-container .first-time-section .first-time-container .first-time-header {
+    margin: 0 24px 0 0;
+  }
+  .new-here-container .first-time-section .first-time-container .first-time-info {
+    margin: 0 24px 0 0;
+    height: 20px;
+  }
+  .new-here-container .first-time-section .first-time-container .btn {
+    margin: 0 0 0 auto;
+  }
+  .new-here-container .rick-welcome-section .rick-welcome-container .rick-welcome-info-container {
+    padding: 0 0 0 80px;
+  }
+  .new-here-container .newstart-staff-section .newstart-staff-container .newstart-staff .newstart-staff-item {
+    width: 16.6666%;
+  }
+}
+
+    </style></head><body><div id="campusHomeAnchor"></div><div class="cookies-notification-container" style="display: none"><div class="cookies-notification-inner-container"><p><span class="icon-alert"></span>Turn on your cookies for the best browsing experience.</p><div><a href="javascript:;" class="cookies-learnmore-link"><span class="icon-arrow-right"></span></a><a href="javascript:;" class="cookies-close-btn"><span class="icon-close"></span></a></div></div><div class="cookies-notification"><p>This site uses cookies to store information on your computer.</p><p>These cookies are essential to make our site work.  We use cookies for a variety of reasons, including giving and content preferences.</p><p>Instructions to turn on your browser cookies:</p><p><a href="https://www.whatismybrowser.com/guides/how-to-enable-cookies/auto" target="_blank">https://www.whatismybrowser.com/guides/how-to-enable-cookies/auto</a></p></div></div><div class="wrapper campus-wrapper global-footer "><section class="header campus-page-header"><div class="topLinksContainer"><div class="topLinks"><a href="../../index.html" class="logo-container guest">
+             <img style="position: absolute; top: -55px;" class="saddleback-logo cyan" src="/kim/dcbg.png" />
+    <img class="saddleback-logo white" src="https://sb-web.s3-us-west-1.amazonaws.com/saddleback.com/home/SaddlebackLogo_White.svg" /><!-- <span class="logoSlogan">one family, many locations</span> -->
+</a><div class="v2 v2Module" data-module="basketButton"></div><div class="campus-page-user-login guest-login"><span class="signInInfo guest-sign-in"><a href="">Sign In</a></span><div id="signInNotification" class="toaster-ui" style="display: none;"><div class="toaster-inner"><img src="">Sign in</a> for a personalized experience.</p><a id="closeToaster" class="close-btn" href="javascript:;"><span class="icon-close"></span></a></div></div><script type="text/javascript">
+        //<![CDATA[
+            if(typeof $.cookie('SignInToasterClosed') === 'undefined') {
+                $('.topLinks').addClass('toaster-relative');
+                setTimeout(function(){
+                    $("#signInNotification").show();
+                    $("#signInNotification").addClass('slide-in');
+                }, 2000);
+
+                setTimeout(function(){
+                    $("#signInNotification").removeClass('slide-in');
+                    setTimeout(function(){
+                        $("#signInNotification").hide();
+                    }, 500 );
+                }, 8000);
+            }
+
+            $(document).on('click', '#closeToaster', function(){
+                $("#signInNotification").removeClass('slide-in');
+                $.cookie('SignInToasterClosed', true, { expires: 90 });
+            });
+        //]]></script></div> 
+
+<nav id="navMoreBtn" class="menuBtn mobile nav-more-closed">
+    <div class="navTopRow">
+        <div id="nav-icon3" class="nav-icon-closed">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+<div class="navRowWide table">
+  <div class="tableRow">
+      <div class="tableCell navMiddle"><a href="new-here.html" data-nav="NavVisit">I'm New</a></div>
+
+      <div class="tableCell navMiddle"><a href="/learn.html" data-nav="NavAct">Grow</a></div>
+
+      <div class="tableCell navMiddle"><a href="give.html" data-nav="NavGive">Give</a></div>
+  </div>
+</div>
+    
+
+</section>
+<section class="content"><script id="magnific-include" type="text/javascript" src="../../../cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script><link rel="stylesheet" type="text/css" href="../../css/saddleback.com/dist/magnific-popup.css"></link><script id="jquery-fitvids-js-include" src="../../../cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+
+    <h1>I'm New Here</h1><div class="new-here-container"><section id="NewStartHeader" class="new-here-header-section"><div class="new-here-header-image" style="background: url(/kim/member2.jpg) top center no-repeat; background-size: cover;"><div class="new-here-header-inner"><p class="new-here-header">Welcome to Deliverce church Donholm</p><div class="intro-link-container"><a class="play-circle-background new-here-video-btn play-icon"><span class="icon-play-circle"></span></a><a class="btn transparent new-here-video-btn">Watch Video</a></div></div></div><div id="GetToKnowUs"></div></section><section id="newstartNavMenu" class="newstart-details-tabs"><ul class="newstart-details-tab-labels"><li id="GetToKnowUsNav" class="active"><a href="#GetToKnowUs">Meet Our Pastor</a></li><li id="VisitUsNav"><a href="#VisitUs">Join Us</a></li>
+        <li id="GetConnectedNav"><a href="#GetConnected">Sections</a></li>
+        <li id="DifferenceNav"><a href="#Difference">Get involved</a></li></ul></section><section class="know-us-section newstart-separator-section"><div class="newstart-separator-container" style="background: url(/kim/mainpast5.jpg) top center no-repeat; background-size: cover;"><div class="newstart-separator-container-inner"><h3 class="header-bars-short ltOrange">Meet our lead pastor</h3><div class="newstart-separator-inner"><p class="newstart-separator-header">Loving God and Loving People</p><p class="newstart-separator-info" style="margin-bottom: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita reprehenderit atque eligendi facilis rem doloribus maiores. Impedit, at minus reprehenderit temporibus delectus iste soluta autem commodi adipisci dolores suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quae in omnis minima. Minima aliquam impedit beatae, recusandae eligendi sed quo consequatur molestiae reiciendis deleniti voluptatem tempore dolorem, repellat earum?</p></div></div></div>
+
+        </section>
+
+            
+
+           
+
+<section  class="vision-values-section newstart-item-container"><div class="purpose-driven-container newstart-item"><div class="newstart-item-img" style="background: url(/kim/memberstent.jpg) top center no-repeat; background-size: cover;"></div><div class="newstart-item-info-container"><p class="newstart-item-header">Purpose Driven</p><p class="newstart-item-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quaerat optio quos, soluta velit maiores. Vel repellat vero ex aut cupiditate eveniet officiis ratione natus. Deleniti optio, soluta laboriosam illum corporis minus iusto natus ducimus officiis ab. Magnam ad voluptates voluptatum voluptate unde eum, dolorem corporis? Explicabo repudiandae eveniet recusandae perferendis est! Ducimus, velit quisquam nulla pariatur ipsa laborum ad accusantium laboriosam quos dolorum minima magni aspernatur dolor eligendi nemo reprehenderit labore distinctio molestiae eum quas officia doloribus quaerat a aut. Eos ullam optio repellendus consequatur beatae accusamus tenetur fugiat numquam dignissimos architecto dolorem, blanditiis nulla voluptates velit alias cumque?</p><a class="btn" href="#">Learn More</a></div></div>
+
+
+<div id="VisitUs"></div></section><section class="visit-us-section newstart-separator-section"><div class="visit-us-container newstart-separator-container" style="background: url(/kim/memberfull.jpg) top center no-repeat; background-size: cover;"><div class="newstart-separator-container-inner"><h3 class="header-bars-short ltOrange">join Us</h3><div class="newstart-separator-inner"><p class="newstart-separator-header">You're more than welcome. You’re wanted!</p><p class="newstart-separator-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officiis atque ea fugiat quod tempora molestiae, veritatis temporibus nesciunt suscipit quia odio. Sunt dignissimos amet veritatis cupiditate distinctio laboriosam, quasi sequi ipsum, at obcaecati, dicta asperiores quia! Reiciendis hic dolorum iure deleniti laborum vel incidunt tempore eum, architecto id exercitationem.</p><a class="btn transparent new-here-video-btn" href="#">What to Expect</a></div><div class="newstart-separator-social-container"><a href="#" target="_blank"><span class="icon-instagram-box"></span></a><a href="#" target="_blank"><span class="icon-facebook-box"></span></a><a href="#" target="_blank"><span class="icon-twitter-box"></span></a><a href="#" target="_blank"><span class="icon-youtube-box"></span></a></div></div></div>
+
+    
+    <section id="GetConnected" class="get-connected-section newstart-separator-section"><div class="get-connected-container newstart-separator-container" style="background: url(/kim/ladies.jpg) top center no-repeat; background-size: cover;"><div class="newstart-separator-container-inner"><h3 class="header-bars-short ltOrange">church sections</h3><div class="newstart-separator-inner"><p class="newstart-separator-header">Find your suitable place/fit within our church.</p><p class="newstart-separator-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates recusandae facilis, aliquid iusto corporis veniam totam quae quas dolores earum modi odio et, fugit a omnis. Incidunt, eligendi. Error, natus.</p></div></div></div><div class="get-connected-item-container newstart-item-container"><div class="get-connected-item newstart-item"><div class="newstart-item-img" style="background: url(/kim/church.jpg) top center no-repeat; background-size: cover;"></div><div class="newstart-item-info-container"><p class="newstart-item-header">Main service</p><p class="newstart-item-info">No matter your age or life stage, there’s a group for you — men’s, women’s, couples, singles, and more!</p><a class="btn" href="#">Learn More</a></div></div><div class="get-connected-item newstart-item"><div class="newstart-item-img" style="background: url(/kim/youth1.jpg) top center no-repeat; background-size: cover;"></div><div class="newstart-item-info-container"><p class="newstart-item-header">Youth service</p><p class="newstart-item-info">There’s always something fun happening at our campuses! Check the calendar to see what’s going on near you.</p><a class="btn" href="#">View Calendar</a></div></div><div class="newstart-item"><div class="newstart-item-img" style="background: url(/kim/youth2.jpg) top center no-repeat; background-size: cover;"></div><div class="newstart-item-info-container"><p class="newstart-item-header">Teen service</p><p class="newstart-item-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe eum voluptas quae dolorum neque illum maxime ex sunt provident fugiat.</p><a class="btn" href="#">Learn More</a></div></div><div class="newstart-item"><div class="newstart-item-img" style="background: url(/kim/kid.jpg) top center no-repeat; background-size: cover;"></div><div class="newstart-item-info-container"><p class="newstart-item-header">Kids service</p><p class="newstart-item-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor adipisci ratione libero vel voluptas est vitae pariatur earum culpa aut!</p><a class="btn" href="#">Learn More</a></div></div></div><div id="Difference"></div></section><section class="make-a-difference-section newstart-separator-section"><div class="make-a-difference-container newstart-separator-container" style="background: url(/kim/choirgreen2.jpg) top center no-repeat; background-size: cover;"><div class="newstart-separator-container-inner"><h3 class="header-bars-short ltOrange">Get involved</h3><div class="newstart-separator-inner"><p class="newstart-separator-header">Our faith is more than an idea</p><p class="newstart-separator-info">Our faith in who Jesus is should affect our thoughts, feelings, and actions. We express God’s love for others by meeting not just their spiritual needs, but their physical needs as well. In a world filled plagued with poverty, racism, spiritual emptiness, disease, and natural disasters, we have the opportunity to reach out and make a difference in the lives of others. This can be in your neighborhood, in your city, or around the world!</p></div></div></div><div class="make-a-difference-items newstart-item-container"><div class="newstart-item"><div class="newstart-item-img" style="background: url(/kim/youth3.jpg) top center no-repeat; background-size: cover;"></div><div class="newstart-item-info-container"><p class="newstart-item-header">Events</p><p class="newstart-item-info">You have something to offer the church that no one else does. God has given you something unique, and we want to help you figure out how to use that gift in an area of ministry based on your S.H.A.P.E. – spiritual gifts, heart, abilities, personality, and experiences.</p><a class="btn" href="#">Find a Ministry</a></div></div><div class="newstart-item"><div class="newstart-item-img" style="background: url(/kim/mainpast.jpg) top center no-repeat; background-size: cover;"></div><div class="newstart-item-info-container"><p class="newstart-item-header">Donations</p><p class="newstart-item-info">As a church family, we have a mission to express God’s love for others by meeting their physical and spiritual needs. In a world filled plagued with poverty, racism, spiritual emptiness, disease, and natural disasters, we have the opportunity to reach out and lend a hand. This can be in your neighborhood, in your city, or around the world!</p><a class="btn" href="">Learn More</a></div></div></div></section></div><!-- Javascript for Video Player -->
+<div id="introVideo" class="mfp-hide"><div id="introVideoPlayer"></div></div><div id="firstTimeForm" class="mfp-hide"><div class="popup"><p class="popup-title">First Time Visitor</p><div class="popup-inner"><iframe height="573" title="First Time Visitor Form" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src=""></iframe></div></div></div><script> 
+            //<![CDATA[
+            $(document).ready(function () {	
+                $('.new-here-header-image .new-here-video-btn').magnificPopup({
+                    items: 
+                    {
+                        src: $('#introVideo'),
+                        type: 'inline'
+                    }
+                });
+                $('.first-time-btn').magnificPopup({
+                    items: 
+                    {
+                        src: $('#firstTimeForm'),
+                        type: 'inline'
+                    }
+                });
+                $('.newstart-details-tab-labels li').on('click', function(ev) {
+                    $('.newstart-details-tab-labels li').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+                /*Smooth Scroll Script*/
+                $('a[href*=#]:not([href=#])').click(function () {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                        || location.hostname == this.hostname) {
+
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+
+                var anchorRemovalQuery = window.matchMedia("(min-width: 768px)");
+                var getConnectedElement = $('<div></div>')
+                var visitUsElement = $('<div></div>')
+                // listeners, so that it works on window resize and orientation change
+                anchorRemovalQuery.addListener(handleOrientationChange);
+                function handleOrientationChange(anchorRemovalQuery) {
+                    if (anchorRemovalQuery.matches) {
+                        $('.newstart-care-item #GetConnected').remove();
+                        $(' #VisitUs').remove();
+                        
+                    }
+                    else {
+                        $('').append(visitUsElement);
+                        visitUsElement.attr('id', 'VisitUs');
+                        $('.newstart-care-item').append(getConnectedElement);
+                        getConnectedElement.attr('id', 'GetConnected');
+                    }
+                }
+                if (window.innerWidth < 768) {
+                    $('').append(visitUsElement);
+                        visitUsElement.attr('id', 'VisitUs');
+                        $('.newstart-care-item').append(getConnectedElement);
+                        getConnectedElement.attr('id', 'GetConnected');
+                }
+                if (window.innerWidth > 768) {
+                    $('.newstart-care-item #GetConnected').remove();
+                    $(' #VisitUs').remove();
+                }
+            });
+
+            $(window).scroll(function (event) {
+                var scroll = $(window).scrollTop();
+                var GetToKnowUsScroll = document.getElementById('GetToKnowUsNav');
+                var VisitUsScroll = document.getElementById('GetToKnowUsNav');
+                var GetConnectedScroll = document.getElementById('GetToKnowUsNav');
+                var DifferenceScroll = document.getElementById('GetToKnowUsNav');
+                
+                if( scroll >= $('#GetToKnowUs').offset().top - 40) {
+                    $('.newstart-details-tab-labels li').removeClass('active');
+                    $('#GetToKnowUsNav').addClass('active');
+                    //GetToKnowUsScroll.scrollIntoView();
+                }
+                if (scroll >= $('#VisitUs').offset().top - 40) {
+                    $('.newstart-details-tab-labels li').removeClass('active');
+                    $('#VisitUsNav').addClass('active');
+                    //VisitUsScroll.scrollIntoView();
+                }
+                if(scroll >= $('#GetConnected').offset().top - 40) {
+                    $('.newstart-details-tab-labels li').removeClass('active');
+                    $('#GetConnectedNav').addClass('active');
+                    //GetConnectedScroll.scrollIntoView();
+                }
+                if(scroll >= $('#Difference').offset().top - 40) {
+                    $('.newstart-details-tab-labels li').removeClass('active');
+                    $('#DifferenceNav').addClass('active');
+                    //DifferenceScroll.scrollIntoView();
+                }
+            });
+            //trigger the scroll
+            $(window).scroll();//ensure if you're in current position when page is refreshed
+                                
+            var tag = document.createElement('script');                   
+            tag.src = "https://www.youtube.com/iframe_api";                   
+            var firstScriptTag = document.getElementsByTagName('script')[0];                   
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);                   
+                            
+            var player;                   
+            function onYouTubeIframeAPIReady()                   
+            {                      
+                player = new YT.Player('introVideoPlayer', {                      
+                    height: '390',                      
+                    width: '640',                      
+                    videoId: 'u4c2Tg74Jwo',
+                    playerVars: {
+                        rel: 0,
+                        origin: location.origin
+                    }
+                });                      
+                            
+                $('#introVideo').fitVids();                      
+            }
+            //]]></script></section>
+            
+            <!-- FOOTER -->
+<section style="height: 50vh;" class="footer"><nav><div class="backToTopContainer"><a href="#" class="btn">Back To Top</a></div><div class="subscriptionContainer"><div class="wideLogoContainer"><a href="../../index.html" class="logo"><img src="" /></a></div></div><div class="logoContainer"><a href="../../index.html" class="campus-footer-logo logo"><img class="img" src="/kim/dcwhite.png" /></a></div><div class="footerBottomRow clearfix">
+    <div style="" class="footerBottomLinksContainer"><ul class="footerBottomLinks clearfix"><li><a href="" style="color:white; position: relative;">sign in</a></li><li><a href="#">contact us</a></li><li><a href="#">privacy policy</a></li><li><a href="#">career opportunities</a></li><li><a href="#">internships</a></li><li><a href="#">mobile app</a></li></ul></div>
+    
+    <div class="copyrightContainer">© <span>2021 Deliverance Church Donholm</span></div></div><section id="campus-info" class="sectionContainer campusInfo"><div class="socialLinksContainer">
+        <ul class="socialLinks"><li><a href="https://web.facebook.com/dcdonholm/?_rdc=1&_rdr" title="Facebook" target="_blank"><span aria-hidden="true" class="icon-facebook-box"></span></a></li><li><a href="https://twitter.com/dcdonholm?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="Twitter" target="_blank"><span aria-hidden="true" class="icon-twitter-box"></span></a></li><li><a href="https://www.youtube.com/channel/UC8Rhgh8d4ARCQ9bSWm3n8LQ" title="YouTube" target="_blank"><span aria-hidden="true" class="icon-youtube-box"></span></a></li><li><a href="https://www.instagram.com/dcdonholm/?hl=en" title="Instagram" target="_blank"><span aria-hidden="true" class="icon-instagram-box"></span></a></li></ul></div></section>
+
+</section></nav></section><!-- END FOOTER -->
+</div><script type="text/javascript">
+        var $buoop = { vs: { i: 10 }, reminder: 24 };
+        $buoop.ol = window.onload;
+        window.onload = function () {
+            try { if ($buoop.ol) $buoop.ol(); } catch (e) { }
+            var e = document.createElement("script");
+            e.setAttribute("type", "text/javascript");
+            e.setAttribute("src", "../../../browser-update.org/update.js");
+            document.body.appendChild(e);
+        }
+    </script><script>
+//<![CDATA[
+        $(document).ready(function(){
+            var v2BasketCheck = setInterval(function() {
+                if($('.v2Module.loaded').length && $('#basketButtonid1').children().length && $('#basketButtonid1 basketbutton').children('a').length) {
+                        //once the children objects are rendered, if there is a link for the basket,
+                        //add a divider to the top links
+                        clearInterval(v2BasketCheck);
+                        $('#basketButtonid1').parents('li').before('<li class="topLinksDivider"></li>');
+                }
+            },100);
+
+            $('#CampusPageSearchToggle').on('click', function(){
+                $('.nav-campus-search').addClass('search-open');
+                $('#CampusPageSearchToggle .icon-close').css('display', 'flex');
+                $('#CampusPageSearchToggle .icon-search').hide();
+            });
+
+            $('#SearchForm #TextSearch').focus(function(){
+                $('#CampusPageSearchToggle .icon-search').css('display', 'flex').addClass('search-now');
+                $('#searchCloseBtn').show();
+                $('#CampusPageSearchToggle .icon-close').hide();
+            });
+
+            $(document).on('click', '#CampusPageSearchToggle .icon-close', function () {
+                $('.nav-campus-search').removeClass('search-open');
+                $('#searchCloseBtn').hide();
+                $('#CampusPageSearchToggle .icon-close').hide();
+                $('#CampusPageSearchToggle .icon-search').show();
+            });
+
+            $('#searchCloseBtn').on('click', function(){
+                $('#CampusPageSearchToggle .icon-search').removeClass('search-now');
+                $('#CampusPageSearchToggle .icon-search').hide();
+                $('#CampusPageSearchToggle .icon-close').css('display', 'flex');
+                $('#searchCloseBtn').hide();
+                $("#TextSearch").val('');
+            });
+
+            $(document).on('click', '#CampusPageSearchToggle .search-now', function () {
+                if ($("#TextSearch").val() == "") {
+                    $("#TextSearch").attr("placeholder", "Search");
+                    return false;
+                }
+
+                $('#SearchForm').submit();
+            });
+            
+            if (!Modernizr.cookies && $.cookie('CookieNotificationClosed') !== 'true') {
+                $('.cookies-notification-container').slideDown();
+            }
+            $('.cookies-learnmore-link').click(function() {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else {
+                    $(this).addClass('active');
+                }
+                $('.cookies-notification').toggleClass('active');
+            });
+            $('.cookies-close-btn').click(function() {
+                $('.cookies-notification-container').slideUp();
+                $.cookie('CookieNotificationClosed', 'true', { expires: 30 });
+            });
+            
+            //Hamburger menu animation
+            //Did not use toggle class so that I could control the speed of each class addition and removal
+            $(document).on('click', '#navMoreBtn.nav-more-closed', function(){
+                $(this).addClass('more-open');
+                $(this).removeClass('nav-more-closed');
+                // $('#nav-icon3').addClass('open');
+                // $('#nav-icon3').removeClass('nav-icon-closed');
+                $('.wrapper .header').addClass('nav-menu-open');
+            });
+            $(document).on('click', '#navMoreBtn.more-open', function(){
+                
+                $(this).addClass('nav-more-closed');
+                $(this).removeClass('more-open');
+                // $('#nav-icon3').removeClass('open');
+                // $('#nav-icon3').addClass('nav-icon-closed');    
+                $('.wrapper .header').removeClass('nav-menu-open');
+            });
+        });
+        //]]></script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHXJPB2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>//</noscript><!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>
+
+
+<!-- 247247 -->
+<!-- kenema paybill -->
+<!-- kkfjmmfkkgjl -->
+<!-- 303030 -->

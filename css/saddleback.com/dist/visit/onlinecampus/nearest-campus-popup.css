@@ -1,0 +1,296 @@
+html {
+  overflow: unset !important;
+  margin-right: 0 !important;
+}
+
+.mfp-bg {
+  display: none;
+}
+
+iframe:not(#chatFrame) {
+  height: 194px;
+  padding-bottom: 24px;
+}
+
+.mfp-wrap {
+  overflow: unset !important;
+  z-index: 1;
+  bottom: 253px;
+  top: unset !important;
+  left: unset;
+  right: 0;
+  width: auto;
+  height: auto !important;
+  position: fixed !important;
+  width: 100%;
+  max-width: 635px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+#redesigned-theme-2018 #public {
+  display: none !important;
+}
+
+.prayer-popup-active .mfp-wrap {
+  bottom: 338px;
+}
+.prayer-popup-active .nearestLocationListsContainer {
+  padding: 0;
+}
+
+.mfp-container {
+  padding: 0;
+  height: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 12px 14px rgba(0, 0, 0, 0.301164);
+}
+
+#NearestLocationList {
+  margin: 0;
+}
+#NearestLocationList .location-item {
+  margin: 0;
+}
+#NearestLocationList .rsArrow {
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 38px;
+  height: 40px;
+  background: rgba(77, 77, 79, 0.699191);
+  opacity: 0.7 !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+#NearestLocationList .rsArrow .rsArrowIcn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100%;
+}
+#NearestLocationList .rsArrow .rsArrowIcn:after {
+  font-family: 'SB-Icons' !important;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+#NearestLocationList .rsArrowLeft {
+  left: -16px;
+  right: unset;
+}
+#NearestLocationList .rsArrowLeft .rsArrowIcn:after {
+  content: '\e947';
+}
+#NearestLocationList .rsArrowRight {
+  right: -16px;
+  left: unset;
+}
+#NearestLocationList .rsArrowRight .rsArrowIcn:after {
+  content: '\e948';
+}
+
+.nearestLocationListsContainer {
+  padding: 16px 16px 8px;
+  min-height: 253px;
+}
+
+#nearestCampusPopup .nearest-campus-popup .mfp-close {
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  background: #4d4d4f;
+  font-size: 17px;
+  top: -8px;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .desktop-pastor-image {
+  display: none;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-distance-container {
+  margin-bottom: 8px;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-distance-container .nearestCampusDistanceText {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #F47A46;
+  margin: 0 4px 0 0;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-distance-container .nearestCampusDistance {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #F47A46;
+  margin: 0;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearestCampusNameContainer {
+  margin-bottom: 8px;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearestCampusNameContainer .toggleInfo {
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.923077px;
+  color: #00aeef;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-pastor-image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-bottom: 8px;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-pastor-image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-pastor-image .toggleInfo {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin: 0 0 0 16px;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-pastor-info {
+  margin-bottom: 16px;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-pastor-info .toggleInfo.name {
+  display: none;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-pastor-info .toggleInfo.info {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.8px;
+  color: #4d4d4f;
+  margin: 0;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .linkContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .linkContainer .btn {
+  width: 50%;
+  height: 46px;
+  border-radius: 8px;
+}
+#nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .linkContainer .btn:first-of-type {
+  margin-right: 8px;
+}
+#nearestCampusPopup .nearest-campus-popup .prayer-request .missed-message {
+  display: none;
+}
+#nearestCampusPopup .nearest-campus-popup .prayer-request .nearestCampusInfoContainer .nearest-campus-inner .nearestCampusNameContainer {
+  padding: 16px 16px 0;
+}
+#nearestCampusPopup .nearest-campus-popup .prayer-request .nearestCampusInfoContainer .nearest-campus-inner .nearestCampusNameContainer .toggleInfo {
+  white-space: unset;
+  overflow: unset;
+  text-overflow: unset;
+}
+#nearestCampusPopup .nearest-campus-popup .prayer-request .nearestCampusInfoContainer .nearest-campus-inner .nearest-pastor-image {
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 650px) {
+  .mfp-wrap {
+    bottom: 281px;
+  }
+
+  .nearestLocationListsContainer {
+    padding: 24px;
+    min-height: 265px;
+  }
+
+  #nearestCampusPopup .nearest-campus-popup .mfp-close {
+    top: 24px;
+    right: 24px;
+  }
+  #nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  #nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .desktop-pastor-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  #nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner {
+    min-width: 387px;
+  }
+  #nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-pastor-image {
+    display: none;
+  }
+  #nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-pastor-info {
+    margin-bottom: 16px;
+  }
+  #nearestCampusPopup .nearest-campus-popup .nearestCampusInfoContainer .nearest-campus-inner .nearest-pastor-info .toggleInfo.name {
+    max-width: 300px;
+    display: block;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #4d4d4f;
+    margin: 0 0 8px;
+  }
+  #nearestCampusPopup .nearest-campus-popup .prayer-request .missed-message {
+    display: block;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 1.07692px;
+    color: #f47a46;
+    padding: 24px 95px 0 24px;
+    margin-bottom: 16px;
+  }
+  #nearestCampusPopup .nearest-campus-popup .prayer-request .nearestCampusInfoContainer {
+    padding: 0 24px;
+  }
+  #nearestCampusPopup .nearest-campus-popup .prayer-request .nearestCampusInfoContainer .nearest-campus-inner {
+    min-width: 408px;
+  }
+  #nearestCampusPopup .nearest-campus-popup .prayer-request .nearestCampusInfoContainer .nearest-campus-inner .nearestCampusNameContainer {
+    display: none;
+  }
+  #nearestCampusPopup .nearest-campus-popup .prayer-request .nearestCampusInfoContainer .nearest-campus-inner .nearest-pastor-info {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mfp-wrap {
+    right: 8px;
+  }
+
+  .mfp-content {
+    padding: 0;
+  }
+
+  .prayer-popup-active .mfp-wrap {
+    bottom: 356px;
+  }
+}

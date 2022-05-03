@@ -1,0 +1,518 @@
+.relief-no-scroll {
+  position: relative;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+section.content.alert-above {
+  z-index: 1000;
+}
+
+.ad-ticker-minimized {
+  transition: all 0.4s;
+  margin-top: -60px;
+}
+
+.ad-ticker-section {
+  position: fixed;
+  overflow-y: auto;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  margin-top: -88px;
+  padding-top: 18px;
+}
+.ad-ticker-section.basic {
+  margin-top: -133px;
+}
+.ad-ticker-section.basic .ad-ticker-background {
+  height: 115px;
+}
+.ad-ticker-section.basic .ad-ticker-background .ad-ticker-title-container {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.ad-ticker-section.basic .ad-ticker-background .ad-ticker-title-container .ad-ticker-title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: unset;
+  margin: 0 auto 8px;
+  text-transform: unset;
+}
+.ad-ticker-section.basic .ticker-close {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  z-index: 100;
+}
+.ad-ticker-section.basic .ticker-close .icon-close {
+  display: block !important;
+  color: #00aeef;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #00aeef;
+  cursor: pointer;
+}
+.ad-ticker-section #adTickerCloseBtn {
+  display: none;
+}
+.ad-ticker-section #adTickerNewCloseBtn {
+  display: none;
+}
+.ad-ticker-section .full-ad-btn {
+  display: none;
+}
+.ad-ticker-section.open {
+  margin-top: 0;
+  padding-top: 0;
+  top: 0px;
+  min-height: 568px;
+  margin-top: 0px;
+}
+.ad-ticker-section.open .ad-ticker-background {
+  height: 100%;
+  min-height: 100%;
+  overflow-y: auto;
+  margin: 0;
+  background-size: auto;
+}
+.ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 32px 15px;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  height: 100%;
+}
+.ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-ticker-title-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 530px;
+}
+.ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-ticker-title-inner.foreground-included {
+  position: unset;
+  -webkit-transform: unset;
+          transform: unset;
+}
+.ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-btn-container.foreground-included {
+  margin-top: 48px;
+}
+.ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-ticker-header {
+  display: block;
+}
+.ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-to-fullscreen {
+  display: none;
+}
+.ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-ticker-foreground-img {
+  display: block;
+}
+.ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-ticker-fullscreen-caption {
+  display: block;
+}
+.ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-ticker-subtitle {
+  display: block;
+}
+.ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-ticker-btn-header {
+  display: block;
+}
+.ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-ticker-title {
+  display: none;
+}
+.ad-ticker-section.open #adTickerCloseBtn {
+  display: block;
+}
+.ad-ticker-section.open #adTickerNewCloseBtn {
+  display: none;
+}
+.ad-ticker-section.open .full-ad-btn {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.ad-ticker-section .ad-ticker-background {
+  height: 70px;
+  overflow-y: auto;
+  margin: 0;
+  background-size: auto;
+  display: block;
+  background-image: linear-gradient(360deg, #4095B6 0%, #6DCFF6 100%);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.ad-ticker-section .ad-ticker-background .ad-ticker-title-container {
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  text-align: left;
+  -webkit-transform: unset;
+          transform: unset;
+  height: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0 15px;
+}
+.ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-header {
+  display: none;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 16px;
+}
+.ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-foreground-img {
+  display: none;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  min-width: auto;
+  margin: 0 auto 24px;
+}
+.ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-fullscreen-caption {
+  display: none;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 2.53571px;
+  color: #FFF;
+  margin-bottom: 16px;
+}
+.ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-subtitle {
+  display: none;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFF;
+  margin: 0;
+}
+.ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  margin: 0 16px 0 0;
+  width: auto;
+  color: #fff;
+}
+.ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-btn-header {
+  display: none;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 16px;
+}
+.ad-ticker-section .ad-ticker-background .ad-ticker-title-container .btn {
+  width: auto;
+  padding: 8px 16px;
+  max-width: 100%;
+  min-width: 200px;
+  height: 40px;
+  background: #FFFFFF;
+  color: #4d4d4f;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1.42857px;
+  border: none;
+}
+.ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-to-fullscreen {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-to-fullscreen .ad-fulscreen-expand {
+  display: none;
+  margin: 0 5px 0 0;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  margin: 0 10px 0 0;
+  color: #fff;
+  cursor: pointer;
+}
+.ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-to-fullscreen .icon-arrow-up {
+  display: block;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(77, 77, 79, 0.7);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.ad-ticker-section .ticker-close {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 100;
+}
+.ad-ticker-section .ticker-close .icon-close {
+  display: block;
+  color: #fff;
+  padding: 8px;
+  background: rgba(77, 77, 79, 0.7);
+  cursor: pointer;
+}
+.ad-ticker-section .ticker-close .icon-close:hover {
+  background-color: #fff;
+  color: #4d4d4f;
+}
+
+@media screen and (min-width: 414px) {
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-title {
+    font-size: 20px;
+  }
+
+  .relief-alert-minimized .relief-alert-background .relief-alert-title-container .relief-alert-title {
+    font-size: 16px;
+    line-height: 35px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-fullscreen-caption {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-btn-header {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-foreground-img {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .ad-ticker-section {
+    margin-top: -82px;
+  }
+  .ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container {
+    padding: 0 15px 124px;
+  }
+  .ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-btn-container.foreground-included {
+    margin-top: 72px;
+  }
+  .ad-ticker-section.open .ad-ticker-background .ad-ticker-title-container .ad-ticker-foreground-img {
+    max-width: 430px;
+  }
+  .ad-ticker-section.basic {
+    margin-top: -82px;
+  }
+  .ad-ticker-section.basic .ad-ticker-background {
+    height: 64px;
+  }
+  .ad-ticker-section.basic .ad-ticker-background .ad-ticker-title-container {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .ad-ticker-section.basic .ad-ticker-background .ad-ticker-title-container .ad-ticker-title {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    margin: 0 32px 0 0;
+  }
+  .ad-ticker-section.basic .ticker-close {
+    right: 16px;
+  }
+  .ad-ticker-section .ad-ticker-background {
+    height: 64px;
+  }
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-title {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    padding: 0;
+  }
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-header {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-fullscreen-caption {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 2.53571px;
+    margin-bottom: 32px;
+  }
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-ticker-btn-header {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-to-fullscreen {
+    position: absolute;
+    right: 24px;
+    margin-left: auto;
+  }
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-to-fullscreen .ad-fulscreen-expand {
+    display: block;
+  }
+}
+@media screen and (min-width: 950px) {
+  .ad-ticker-section .ad-ticker-background .ad-ticker-title-container .ad-to-fullscreen {
+    right: 86px;
+  }
+}
+@media screen and (min-height: 300px) and (orientation: landscape) {
+  .ad-ticker-section.open .ad-ticker-background.no-img-no-caption .ad-ticker-title-container .ad-btn-container {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything {
+    -ms-flex-align: start;
+        align-items: flex-start;
+    padding: 16px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container {
+    padding: 0 15px 32px;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-title-inner {
+    position: unset;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-fullscreen-caption {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-subtitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-title {
+    font-size: 12px;
+    margin: 0 16px 0 0;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-btn-header {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 16px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-btn-container {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-btn-container.foreground-included {
+    margin-top: 16px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-btn-container.foreground-included .ad-ticker-btn-header {
+    margin-bottom: 16px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-foreground-img {
+    max-width: 100px;
+    margin: 0 auto 16px;
+  }
+}
+@media screen and (min-height: 768px) and (orientation: landscape) {
+  .ad-ticker-section.open .ad-ticker-background.no-img-no-caption .ad-ticker-title-container .ad-btn-container {
+    bottom: 32px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container {
+    padding: 72px 15px 72px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-fullscreen-caption {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-btn-header {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-btn-container {
+    bottom: 32px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-foreground-img {
+    max-width: 300px;
+  }
+}
+@media screen and (min-height: 1000px) and (orientation: landscape) {
+  .ad-ticker-section.open .ad-ticker-background.no-img-no-caption .ad-ticker-title-container .ad-btn-container {
+    bottom: 72px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container {
+    padding: 72px 15px 72px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-fullscreen-caption {
+    font-size: 72px;
+    line-height: 85px;
+    margin-bottom: 32px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-subtitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-btn-header {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-btn-container {
+    bottom: 72px;
+  }
+  .ad-ticker-section.open .ad-ticker-background.everything .ad-ticker-title-container .ad-ticker-foreground-img {
+    max-width: 400px;
+  }
+}

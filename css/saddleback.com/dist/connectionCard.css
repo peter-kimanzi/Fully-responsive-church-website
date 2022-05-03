@@ -1,0 +1,237 @@
+@import "https://fonts.googleapis.com/css?family=Lato:300,400,700,900|PT+Serif:400,700";
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+html {
+  overflow: visible !important;
+}
+
+h2, .beta {
+  color: #4d4d4f;
+  display: block;
+  font: normal 24px/30px "Lato", Arial;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-bottom: 11px;
+  text-transform: none;
+}
+
+label {
+  color: #878787;
+  display: block;
+  font: 12px 'Lato';
+  letter-spacing: 1.1px;
+  margin-bottom: 3px;
+}
+
+.rating span {
+  width: 32px;
+  height: 32px;
+  padding-right: 1.2em !important;
+  font-size: 32px !important;
+}
+.rating span:before {
+  font-size: 32px;
+}
+
+.wufoo .info {
+  display: none;
+}
+.wufoo label.desc, .wufoo legend.desc {
+  color: #878787;
+  display: block;
+  font: 12px 'Lato';
+  letter-spacing: 1.1px;
+  margin-bottom: 3px;
+  -webkit-margin-bottom-collapse: separate;
+}
+.wufoo label span {
+  font-weight: normal !important;
+}
+.wufoo label.choice {
+  color: #4d4d4f;
+  font-family: Lato;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  line-height: 1.43;
+}
+.wufoo span.subfield {
+  padding: 12px 0 12px 26px;
+}
+.wufoo span.subfield label {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.wufoo input[type=text], .wufoo input[type=email], .wufoo input[type=tel], .wufoo textarea {
+  background: none;
+  border: 0;
+  border: 1px solid #4d4d4f;
+  border-radius: 2px;
+  color: #4d4d4f;
+  font: 14px "Lato", Arial;
+  font-style: normal;
+  height: 36px;
+  letter-spacing: 1px;
+  padding: 0 0 0 5px;
+  width: 100%;
+}
+.wufoo input[type=text]:focus, .wufoo input[type=email]:focus, .wufoo input[type=tel]:focus, .wufoo textarea:focus {
+  border-color: #00aeef;
+  outline: 0;
+}
+.wufoo input[type=text].disabled, .wufoo input[type=text].inactive, .wufoo input[type=email].disabled, .wufoo input[type=email].inactive, .wufoo input[type=tel].disabled, .wufoo input[type=tel].inactive, .wufoo textarea.disabled, .wufoo textarea.inactive {
+  border: 0;
+}
+.wufoo input[type=text]:last-child, .wufoo input[type=email]:last-child, .wufoo input[type=tel]:last-child, .wufoo textarea:last-child {
+  margin-bottom: 0;
+}
+.wufoo input[type=text].parsley-error, .wufoo input[type=email].parsley-error, .wufoo input[type=tel].parsley-error, .wufoo textarea.parsley-error {
+  margin-bottom: 5px;
+}
+.wufoo input[type=text].textarea, .wufoo input[type=email].textarea, .wufoo input[type=tel].textarea, .wufoo textarea.textarea {
+  color: #4d4d4f;
+  font-size: 14px;
+  min-height: 100px;
+  padding: 5px;
+}
+.wufoo input[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+}
+.wufoo input[type=checkbox] + label:before {
+  content: "";
+  background: white;
+  border: 2px solid #878787;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  height: 16px;
+  left: -26px;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+.wufoo input[type=checkbox]:focus {
+  outline: 0;
+}
+.wufoo input[type=checkbox]:checked + label:before {
+  background: #00aeef;
+  border: 0;
+}
+.wufoo input[type=checkbox]:checked + label:after {
+  color: white;
+  content: '\e00a';
+  font-family: 'sb-im-default';
+  font-size: 10px;
+  left: -23px;
+  position: absolute;
+  top: 2px;
+}
+.wufoo li span {
+  color: #4d4d4f;
+}
+.wufoo li.focused {
+  background-color: none !important;
+  background: none !important;
+}
+.wufoo li.focused label.desc {
+  color: #878787;
+}
+.wufoo li.threeColumns div span {
+  width: 100%;
+}
+.wufoo select.select {
+  border: 0;
+  border: 1px solid #4d4d4f;
+  border-radius: 2px;
+  color: #4d4d4f;
+  font: 14px "Lato", Arial;
+  height: 36px;
+  position: relative;
+  width: 100%;
+}
+.wufoo select.select:focus {
+  border-color: #00aeef;
+  outline: 0;
+}
+.wufoo fieldset:before {
+  content: " ";
+  display: table;
+}
+.wufoo legend {
+  display: block;
+}
+.wufoo legend h3 {
+  color: #4d4d4f;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+.wufoo legend h3 + span {
+  font-family: Lato;
+  color: #878787;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  line-height: 1.43;
+}
+.wufoo legend span {
+  color: #4d4d4f;
+  display: block;
+  font-family: Lato;
+  font-size: 16px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.wufoo li h3 {
+  color: #4d4d4f;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+.wufoo input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: 0;
+  background: #00aeef;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font: 900 14px/36px "Lato", Arial;
+  height: 36px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+.wufoo input[type=submit]:hover {
+  background: #0093c6;
+}
+
+@media screen and (min-width: 568px) {
+  .wufoo li.threeColumns div span {
+    width: 50%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wufoo li.threeColumns div span {
+    width: 30%;
+    margin: 0 5px 0 0;
+  }
+  .wufoo input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+  }
+}

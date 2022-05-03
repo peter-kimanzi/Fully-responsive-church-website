@@ -1,0 +1,1399 @@
+/* Ellipsis Script */
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
+}
+
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+}
+
+/* End Ellipsis Script */
+/* Popup Tabs Code */
+.tabs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 700px;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+}
+
+.popup-radio-btn {
+  display: none !important;
+}
+
+.label {
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px !important;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  transition: background 0.1s, color 0.1s;
+  width: 100%;
+  text-align: center;
+}
+.label:first-of-type {
+  -ms-flex-order: -2;
+      order: -2;
+  margin-bottom: 16px !important;
+}
+.label:last-of-type {
+  -ms-flex-order: -1;
+      order: -1;
+}
+
+.input:focus + .label {
+  z-index: 1;
+}
+
+.input:checked + .label {
+  color: #00aeef;
+}
+
+.panel {
+  display: none;
+  margin-top: 16px !important;
+  padding-top: 32px;
+  border-top: solid 1px #bcbec0;
+}
+
+@media screen and (min-width: 450px) {
+  .label {
+    width: auto;
+    text-align: left;
+    padding: 0 0 8px !important;
+  }
+  .label:first-of-type {
+    margin-right: 20px;
+    margin-bottom: 0 !important;
+  }
+  .label:last-of-type {
+    margin-left: 20px;
+  }
+
+  .input:checked + .label {
+    padding: 0 0 6px !important;
+    border-bottom: solid 2px #00aeef;
+  }
+
+  .panel {
+    margin-top: 0 !important;
+  }
+}
+@media (min-width: 600px) {
+  .label {
+    width: auto;
+  }
+}
+@media (min-width: 600px) {
+  .panel {
+    -ms-flex-order: 99;
+        order: 99;
+  }
+}
+.input:checked + .label + .panel {
+  display: block;
+  width: 100%;
+}
+
+/* End Popup Tabs Code */
+.service-popup .popup {
+  min-height: 720px;
+}
+.service-popup .popup .icon-close {
+  font-size: 14px;
+}
+.service-popup .popup-inner .faff-popup-header {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #4d4d4f;
+}
+.service-popup .popup-inner .faff-popup-description {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 40px;
+}
+
+#volunteerOppsPopup .popup .icon-close {
+  font-size: 14px;
+}
+#volunteerOppsPopup .popup .popup-inner .faff-volunteer-item {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: solid 1px #bcbec0;
+  width: 100%;
+}
+#volunteerOppsPopup .popup .popup-inner .faff-volunteer-item .faff-volunteer-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 100%;
+}
+#volunteerOppsPopup .popup .popup-inner .faff-volunteer-item .faff-volunteer-inner:hover {
+  text-decoration: none;
+}
+#volunteerOppsPopup .popup .popup-inner .faff-volunteer-item .faff-volunteer-inner .faff-volunteer-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 96%;
+}
+#volunteerOppsPopup .popup .popup-inner .faff-volunteer-item .faff-volunteer-inner .faff-volunteer-info .icon-arrow-right {
+  width: 4%;
+}
+#volunteerOppsPopup .popup .popup-inner .faff-volunteer-item .faff-volunteer-inner .faff-volunteer-info .faff-volunteer-img {
+  width: 20%;
+  min-width: 60px;
+  max-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0;
+}
+#volunteerOppsPopup .popup .popup-inner .faff-volunteer-item .faff-volunteer-inner .faff-volunteer-info .faff-volunteer-text {
+  margin-left: 16px;
+  width: 65%;
+}
+#volunteerOppsPopup .popup .popup-inner .faff-volunteer-item .faff-volunteer-inner .faff-volunteer-info .faff-volunteer-text .ministry-title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #4d4d4f;
+}
+#volunteerOppsPopup .popup .popup-inner .faff-volunteer-item .faff-volunteer-inner .faff-volunteer-info .faff-volunteer-text .ministry-title:hover {
+  text-decoration: none;
+}
+#volunteerOppsPopup .popup .popup-inner .faff-volunteer-item .faff-volunteer-inner .faff-volunteer-info .faff-volunteer-text .ministry-description {
+  font-size: 13px;
+  line-height: 22px;
+  color: #bcbec0;
+  margin: 0;
+}
+
+.faff-header-section .faff-header {
+  position: relative;
+}
+.faff-header-section .faff-header .faff-header-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 0 32px;
+  width: 100%;
+  max-width: 386px;
+}
+.faff-header-section .faff-header .faff-header-inner .faff-logo {
+  min-width: unset;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.faff-header-section .faff-header .faff-header-inner .btn {
+  height: 46px;
+  width: 230px;
+  border-radius: 15px;
+}
+.faff-header-section .faff-header .faff-header-inner .btn:first-of-type {
+  margin-bottom: 32px;
+}
+
+.faff-intro-section {
+  margin: 0 16px 64px;
+}
+.faff-intro-section .faff-intro h2 {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 1.44444px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.faff-intro-section .faff-intro h2:after {
+  border-top: solid 4px #F15B4E;
+  width: 71px;
+  margin-left: unset;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.faff-intro-section .faff-intro h2:before {
+  border-top: solid 4px #F15B4E;
+  width: 71px;
+  margin-left: unset;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.faff-intro-section .faff-intro p {
+  margin: 0;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+}
+
+.event-list-embed {
+  margin: 0 0 60px !important;
+}
+.event-list-embed h2 {
+  display: none;
+}
+.event-list-embed .event-campus {
+  display: none;
+}
+.event-list-embed .event-venue + .spacer {
+  display: none;
+}
+
+.faff-event-list.no-events {
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #4d4d4f;
+  width: 100%;
+}
+.faff-event-list.no-events:before {
+  content: 'Check back soon!';
+  display: block;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 16px;
+}
+
+.faff-wufoo-form {
+  width: 100%;
+}
+.faff-wufoo-form iframe {
+  min-height: 800px;
+}
+
+.services-container {
+  padding-top: 40px;
+}
+
+.faff-services-section {
+  margin: 0 16px 64px;
+}
+
+.services-filter-container.desktop {
+  display: none;
+}
+
+.services-filter-container .services-filter-label {
+  font-size: 13px;
+  line-height: 24px;
+  color: #4d4d4f;
+  margin: 0 0 8px;
+}
+
+.service-item {
+  margin: 0 0 24px;
+  padding-bottom: 16px;
+  border-bottom: solid 1px #bcbec0;
+}
+.service-item .service-popup-open {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.service-item .service-popup-open:hover {
+  text-decoration: none !important;
+}
+.service-item .service-item-title-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+}
+.service-item .service-item-title-container .service-item-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.service-item .service-item-title-container .service-item-title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #00aeef;
+  margin: 0;
+  padding-left: 16px;
+}
+.service-item .service-item-title-container .service-item-title:hover {
+  text-decoration: underline;
+}
+.service-item .service-item-description {
+  width: 100%;
+  color: #878787;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 20px;
+}
+.service-item .service-item-description:hover {
+  text-decoration: none !important;
+}
+.service-item .arrow-icon-container {
+  display: none;
+}
+
+.faff-resources-section {
+  margin: 0 16px 48px;
+}
+.faff-resources-section .faff-resources-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 -7px;
+}
+.faff-resources-section .faff-resources-inner .resources-item {
+  width: 50%;
+  height: 100%;
+  min-height: 147px;
+  max-height: 220px;
+  padding: 0 7px;
+  margin: 0 0 16px;
+}
+.faff-resources-section .faff-resources-inner .resources-item .resources-item-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #F15B4E 0%, rgba(241, 91, 78, 0.5) 100%);
+  min-height: 147px;
+  margin: 0;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 0 16px;
+  color: #fff;
+}
+
+.faff-training-section {
+  margin: 0 16px 64px;
+}
+.faff-training-section .faff-training-inner .faff-training-item {
+  margin-bottom: 32px;
+  display: inline-block;
+}
+.faff-training-section .faff-training-inner .faff-training-item:last-of-type {
+  margin-bottom: 0;
+}
+.faff-training-section .faff-training-inner .faff-training-item:hover {
+  text-decoration: none;
+}
+.faff-training-section .faff-training-inner .faff-training-item img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.faff-training-section .faff-training-inner .faff-training-item p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4d4d4f;
+  margin: 0;
+}
+
+.faff-givehelp-section {
+  margin: 0 16px 64px;
+}
+.faff-givehelp-section .faff-givehelp-intro {
+  margin: 0 0 48px;
+}
+.faff-givehelp-section .faff-givehelp-intro h2 {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 1.44444px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.faff-givehelp-section .faff-givehelp-intro h2:after {
+  border-top: solid 4px #F15B4E;
+  width: 71px !important;
+  margin-left: unset !important;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.faff-givehelp-section .faff-givehelp-intro h2:before {
+  border-top: solid 4px #F15B4E;
+  width: 71px !important;
+  margin-left: unset !important;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.faff-givehelp-section .faff-givehelp-intro p {
+  margin: 0;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+}
+.faff-givehelp-section .faff-givehelp-item-container .faff-givehelp-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 48px;
+  max-width: 400px;
+  margin: 0 auto 48px;
+}
+.faff-givehelp-section .faff-givehelp-item-container .faff-givehelp-item:last-of-type {
+  margin-bottom: 0;
+}
+.faff-givehelp-section .faff-givehelp-item-container .faff-givehelp-item img {
+  width: 100%;
+  margin: 0 0 24px;
+}
+.faff-givehelp-section .faff-givehelp-item-container .faff-givehelp-item h4 {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 16px;
+}
+.faff-givehelp-section .faff-givehelp-item-container .faff-givehelp-item p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #bcbec0;
+  margin-bottom: 24px;
+}
+.faff-givehelp-section .faff-givehelp-item-container .faff-givehelp-item .btn {
+  height: 46px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#careLandingPage .faff-header-section .covid-info-container {
+  margin: 32px 16px 54px;
+}
+#careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-image {
+  display: block;
+  margin: 0 auto 16px;
+}
+#careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-text-container img {
+  display: block;
+}
+#careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-text-container img.mobile {
+  margin: 0 auto 16px;
+}
+#careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-text-container img.desktop {
+  display: none;
+}
+#careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-text-container .covid-info {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 auto 16px;
+  width: 100%;
+  max-width: 430px;
+}
+#careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-text-container .btn {
+  width: 100%;
+  border-radius: 15px;
+  height: 46px;
+}
+#careLandingPage .faff-header-section .here-for-you-container {
+  margin-bottom: 64px;
+}
+#careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-image-container {
+  position: relative;
+  margin: 0 0 32px;
+}
+#careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-image-container .here-for-you-background {
+  background: linear-gradient(180deg, #4FBBBE 0%, #00AEEF 100%);
+  height: 204px;
+  width: 100%;
+  display: block;
+  margin-bottom: 170px;
+}
+#careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-image-container .here-for-you-image {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  margin: 0 auto;
+}
+#careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-info-container {
+  padding: 0 16px;
+}
+#careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-info-container .here-for-you-header {
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.655172px;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto 16px;
+  color: #4FBBBE;
+}
+#careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-info-container .here-for-you-text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+}
+#careLandingPage .saddlback-cares-container {
+  height: 615px;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 64px;
+}
+#careLandingPage .saddlback-cares-container:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+#careLandingPage .saddlback-cares-container .saddleback-cares-inner {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+#careLandingPage .saddlback-cares-container .saddleback-cares-inner .saddleback-cares-header {
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.655172px;
+  margin: 0 auto 32px;
+  color: #fff;
+  width: 100%;
+  max-width: 288px;
+}
+#careLandingPage .saddlback-cares-container .saddleback-cares-inner .saddleback-cares-text {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 275px;
+  color: #fff;
+}
+#careLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner {
+  padding: 0 16px;
+}
+#careLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner .saddleback-cares-header {
+  max-width: 270px;
+}
+#careLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner .saddleback-cares-text {
+  margin: 0 auto 32px;
+}
+#careLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner .btn {
+  height: 46px;
+  border-radius: 15px;
+  width: 100%;
+}
+#careLandingPage .faff-services-section .titleBar {
+  margin-bottom: 8px;
+}
+#careLandingPage .faff-services-section .titleBar .desktop-titleBar {
+  display: none;
+}
+#careLandingPage .faff-services-section .mobile-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #bcbec0;
+}
+
+#peaceCenterLandingPage .faff-header-section .faff-header .faff-header-inner .peace-center-header {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+#peaceCenterLandingPage .faff-intro-section .faff-intro h2 {
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  color: #4D4D4F;
+}
+#peaceCenterLandingPage .faff-intro-section .faff-intro h2:before {
+  display: none;
+}
+#peaceCenterLandingPage .faff-intro-section .faff-intro h2:after {
+  display: none;
+}
+#peaceCenterLandingPage .faff-intro-section .faff-intro p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #4D4D4F;
+  margin-bottom: 8px;
+}
+#peaceCenterLandingPage .faff-intro-section .faff-intro a {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1.16667px;
+  text-align: center;
+}
+#peaceCenterLandingPage .saddlback-cares-container {
+  height: 481px;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 64px;
+}
+#peaceCenterLandingPage .saddlback-cares-container:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+#peaceCenterLandingPage .saddlback-cares-container .saddleback-cares-inner {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+#peaceCenterLandingPage .saddlback-cares-container .saddleback-cares-inner .saddleback-cares-header {
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.655172px;
+  margin: 0 auto 32px;
+  color: #fff;
+  width: 100%;
+  max-width: 288px;
+}
+#peaceCenterLandingPage .saddlback-cares-container .saddleback-cares-inner .saddleback-cares-text {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 275px;
+  color: #fff;
+}
+#peaceCenterLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner {
+  padding: 0 16px;
+}
+#peaceCenterLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner .saddleback-cares-header {
+  max-width: 270px;
+}
+#peaceCenterLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner .saddleback-cares-text {
+  margin: 0 auto 32px;
+}
+#peaceCenterLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner .btn {
+  height: 46px;
+  border-radius: 15px;
+  width: 230px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+}
+#peaceCenterLandingPage .faff-givehelp-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-bottom: solid 1px #bcbec0;
+  border-top: solid 1px #bcbec0;
+}
+#peaceCenterLandingPage .peace-center-locations-section {
+  margin: 0 15px;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container {
+  background-image: linear-gradient(138deg, #F15B4E, #f99e49);
+  padding: 5px;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner {
+  background: #fff;
+  padding: 24px 16px;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-header {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #4D4D4F;
+  margin-bottom: 24px;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: solid 1px #BCBEC0;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin: 0;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item p, #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item a {
+  margin-bottom: 24px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item p span, #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item a span {
+  color: #BCBEC0;
+  font-size: 22px;
+  margin-right: 24px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 30px;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item p.location, #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item a.location {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1.14286px;
+  color: #4D4D4F;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item p.time, #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item a.time {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1.14286px;
+  color: #4D4D4F;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item p.email, #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item a.email {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item p.email span, #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item a.email span {
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 4px;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item p:last-of-type {
+  margin: 0;
+}
+#peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item a {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.8px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 575px) {
+  .mfp-content .popup .popup-inner {
+    padding: 30px;
+  }
+
+  .faff-intro-section {
+    margin: 0 32px 64px;
+  }
+
+  .faff-services-section {
+    margin: 0 32px 64px;
+  }
+
+  .faff-training-section {
+    margin: 0 32px 64px;
+  }
+  .faff-training-section .faff-training-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin: 0 -8px;
+  }
+  .faff-training-section .faff-training-inner .faff-training-item {
+    width: 50%;
+    padding: 0px 8px;
+  }
+
+  .faff-resources-section {
+    margin: 0 32px 48px;
+  }
+  .faff-resources-section .faff-resources-inner .resources-item {
+    min-height: 220px;
+  }
+  .faff-resources-section .faff-resources-inner .resources-item .resources-item-inner {
+    min-height: 220px;
+  }
+
+  .faff-givehelp-section {
+    margin: 0 32px 64px;
+  }
+
+  #careLandingPage .faff-header-section .covid-info-container {
+    margin: 0 32px 54px;
+  }
+  #careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-info-container {
+    padding: 0 32px;
+  }
+  #careLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner {
+    padding: 0 32px;
+  }
+
+  #peaceCenterLandingPage .peace-center-locations-section {
+    margin: 0 32px;
+  }
+  #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding: 24px 32px;
+  }
+  #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-header {
+    width: 100%;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item {
+    margin: 0 32px 24px;
+    border: none;
+  }
+  #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item:last-of-type {
+    margin: 0 32px 24px;
+  }
+  #peaceCenterLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner {
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .faff-intro-section .faff-intro {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .services-filter-container {
+    padding: 0 16px 8px;
+    border-bottom: solid 1px #878787;
+  }
+  .services-filter-container a {
+    margin-right: 48px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #4d4d4f;
+    position: relative;
+  }
+  .services-filter-container a.active {
+    color: #00aeef;
+  }
+  .services-filter-container a.active:after {
+    content: '';
+    width: 100%;
+    min-width: 50px;
+    height: 3px;
+    background: #00aeef;
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: -14px;
+  }
+  .services-filter-container a:hover {
+    text-decoration: none;
+  }
+  .services-filter-container a:last-of-type {
+    margin-right: 0;
+  }
+  .services-filter-container.desktop {
+    display: block;
+  }
+  .services-filter-container.mobile {
+    display: none;
+  }
+
+  .services-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  .services-container .service-item {
+    width: 50%;
+    max-width: 369px;
+    padding: 0 16px;
+    border: none;
+  }
+  .services-container .service-item .service-item-image {
+    width: 100px;
+    height: 100px;
+  }
+  .services-container .service-item .service-item-description {
+    margin-bottom: 16px;
+  }
+  .services-container .service-item .arrow-icon-container {
+    width: 100%;
+    padding-bottom: 16px;
+    border-bottom: solid 1px #bcbec0;
+    text-align: right;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: unset;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .services-container .service-item .arrow-icon-container .icon-arrow-right {
+    display: inline-block;
+    margin-left: 8px;
+    text-decoration: none;
+  }
+
+  .faff-givehelp-section .faff-givehelp-intro {
+    max-width: 650px;
+    margin: 0 auto 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mfp-content .popup .popup-inner {
+    padding: 30px 80px;
+  }
+
+  .faff-header-section .faff-header {
+    margin-bottom: 80px;
+  }
+  .faff-header-section .faff-header .faff-header-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding: 0;
+    max-width: 484px;
+    margin: 0 -12px;
+  }
+  .faff-header-section .faff-header .faff-header-inner .faff-logo {
+    width: 100%;
+    max-width: 356px;
+    margin: 0 auto 32px;
+  }
+  .faff-header-section .faff-header .faff-header-inner .btn {
+    width: 50%;
+    max-width: 230px;
+    padding: 0 12px;
+  }
+  .faff-header-section .faff-header .faff-header-inner .btn:first-of-type {
+    margin-bottom: 0;
+  }
+
+  .faff-intro-section .faff-intro h2 {
+    margin-bottom: 24px;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+  .faff-intro-section .faff-intro h2:after {
+    border-top: solid 5px #F15B4E;
+    width: 72px !important;
+  }
+  .faff-intro-section .faff-intro h2:before {
+    border-top: solid 5px #F15B4E;
+    width: 72px !important;
+  }
+
+  .faff-resources-section .faff-resources-inner .resources-item {
+    width: 33.3333333%;
+    max-width: 301px;
+  }
+
+  .faff-training-section {
+    padding-bottom: 80px;
+    border-bottom: solid 1px #878787;
+    margin: 0 30px 80px;
+  }
+
+  .faff-givehelp-section .faff-givehelp-intro h2 {
+    margin-bottom: 24px;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+  .faff-givehelp-section .faff-givehelp-intro h2:after {
+    border-top: solid 5px #F15B4E;
+    width: 72px !important;
+  }
+  .faff-givehelp-section .faff-givehelp-intro h2:before {
+    border-top: solid 5px #F15B4E;
+    width: 72px !important;
+  }
+  .faff-givehelp-section .faff-givehelp-item-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .faff-givehelp-section .faff-givehelp-item-container .faff-givehelp-item {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    margin-bottom: 60px;
+    max-width: unset;
+  }
+  .faff-givehelp-section .faff-givehelp-item-container .faff-givehelp-item .faff-givehelp-desktop {
+    margin-left: 32px;
+    max-width: 320px;
+  }
+  .faff-givehelp-section .faff-givehelp-item-container .faff-givehelp-item .faff-givehelp-desktop .btn {
+    max-width: 200px;
+  }
+  .faff-givehelp-section .faff-givehelp-item-container .faff-givehelp-item img {
+    max-width: 240px;
+    margin: 0;
+  }
+
+  h3.titleBar {
+    margin: 0 0 48px 0;
+  }
+
+  #careLandingPage .faff-header-section .covid-info-container {
+    margin: 32px 32px 64px;
+  }
+  #careLandingPage .faff-header-section .covid-info-container .covid-info-inner {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+  }
+  #careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-image {
+    width: auto;
+    height: 224px;
+  }
+  #careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-text-container img {
+    display: block;
+  }
+  #careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-text-container img.mobile {
+    display: none;
+  }
+  #careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-text-container img.desktop {
+    display: block;
+    margin: 0 0 16px;
+  }
+  #careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-text-container .covid-info {
+    text-align: left;
+    margin: 0 0 24px;
+  }
+  #careLandingPage .faff-header-section .covid-info-container .covid-info-inner .covid-info-text-container .btn {
+    max-width: 200px;
+  }
+  #careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  #careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-image-container {
+    margin: 0;
+  }
+  #careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-image-container .here-for-you-background {
+    width: 321px;
+    height: 480px;
+    margin-bottom: 0;
+  }
+  #careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-image-container .here-for-you-image {
+    width: 350px;
+    top: 50%;
+    left: 160px;
+    -webkit-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
+    margin: 0;
+  }
+  #careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-info-container {
+    padding: 0 32px 0 0;
+    width: 100%;
+    max-width: 500px;
+    margin-left: 30%;
+  }
+  #careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-info-container .here-for-you-header {
+    font-size: 72px;
+    line-height: 68px;
+    letter-spacing: 1.24138px;
+    text-align: left;
+    margin: 0 0 32px;
+    max-width: unset;
+  }
+  #careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-info-container .here-for-you-text {
+    text-align: left;
+  }
+  #careLandingPage .saddlback-cares-container {
+    height: 600px;
+    margin-bottom: 32px;
+  }
+  #careLandingPage .saddlback-cares-container .saddleback-cares-inner {
+    top: 50%;
+    left: 40px;
+    -webkit-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
+    width: auto;
+    padding: 0;
+  }
+  #careLandingPage .saddlback-cares-container .saddleback-cares-inner .saddleback-cares-header {
+    font-size: 72px;
+    line-height: 68px;
+    letter-spacing: 1.24138px;
+    margin: 0 0 24px;
+    max-width: 480px;
+    text-align: left;
+  }
+  #careLandingPage .saddlback-cares-container .saddleback-cares-inner .saddleback-cares-text {
+    text-align: left;
+    margin: 0;
+    max-width: 500px;
+  }
+  #careLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner {
+    padding: 0;
+  }
+  #careLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner .btn {
+    width: 230px;
+  }
+  #careLandingPage .faff-services-section .titleBar {
+    margin-bottom: 32px;
+  }
+  #careLandingPage .faff-services-section .titleBar .desktop-titleBar {
+    display: block;
+  }
+  #careLandingPage .faff-services-section .titleBar .mobile-titleBar {
+    display: none;
+  }
+  #careLandingPage .faff-services-section .mobile-subtitle {
+    display: none;
+  }
+
+  #peaceCenterLandingPage .faff-header-section .faff-header .faff-header-inner .peace-center-header {
+    font-size: 44px;
+    line-height: 48px;
+    max-width: 300px;
+    margin: 0 auto 52px;
+  }
+  #peaceCenterLandingPage .faff-intro-section {
+    margin: 0 32px 114px;
+  }
+  #peaceCenterLandingPage .faff-intro-section .faff-intro {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    max-width: 1048px;
+  }
+  #peaceCenterLandingPage .faff-intro-section .faff-intro h2 {
+    font-size: 58px;
+    line-height: 62px;
+    text-align: right;
+    margin: 0;
+  }
+  #peaceCenterLandingPage .faff-intro-section .faff-intro .faff-intro-inner {
+    padding-left: 32px;
+    margin-left: 32px;
+    border-left: solid 2px #bcbec0;
+  }
+  #peaceCenterLandingPage .faff-intro-section .faff-intro p {
+    text-align: left;
+  }
+  #peaceCenterLandingPage .faff-intro-section .faff-intro a {
+    text-align: left;
+  }
+  #peaceCenterLandingPage .faff-services-section {
+    margin: 0 32px 80px;
+  }
+  #peaceCenterLandingPage .saddlback-cares-container {
+    height: 600px;
+    margin-bottom: 80px;
+  }
+  #peaceCenterLandingPage .saddlback-cares-container .saddleback-cares-inner {
+    top: 50%;
+    left: 40px;
+    -webkit-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
+    width: auto;
+    padding: 0;
+  }
+  #peaceCenterLandingPage .saddlback-cares-container .saddleback-cares-inner .saddleback-cares-header {
+    font-size: 72px;
+    line-height: 68px;
+    letter-spacing: 1.24138px;
+    margin: 0 0 24px;
+    max-width: 494px;
+    text-align: left;
+  }
+  #peaceCenterLandingPage .saddlback-cares-container .saddleback-cares-inner .saddleback-cares-text {
+    text-align: left;
+    margin: 0;
+    max-width: 500px;
+  }
+  #peaceCenterLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner {
+    padding: 0;
+  }
+  #peaceCenterLandingPage .saddlback-cares-container.support-groups .saddleback-cares-inner .btn {
+    margin: 0;
+  }
+  #peaceCenterLandingPage .faff-givehelp-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: solid 1px #D8D8D8;
+    border-top: solid 1px #D8D8D8;
+  }
+}
+@media screen and (min-width: 950px) {
+  .faff-resources-section .faff-resources-inner {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .faff-resources-section .faff-resources-inner .resources-item {
+    width: 25%;
+  }
+
+  .faff-training-section .faff-training-inner .faff-training-item {
+    width: 33.333333%;
+    margin: 0;
+  }
+
+  .services-container {
+    margin: 0 -30px;
+  }
+  .services-container .service-item {
+    max-width: 487px;
+    padding: 0 30px;
+    width: 33.333333%;
+    margin: 0 0 60px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #careLandingPage .faff-header-section .here-for-you-container .here-for-you-inner .here-for-you-info-container {
+    margin-left: 25%;
+  }
+
+  #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item {
+    margin: 0 32px 24px 0;
+  }
+  #peaceCenterLandingPage .peace-center-locations-section .locations-container .locations-inner .locations-item:last-of-type {
+    margin: 0 32px 24px 0;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .faff-intro-section {
+    margin: 0 0 64px;
+  }
+
+  .faff-services-section {
+    margin: 0 0 64px;
+  }
+
+  .faff-training-section {
+    margin: 0 0 80px;
+  }
+
+  .faff-resources-section {
+    margin: 0 0 48px;
+  }
+
+  .faff-givehelp-section {
+    margin: 0 0 64px;
+  }
+
+  .services-container {
+    margin: 0 -55px;
+  }
+  .services-container .service-item {
+    max-width: 447px;
+    padding: 0 55px;
+    margin: 0 0 70px;
+  }
+
+  .faff-givehelp-section .faff-givehelp-item-container {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .faff-givehelp-section .faff-givehelp-item-container .faff-givehelp-item {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  #peaceCenterLandingPage .peace-center-locations-section {
+    margin: 0;
+  }
+
+  #peaceCenterLandingPage .faff-services-section {
+    margin: 0 0 80px;
+  }
+}

@@ -1,0 +1,222 @@
+.landing-page-header-section {
+  padding: 0 16px;
+  margin: 0 0 32px;
+}
+.landing-page-header-section .landing-page-header-inner .landing-page-header {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: 1.35714px;
+  color: #4d4d4f;
+  margin-bottom: 32px;
+}
+.landing-page-header-section .landing-page-header-inner .landing-page-header-info {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #4d4d4f;
+}
+
+.landing-page-item-section {
+  background: #EDF1F5;
+  padding: 32px 16px;
+}
+.landing-page-item-section .online-landing-page-item {
+  margin: 0 0 16px;
+  border-radius: 10px;
+  position: relative;
+  height: 320px;
+  box-shadow: 5px 10px 10px -5px rgba(77, 77, 79, 0.5);
+}
+.landing-page-item-section .online-landing-page-item:after {
+  background: rgba(77, 77, 79, 0.6);
+  content: '';
+  display: block;
+  height: 100%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  border-radius: 10px;
+}
+.landing-page-item-section .online-landing-page-item .online-item-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  padding: 40px 16px 16px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.landing-page-item-section .online-landing-page-item .online-item-inner .online-landing-header-container {
+  margin-bottom: 0;
+}
+.landing-page-item-section .online-landing-page-item .online-item-inner .online-landing-header-container img {
+  margin-bottom: 16px;
+}
+.landing-page-item-section .online-landing-page-item .online-item-inner .online-landing-header-container h5 {
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #fff;
+}
+.landing-page-item-section .online-landing-page-item .online-item-inner .campus-dropdown-box {
+  margin-top: auto;
+}
+.landing-page-item-section .online-landing-page-item .online-item-inner .campus-dropdown-box .btn {
+  width: 100%;
+  margin-top: 24px;
+  height: 46px;
+  border-radius: 15px;
+  background: #bcbec0;
+  pointer-events: none;
+  border: 2px solid #bcbec0;
+}
+.landing-page-item-section .online-landing-page-item .online-item-inner .campus-dropdown-box .btn.active {
+  pointer-events: auto;
+  background: #00aeef;
+  border: 2px solid #00aeef;
+}
+
+@media screen and (min-width: 575px) {
+  .landing-page-header-section {
+    padding: 0 32px;
+  }
+
+  .landing-page-item-section {
+    padding: 60px 32px;
+  }
+  .landing-page-item-section .online-landing-page-item .online-item-inner {
+    padding: 40px 32px 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-bottom: 64px;
+  }
+
+  .landing-page-header-section .landing-page-header-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    max-width: 1170px;
+    margin: 0 auto 64px;
+  }
+  .landing-page-header-section .landing-page-header-inner .landing-page-header {
+    font-size: 58px;
+    line-height: 62px;
+    letter-spacing: 1px;
+    margin: 0 37px 0 0;
+    width: 50%;
+    max-width: 500px;
+  }
+  .landing-page-header-section .landing-page-header-inner .landing-page-header-info {
+    width: 50%;
+    max-width: 618px;
+  }
+
+  .landing-page-item-section {
+    padding: 60px 32px;
+  }
+  .landing-page-item-section .online-landing-page-item {
+    height: 450px;
+    margin: 0 0 32px;
+  }
+  .landing-page-item-section .online-landing-page-item .online-item-inner {
+    padding: 150px 40px 32px;
+  }
+  .landing-page-item-section .online-landing-page-item .online-item-inner .online-landing-header-container {
+    max-width: 300px;
+  }
+  .landing-page-item-section .online-landing-page-item .online-item-inner .campus-dropdown-box {
+    max-width: 260px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .landing-page-item-section {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .landing-page-item-section .online-landing-page-item {
+    width: 33.333333%;
+    height: 615px;
+    margin: 0 16px;
+  }
+  .landing-page-item-section .online-landing-page-item .online-item-inner {
+    padding: 213px 40px 32px;
+  }
+  .landing-page-item-section .online-landing-page-item .online-item-inner .online-landing-header-container {
+    position: relative;
+    margin-bottom: 0;
+    padding: 24px 16px 0;
+  }
+  .landing-page-item-section .online-landing-page-item .online-item-inner .online-landing-header-container img#cmLogo {
+    position: absolute;
+    top: -6px;
+  }
+  .landing-page-item-section .online-landing-page-item .online-item-inner .online-landing-header-container img#hsmLogo {
+    position: absolute;
+    top: -1px;
+  }
+  .landing-page-item-section .online-landing-page-item .online-item-inner .online-landing-header-container img#jhmLogo {
+    position: absolute;
+    top: -16px;
+  }
+  .landing-page-item-section .online-landing-page-item .online-item-inner .campus-dropdown-box {
+    max-width: 100%;
+  }
+
+  #skLandingPage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 -16px;
+  }
+  #skLandingPage .online-landing-page-item {
+    width: 45%;
+    height: 450px;
+    margin: 0 16px 32px;
+  }
+  #skLandingPage .online-landing-page-item .online-item-inner {
+    padding: 150px 32px 32px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #skLandingPage {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0 -6px;
+  }
+  #skLandingPage .online-landing-page-item {
+    width: 25%;
+    margin: 0 6px;
+    height: 615px;
+  }
+  #skLandingPage .online-landing-page-item .online-item-inner {
+    padding: 238px 16px 16px;
+  }
+  #skLandingPage .online-landing-page-item .online-item-inner .online-landing-header-container {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .landing-page-header-section {
+    padding: 0;
+  }
+}

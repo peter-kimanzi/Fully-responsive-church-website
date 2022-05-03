@@ -1,0 +1,599 @@
+.locationsPageContainerUS h3,
+.locationsPageContainerInternational h3 {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+#LocationsPageListUS,
+#LocationsPageListInternational {
+  padding-left: 0;
+}
+
+#map-canvas-lp {
+  display: none;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto 100px auto;
+  float: left;
+}
+
+span.rotate360Loop {
+  -webkit-transform-origin: 50% 55%;
+}
+
+#MapContainerLP {
+  position: relative;
+  overflow: hidden;
+}
+
+.keyContainer {
+  display: none;
+  margin-top: 13px;
+  float: right;
+}
+
+.keyContainer img {
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+.keyContainer span {
+  font: 14px/22px "PT Serif", Times New Roman, serif;
+}
+
+.toggleTab {
+  width: 36px;
+  height: 83px;
+  border-top: 1px solid #00aeef;
+  border-bottom: 1px solid #00aeef;
+  border-left: 1px solid #00aeef;
+  margin-top: 258px;
+  float: left;
+  box-shadow: inset -4px 0 5px -5px #0093c6;
+  background: #ffffff;
+}
+
+.toggleTab > a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  font-size: 32px;
+  color: #00aeef;
+}
+
+.toggleTab > a:hover {
+  text-decoration: none;
+}
+
+#DirectionsSidebar {
+  width: 365px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  right: -365px;
+}
+
+.directionsHeader {
+  width: 329px;
+  padding: 20px 20px 0 20px;
+  float: right;
+  background: #ffffff;
+}
+.directionsHeader h3 {
+  margin-top: 0;
+}
+
+.directionsContainer {
+  width: 329px;
+  height: 483px;
+  padding: 0 0 30px 20px;
+  float: left;
+  background: #ffffff;
+}
+
+.directionsContainer a.btn {
+  height: 33px;
+  margin-bottom: 15px;
+}
+
+.directionsContainer #ButtonViewInGoogle {
+  display: block;
+}
+
+#LocationsDirectionRenderer {
+  max-height: 350px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  overflow-y: scroll;
+  font: 1em "Lato";
+}
+
+.locationsPageSearchContainer {
+  margin: 0 15px 30px 15px;
+  position: relative;
+}
+.locationsPageSearchContainer h1 {
+  margin-left: 0;
+}
+
+.locationsPageListsContainer {
+  margin: 0 7.5px;
+}
+
+@media screen and (min-width: 575px) {
+  .locationsPageListsContainer {
+    margin: 0 20px;
+  }
+}
+.locationsPageSearchContainer h2 {
+  margin-bottom: 0.84615384615384615384615384615385em;
+}
+
+.locationsPageSearchContainer h1 {
+  margin-bottom: 22px;
+}
+
+.locationsPageSearchContainer h1 + span {
+  display: none;
+  font: 1.125em/1.2222222222em "PT Serif", Times New Roman, serif;
+  font-style: italic;
+}
+
+.textLocationPageSearchContainer {
+  display: inline-block;
+  width: 91%;
+  position: relative;
+}
+
+.locationsPageSearchContainer input#TextLocationSearch {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1.8333333em;
+  padding-left: 10px;
+  border: 1px solid #00aeef;
+  border-radius: 0;
+  font: 18px "PT Serif", Times New Roman, serif;
+  line-height: 1.6333em;
+  font-style: italic;
+  text-align: left;
+  color: #00aeef;
+}
+
+.locationsPageSearchContainer input#TextLocationSearch.error {
+  outline-color: red;
+  background: #f6cfcf;
+  color: #000000;
+}
+
+.locationsPageSearchContainer input#ButtonLocationSearch {
+  height: 33px;
+  padding: 0;
+  top: 0;
+  right: -9%;
+  font-size: 18px;
+  line-height: 1.8333333em;
+  position: absolute;
+  /* right: 0; */
+  width: 65px;
+  border: none;
+}
+
+#ButtonGeoLocationPageSearch,
+#ImageWait {
+  position: relative;
+  top: 2px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#ButtonLocationSearch {
+  background-color: #00aeef;
+}
+
+#ButtonLocationSearch:hover {
+  background-color: #0093c6;
+}
+
+#ButtonGeoLocationPageSearch:hover {
+  text-decoration: none;
+}
+
+.locationsPageContainerInternational div h3.std {
+  margin: 30px 0 15px 0;
+}
+
+.locationsPageContainerUS > div,
+.locationsPageContainerInternational > div {
+  margin: 0 11px;
+}
+
+ul.arrowedList.lp-locations li {
+  height: 55px;
+  border: 0;
+}
+
+.lp-locations > div {
+  margin: 0 10px;
+}
+
+.lp-locations li div {
+  transition: margin 0.3s ease-in-out;
+}
+
+.lp-locations li .campusInfoContainerLP {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.lp-locations li div.campusInfoLinksContainerLP.active {
+  margin-left: 10px;
+  background: #0093c6;
+}
+
+.lp-locations li .campusInfoLinksContainerLP {
+  margin-left: -195px;
+}
+
+.lp-locations li .campusInfoLinksContainerLP > a,
+.lp-locations li .campusInfoLinksContainerLP > a:hover {
+  width: auto;
+  height: 100%;
+  padding: 0.42em 10px;
+  font-size: 24px;
+  background: #0093c6;
+  color: #fff;
+}
+
+.lp-locations li .campusInfoLinksContainerLP > a:hover {
+  color: #000;
+}
+
+.lp-locations li .margin {
+  width: 10px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.lp-locations li div.campusNameContainerLP {
+  display: inline-block;
+  width: 100%;
+  height: 55px;
+  margin-right: 0%;
+  margin-left: 0%;
+  white-space: nowrap;
+}
+
+#LocationsPageListInternational li div.campusNameContainerLP > a.toggleInfo {
+  width: 100%;
+}
+
+.campusNameContainerLP .toggleInfo {
+  padding: 2px 0 0 30px;
+}
+.campusNameContainerLP:hover {
+  background: #0093c6;
+}
+
+.lp-locations li div.campusNameContainerLP.active {
+  background: #0093c6;
+}
+
+.lp-locations li div.campusNameContainerLP.active .arrow {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.lp-locations li div.campusNameContainerLP span.campusDistanceLP {
+  display: block;
+  font-size: 0.57142857142857142857142857142857em;
+  line-height: 0.91666667em;
+  color: white;
+}
+
+.lpInfoWindow {
+  max-width: 300px;
+  padding: 10px;
+}
+.lpInfoWindow p.nomargin {
+  width: 60%;
+  margin: 0;
+}
+.lpInfoWindow .serviceTimesContainer {
+  margin-left: 20px;
+}
+.lpInfoWindow .lpLinkContainer {
+  margin-top: 11px;
+  margin-left: 10px;
+}
+.lpInfoWindow a.btn {
+  height: 36px;
+  padding-top: 3px;
+  text-transform: capitalize;
+}
+.lpInfoWindow a.btn:first-of-type {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  height: 36px;
+  text-transform: capitalize;
+}
+
+.locationFinePrintContainer {
+  margin: 22px 11px 33px;
+  font-size: .875em;
+}
+
+.buttonContainer {
+  width: 100%;
+  text-align: center;
+}
+.buttonContainer a {
+  width: 280px;
+}
+.buttonContainer a:nth-of-type(2) {
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.regathering-info {
+  max-width: 100%;
+}
+.regathering-info .std {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 7.2px;
+  color: #4d4d4f;
+}
+.regathering-info .address {
+  margin-bottom: 8px;
+}
+.regathering-info .lpLinkContainer {
+  margin: 16px 0 0;
+}
+.regathering-info .lpLinkContainer.btn-container {
+  display: -ms-flexbox;
+  display: flex;
+}
+.regathering-info .lpLinkContainer .website-link {
+  display: block;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #00aeef;
+}
+.regathering-info .lpLinkContainer .btn {
+  width: 178px;
+  border-radius: 15px;
+  height: 40px;
+}
+.regathering-info .lpLinkContainer .btn:first-of-type {
+  height: 40px;
+  margin-right: 32px;
+  margin-bottom: 0;
+}
+.regathering-info .serviceTimesContainer {
+  margin: 0;
+}
+.regathering-info .serviceTimesContainer .service-times {
+  display: none;
+}
+.regathering-info .serviceTimesContainer .nomargin {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.regathering-info .serviceTimesContainer .nomargin strong {
+  display: block;
+}
+
+.gm-ui-hover-effect {
+  top: 6px !important;
+  right: 12px !important;
+}
+.gm-ui-hover-effect img {
+  height: 20px !important;
+  width: 20px !important;
+}
+
+@media screen and (min-width: 575px) {
+  .locationsPageSearchContainer {
+    margin: 0 30px 30px 30px;
+    position: relative;
+  }
+  .locationsPageSearchContainer h1 {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 710px) {
+  #ButtonGeoLocationPageSearch,
+  #ImageWait {
+    top: 3px;
+  }
+
+  #MapContainerLP {
+    width: 94%;
+    margin: 0 auto;
+    overflow: visible;
+    padding-bottom: 30px;
+  }
+
+  .keyContainer {
+    display: block;
+  }
+
+  .locationsPageSearchContainer {
+    margin: 0 30px 30px 30px;
+  }
+
+  .locationsPageSearchContainer span:first-of-type {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  .locationsPageSearchContainer #ButtonGeoLocationPageSearch .icon-target {
+    padding-right: 4px;
+  }
+
+  .textLocationPageSearchContainer {
+    width: 390px;
+    position: relative;
+  }
+
+  .textLocationPageSearchContainer input#TextLocationSearch {
+    height: 44px;
+    padding-right: 65px;
+  }
+
+  .textLocationPageSearchContainer input#ButtonLocationSearch {
+    height: 44px;
+    right: -14%;
+  }
+
+  .keyContainer {
+    float: unset;
+  }
+
+  #MapContainerLP {
+    width: 98%;
+    margin: 0 auto;
+    padding: 2%;
+    /* background-color: $cyan; */
+    /* -webkit-box-shadow: inset 0 0 30px $cyan; */
+    /* -moz-box-shadow: inset 0 0 30px $cyan; */
+    /* box-shadow: inset 0 0 10px $cyan; */
+  }
+
+  .locationsPageContainerUS > div,
+  .locationsPageContainerInternational > div {
+    margin: 0 0 22px 0;
+  }
+
+  .locationsPageListsContainer {
+    width: 94%;
+    margin: 22px auto 0px auto;
+  }
+
+  .locationsPageContainerUS {
+    width: 50%;
+    float: left;
+  }
+
+  .locationsPageContainerInternational {
+    width: 50%;
+    float: left;
+  }
+  .locationsPageContainerInternational div h3.std {
+    margin-top: 0;
+  }
+
+  .locationsContainerFinePrint {
+    width: 100%;
+    float: left;
+  }
+
+  ul#LocationsPageListUS {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    -ms-column-count: 2;
+    -ms-column-gap: 0px;
+    -o-column-count: 2;
+    -o-column-gap: 0px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+  }
+
+  ul#LocationsPageListInternational {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    -o-column-count: 2;
+    column-count: 2;
+  }
+
+  ul.lp-locations > div {
+    margin: 0;
+  }
+
+  ul.lp-locations li {
+    margin-bottom: 22px;
+    padding-right: 11px;
+    display: inline-block;
+  }
+  ul.lp-locations li a,
+  ul.lp-locations li span {
+    font-size: 0.875em;
+    line-height: 1.5714285714285714285714285714286em;
+  }
+  ul.lp-locations li p {
+    margin-bottom: 0;
+  }
+
+  .locationFinePrintContainer {
+    margin: 22px auto 33px;
+    width: 94%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .keyContainer {
+    float: right;
+  }
+}
+@media screen and (min-width: 960px) {
+  .textLocationPageSearchContainer {
+    width: 450px;
+  }
+
+  .locationsPageContainerUS {
+    width: 60%;
+  }
+
+  .locationsPageContainerInternational {
+    width: 40%;
+  }
+
+  ul#LocationsPageListUS {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    -o-column-count: 3;
+    column-count: 3;
+    /* I have no idea why columns are so poorly implemented or why this works */
+  }
+  ul#LocationsPageListUS #Campus_Lake_Forest {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #MapContainerLP {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .directionsHeader {
+    padding: 0px 20px 0 20px;
+  }
+
+  .buttonContainer {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .locationsPageSearchContainer {
+    margin: 0 30px 30px 0px;
+  }
+}

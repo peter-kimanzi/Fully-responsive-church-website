@@ -1,0 +1,651 @@
+/* COMPASS IMPORTS */
+p {
+  color: #4d4d4f;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin-left: 0;
+}
+
+.our-church-header h1 {
+  font-weight: 900;
+  text-align: center;
+}
+.our-church-header .history-unfolding {
+  font-weight: 900;
+}
+
+/* PD Slider */
+.purpose-driven-container .pd-slider {
+  width: 100%;
+  background: transparent;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.purpose-driven-container .pd-slider .rsOverflow {
+  background: transparent;
+  -ms-flex-order: 2;
+      order: 2;
+}
+.purpose-driven-container .pd-slider .rsOverflow .rsContainer {
+  background: transparent;
+}
+.purpose-driven-container .pd-slider .rsOverflow .rsContainer .rsSlide {
+  background: transparent;
+}
+.purpose-driven-container .pd-slider .rsOverflow .rsContainer .rsSlide p {
+  margin: 0;
+  line-height: 1.63;
+  letter-spacing: 1px;
+}
+.purpose-driven-container .pd-slider .rsNav, .purpose-driven-container .pd-slider .rsTabs {
+  padding: 0;
+}
+.purpose-driven-container .pd-slider .rsNav .rsNavItem, .purpose-driven-container .pd-slider .rsTabs .rsNavItem {
+  display: block;
+  color: #00aeef;
+  box-shadow: none;
+  background-image: none;
+  border: solid 1px #00aeef;
+  padding: 0;
+  line-height: 36px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  text-shadow: none;
+  font-weight: 900;
+  text-shadow: none;
+}
+.purpose-driven-container .pd-slider .rsNav .rsNavSelected, .purpose-driven-container .pd-slider .rsTabs .rsNavSelected {
+  background: #00aeef;
+  color: #fff;
+}
+
+/*CLASS Section*/
+.class-graphic-container img {
+  display: block;
+  margin: 0 auto 30px;
+  /*margin-bottom: 30px;*/
+  max-height: 240px;
+  max-width: 240px;
+}
+
+.class-call-to-action p {
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.class-call-to-action .btn {
+  width: 100%;
+}
+
+/*What We Believe*/
+.believe-container .believe-slider {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background: #fff;
+}
+.believe-container .believe-slider .rsOverflow {
+  background: #fff;
+  -ms-flex-order: 2;
+      order: 2;
+}
+.believe-container .believe-slider .rsOverflow .rsContainer .rsSlide {
+  background: #fff;
+}
+.believe-container .believe-slider .rsOverflow .rsContainer .rsSlide p {
+  margin-bottom: 15px;
+}
+.believe-container .believe-slider .rsOverflow .rsContainer .rsSlide .bible-verse-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.believe-container .believe-slider .rsOverflow .rsContainer .rsSlide .bible-verse-container .bible-verse {
+  font-size: 12px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+.believe-container .believe-slider .rsNav, .believe-container .believe-slider .rsTabs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding: 15px 15px 0;
+  background-color: #f6f6f6 !important;
+}
+.believe-container .believe-slider .rsNav .rsNavItem, .believe-container .believe-slider .rsNav .rsTab, .believe-container .believe-slider .rsTabs .rsNavItem, .believe-container .believe-slider .rsTabs .rsTab {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  max-width: 50%;
+  width: 100%;
+  text-align: left;
+  display: block;
+  color: #4d4d4f;
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: 15px;
+  border: none;
+  box-shadow: none;
+  background-image: none;
+  background: none;
+}
+.believe-container .believe-slider .rsNav .rsNavSelected, .believe-container .believe-slider .rsTabs .rsNavSelected {
+  text-shadow: none;
+  background: none;
+  color: #00aeef;
+  font-weight: 900;
+}
+
+/*Grey arrow attached to container*/
+.ui-tabs-nav:after {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #f6f6f6;
+  margin-left: -12px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  content: '';
+}
+
+/*Our History Slider*/
+.our-history-container .history-slider {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 30px;
+  background: #fff;
+}
+.our-history-container .history-slider .rsOverflow {
+  -ms-flex-order: 3;
+      order: 3;
+  background: #fff;
+}
+.our-history-container .history-slider .rsOverflow .rsContainer .rsSlide .date-container {
+  min-height: 230px;
+}
+.our-history-container .history-slider .rsOverflow .rsContainer .rsSlide .date-container .desktop-history-image {
+  position: relative;
+  display: none;
+}
+.our-history-container .history-slider .rsOverflow .rsContainer .rsSlide .date-container .staticHeightImageContainer {
+  margin: 0;
+  min-height: 230px;
+}
+.our-history-container .history-slider .rsOverflow .rsContainer .rsSlide .date-container .date-slide-overlay {
+  position: absolute;
+  top: 15px;
+  padding: 15px;
+}
+.our-history-container .history-slider .rsOverflow .rsContainer .rsSlide .date-container .date-slide-overlay .year {
+  display: block;
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px #4d4d4f;
+}
+.our-history-container .history-slider .rsOverflow .rsContainer .rsSlide .date-container .date-slide-overlay p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  margin: 0;
+  text-shadow: 1px 1px #4d4d4f;
+  max-width: 400px;
+  width: 100%;
+}
+.our-history-container .history-slider .rsNav, .our-history-container .history-slider .rsTabs {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 0;
+  width: 100%;
+}
+.our-history-container .history-slider .rsNav .rsNavItem, .our-history-container .history-slider .rsNav .rsTab, .our-history-container .history-slider .rsTabs .rsNavItem, .our-history-container .history-slider .rsTabs .rsTab {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  max-width: 15%;
+  width: 100%;
+  height: 40px;
+  min-width: 0;
+  background-image: none;
+  background: #f6f6f6;
+  border-radius: 0;
+  border: none;
+  border: solid 1px #f6f6f6;
+  color: #4d4d4f;
+  box-shadow: none;
+  padding: 10px;
+  margin: 0;
+  text-shadow: none;
+}
+.our-history-container .history-slider .rsNav .rsNavItem .rsTmb span, .our-history-container .history-slider .rsNav .rsTab .rsTmb span, .our-history-container .history-slider .rsTabs .rsNavItem .rsTmb span, .our-history-container .history-slider .rsTabs .rsTab .rsTmb span {
+  color: #4d4d4f;
+  font-weight: 900;
+}
+.our-history-container .history-slider .rsNav .rsNavItem .rsTmb .now-label, .our-history-container .history-slider .rsNav .rsTab .rsTmb .now-label, .our-history-container .history-slider .rsTabs .rsNavItem .rsTmb .now-label, .our-history-container .history-slider .rsTabs .rsTab .rsTmb .now-label {
+  font-size: 10px;
+}
+.our-history-container .history-slider .rsNav .rsNavItem .rsTmb .desktop-label, .our-history-container .history-slider .rsNav .rsTab .rsTmb .desktop-label, .our-history-container .history-slider .rsTabs .rsNavItem .rsTmb .desktop-label, .our-history-container .history-slider .rsTabs .rsTab .rsTmb .desktop-label {
+  display: none;
+}
+.our-history-container .history-slider .rsNav .rsNavSelected, .our-history-container .history-slider .rsTabs .rsNavSelected {
+  /*				background: #fff;
+  				border-top: solid 5px $cyan;
+  				color: $charcoal;
+  				padding: 6px 10px 10px;
+  				box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.1);*/
+  border-top: solid 5px #00aeef;
+  background: #fff;
+  padding: 11px;
+  position: relative;
+  width: 100%;
+  border: none;
+  border-top: #fff;
+  box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.1);
+}
+.our-history-container .history-slider .rsNav .rsNavSelected:after, .our-history-container .history-slider .rsTabs .rsNavSelected:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top: solid 5px #00aeef;
+  position: absolute;
+  top: -6px;
+  left: 0px;
+}
+.our-history-container .icon-arrow-down {
+  color: #00aeef;
+  padding-left: 5px;
+}
+
+/*See More Toggle*/
+.our-history-slide-content {
+  max-height: 140px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+.our-history-slide-content.open {
+  max-height: 1500px;
+}
+.our-history-slide-content aside {
+  display: none;
+  /*For mobile*/
+}
+
+.see-more-toggle {
+  text-decoration: none;
+}
+.see-more-toggle:after {
+  content: " More";
+}
+.see-more-toggle.open:after {
+  content: " Less";
+}
+
+/*Locations Graphic*/
+.visit-locations {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #00aeef;
+  height: auto;
+  padding: 60px 5%;
+  margin-bottom: 60px;
+}
+
+.map-location-graphic {
+  margin-bottom: 60px;
+}
+
+.map-photo {
+  max-width: 335px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.visit-locations-text {
+  text-align: center;
+}
+.visit-locations-text .small-title {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.visit-locations-text h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.visit-locations-text h6 {
+  font-weight: 900;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.visit-locations-text .campus-btn {
+  border: solid 2px #fff;
+}
+.visit-locations-text .campus-btn:hover {
+  border: none;
+}
+
+@media screen and (min-width: 400px) {
+  .our-history-container .history-slider .rsNav .rsNavItem .rsTmb .now-label, .our-history-container .history-slider .rsNav .rsTab .rsTmb .now-label, .our-history-container .history-slider .rsTabs .rsNavItem .rsTmb .now-label, .our-history-container .history-slider .rsTabs .rsTab .rsTmb .now-label {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .our-church-header .main-masthead {
+    max-height: 500px;
+    height: 500px;
+    position: relative;
+  }
+  .our-church-header .main-masthead:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(227deg, #333333, #4d4d4f);
+    opacity: .3;
+  }
+  .our-church-header .header-info {
+    position: absolute;
+    top: 225px;
+    width: 530px;
+    left: 50%;
+    margin-left: -265px;
+  }
+  .our-church-header .header-info h1 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px #4d4d4f;
+  }
+  .our-church-header .header-info p {
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px #4d4d4f;
+  }
+
+  /*Purpose Driven Slider*/
+  .purpose-driven-container h3 {
+    margin-bottom: 60px;
+  }
+  .purpose-driven-container .pd-slider {
+    max-width: 780px;
+    margin: 0 auto;
+    width: 100%;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+    padding: 0 0 30px;
+  }
+  .purpose-driven-container .pd-slider .rsOverflow {
+    background: #fff;
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  .purpose-driven-container .pd-slider .rsOverflow .rsContainer {
+    margin: 0 auto;
+    width: 530px;
+  }
+  .purpose-driven-container .pd-slider .rsOverflow .rsContainer .rsSlide {
+    background: #fff;
+  }
+  .purpose-driven-container .pd-slider .rsOverflow .rsContainer .rsSlide p {
+    margin: 0;
+    line-height: 1.63;
+    letter-spacing: 1px;
+  }
+  .purpose-driven-container .pd-slider .rsNav, .purpose-driven-container .pd-slider .rsTabs {
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 5px;
+  }
+  .purpose-driven-container .pd-slider .rsNav .rsNavItem, .purpose-driven-container .pd-slider .rsTabs .rsNavItem {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    max-width: 20%;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #4d4d4f;
+    border-left: solid 0.5px #f6f6f6;
+    border-right: solid 0.5px #f6f6f6;
+    border-bottom: solid 1px #f6f6f6;
+    border-top: solid 1px #f6f6f6;
+  }
+  .purpose-driven-container .pd-slider .rsNav .rsNavSelected, .purpose-driven-container .pd-slider .rsTabs .rsNavSelected {
+    background: #fff;
+    color: #4d4d4f;
+    position: relative;
+    width: 100%;
+    border: none;
+    border-top: #fff;
+    box-shadow: 5px -20px 30px 5px rgba(0, 0, 0, 0.1);
+  }
+  .purpose-driven-container .pd-slider .rsNav .rsNavSelected:before, .purpose-driven-container .pd-slider .rsTabs .rsNavSelected:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top: solid 5px #00aeef;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+  }
+
+  /*CLASS Section*/
+  .class-container .title-container h3 {
+    margin-bottom: 60px;
+  }
+  .class-container .class-flex-container {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 630px;
+    margin: 0 auto;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .class-container .class-flex-container .class-graphic-container {
+    -ms-flex-order: 2;
+        order: 2;
+    max-width: 40%;
+    width: 100%;
+  }
+  .class-container .class-flex-container .class-call-to-action {
+    max-width: 60%;
+    width: 100%;
+    padding-right: 30px;
+  }
+  .class-container .class-flex-container .class-call-to-action p {
+    text-align: left;
+  }
+  .class-container .class-flex-container .class-call-to-action .btn {
+    width: 200px;
+    display: block;
+    text-align: center;
+    line-height: 36px;
+    padding: 0;
+  }
+
+  /*What we Believe Section*/
+  .believe-container h3 {
+    margin-bottom: 60px;
+  }
+  .believe-container .believe-slider {
+    max-width: 715px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    background: #fff;
+  }
+  .believe-container .believe-slider .rsOverflow {
+    background: #fff;
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  .believe-container .believe-slider .rsOverflow .rsContainer .rsSlide {
+    background: #fff;
+  }
+  .believe-container .believe-slider .rsOverflow .rsContainer .rsSlide p {
+    margin-bottom: 15px;
+  }
+  .believe-container .believe-slider .rsOverflow .rsContainer .rsSlide .bible-verse-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .believe-container .believe-slider .rsOverflow .rsContainer .rsSlide .bible-verse-container .bible-verse {
+    font-size: 12px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+  }
+  .believe-container .believe-slider .rsNav, .believe-container .believe-slider .rsTabs {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 30px 30px 60px;
+    background-color: #f6f6f6 !important;
+  }
+  .believe-container .believe-slider .rsNav .rsNavItem, .believe-container .believe-slider .rsNav .rsTab, .believe-container .believe-slider .rsTabs .rsNavItem, .believe-container .believe-slider .rsTabs .rsTab {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    max-width: 20%;
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+    margin: 30px 0 0;
+  }
+  .believe-container .believe-slider .rsNav .rsNavSelected, .believe-container .believe-slider .rsTabs .rsNavSelected {
+    text-shadow: none;
+    background: none;
+    color: #00aeef;
+    font-weight: 900;
+  }
+
+  .ui-tabs-nav:after {
+    top: 194px;
+  }
+
+  /*Our History Slider*/
+  .our-history-container h3 {
+    margin-bottom: 60px;
+  }
+  .our-history-container .icon-arrow-down {
+    display: none;
+  }
+  .our-history-container .history-slider {
+    margin-bottom: 60px;
+  }
+  .our-history-container .history-slider .rsOverflow {
+    height: 500px;
+  }
+  .our-history-container .history-slider .rsOverflow .rsContainer .rsSlide .date-container .staticHeightImageContainer {
+    height: 500px;
+  }
+  .our-history-container .history-slider .rsOverflow .rsContainer .rsSlide .date-container .date-slide-overlay {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    padding: 60px;
+    top: 100px;
+    height: 400px;
+  }
+  .our-history-container .history-slider .rsOverflow .rsContainer .rsSlide .date-container .date-slide-overlay .year {
+    font-size: 32px;
+  }
+  .our-history-container .history-slider .rsOverflow .rsContainer .rsSlide .date-container .date-slide-overlay p {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .our-history-container .history-slider .rsNav .rsNavItem .rsTmb .desktop-label, .our-history-container .history-slider .rsNav .rsTab .rsTmb .desktop-label, .our-history-container .history-slider .rsTabs .rsNavItem .rsTmb .desktop-label, .our-history-container .history-slider .rsTabs .rsTab .rsTmb .desktop-label {
+    display: block;
+    font-size: 16px;
+  }
+  .our-history-container .history-slider .rsNav .rsNavItem .rsTmb .mobile-label, .our-history-container .history-slider .rsNav .rsTab .rsTmb .mobile-label, .our-history-container .history-slider .rsTabs .rsNavItem .rsTmb .mobile-label, .our-history-container .history-slider .rsTabs .rsTab .rsTmb .mobile-label {
+    display: none;
+  }
+  .our-history-container .our-history-slide-content {
+    height: auto;
+    max-height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .our-history-container .our-history-slide-content aside {
+    display: block;
+    max-width: 20%;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 1.63;
+  }
+  .our-history-container .our-history-slide-content .our-history-full-text {
+    max-width: 80%;
+    width: 100%;
+    padding-left: 60px;
+  }
+  .our-history-container .our-history-slide-content .our-history-full-text p:last-child {
+    margin: 0;
+  }
+  .our-history-container .see-more-toggle {
+    display: none;
+  }
+
+  /*Campus Locations Section*/
+  .visit-locations {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+
+  .visit-locations-text {
+    margin-right: 30px;
+    text-align: left;
+    -ms-flex-order: -1;
+        order: -1;
+  }
+  .visit-locations-text .small-title {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  .visit-locations-text h2 {
+    font-size: 32px;
+  }
+
+  .map-location-graphic {
+    margin: 0;
+  }
+}

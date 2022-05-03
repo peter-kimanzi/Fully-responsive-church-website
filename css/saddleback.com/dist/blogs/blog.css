@@ -1,0 +1,511 @@
+/*==========================================
+	BLOG STYLING - blog.scss
+==========================================*/
+/**********************
+	BLOG DETAILS 
+***********************/
+.blogItem span {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.commentsToggleContainer {
+  text-align: center;
+}
+
+.blogListWidget {
+  margin-left: 1%;
+  margin-right: 1%;
+  position: relative;
+}
+
+h1.blogListTitle {
+  float: left;
+}
+
+.storiesHome .blogListWidget .title.centered,
+.newsHome .blogListWidget .title.centered {
+  background: transparent;
+}
+.storiesHome .breadcrumb,
+.newsHome .breadcrumb {
+  margin-left: 0 !important;
+}
+
+.blogFeatured .blogHeadlineLong {
+  display: none;
+}
+
+.blogContent .pullQuote {
+  display: none;
+}
+
+/*****************************
+	BLOG ARTICLE MEDIA QUERIES
+*****************************/
+.blogImageSquare {
+  width: 100%;
+}
+
+.blogContent h1 {
+  margin-left: 0;
+}
+
+.blogImageRectangle {
+  max-width: 1280px;
+}
+.blogImageRectangle.staticHeightImageCenter {
+  height: auto;
+}
+
+.blogFeatured {
+  display: block;
+}
+
+.blogArticle {
+  position: relative;
+  margin-bottom: 3em;
+}
+
+.item,
+.blogItem {
+  margin-bottom: 11px;
+}
+.item .images a,
+.blogItem .images a {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.blogDateText,
+.authorContent {
+  float: left;
+}
+
+.blogDateText {
+  margin: 0 10px 11px 0;
+}
+
+#shareContainer {
+  margin: 0px auto 15px;
+}
+
+/* 40 Days of Prayer specific stuff */
+.verse {
+  width: 100%;
+}
+
+.shareable-container {
+  width: 100%;
+}
+.shareable-container .shareable-image {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+.shareable-container .shareable-download-btn {
+  width: 45px;
+}
+
+/* Content Media Queries  */
+@media screen and (max-width: 479px) {
+  .storiesHome .blogListWidget .additionalInfo {
+    display: none;
+  }
+
+  .pullQuote p {
+    font-size: 26px !important;
+  }
+
+  #shareContainer {
+    text-align: center;
+  }
+}
+.mobile-blog-masthead {
+  display: block;
+}
+.mobile-blog-masthead img {
+  height: 540px;
+  min-width: 540px;
+  top: 250px;
+  transition: all 0.5s ease-in-out;
+}
+
+.desktop-blog-masthead {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .title.centered,
+  .blogRecommendedResources .heading {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .storySection .sectionContainer,
+  .latestSection .sectionContainer,
+  .recentSeries .sectionContainer,
+  .mediaSeries .sectionContainer {
+    margin-bottom: 3em;
+  }
+  .storySection .storySection,
+  .storySection .latestSection,
+  .latestSection .storySection,
+  .latestSection .latestSection,
+  .recentSeries .storySection,
+  .recentSeries .latestSection,
+  .mediaSeries .storySection,
+  .mediaSeries .latestSection {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .storySection .blogItem,
+  .latestSection .blogItem,
+  .recentSeries .blogItem,
+  .mediaSeries .blogItem {
+    width: 50%;
+    display: inline-block;
+  }
+  .storySection .blogExcerptShort,
+  .latestSection .blogExcerptShort,
+  .recentSeries .blogExcerptShort,
+  .mediaSeries .blogExcerptShort {
+    height: 2.8em;
+  }
+
+  .mediaSeries,
+  .resources {
+    margin-right: -11px;
+    line-height: 0;
+  }
+
+  .item,
+  .blogItem {
+    width: 50%;
+    display: inline-block;
+    padding-right: 11px;
+  }
+
+  .blogExcerptShort {
+    height: 2.8em;
+  }
+
+  .blogRecommendedResources ul {
+    -moz-column-count: 2;
+    /* Firefox */
+    -webkit-column-count: 2;
+    /* Safari and Chrome */
+    column-count: 2;
+  }
+
+  .storiesHome .blogListWidget .title.centered,
+  .newsHome .blogListWidget .title.centered {
+    padding: 0;
+  }
+
+  .blogFeatured {
+    margin-bottom: 1.5em;
+  }
+  .blogFeatured .blogHeadlineLong,
+  .blogFeatured .blogInfoContainer,
+  .blogFeatured .blogExcerptLong {
+    display: none;
+  }
+  .blogFeatured .blogItem {
+    float: left !important;
+    z-index: 100;
+    background-color: white;
+    padding-right: 2%;
+    width: 51%;
+  }
+  .blogFeatured .blogDate,
+  .blogFeatured .blogAuthor {
+    display: block;
+  }
+  .blogFeatured .additionalInfo {
+    position: relative;
+    display: block;
+  }
+  .blogFeatured .additionalInfo .blogHeadlineShort {
+    margin: 0 0 0.75em 0;
+    padding: 0 0 0.75em 0;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  .blogFeatured .additionalInfo .blogHeadlineShort a,
+  .blogFeatured .additionalInfo .blogHeadlineLong a {
+    font-family: Georgia, serif !important;
+    font-style: italic !important;
+    font-size: 2em;
+    line-height: 2.25em;
+    color: #4d4d4f;
+  }
+  .blogFeatured .additionalInfo .blogExcerptLong,
+  .blogFeatured .additionalInfo .blogExcerptShort {
+    margin: 0 0 0.75em 0;
+    padding: 0 0 0.75em 0;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  .blogFeatured .additionalInfo .blogExcerptShort {
+    height: inherit;
+  }
+  .blogFeatured .additionalInfo .blogDate,
+  .blogFeatured .additionalInfo .blogAuthor {
+    display: inline-block;
+    font-size: 0.8125em;
+    line-height: 1.846153846153846em;
+  }
+  .blogFeatured .additionalInfo .blogLinkReadMoreIcon {
+    display: block;
+    bottom: 10px;
+    height: 50px;
+    margin: 10px 10px 0 0;
+    float: left;
+    position: relative;
+  }
+  .blogFeatured .additionalInfo .blogLinkReadMoreIcon .blogMoreInfoTxt {
+    display: inline-block;
+    padding: 8px 32px 8px 10px;
+  }
+
+  .SBW .sectionContainer {
+    margin-bottom: 3em;
+  }
+  .SBW .storySection,
+  .SBW .latestSection {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .SBW .blog {
+    clear: both;
+  }
+  .SBW .blogItem {
+    width: 50%;
+    display: inline-block;
+  }
+  .SBW .blogExcerptShort {
+    height: 2.8em;
+  }
+
+  .blogImageSquare {
+    display: none;
+  }
+
+  .blogImageRectangle {
+    display: block;
+  }
+}
+@media screen and (min-width: 600px) {
+  .blogFeatured .additionalInfo .blogExcerptShort {
+    display: none;
+  }
+  .blogFeatured .additionalInfo .blogExcerptLong {
+    display: block;
+  }
+  .blogFeatured .additionalInfo .blogLinkReadMoreIcon {
+    float: right;
+  }
+  .blogFeatured .blogExcerptLong {
+    margin: 0 0 0.75em 0;
+    overflow: hidden;
+    height: 135px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .mobile-blog-masthead {
+    display: none;
+  }
+
+  .desktop-blog-masthead {
+    display: block;
+  }
+}
+@media screen and (min-width: 770px) {
+  .blogContent .pullQuote {
+    display: block;
+    width: 30%;
+    position: absolute;
+    left: 0;
+    margin-left: 1%;
+  }
+
+  .blogRecommendedResources ul {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+
+  .storySection .blogItem:nth-of-type(3),
+  .latestSection .blogItem:nth-of-type(3),
+  .recentSeries .blogItem:nth-of-type(3) {
+    display: inline-block;
+  }
+  .storySection .blogItem:nth-of-type(4),
+  .latestSection .blogItem:nth-of-type(4),
+  .recentSeries .blogItem:nth-of-type(4) {
+    display: inline-block;
+  }
+  .storySection .blogItem,
+  .latestSection .blogItem,
+  .recentSeries .blogItem {
+    width: 33.33333333333333%;
+    display: inline-block;
+  }
+
+  .blogFeatured .blogItem {
+    width: 33.33333333333333%;
+  }
+
+  .blogListMoreButtonContainer .btn.action {
+    display: none;
+  }
+  .blogListMoreButtonContainer .arrowedButton {
+    display: inline-block;
+  }
+
+  .item:nth-child(3n+3) {
+    display: inline-block;
+  }
+
+  .item {
+    width: 33.33333333333333%;
+    display: inline-block;
+  }
+
+  .SBW .blogItem:nth-child(3n+3) {
+    display: inline-block;
+  }
+  .SBW .blogItem {
+    width: 33.33333333333333%;
+    display: inline-block;
+  }
+
+  .blogContent,
+  .blogHeadlineLong {
+    float: right;
+    width: 65%;
+  }
+
+  .commentsContainer {
+    width: 65%;
+    margin-left: 35%;
+  }
+
+  .blogArticle .socialButtonGroup,
+  .blogArticle #shareContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+  }
+
+  #shareContainer {
+    margin: 0px auto 15px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .blogContent .pullQuote {
+    width: 20%;
+  }
+
+  .blogContent .pullQuote:nth-of-type(even) {
+    width: 20%;
+    position: absolute;
+    left: inherit;
+    right: 1%;
+  }
+
+  .blogRecommendedResources ul {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+
+  .storySection .blogItem:nth-of-type(3),
+  .latestSection .blogItem:nth-of-type(3),
+  .mediaSeries .blogItem:nth-of-type(3) {
+    display: inline-block;
+  }
+  .storySection .blogItem:nth-of-type(4),
+  .latestSection .blogItem:nth-of-type(4),
+  .mediaSeries .blogItem:nth-of-type(4) {
+    display: inline-block;
+  }
+  .storySection .blogItem,
+  .latestSection .blogItem,
+  .mediaSeries .blogItem {
+    width: 25%;
+    display: inline-block;
+  }
+
+  .item:nth-child(4n+3) {
+    display: inline-block;
+  }
+
+  .item:nth-child(4n+4) {
+    display: inline-block;
+  }
+
+  .item {
+    width: 25%;
+    display: inline-block;
+  }
+
+  .blogFeatured .blogItem {
+    width: 25%;
+  }
+  .blogFeatured .additionalInfo .blogExcerptLong {
+    height: 145px;
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+  }
+
+  .SBW .blogItem:nth-child(4n+3) {
+    display: inline-block;
+  }
+  .SBW .blogItem:nth-child(4n+4) {
+    display: inline-block;
+  }
+  .SBW .blogItem {
+    width: 25%;
+    display: inline-block;
+  }
+
+  .blogContent,
+  .blogHeadlineLong {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .commentsContainer {
+    width: 50%;
+    margin: 0 auto 3em;
+  }
+
+  .socialButtonGroup,
+  .blogArticle #shareContainer {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 18%;
+    max-width: 295px;
+  }
+  .socialButtonGroup .emailShare,
+  .blogArticle #shareContainer .emailShare {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1270px) {
+  .blogFeatured .additionalInfo .blogExcerptLong {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .blogWidget {
+    margin: 0 0 60px;
+  }
+}

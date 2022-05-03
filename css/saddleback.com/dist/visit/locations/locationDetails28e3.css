@@ -1,0 +1,772 @@
+.mfp-content {
+  background: white;
+  max-width: 340px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.campusName {
+  margin-left: 10px;
+}
+
+#shareContainer {
+  margin-bottom: 1.5em;
+}
+#shareContainer .facebookButton {
+  float: left;
+}
+#shareContainer .twitterButton {
+  width: 120px;
+  float: left;
+}
+#shareContainer .youtubeButton {
+  width: 130px;
+  float: left;
+}
+#shareContainer .instagramButton {
+  width: 139px;
+  float: left;
+}
+#shareContainer .instagramButton .box a span:first-child {
+  margin-right: 4px;
+}
+#shareContainer .sharrre:last-of-type {
+  margin-right: 0;
+}
+
+.langToggle {
+  display: block;
+  text-align: center;
+}
+
+.campusTagLine p {
+  margin-bottom: 0.8em;
+  font-family: "Lato";
+  font-size: 1.875em;
+  line-height: 1.6em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+}
+
+.campusDescriptionContainer {
+  margin-bottom: 3em;
+}
+
+.campusDescription {
+  border-color: #dbdbdb;
+  margin-top: 11px;
+  padding-top: 11px;
+  padding-bottom: 0;
+}
+.campusDescription p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.campusDescription .fluid-video-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.serviceTimesSection .tabs {
+  margin-bottom: 22px;
+}
+.serviceTimesSection .tabs .tabsNav li a {
+  font-size: 16px;
+  line-height: 44px;
+}
+
+.tabsNav.one li {
+  width: 100%;
+}
+.tabsNav.two li {
+  width: 50%;
+}
+.tabsNav.three li {
+  width: 33.333%;
+}
+.tabsNav.four li {
+  width: 25%;
+}
+.tabsNav.five li {
+  width: 20%;
+}
+.tabsNav.six li {
+  width: 16.666666666666666666666666666667%;
+}
+.tabsNav.seven li {
+  width: 14.285714285714285714285714285714%;
+}
+
+.campusServiceTimesContainer sup, .ministryServiceTimesContainer sup {
+  font-size: 16px;
+}
+.campusServiceTimesContainer .serviceTimesLabel, .ministryServiceTimesContainer .serviceTimesLabel {
+  font: 1em/1.375em "Lato", Arial;
+  font-style: italic;
+  color: black;
+}
+.campusServiceTimesContainer .serviceTimesDay, .ministryServiceTimesContainer .serviceTimesDay {
+  display: inline-block;
+  width: 100%;
+  max-width: 260px;
+  vertical-align: top;
+  color: black;
+  font-style: normal;
+}
+.campusServiceTimesContainer .serviceTimesDay h3, .ministryServiceTimesContainer .serviceTimesDay h3 {
+  font-style: normal;
+}
+.campusServiceTimesContainer .serviceTimesDay .serviceTimesRow, .ministryServiceTimesContainer .serviceTimesDay .serviceTimesRow {
+  font-family: "Lato", Arial;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 11px;
+}
+.campusServiceTimesContainer .serviceTimesDay .serviceTimesRow .serviceTimesColumn, .ministryServiceTimesContainer .serviceTimesDay .serviceTimesRow .serviceTimesColumn {
+  display: inline-block;
+  margin-right: 10%;
+  vertical-align: top;
+}
+.campusServiceTimesContainer .serviceTimesDay .serviceTimesRow .serviceTimesColumn:last-of-type, .ministryServiceTimesContainer .serviceTimesDay .serviceTimesRow .serviceTimesColumn:last-of-type {
+  margin-right: 0;
+}
+.campusServiceTimesContainer .serviceTimesDay .serviceTimesRow .serviceTimesTag, .ministryServiceTimesContainer .serviceTimesDay .serviceTimesRow .serviceTimesTag {
+  font-size: 0.875em;
+  line-height: 1.7142857142857142em;
+}
+
+.locationsDetailMainInfo {
+  position: relative;
+}
+
+.locationsDetailFeatureImageContainer {
+  margin-bottom: 3em;
+  overflow: hidden;
+}
+
+.campusAddressContainer, .officeAddressContainer {
+  margin-bottom: 1.5em;
+}
+.campusAddressContainer .close, .campusAddressContainer .officeInfoToggle, .officeAddressContainer .close, .officeAddressContainer .officeInfoToggle {
+  display: none;
+}
+
+.campusmap {
+  display: none;
+}
+
+.campusAdImg {
+  display: block;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.eventCalendarContainer {
+  height: 600px;
+}
+.eventCalendarContainer .eventListWidget {
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.connectContainer.wide {
+  display: none;
+}
+
+.connectContainer .arrowedList li {
+  height: inherit;
+}
+
+.connectContainer .arrowedList li a {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.staffProfile {
+  margin-bottom: 3em;
+}
+
+.featureSliderMobile {
+  display: none;
+}
+
+.featureSliderWide {
+  margin-bottom: 22px;
+}
+
+.contactContainer, .campusServiceTimesContainer {
+  margin-bottom: 3em;
+}
+.contactContainer a, .campusServiceTimesContainer a {
+  font-size: 16px;
+}
+.contactContainer .locationContainer, .campusServiceTimesContainer .locationContainer {
+  position: relative;
+}
+.contactContainer .campusInfoProfile, .campusServiceTimesContainer .campusInfoProfile {
+  margin-bottom: 11px;
+}
+
+.pastorProfile .image {
+  margin-bottom: 1.5em;
+}
+.pastorProfile .image img {
+  display: block;
+  width: 100%;
+}
+.pastorProfile .name {
+  margin-bottom: 0;
+  clear: both;
+}
+.pastorProfile .pastorTitle span {
+  display: inline-block;
+}
+.pastorProfile .share {
+  vertical-align: bottom;
+}
+.pastorProfile .facebookButton {
+  float: left;
+}
+.pastorProfile .twitterButton {
+  width: 120px;
+  margin-right: 0;
+  float: right;
+}
+.pastorProfile .nameAndBioContainer .bio {
+  display: inline-block;
+  margin: 0;
+}
+.pastorProfile .nameAndBioContainer .more {
+  display: inline;
+  margin-bottom: 1.5em;
+}
+
+.footerAdContainer {
+  padding: 44px 10px;
+  background: #f99e49;
+  margin-bottom: 22px;
+}
+.footerAdContainer img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+.footerAdContainer .signupInfo {
+  text-align: center;
+}
+.footerAdContainer .signupInfo h2 {
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 37px;
+}
+.footerAdContainer .signupInfo p {
+  color: #fff;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget {
+  width: 100%;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget #RegistrationSuccessContainer, .footerAdContainer #EmailSubscriptionSignupWidget #RegistrationFailureContainer {
+  height: 220px;
+  padding-top: 85px;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget input[type=text] {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 10px;
+  border: 0;
+  margin-bottom: 3em;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget input[type=text]:last-of-type {
+  margin-bottom: 3em;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget input[type=text]:focus {
+  border-color: #00aeef;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget label {
+  font-family: "Lato", Arial;
+  color: #fff;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget #SubmitRegistration {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget #SubmitRegistration > span {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  font-style: none;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  float: right;
+  background: #00aeef;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget #SubmitRegistration > span:hover {
+  background: #0093c6;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget #SubmitRegistration .arrowOuterContainer .icon-arrow-right {
+  font-size: 32px;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget p {
+  font-family: "Lato", Arial;
+  letter-spacing: 1px;
+  line-height: 1.63;
+  color: #4d4d4f;
+}
+
+#SmallGroupListPopup h3 {
+  color: white;
+  background: black;
+  line-height: 2.4444444444444444444444444444444em;
+  margin-bottom: 0;
+  text-align: center;
+}
+#SmallGroupListPopup .smallGroupListContainer {
+  padding-top: 11px;
+  position: relative;
+}
+#SmallGroupListPopup .smallGroupContainer {
+  float: left;
+  margin-bottom: 22px;
+  padding: 0 11px;
+  text-align: center;
+  width: 100%;
+}
+#SmallGroupListPopup .smallGroupContainer:nth-of-type(2n+1) {
+  clear: left;
+}
+#SmallGroupListPopup .smallGroupContainer > span {
+  font: 16px/22px "Lato", Arial;
+  display: block;
+}
+#SmallGroupListPopup .smallGroupContainer > span:last-of-type {
+  margin-bottom: 11px;
+}
+#SmallGroupListPopup .smallGroupContainer label {
+  font: 16px/22px "Lato", Arial;
+  display: block;
+}
+#SmallGroupListPopup .smallGroupContainer a {
+  display: block;
+  border: 1px solid #819aa9;
+  line-height: 33px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+#SmallGroupListPopup .smallGroupContainer a:hover {
+  text-decoration: none;
+}
+#SmallGroupListPopup .smallGroupContainer a.active {
+  background: #acacac;
+  border-color: #acacac;
+  color: #ffffff;
+  position: relative;
+  z-index: 100;
+}
+#SmallGroupListPopup .smallGroupContainer a.active:after {
+  border: 10px solid;
+  border-color: transparent transparent #acacac transparent;
+  bottom: -23px;
+  content: '';
+  display: block;
+  height: 0;
+  left: 50%;
+  margin-left: -10px;
+  position: absolute;
+  width: 0;
+  z-index: 110;
+}
+#SmallGroupListPopup .smallGroupContainer .contactFormContainer {
+  background: #acacac;
+  border-top: 22px solid #ffffff;
+  left: 0;
+  padding: 22px 0 11px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+#SmallGroupListPopup .smallGroupContainer .contactFormContainer h4, #SmallGroupListPopup .smallGroupContainer .contactFormContainer label {
+  color: #ffffff;
+}
+#SmallGroupListPopup .smallGroupContainer .contactFormContainer h4 {
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+#SmallGroupListPopup .smallGroupContainer .contactFormContainer input[type=text] {
+  height: 44px;
+  padding: 10px;
+}
+#SmallGroupListPopup .smallGroupContainer .contactFormContainer input[type=text]:last-of-type {
+  margin-bottom: 22px;
+}
+#SmallGroupListPopup .smallGroupContainer .contactFormContainer div {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.footerAdContainer .appImageContainer img {
+  width: 100%;
+  max-width: 155px;
+}
+
+.contactContainer .contactInfoContainer div.officehours [class^="sb-icon-"], .contactContainer .contactInfoContainer div.officehours [class*=" sb-icon-"], .contactContainer .contactInfoContainer div.officehours [class^="icon-"], .contactContainer .contactInfoContainer div.officehours [class*=" icon-"], .contactContainer .contactInfoContainer div.email [class^="sb-icon-"], .contactContainer .contactInfoContainer div.email [class*=" sb-icon-"], .contactContainer .contactInfoContainer div.email [class^="icon-"], .contactContainer .contactInfoContainer div.email [class*=" icon-"], .contactContainer .contactInfoContainer div.fax [class^="sb-icon-"], .contactContainer .contactInfoContainer div.fax [class*=" sb-icon-"], .contactContainer .contactInfoContainer div.fax [class^="icon-"], .contactContainer .contactInfoContainer div.fax [class*=" icon-"], .contactContainer .contactInfoContainer div.phone [class^="sb-icon-"], .contactContainer .contactInfoContainer div.phone [class*=" sb-icon-"], .contactContainer .contactInfoContainer div.phone [class^="icon-"], .contactContainer .contactInfoContainer div.phone [class*=" icon-"] {
+  color: #00aeef;
+}
+
+@media screen and (max-width: 479px) {
+  .magicShareRelocator {
+    margin-bottom: 88px;
+    position: relative;
+  }
+  .magicShareRelocator .sectionContainer:first-of-type {
+    position: absolute;
+    width: 100%;
+    bottom: -110px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .connectContainer .arrowedList li {
+    float: left;
+    width: 49.5%;
+    margin-right: 1%;
+  }
+
+  .connectContainer .arrowedList li:last-of-type {
+    margin-right: 0;
+  }
+
+  .email {
+    font-size: 0.8125em;
+    line-height: 1.846153846153846em;
+  }
+
+  .staffSectionContainer .staffProfile {
+    width: 46%;
+    display: inline-block;
+    margin-left: 3%;
+    vertical-align: top;
+  }
+  .staffSectionContainer .staffProfile:last-of-type {
+    margin-right: 0;
+  }
+
+  #staff-profile .sectionContainer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .title.centered, .blogRecommendedResources .heading {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .blogListTitleBarMoreButtonContainer {
+    display: inline;
+  }
+
+  .storySection .blogListMoreButtonContainer, .latestSection .blogListMoreButtonContainer {
+    display: none;
+  }
+
+  .title.blue .btn {
+    background-color: #00aeef;
+  }
+
+  .title.green .btn {
+    background-color: #67c18c;
+  }
+
+  .title.green .btn {
+    background-color: #67c18c;
+  }
+
+  .title.blue .btn:hover {
+    color: #00aeef;
+    border: 1px solid #00aeef;
+    background-color: white;
+  }
+
+  .title.green .btn:hover {
+    color: #67c18c;
+    border: 1px solid #67c18c;
+    background-color: white;
+  }
+
+  .title.tan .btn {
+    background-color: #00aeef;
+  }
+
+  .title.tan .btn:hover {
+    color: #00aeef;
+    border: 1px solid #00aeef;
+    background-color: white;
+  }
+}
+@media screen and (min-width: 568px) {
+  #shareContainer .twitterButton {
+    float: left;
+  }
+
+  .campusAddressContainer, .officeAddressContainer {
+    width: 100%;
+    margin-bottom: 3em;
+    float: left;
+  }
+
+  .campusAddressContainer {
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .pastorProfile {
+    display: table;
+  }
+  .pastorProfile .imageAndSocialContainer img {
+    width: 280px;
+  }
+  .pastorProfile .nameAndBioContainer {
+    display: table-cell;
+    padding-bottom: 40px;
+    padding-left: 5%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    vertical-align: middle;
+  }
+
+  .footerAdContainer .appImageContainer {
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+  .footerAdContainer .appImageContainer img {
+    width: 100%;
+    max-width: 155px;
+  }
+  .footerAdContainer .signupInfo {
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    height: 324px;
+    margin-bottom: 22px;
+    float: right;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: left;
+  }
+  .footerAdContainer .signupInfo h2 {
+    width: 60%;
+    margin: 0;
+  }
+  .footerAdContainer .signupInfo p {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mfp-content {
+    max-width: 700px;
+  }
+
+  .campusDescription {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .campusServiceTimesContainer {
+    width: 33%;
+    float: left;
+  }
+  .campusServiceTimesContainer .serviceTimesDay {
+    display: block;
+  }
+
+  .serviceTimesSection .tabs {
+    margin-bottom: 22px;
+  }
+  .serviceTimesSection .tabs .tabsNav li a {
+    font-size: 20px;
+    line-height: 44px;
+  }
+
+  .contactContainer {
+    width: 57%;
+    float: left;
+  }
+  .contactContainer .locationContainer {
+    width: 50%;
+    float: left;
+    padding: 0 5%;
+    border-left: 1px solid #00aeef;
+    border-right: 1px solid #00aeef;
+  }
+  .contactContainer .contactInfoContainer {
+    width: 45%;
+    float: right;
+  }
+  .contactContainer .contactInfoContainer div.officehours [class^="sb-icon-"], .contactContainer .contactInfoContainer div.officehours [class*=" sb-icon-"], .contactContainer .contactInfoContainer div.officehours [class^="icon-"], .contactContainer .contactInfoContainer div.officehours [class*=" icon-"], .contactContainer .contactInfoContainer div.email [class^="sb-icon-"], .contactContainer .contactInfoContainer div.email [class*=" sb-icon-"], .contactContainer .contactInfoContainer div.email [class^="icon-"], .contactContainer .contactInfoContainer div.email [class*=" icon-"], .contactContainer .contactInfoContainer div.fax [class^="sb-icon-"], .contactContainer .contactInfoContainer div.fax [class*=" sb-icon-"], .contactContainer .contactInfoContainer div.fax [class^="icon-"], .contactContainer .contactInfoContainer div.fax [class*=" icon-"], .contactContainer .contactInfoContainer div.phone [class^="sb-icon-"], .contactContainer .contactInfoContainer div.phone [class*=" sb-icon-"], .contactContainer .contactInfoContainer div.phone [class^="icon-"], .contactContainer .contactInfoContainer div.phone [class*=" icon-"] {
+    color: #00aeef;
+    margin-right: 7px;
+  }
+  .contactContainer .contactInfoContainer div.officehours a, .contactContainer .contactInfoContainer div.email a, .contactContainer .contactInfoContainer div.fax a, .contactContainer .contactInfoContainer div.phone a {
+    display: inline-block;
+  }
+
+  .connectContainer.mobile {
+    display: none;
+  }
+
+  .officeAddressContainer {
+    height: 45px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: #ffffff;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+  }
+  .officeAddressContainer .officeInfoToggle {
+    display: block;
+  }
+  .officeAddressContainer .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .officeAddressContainer.open {
+    height: auto;
+    min-height: 111px;
+    margin-bottom: -44px;
+    -webkit-transform: translate(0, -132px);
+    transform: translate(0, -132px);
+  }
+  .officeAddressContainer.open .officeInfoToggle {
+    display: none;
+  }
+  .officeAddressContainer.open .close {
+    display: block;
+  }
+  .officeAddressContainer.open .close:hover {
+    text-decoration: none;
+  }
+
+  .officeAddressContainer + h2 {
+    clear: left;
+  }
+
+  .connectContainer.wide {
+    display: block;
+    margin-bottom: 22px;
+  }
+  .connectContainer.wide img {
+    display: block;
+    width: 100%;
+  }
+  .connectContainer.wide .connectInfoContainer {
+    width: 410px;
+    margin-top: -105px;
+    position: absolute;
+    top: 50%;
+    left: 85px;
+  }
+  .connectContainer.wide .connectInfoContainer h2, .connectContainer.wide .connectInfoContainer p {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0 10px #0000008a;
+  }
+  .connectContainer.wide .connectInfoContainer p {
+    font-size: 18px;
+    line-height: 28px;
+    text-shadow: 0 0 10px #0000008a;
+  }
+  .connectContainer.wide .connectInfoContainer h2 {
+    font-size: 40px;
+    margin-bottom: 11px;
+    text-shadow: 0 0 10px #0000008a;
+  }
+  .connectContainer.wide .connectInfoContainer .ministries, .connectContainer.wide .connectInfoContainer .smallGroup {
+    height: 36px;
+    float: left;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 36px;
+    font-style: none;
+    width: 200px;
+    text-align: center;
+    margin-top: 11px;
+    border-radius: 2px;
+    border: solid 1px #fff;
+    color: #fff;
+    background-color: rgba(77, 77, 79, 0.3);
+  }
+  .connectContainer.wide .connectInfoContainer .ministries:hover, .connectContainer.wide .connectInfoContainer .smallGroup:hover {
+    color: #fff;
+    background: #0093c6;
+    border-color: #0093c6;
+  }
+  .connectContainer.wide .connectInfoContainer .laMinistriesBtn {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  .connectContainer.wide .connectInfoContainer .smallGroup {
+    float: right;
+  }
+
+  .staffSectionContainer {
+    clear: right;
+  }
+
+  .staffSectionContainer .staffProfile {
+    width: 29%;
+  }
+  .staffSectionContainer .staffProfile:last-of-type {
+    margin-right: 0;
+  }
+
+  .footerAdContainer {
+    padding: 44px 4%;
+  }
+  .footerAdContainer .appImageContainer {
+    width: 25%;
+    float: left;
+    text-align: left;
+  }
+  .footerAdContainer .signupInfo {
+    width: 30%;
+    margin: 0 2%;
+    float: left;
+  }
+  .footerAdContainer .signupInfo h2 {
+    width: 100%;
+    margin: 0;
+  }
+  .footerAdContainer .signupInfo p {
+    width: 100%;
+  }
+  .footerAdContainer #EmailSubscriptionSignupWidget {
+    width: 35%;
+    float: right;
+    margin-top: 22px;
+  }
+  .footerAdContainer #EmailSubscriptionSignupWidget #SubmitRegistration {
+    margin: 0 0 0 auto;
+  }
+
+  #SmallGroupListPopup .smallGroupContainer {
+    width: 50%;
+  }
+}

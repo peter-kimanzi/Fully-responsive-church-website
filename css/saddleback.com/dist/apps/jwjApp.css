@@ -1,0 +1,352 @@
+.content .sectionContainer .sectionInner h1 {
+  margin-left: 0;
+}
+
+.appsHeaderContainer {
+  background-image: url("../../../../../site.saddleback.com/site/provider/siteprovider/saddleback.com/templates/html_emails/images/journeywithjesus.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  margin-bottom: 44px;
+  padding: 10% 22px;
+  margin-bottom: 44px;
+}
+.appsHeaderContainer .appsHeader {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.appsHeaderContainer .appsHeader img {
+  position: relative;
+  top: -25px;
+  width: 100px;
+}
+.appsHeaderContainer .appsHeader .playButtonCircle {
+  border-radius: 50%;
+  height: 45px;
+  margin-left: -20px;
+  margin-top: 30px;
+  width: 45px;
+}
+.appsHeaderContainer .appsHeader .playButtonTriangle {
+  border-bottom-width: 15px;
+  border-top-width: 15px;
+  border-left-width: 20px;
+  margin: -14px 0 0 -8px;
+}
+
+.seriesSloganContainer h4 {
+  font-family: "Lato", Arial;
+  line-height: 1em;
+}
+
+.seriesDescription, .seriesDescription p {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  color: #4d4d4f;
+}
+
+.stepsSection {
+  margin: 0 11px 22px;
+}
+.stepsSection .step {
+  color: white;
+  padding: 10%;
+  margin-bottom: 11px;
+  text-align: center;
+  position: relative;
+}
+.stepsSection .step .btn {
+  background-color: rgba(77, 77, 79, 0.3);
+  border: 2px solid;
+  font-family: "Lato", Arial;
+  font-size: 14px;
+  font-style: normal;
+  padding: 11px 16px;
+}
+.stepsSection .step .btn:hover {
+  background: #0093c6;
+  color: #fff;
+  border: solid 2px #0093c6;
+}
+.stepsSection .step h3 {
+  font-family: "Lato", Arial;
+  font-size: 34px;
+  line-height: 32px;
+  font-weight: bold;
+  font-style: normal;
+  color: #fff;
+}
+
+.coreAppsSectionContainer {
+  padding-top: 44px;
+}
+.coreAppsSectionContainer h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-family: "Lato", Arial;
+  font-style: normal;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.coreAppsSectionContainer h2 img {
+  display: none;
+}
+.coreAppsSectionContainer img {
+  display: block;
+}
+.coreAppsSectionContainer .deviceImg {
+  display: none;
+}
+.coreAppsSectionContainer .coreAppsSection {
+  margin-bottom: 44px;
+}
+.coreAppsSectionContainer .coreAppsRow {
+  max-width: 980px;
+  margin: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  text-align: center;
+  margin-bottom: 44px;
+}
+.coreAppsSectionContainer .coreAppsRow .appInfoTop, .coreAppsSectionContainer .coreAppsRow .appInfoBottom {
+  display: none;
+}
+.coreAppsSectionContainer .coreAppsRow .appIntroSection {
+  width: 100%;
+  margin-bottom: 22px;
+}
+.coreAppsSectionContainer .coreAppsRow .appIntroSection a.btn {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 42px;
+  padding: 0 22px;
+  margin: 0 auto;
+  display: block;
+  width: 140px;
+}
+.coreAppsSectionContainer .coreAppsRow .appDownloadsSection {
+  width: 50%;
+  padding: 0 0 0 8%;
+}
+.coreAppsSectionContainer .coreAppsRow .appDownloadsSection img {
+  margin-bottom: 11px;
+}
+.coreAppsSectionContainer .coreAppsRow .appDownloadsSection img:first-of-type {
+  margin-bottom: 22px;
+}
+.coreAppsSectionContainer .coreAppsRow .appIcon {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.coreAppsSectionContainer .coreAppsRow .appPreviewImgSection {
+  width: 50%;
+}
+.coreAppsSectionContainer .coreAppsRow .appPreviewImgSection img {
+  width: 100%;
+  position: relative;
+  right: -44px;
+  max-width: 280px;
+}
+
+@media screen and (min-width: 480px) {
+  .stepsSection {
+    margin: 0 1% 22px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .coreAppsSectionContainer h2 {
+    font-size: 40px;
+    line-height: normal;
+  }
+}
+@media screen and (min-width: 700px) {
+  .coreAppsSectionContainer .coreAppsSection {
+    min-height: 530px;
+  }
+  .coreAppsSectionContainer .coreAppsRow {
+    position: relative;
+    text-align: left;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appIntroSection {
+    -ms-flex-order: 1;
+        order: 1;
+    width: 60%;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appIntroSection h2 img {
+    display: inline-block;
+    margin-right: 22px;
+    color: #4d4d4f;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appIntroSection p {
+    color: #4d4d4f;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appInfoTop, .coreAppsSectionContainer .coreAppsRow .appInfoBottom {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appInfoTop {
+    font-family: "Lato", Arial;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appInfoBottom {
+    font-style: italic;
+    color: #bcbec0;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appDownloadsSection {
+    -ms-flex-order: 2;
+        order: 2;
+    width: 60%;
+    padding: 0;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appDownloadsSection .appIcon {
+    display: none;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appDownloadsSection img {
+    height: 42px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 11px;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appDownloadsSection p {
+    color: #4d4d4f;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appPreviewImgSection {
+    -ms-flex-order: 3;
+        order: 3;
+    position: absolute;
+    width: 40%;
+    top: 0;
+    right: 0;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appPreviewImgSection img {
+    width: auto;
+    height: 530px;
+    max-width: none;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(odd) .appPreviewImgSection {
+    right: 0;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(even) .coreAppsRow {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(even) .appPreviewImgSection {
+    left: 0;
+    text-align: right;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(even) .appPreviewImgSection img {
+    display: inline-block;
+    position: absolute;
+    right: 33px;
+  }
+
+  .seriesSloganContainer {
+    text-align: center;
+  }
+  .seriesSloganContainer h4 {
+    font-family: "Lato", Arial;
+    font-style: normal;
+    line-height: 120%;
+    word-spacing: 3px;
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .appsHeaderContainer .appsHeader img {
+    top: -55px;
+    width: auto;
+  }
+  .appsHeaderContainer .appsHeader .playButtonCircle {
+    border-radius: 50%;
+    height: 100px;
+    margin: 50px 0 0 -50px;
+    width: 100px;
+  }
+  .appsHeaderContainer .appsHeader .playButtonTriangle {
+    border-bottom-width: 30px;
+    border-top-width: 30px;
+    border-left-width: 40px;
+    margin: -30px 0 0 -15px;
+  }
+
+  .seriesDescriptionContainer {
+    display: table;
+  }
+  .seriesDescriptionContainer .seriesSloganContainer {
+    display: table-cell;
+    width: 30%;
+    vertical-align: middle;
+    text-align: left;
+  }
+  .seriesDescriptionContainer .seriesSlogan {
+    padding-right: 26px;
+  }
+  .seriesDescriptionContainer .seriesDescription {
+    padding: 11px 0;
+    margin: 0;
+    display: table-cell;
+    width: 70%;
+    vertical-align: middle;
+    border: 0;
+    border-left: 3px solid #f99e49;
+    padding-left: 26px;
+  }
+  .seriesDescriptionContainer .seriesDescription p {
+    text-align: left;
+    color: #4d4d4f;
+  }
+  .seriesDescriptionContainer .seriesDescription p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .stepsSection {
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: 33px;
+  }
+  .stepsSection .step {
+    padding: 60px;
+  }
+  .stepsSection .step .btn {
+    position: absolute;
+    display: inline-table;
+    bottom: 33px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    font-size: 14px;
+  }
+  .stepsSection .step.one {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    margin-right: 11px;
+    margin-bottom: 22px;
+  }
+  .stepsSection .step.one:after {
+    content: " " width;
+  }
+  .stepsSection .step.two {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    margin-left: 11px;
+    margin-right: -22px;
+    margin-bottom: 22px;
+    padding-bottom: 85px;
+  }
+  .stepsSection .step.three {
+    margin-right: -22px;
+    padding-bottom: 85px;
+  }
+}

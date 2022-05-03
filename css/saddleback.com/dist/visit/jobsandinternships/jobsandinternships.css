@@ -1,0 +1,1956 @@
+/* COMPASS IMPORTS */
+@font-face {
+  font-family: 'SB-Icons';
+  src: url("../../../../../fonts/rebrand/SB-Icons134c.eot?itbk42");
+  src: url("../../../../../fonts/rebrand/SB-Icons134c.eot?itbk42#iefix") format("embedded-opentype"), url("../../../../../fonts/rebrand/SB-Icons134c.ttf?itbk42") format("truetype"), url("../../../../../fonts/rebrand/SB-Icons134c.woff?itbk42") format("woff"), url("../../../../../fonts/rebrand/SB-Icons134c.svg?itbk42#SB-Icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'SB-Icons' !important;
+  speak: none !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1 !important;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-back-10:before {
+  content: "\e953";
+}
+
+.icon-forward-10:before {
+  content: "\e954";
+}
+
+.icon-share:before {
+  content: "\e97b";
+}
+
+.icon-more:before {
+  content: "\e97a";
+}
+
+.icon-respond:before {
+  content: "\e900";
+}
+
+.icon-view:before {
+  content: "\e901";
+}
+
+.icon-subscribe:before {
+  content: "\e902";
+}
+
+.icon-heart:before {
+  content: "\e903";
+}
+
+.icon-print-outline:before {
+  content: "\e904";
+}
+
+.icon-printer-glyph:before {
+  content: "\e905";
+}
+
+.icon-pdf:before {
+  content: "\e906";
+}
+
+.icon-email-glyph:before {
+  content: "\e907";
+}
+
+.icon-email-outline:before {
+  content: "\e908";
+}
+
+.icon-download:before {
+  content: "\e909";
+}
+
+.icon-cloud:before {
+  content: "\e90a";
+}
+
+.icon-settings:before {
+  content: "\e90b";
+}
+
+.icon-tools:before {
+  content: "\e90c";
+}
+
+.icon-phone-glyph:before {
+  content: "\e90d";
+}
+
+.icon-phone-outline:before {
+  content: "\e90e";
+}
+
+.icon-mobile-phone-glyph:before {
+  content: "\e90f";
+}
+
+.icon-mobile-phone-outline:before {
+  content: "\e910";
+}
+
+.icon-bible:before {
+  content: "\e911";
+}
+
+.icon-map:before {
+  content: "\e912";
+}
+
+.icon-computer-outline:before {
+  content: "\e913";
+}
+
+.icon-computer-glyph:before {
+  content: "\e914";
+}
+
+.icon-glasses:before {
+  content: "\e915";
+}
+
+.icon-info:before {
+  content: "\e916";
+}
+
+.icon-alert:before {
+  content: "\e917";
+}
+
+.icon-conversation:before {
+  content: "\e918";
+}
+
+.icon-chat:before {
+  content: "\e919";
+}
+
+.icon-location-glyph:before {
+  content: "\e91a";
+}
+
+.icon-location-outline:before {
+  content: "\e91b";
+}
+
+.icon-location-finder:before {
+  content: "\e93e";
+}
+
+.icon-controls:before {
+  content: "\e91c";
+}
+
+.icon-badge:before {
+  content: "\e91d";
+}
+
+.icon-search-big:before {
+  content: "\e91e";
+}
+
+.icon-search:before {
+  content: "\e91f";
+}
+
+.icon-copy:before {
+  content: "\e920";
+}
+
+.icon-television:before {
+  content: "\e921";
+}
+
+.icon-volunteer:before {
+  content: "\e922";
+}
+
+.icon-friends:before {
+  content: "\e923";
+}
+
+.icon-travel:before {
+  content: "\e924";
+}
+
+.icon-lock-opened:before {
+  content: "\e925";
+}
+
+.icon-lock:before {
+  content: "\e926";
+}
+
+.icon-curriculum:before {
+  content: "\e927";
+}
+
+.icon-calendar:before {
+  content: "\e928";
+}
+
+.icon-profile-incomplete:before {
+  content: "\e929";
+}
+
+.icon-profile-1-star:before {
+  content: "\e930";
+}
+
+.icon-profile-2-star:before {
+  content: "\e931";
+}
+
+.icon-profile-complete:before {
+  content: "\e932";
+}
+
+.icon-check-mark:before {
+  content: "\e93d";
+}
+
+.icon-close:before {
+  content: "\e942";
+}
+
+.icon-add:before {
+  content: "\e943";
+}
+
+.icon-add-item:before {
+  content: "\e944";
+}
+
+.icon-decline:before {
+  content: "\e93c";
+}
+
+.icon-add-outline:before {
+  content: "\e956";
+}
+
+.icon-subtract:before {
+  content: "\e945";
+}
+
+.icon-remove-outline:before {
+  content: "\e957";
+}
+
+.icon-resend:before {
+  content: "\e93b";
+}
+
+.icon-arrow-down:before {
+  content: "\e946";
+}
+
+.icon-arrow-left:before {
+  content: "\e947";
+}
+
+.icon-arrow-right:before {
+  content: "\e948";
+}
+
+.icon-arrow-up:before {
+  content: "\e949";
+}
+
+.icon-camera:before {
+  content: "\e940";
+}
+
+.icon-play-circle:before {
+  content: "\e94a";
+}
+
+.icon-play-big:before {
+  content: "\e94b";
+}
+
+.icon-play:before {
+  content: "\e94c";
+}
+
+.icon-pause:before {
+  content: "\e94d";
+}
+
+.icon-pause-circle:before {
+  content: "\e94e";
+}
+
+.icon-last-track:before {
+  content: "\e94f";
+}
+
+.icon-next-track:before {
+  content: "\e952";
+}
+
+.icon-full-screen-outline:before {
+  content: "\e959";
+}
+
+.icon-full-screen-glyph:before {
+  content: "\e95a";
+}
+
+.icon-volume-none:before {
+  content: "\e95b";
+}
+
+.icon-volume:before {
+  content: "\e95c";
+}
+
+.icon-volume-raise:before {
+  content: "\e95d";
+}
+
+.icon-facebook:before {
+  content: "\e960";
+}
+
+.icon-facebook-box:before {
+  content: "\e961";
+}
+
+.icon-googleplus:before {
+  content: "\e962";
+}
+
+.icon-googleplus-box:before {
+  content: "\e963";
+}
+
+.icon-instagram:before {
+  content: "\e964";
+}
+
+.icon-instagram-box:before {
+  content: "\e965";
+}
+
+.icon-linkedin:before {
+  content: "\e966";
+}
+
+.icon-linkedin-box:before {
+  content: "\e967";
+}
+
+.icon-pinterest:before {
+  content: "\e968";
+}
+
+.icon-pinterest-box:before {
+  content: "\e969";
+}
+
+.icon-podcast:before {
+  content: "\e96a";
+}
+
+.icon-podcast-box:before {
+  content: "\e96b";
+}
+
+.icon-rss:before {
+  content: "\e970";
+}
+
+.icon-rss-box:before {
+  content: "\e971";
+}
+
+.icon-skype:before {
+  content: "\e972";
+}
+
+.icon-skype-box:before {
+  content: "\e973";
+}
+
+.icon-twitter:before {
+  content: "\e974";
+}
+
+.icon-twitter-box:before {
+  content: "\e975";
+}
+
+.icon-whatsapp:before {
+  content: "\e976";
+}
+
+.icon-whatsapp-box:before {
+  content: "\e977";
+}
+
+.icon-youtube:before {
+  content: "\e978";
+}
+
+.icon-youtube-box:before {
+  content: "\e979";
+}
+
+.icon-email-box:before {
+  content: "\e93f";
+}
+
+.icon-delete:before {
+  content: "\e97c";
+}
+
+.icon-clock:before {
+  content: "\e97e";
+}
+
+.icon-building:before {
+  content: "\e97f";
+}
+
+.icon-language-select:before {
+  content: "\e955";
+}
+
+.icon-language:before {
+  content: "\e92d";
+}
+
+.icon-demographic:before {
+  content: "\e92e";
+}
+
+.icon-down-icon:before {
+  content: "\e92a";
+}
+
+.icon-copy-link:before {
+  content: "\e92b";
+}
+
+.icon-list-view:before {
+  content: "\e92c";
+}
+
+.icon-grid-view:before {
+  content: "\e92f";
+}
+
+.icon-cash:before {
+  content: "\e933";
+}
+
+.icon-check:before {
+  content: "\e934";
+}
+
+.icon-star:before {
+  content: "\e935";
+}
+
+.icon-blog:before {
+  content: "\e936";
+}
+
+.icon-events:before {
+  content: "\e937";
+}
+
+.icon-next-steps:before {
+  content: "\e938";
+}
+
+.icon-serve:before {
+  content: "\e939";
+}
+
+.icon-staff:before {
+  content: "\e93a";
+}
+
+.icon-shopping-cart:before {
+  content: "\e941";
+}
+
+.icon-resources:before {
+  content: "\e950";
+}
+
+.icon-steps:before {
+  content: "\e951";
+}
+
+.icon-sb-logo:before {
+  content: "\e958";
+}
+
+.icon-sk:before {
+  content: "\e96c";
+}
+
+.icon-jhm:before {
+  content: "\e95e";
+}
+
+.icon-hsm:before {
+  content: "\e96d";
+}
+
+.icon-cm:before {
+  content: "\e95f";
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+h1.interns {
+  margin-top: -15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.titleSection {
+  margin-bottom: 0;
+}
+
+.masthead-image-container {
+  margin: 0 0 60px;
+}
+.masthead-image-container .masthead-photo {
+  margin: 0;
+}
+
+.imageContainer.interns {
+  margin: 0;
+}
+
+.sectionContainer.interns {
+  margin: 0 0 60px;
+}
+
+.internship-headers {
+  margin-bottom: 0;
+}
+
+.internship-headers h4 {
+  margin-bottom: 15px;
+}
+
+.jobs-intro-section {
+  margin-bottom: 0;
+}
+.jobs-intro-section .intro {
+  text-align: center;
+  margin: 0 auto;
+}
+.jobs-intro-section .intro p {
+  text-align: left;
+}
+.jobs-intro-section .intro h2 {
+  margin: 0 0 60px;
+}
+
+.cornerLink {
+  display: block;
+  margin-top: 15px;
+}
+
+/* Ellipsis Script */
+.ellip {
+  display: block;
+  height: 100%;
+}
+
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
+}
+
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionContainer.interns {
+  margin: 0px;
+}
+
+.internship-text {
+  max-height: 45px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.internship-text.open {
+  max-height: 845px;
+}
+
+.staticHeightImageContainer {
+  margin-bottom: 60px;
+}
+.staticHeightImageContainer.interns {
+  margin: 0px;
+}
+
+.invisible {
+  display: none !important;
+}
+
+.interns-acrostic-container {
+  width: 100%;
+  background-color: #edf1f5;
+  padding: 30px;
+  position: relative;
+}
+.interns-acrostic-container .gradient {
+  width: 100%;
+  height: 204px;
+  background-image: linear-gradient(247deg, #00aeef, #56c4c4);
+  padding: 0px;
+}
+.interns-acrostic-container .body {
+  width: 100%;
+  height: 586px;
+  background-color: #ffffff;
+  padding: 0px;
+}
+.interns-acrostic-container .intern-acrostic-ctnr {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  left: 0;
+}
+.interns-acrostic-container .intern-acrostic-ctnr.text {
+  padding: 0 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 495px;
+}
+.interns-acrostic-container .intern-acrostic-ctnr.line {
+  width: 75%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 495px;
+  border: 1px solid #747474;
+  margin-top: 600px;
+}
+.interns-acrostic-container .acrostic-image {
+  margin: 90px 47px 47px;
+  width: auto;
+  height: 280px;
+  top: 0px;
+  background-position: center;
+}
+.interns-acrostic-container .acrostic-image.invisible {
+  opacity: 0;
+  z-index: 0;
+}
+.interns-acrostic-container .title-text {
+  max-width: 400px;
+  width: auto;
+  font-family: Lato;
+  font-size: 26px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #4d4d4f;
+  margin: 400px 5% 5%;
+}
+.interns-acrostic-container .display-text {
+  font-family: Lato;
+  font-size: 28px;
+  letter-spacing: 1.08px;
+  text-align: center;
+  color: #4d4d4f;
+  width: 100%;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
+  z-index: 1;
+}
+.interns-acrostic-container .display-text.invisible {
+  opacity: 0;
+  z-index: 0;
+}
+.interns-acrostic-container .description-text {
+  font-family: Lato;
+  font-size: 14px;
+  letter-spacing: 1.08px;
+  text-align: center;
+  color: #848488;
+  width: 100%;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
+  z-index: 1;
+  display: none;
+}
+.interns-acrostic-container .description-text.invisible {
+  opacity: 0;
+  z-index: 0;
+}
+.interns-acrostic-container .intern-acrostic {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  top: 510px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.interns-acrostic-container .acrostic-letter {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: #bcbec0;
+  cursor: pointer;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
+}
+.interns-acrostic-container .acrostic-letter.selected {
+  font-weight: 500;
+  color: #00aeef;
+}
+
+.image-text {
+  width: 248px;
+  font-family: Lato;
+  font-size: 38px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.36px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.header-text {
+  padding: 18px 0px 0px;
+  margin-bottom: 78px;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+.header-text.lots-of-text {
+  font-size: 40px;
+}
+
+.header-line {
+  height: 0px;
+  width: 75px;
+  border: 2.5px solid #56C4C4;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  margin-bottom: 30px;
+}
+
+.types-of-internships-container {
+  margin-bottom: 0px;
+  margin-top: 55px;
+  font-family: Lato;
+  letter-spacing: 1px;
+}
+.types-of-internships-container .internships {
+  padding: 0;
+  margin: 0;
+  background-color: #F6F8FA;
+}
+.types-of-internships-container .internships .image-thumbnail {
+  margin-top: 0px;
+  width: 100%;
+  height: 250px;
+}
+.types-of-internships-container .internships .type-container {
+  max-width: 837px;
+  margin: 0 auto;
+}
+.types-of-internships-container .internships .type-container .type-title {
+  margin: 20px calc(50% - 145px);
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 1.08px;
+  color: #4d4d4f;
+}
+.types-of-internships-container .internships .type-container .type-title span {
+  display: block;
+}
+.types-of-internships-container .internships .type-container .type-link, .types-of-internships-container .internships .type-container .type-view-all {
+  padding: 0px 20px 30px;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 1.53;
+  color: #00aeef;
+  transition: ease-in-out 0.2s;
+}
+.types-of-internships-container .internships .type-container .type-link {
+  display: inline-block;
+}
+.types-of-internships-container .internships .type-container .type-view-all {
+  display: block;
+  margin: 0 auto;
+  width: 152px;
+  text-align: center;
+}
+.types-of-internships-container .internships .type-container .type-view-all.open:before {
+  content: "See Less";
+}
+.types-of-internships-container .internships .type-container .type-view-all:not(.open):before {
+  content: "See More";
+}
+.types-of-internships-container .internships .type-container .flip {
+  -webkit-transform: translate(4px, 2px) rotate(180deg);
+          transform: translate(4px, 2px) rotate(180deg);
+}
+.types-of-internships-container .internships .type-container .type-text {
+  margin: 0px 20px 30px;
+  overflow: hidden;
+  font-size: 17px;
+  line-height: 1.53;
+  color: #4d4d4f;
+  transition: 0.3s ease-out;
+  max-height: 130px;
+}
+.types-of-internships-container .internships .type-container .type-text.view-all {
+  max-height: 1150px;
+  transition: 0.3s ease-in;
+}
+
+.apply-now-button {
+  background-color: #00aeef;
+  padding: 30px 30px;
+  letter-spacing: 1px;
+}
+.apply-now-button .question {
+  font-size: 26px;
+  color: white;
+  text-align: center;
+  max-width: 330px;
+  font-weight: 900;
+  margin: 0 auto 15px;
+}
+.apply-now-button .question-button {
+  padding: 15px;
+  width: 200px;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+.apply-now-button .question-button:hover {
+  background-color: #18b8f1;
+  color: white;
+}
+
+.life-stories-background {
+  background-color: #edf1f5;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.life-stories {
+  background-color: #edf1f5;
+  margin-bottom: 0px;
+  font-family: Lato;
+  letter-spacing: 1px;
+  padding: 100px 30px 0px;
+  overflow: hidden;
+}
+.life-stories .life-stories-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.life-stories .life-stories-container #lifeStoriesSlider {
+  width: 100%;
+  margin: 0 auto;
+  background: none !important;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsArrow {
+  top: 50%;
+  background: none;
+  box-shadow: none;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsArrowLeft {
+  left: -30px;
+  right: unset;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsArrowRight {
+  right: -30px;
+  left: unset;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsVisibleNearbyWrap {
+  overflow: visible;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsOverflow {
+  background: none !important;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide {
+  border-radius: 8px;
+  background: #fff;
+  max-width: 390px;
+  height: 375px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .life-stories-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .story-description-container {
+  padding: 30px;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .story-description-container .story-description-inner-container {
+  text-align: center;
+  color: #4d4d4f;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .story-description-container .story-description-inner-container .life-stories-title {
+  font-size: 32px;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin-bottom: 15px;
+  overflow-wrap: break-word;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .story-description-container .story-description-inner-container .life-stories-description {
+  display: none;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .story-description-container .story-description-inner-container .life-stories-info-link .icon-arrow-right {
+  margin-left: 5px;
+  display: inline-block;
+  font-size: 12px;
+}
+.life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .story-description-container .story-description-inner-container .life-stories-info-link .icon-arrow-right:hover {
+  text-decoration: none;
+}
+
+.faq-container {
+  background-color: #edf1f5;
+  margin-bottom: 0px;
+  font-family: Lato;
+  letter-spacing: 1px;
+  padding: 100px 30px 0px;
+}
+.faq-container .accordion.interns {
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+}
+.faq-container .accordion.interns .needs-view-more {
+  display: none;
+}
+.faq-container .accordion.interns .needs-view-more.view-all {
+  display: block;
+}
+.faq-container .accordion.interns h3 {
+  font-size: 16px;
+  line-height: 1.31;
+  letter-spacing: 1px;
+  background-color: #edf1f5;
+  border: none;
+  border-top: solid 1px #bcbec0;
+  margin-bottom: 0;
+}
+.faq-container .accordion.interns h3:focus {
+  outline: none;
+}
+.faq-container .accordion.interns h3.ui-accordion-header-active {
+  background: #00aeef;
+  border: none;
+  padding-bottom: 16px;
+}
+.faq-container .accordion.interns h3:hover {
+  background: #00aeef;
+  border: none;
+  padding-bottom: 16px;
+}
+.faq-container .accordion.interns div {
+  margin-bottom: 0px;
+  border: none;
+}
+.faq-container .faq-view-all {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  text-align: center;
+  padding: 0px 20px 30px;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 1.53;
+  color: #00aeef;
+  transition: ease-in-out 0.2s;
+}
+.faq-container .faq-view-all.open:before {
+  content: "View Less FAQ's";
+}
+.faq-container .faq-view-all:not(.open):before {
+  content: "View More FAQ's";
+}
+.faq-container .flip {
+  -webkit-transform: translate(4px, 2px) rotate(180deg);
+          transform: translate(4px, 2px) rotate(180deg);
+}
+
+.year-long-interns {
+  background-color: #edf1f5;
+  margin-bottom: 0px;
+  font-family: Lato;
+  letter-spacing: 1px;
+  padding: 100px 30px;
+  overflow: hidden;
+}
+.year-long-interns .yli-container {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  margin-bottom: 326px;
+}
+.year-long-interns .yli-container .year-long-intern {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  transition: 0.3s ease-out;
+  margin-bottom: 40px;
+  z-index: 1000;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+}
+.year-long-interns .yli-container .year-long-intern .thumbnail {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.year-long-interns .yli-container .year-long-intern .yli-name {
+  font-size: 32px;
+  letter-spacing: 0.55px;
+  text-align: center;
+  color: #00aeef;
+}
+.year-long-interns .yli-container .year-long-intern .yli-role {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #878787;
+}
+.year-long-interns .yli-container .year-long-intern.hidden {
+  opacity: 0;
+  z-index: -1;
+  -webkit-transform: translateX(-250%);
+          transform: translateX(-250%);
+}
+.year-long-interns .yli-container .year-long-intern.hidden.right {
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+}
+.year-long-interns .yli-container .intern-arrow-right {
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  margin-left: -16px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  top: 100px;
+  right: -16px;
+}
+.year-long-interns .yli-container .intern-arrow-right:after {
+  font-family: 'SB-Icons' !important;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  content: '\e948';
+}
+.year-long-interns .yli-container .intern-arrow-left {
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  top: 100px;
+  left: -16px;
+}
+.year-long-interns .yli-container .intern-arrow-left:after {
+  font-family: 'SB-Icons' !important;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  content: '\e947';
+}
+
+.workplace-leader-section {
+  background-color: #fff;
+  margin-bottom: 0px;
+  font-family: Lato;
+  letter-spacing: 1px;
+  padding: 100px 30px 0px;
+  overflow: hidden;
+}
+.workplace-leader-section #workplaceStaffSlider .rsOverflow {
+  background: none !important;
+}
+.workplace-leader-section #workplaceStaffSlider .rsSlide {
+  background: none !important;
+}
+.workplace-leader-section #workplaceStaffSlider .rsNav {
+  background: none !important;
+}
+.workplace-leader-section #workplaceStaffSlider img {
+  display: block;
+}
+
+.rsArrow {
+  top: 63%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 38px;
+  height: 40px;
+  background: #4d4d4f;
+  opacity: 0.7 !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.rsArrow .rsArrowIcn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100%;
+}
+.rsArrow .rsArrowIcn:after {
+  font-family: 'SB-Icons' !important;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.rsArrowLeft {
+  left: 0;
+}
+.rsArrowLeft .rsArrowIcn:after {
+  content: '\e947';
+}
+
+.rsArrowRight {
+  right: 0;
+}
+.rsArrowRight .rsArrowIcn:after {
+  content: '\e948';
+}
+
+.internshipsContainer {
+  margin-bottom: 100px;
+}
+.internshipsContainer .imageContainer .staticHeightImageContainer {
+  margin-bottom: 60px;
+}
+.internshipsContainer .imageContainer .staticHeightImageContainer.interns {
+  margin: 0px;
+}
+.internshipsContainer .imageContainer h2 {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.internshipsContainer .internships-info-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.internshipsContainer .internships-info-container .description-container {
+  margin-bottom: 30px;
+}
+.internshipsContainer .internships-info-container .description-container p {
+  margin: 0;
+}
+.internshipsContainer .internships-info-container .description-container:last-of-type {
+  margin-bottom: 60px;
+}
+
+.applyBtn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  line-height: 16px;
+  padding: 10px 0;
+  line-height: 16px;
+}
+
+.applyBtn:hover {
+  background: #0093C6;
+}
+
+.staticHeightImageContainer {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.imageDescription {
+  margin: 0;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: black 1px 0px 0px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+}
+
+.jobsContainer .jobs-header {
+  color: #4d4d4f;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.jobsContainer .description-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.jobsContainer .description-container .fulfill-info-container p {
+  margin-bottom: 60px;
+}
+.jobsContainer .description-container .staticHeightImageContainer {
+  margin: 0;
+}
+
+.jobs-faq .masthead-photo {
+  margin-bottom: 60px;
+}
+.jobs-faq h2 {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.internships-faq h2 {
+  display: block;
+  margin: 0 auto 60px;
+  width: 320px;
+}
+.internships-faq p {
+  margin-bottom: 30px;
+}
+
+.accordion {
+  max-width: 720px;
+  margin: 0 auto 60px;
+}
+
+.jobs-readme-container {
+  padding: 5px 0;
+  border-top: solid 1px #dbdbdb;
+  border-bottom: solid 1px #dbdbdb;
+  text-align: center;
+}
+.jobs-readme-container a {
+  margin: 0;
+  line-height: 1.65em;
+}
+
+.job-blog-photo {
+  margin-bottom: 15px;
+}
+
+.blog-preview-description h1 {
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+.blog-preview-description p {
+  margin-bottom: 15px;
+}
+
+#blog-btn {
+  margin: 0;
+  height: 36px;
+  width: 100%;
+}
+
+.learn-more {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.icon-arrow-down,
+.icon-plus,
+.arrow-down {
+  display: inline-block;
+  margin-left: 5px;
+  color: #00aeef;
+}
+
+.icon-arrow-down:before {
+  display: inline-block;
+  margin-left: 5px;
+  color: #00aeef;
+  vertical-align: middle;
+}
+
+.flip {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.jobs-faq {
+  margin-bottom: 100px;
+}
+.jobs-faq .btn {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  line-height: 34px;
+  padding: 0;
+}
+
+.university-partnerships {
+  max-width: 720px;
+  margin: 0 auto 30px;
+}
+
+.rsOverflow .rsDefault {
+  background: none !important;
+}
+
+@media screen and (min-width: 350px) {
+  .apply-now-button {
+    padding: 30px 30px;
+  }
+
+  .header-text.lots-of-text {
+    font-size: 48px;
+  }
+
+  .types-of-internships-container .internships .type-container .type-title {
+    margin: 20px 20px;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1.08px;
+    color: #4d4d4f;
+  }
+}
+@media screen and (min-width: 375px) {
+  .interns-acrostic-container .acrostic-letter {
+    font-size: 50px;
+  }
+  .interns-acrostic-container .description-text {
+    display: block;
+  }
+}
+@media screen and (min-width: 460px) {
+  .life-stories .life-stories-container {
+    width: 390px;
+  }
+  .life-stories .life-stories-container #reliefstorysSlider {
+    width: 390px;
+  }
+  .life-stories .life-stories-container #reliefstorysSlider .rsOverflow {
+    width: 390px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .applyBtn {
+    width: 200px;
+  }
+
+  .interns-acrostic-container .title-text {
+    margin: 400px 47px 47px;
+  }
+  .interns-acrostic-container .acrostic-letter {
+    font-size: 58px;
+  }
+
+  .interns-acrostic-container .intern-acrostic {
+    width: 75%;
+    max-width: 450px;
+  }
+
+  .life-stories .life-stories-container #lifeStoriesSlider .rsArrowLeft {
+    left: -55px;
+  }
+  .life-stories .life-stories-container #lifeStoriesSlider .rsArrowRight {
+    right: -55px;
+  }
+}
+@media screen and (min-width: 568px) {
+  #blog-btn {
+    width: 200px;
+  }
+
+  .interns-acrostic-container .title-text {
+    margin: 400px auto 0px;
+    font-size: 34px;
+  }
+
+  .types-of-internships-container .internships .type-container .type-title span {
+    display: inline;
+  }
+
+  #lifeStoriesSlider .rsOverflow {
+    padding: 0;
+  }
+  #lifeStoriesSlider .leader-info-container {
+    -ms-flex-align: start;
+        align-items: flex-start;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #lifeStoriesSlider .leader-info-container .workplace-leader-picture {
+    margin: 0;
+    width: 290px;
+    height: auto !important;
+  }
+  #lifeStoriesSlider .leader-info-container .workplace-leader-info {
+    margin-left: 15px;
+    width: 45%;
+  }
+  #lifeStoriesSlider .leader-info-container .workplace-leader-info .workplace-staff-description {
+    max-height: 80px;
+  }
+
+  .year-long-interns .yli-container {
+    padding-top: 50px;
+    margin-bottom: 375px;
+  }
+  .year-long-interns .yli-container .year-long-intern {
+    -webkit-transform: translateX(-50%) scale(1.3);
+            transform: translateX(-50%) scale(1.3);
+  }
+
+  #workplaceStaffSlider {
+    padding: 0 !important;
+  }
+
+  .workplace-leader-section {
+    padding: 100px 0 0 !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .description-container,
+  .intro {
+    margin-bottom: 60px;
+  }
+
+  .description-container {
+    margin-bottom: 60px;
+  }
+
+  .staticHeightImageContainer {
+    position: static;
+  }
+
+  h4 {
+    margin-bottom: 15px;
+  }
+
+  .masthead-photo {
+    margin-bottom: 60px;
+  }
+
+  .intro h2 {
+    margin-bottom: 60px;
+  }
+
+  .imageDescription {
+    top: 170px;
+    margin-bottom: 30px;
+    position: static;
+    font-weight: normal;
+    color: #4d4d4f;
+    text-shadow: none;
+  }
+
+  .blog-preview {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    height: 100%;
+  }
+  .blog-preview .staticHeightImageContainer {
+    margin: 0;
+  }
+
+  .job-blog-photo {
+    margin-bottom: 15px;
+  }
+
+  .blog-preview-description {
+    margin: 0;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    left: 90px;
+    display: block;
+    -webkit-display: inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-flow: column;
+        flex-flow: column;
+  }
+  .blog-preview-description h1 {
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: 900;
+  }
+  .blog-preview-description p {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: inherit;
+    font-weight: normal;
+  }
+
+  .shader-layer {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .internshipsContainer .imageContainer .staticHeightImageContainer {
+    margin-bottom: 60px;
+  }
+
+  .internships {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .internships .description-container {
+    margin: 0 0 30px;
+    width: 50%;
+  }
+  .internships .description-container:nth-of-type(odd) {
+    padding: 0 30px 0 0;
+  }
+  .internships .description-container h4 {
+    text-align: left;
+  }
+
+  /* FAQ Styling - 768px */
+  .jobs-faq .btn {
+    margin: 0 auto;
+    width: 200px;
+    display: block;
+    text-align: center;
+    line-height: 34px;
+    padding: 0;
+  }
+
+  .types-of-internships-container {
+    margin: 55px 0px 0px;
+    max-width: 1280px;
+  }
+  .types-of-internships-container .internships {
+    padding: 0;
+  }
+  .types-of-internships-container .internships .description-container {
+    margin-bottom: 60px;
+  }
+  .types-of-internships-container .internships .image-thumbnail#Image2 {
+    background-position-y: -80px !important;
+  }
+
+  .life-stories {
+    padding: 100px 0;
+    margin: 0 100px;
+    height: 807px;
+  }
+  .life-stories .life-stories-main-title {
+    font-size: 72px;
+    letter-spacing: 2px;
+    line-height: 1.11;
+    margin-bottom: 100px;
+  }
+  .life-stories .life-stories-main-title:before {
+    width: 70px !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 0 !important;
+  }
+  .life-stories .life-stories-main-title:after {
+    width: 70px !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 0 !important;
+  }
+  .life-stories .life-stories-container {
+    width: 390px;
+  }
+  .life-stories .life-stories-container #lifeStoriesSlider {
+    width: 390px;
+    margin: 0;
+  }
+  .life-stories .life-stories-container #lifeStoriesSlider .rsOverflow {
+    width: 390px;
+  }
+  .life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide {
+    height: 400px;
+  }
+  .life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .story-description-container {
+    height: 200px;
+  }
+  .life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .story-description-container .story-description-inner-container {
+    text-align: left;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    height: 100%;
+  }
+  .life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .story-description-container .story-description-inner-container .life-stories-title {
+    height: 42px;
+    overflow: hidden;
+  }
+  .life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .story-description-container .story-description-inner-container .life-stories-description {
+    display: block;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.8px;
+    color: #878787;
+    max-height: 53px;
+  }
+  .life-stories .life-stories-container #lifeStoriesSlider .rsOverflow .rsContainer .rsSlide .rsContent .story-description-container .story-description-inner-container .life-stories-info-link {
+    margin-top: auto;
+    display: block;
+    text-align: right;
+  }
+
+  .year-long-interns .yli-container {
+    margin-bottom: 0px;
+  }
+  .year-long-interns .yli-container .year-long-intern {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    margin: 0 50px;
+  }
+  .year-long-interns .yli-container .year-long-intern.hidden {
+    opacity: 1;
+    z-index: 1000;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .year-long-interns .yli-container .year-long-intern.hidden.right {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .year-long-interns .yli-container .intern-arrow-right {
+    display: none;
+  }
+  .year-long-interns .yli-container .intern-arrow-left {
+    display: none;
+  }
+}
+@media screen and (min-width: 837px) {
+  .types-of-internships-container .internships .image-thumbnail {
+    height: 300px;
+  }
+  .types-of-internships-container .internships .type-container .type-title {
+    font-size: 36px;
+  }
+
+  .header-text {
+    font-size: 72px;
+  }
+  .header-text.lots-of-text {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .cornerLink {
+    display: inline;
+  }
+
+  .header-text.lots-of-text {
+    font-size: 72px;
+  }
+}
+@media screen and (min-width: 1056px) {
+  .life-stories {
+    margin: 0 11%;
+  }
+  .life-stories .life-stories-container #lifeStoriesSlider .rsOverflow {
+    overflow: visible !important;
+  }
+  .life-stories .life-stories-centering-2 {
+    width: 810px;
+  }
+  .life-stories .life-stories-centering-2 #lifeStoriesSlider {
+    width: 390px;
+  }
+  .life-stories .life-stories-centering-2 .rsContainer {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  .life-stories .life-stories-centering-3 {
+    width: 810px;
+  }
+  .life-stories .life-stories-centering-3 #lifeStoriesSlider {
+    width: 390px;
+  }
+
+  .rsArrowLeft {
+    left: 70px;
+  }
+
+  .rsArrowRight {
+    right: 70px;
+  }
+
+  .double-story-arrow-override {
+    display: none !important;
+  }
+
+  .types-of-internships-container .internships .image-thumbnail#Image1 {
+    background-position-y: -200px !important;
+  }
+  .types-of-internships-container .internships .image-thumbnail#Image2 {
+    background-position-y: -100px !important;
+  }
+  .types-of-internships-container .internships .image-thumbnail#Image3 {
+    background-position-y: -180px !important;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .interns-acrostic-container .title-text {
+    margin: 350px auto 0px;
+  }
+
+  .types-of-internships-container {
+    margin: 55px auto 0px;
+  }
+
+  .interns-acrostic-container {
+    width: 100%;
+    background-color: #edf1f5;
+    padding: 30px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .interns-acrostic-container .gradient {
+    width: 30%;
+    height: auto;
+    background-image: linear-gradient(247deg, #00aeef, #56c4c4);
+    padding: 0px;
+  }
+  .interns-acrostic-container .body {
+    width: 100%;
+    height: 586px;
+    background-color: #ffffff;
+    padding: 0px;
+  }
+  .interns-acrostic-container .intern-acrostic-ctnr.text {
+    left: 70%;
+    -webkit-transform: translate(-50%, -210px);
+            transform: translate(-50%, -210px);
+  }
+  .interns-acrostic-container .intern-acrostic-ctnr.line {
+    left: 70%;
+    -webkit-transform: translate(-50%, -210px);
+            transform: translate(-50%, -210px);
+  }
+  .interns-acrostic-container .acrostic-image {
+    margin: 145px 15% 47px;
+    width: 350px;
+    height: 350px;
+  }
+  .interns-acrostic-container .intern-acrostic {
+    left: 70%;
+    -webkit-transform: translate(-50%, -230px);
+            transform: translate(-50%, -230px);
+  }
+
+  .year-long-interns .yli-container .year-long-intern {
+    margin: 0 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .interns-acrostic-container .acrostic-image {
+    margin: 95px 140px 47px;
+    width: 450px;
+    height: 450px;
+  }
+
+  .types-of-internships-container .internships .image-thumbnail#Image2 {
+    background-position-y: -150px !important;
+  }
+  .types-of-internships-container .internships .image-thumbnail#Image3 {
+    background-position-y: -210px !important;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .life-stories {
+    margin: 0 13%;
+  }
+
+  .rsArrowLeft {
+    left: 95px;
+  }
+
+  .rsArrowRight {
+    right: 95px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .life-stories {
+    margin: 0 15%;
+  }
+
+  .rsArrowLeft {
+    left: 125px;
+  }
+
+  .rsArrowRight {
+    right: 125px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .life-stories {
+    margin: 0 17%;
+  }
+
+  .rsArrowLeft {
+    left: 160px;
+  }
+
+  .rsArrowRight {
+    right: 160px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .rsArrowLeft {
+    left: 190px;
+  }
+
+  .rsArrowRight {
+    right: 190px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .life-stories {
+    margin: 0 15px;
+  }
+  .life-stories .life-stories-centering-3 {
+    width: 390px;
+  }
+
+  /*.triple-story-arrow-override {
+  	display: none !important;
+  }*/
+  .rsArrowLeft {
+    left: 0px;
+  }
+
+  .rsArrowRight {
+    right: 0px;
+  }
+}
+@media screen and (min-width: 1390px) {
+  .rsArrowLeft {
+    left: 15px;
+  }
+
+  .rsArrowRight {
+    right: 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .rsArrowLeft {
+    left: 0px;
+  }
+
+  .rsArrowRight {
+    right: 0px;
+  }
+}

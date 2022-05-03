@@ -1,0 +1,231 @@
+#servingOppsApp .btn {
+  width: 100%;
+  height: 46px;
+  border-radius: 15px;
+}
+
+#servingOppsDiv {
+  margin-bottom: 24px;
+}
+
+.serving-opps-card-container {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.serving-opps-card-container .serving-opps-card {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 150ms ease-out;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-name-container {
+  padding: 13px 16px 4px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-radius: 3px 3px 0px 0px;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-name-container .serving-opp-name {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 30px;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-name-container .serving-opp-duration-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-name-container .serving-opp-duration-container .serving-opp-duration-text {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.857143px;
+  margin: 0;
+  color: #4d4d4f;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-name-container .serving-opp-duration-container .icon-clock {
+  color: #4d4d4f;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container {
+  padding: 0 16px 16px;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-ministry-name {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  display: block;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-location-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 8px;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-location-container .icon-location-glyph {
+  color: #00aeef;
+  margin-right: 9px;
+  font-size: 14px;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-location-container .serving-opp-campus {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin: 0;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-venue {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 16px;
+  padding-right: 60px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 20px;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-description {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #878787;
+  margin-bottom: 30px;
+  height: 40px;
+  overflow: hidden;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-schedule {
+  margin-bottom: 30px;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  color: #4d4d4f;
+  height: 40px;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-schedule.recurring {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-schedule.recurring .serving-opp-day {
+  margin: 0;
+  width: 33.3333333%;
+  border-right: solid 1px #bcbec0;
+  text-transform: uppercase;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-schedule.recurring .serving-opp-time {
+  margin: 0;
+  border-right: solid 1px #bcbec0;
+  width: 33.3333333%;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-schedule.recurring .serving-opp-frequency {
+  margin: 0;
+  text-transform: capitalize;
+  width: 33.3333333%;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-schedule.onetime .serving-opp-complete-date {
+  margin: 0;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-schedule.onetime .serving-opp-full-time {
+  margin: 0;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-signups-container {
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: normal;
+  padding-top: 24px;
+  border-top: solid 1px #bcbec0;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-signups-container .signups-needed {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: #f99e49;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-signups-container .serving-opp-details-link {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-signups-container .serving-opp-details-link .icon-arrow-right {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 380px) {
+  .serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-signups-container {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+  .serving-opps-card-container .serving-opps-card .serving-opps-card-inner .serving-opp-info-container .serving-opp-signups-container .signups-needed {
+    margin: 0 auto 0 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  #servingOppsApp .btn {
+    max-width: 200px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  #servingOppsDiv {
+    -ms-flex-align: start;
+        align-items: flex-start;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    margin: 0 -16px 60px;
+  }
+
+  .serving-opps-card-container {
+    width: 50%;
+    padding: 16px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .serving-opps-card-container {
+    width: 33.3333333%;
+  }
+}

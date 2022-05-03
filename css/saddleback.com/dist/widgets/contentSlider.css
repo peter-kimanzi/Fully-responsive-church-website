@@ -1,0 +1,150 @@
+.contentSlider {
+  width: 100%;
+}
+.contentSlider, .contentSlider .rsOverflow, .contentSlider .rsSlide, .contentSlider .rsVideoFrameHolder, .contentSlider .rsThumbs {
+  background: white;
+  color: black;
+}
+.contentSlider .rsSlide, .contentSlider .rsOverflow {
+  background: white;
+}
+.contentSlider .rsOverflow {
+  margin-top: 40px;
+  width: 100% !important;
+}
+.contentSlider .rsContainer {
+  padding: 0;
+}
+.contentSlider .rsContent {
+  padding: 22px;
+}
+.contentSlider h2 {
+  font-family: "Lato", Arial;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.contentSlider .contentSlider img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.contentSlider .pull {
+  margin: 22px 0 30px;
+  text-align: right;
+}
+.contentSlider .rsContent .pull:last-child {
+  margin-bottom: 0;
+}
+.contentSlider .pull a {
+  margin-bottom: 0;
+}
+.contentSlider .seriesImage {
+  display: block;
+  margin-top: 33px;
+}
+.contentSlider .seriesImage img {
+  width: 100%;
+}
+.contentSlider .rsTabs {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  background: #819aa9;
+  line-height: 31px;
+  width: 100%;
+  cursor: pointer;
+}
+.contentSlider .rsTab {
+  -ms-flex-align: center;
+      align-items: center;
+  background: #00aeef !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-left: 2px solid #fff !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  color: white !important;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  font-family: "Lato", Arial;
+  font-size: .9em;
+  height: 40px !important;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 !important;
+  position: relative;
+  text-align: center;
+  text-shadow: none !important;
+  text-transform: uppercase;
+  width: 33.333333333333333333333333333%;
+}
+.contentSlider .rsTab:first-child {
+  border-left: none !important;
+}
+.contentSlider .rsTab > span {
+  height: 40px !important;
+}
+.contentSlider .rsNavSelected {
+  background: #0093c6 !important;
+  position: relative;
+}
+.contentSlider .rsNavSelected:after {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #0093c6;
+  margin-left: -12px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  content: '';
+  z-index: 1000;
+}
+
+@media only screen and (min-width: 575px) {
+  .contentSlider .rsOverflow {
+    border: 1px solid #4d4d4f;
+    border-top: none;
+  }
+  .contentSlider .pull {
+    border-bottom: 1px solid #4d4d4f;
+  }
+  .contentSlider .pull a {
+    bottom: -1px;
+  }
+  .contentSlider .seriesInfo {
+    float: left;
+    width: 50%;
+  }
+  .contentSlider .seriesImage {
+    float: left;
+    padding-left: 33px;
+    width: 50%;
+  }
+  .contentSlider .rsTab {
+    font-size: 1.25em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contentSlider .rsContent {
+    padding: 44px;
+  }
+  .contentSlider .pull {
+    margin: 33px 0 40px;
+  }
+  .contentSlider .seriesInfo {
+    width: 60%;
+  }
+  .contentSlider .seriesImage {
+    width: 40%;
+  }
+}

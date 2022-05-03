@@ -1,0 +1,3511 @@
+.accordion {
+  overflow: hidden;
+}
+.accordion .accordion-item {
+  border: 0;
+  border-bottom: 1px solid #bcbec0;
+  padding: 16px 8px;
+}
+.accordion .accordion-item > input {
+  display: none;
+}
+.accordion .accordion-item > input:checked + .accordion-label {
+  color: #00aeef;
+  font-weight: 900;
+}
+.accordion .accordion-item > input:checked + .accordion-label::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.accordion .accordion-item > input:checked ~ .accordion-content {
+  max-height: 100%;
+  padding: 15px 15px 30px;
+}
+.accordion .accordion-label {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: none;
+  color: #4d4d4f;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  font: 900 28px/35px 'Lato' !important;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 0;
+  padding: 0;
+}
+.accordion .accordion-label::after {
+  color: #00aeef;
+  content: '\e946';
+  font: 12px 'SB-Icons';
+  transition: all 0.3s;
+}
+.accordion .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  position: static;
+  transition: all 0.3s;
+}
+.accordion .accordion-content .accordion-header {
+  display: block;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.accordion .accordion-content .accordion-info {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  margin-bottom: 24px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion .accordion-item > input:checked + .accordion-label {
+    padding-bottom: 8px;
+  }
+  .accordion .accordion-item > input:checked + .accordion-label::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .accordion .accordion-item > input:checked ~ .accordion-content {
+    padding: 16px 0;
+  }
+  .accordion .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    position: static;
+    transition: all 0.3s;
+  }
+}
+.inactive {
+  display: none !important;
+}
+
+.outerVideoContainer {
+  background-color: #bcbec0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 110px;
+  min-height: 290px;
+  position: relative;
+  /* Matt Attempting to fix iOS */
+}
+.outerVideoContainer .aspectPlaceHolder169 {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.outerVideoContainer .newServiceAlert {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1005;
+}
+.outerVideoContainer .newServiceAlert .btn {
+  min-width: 0px;
+}
+.outerVideoContainer .audioOnlyInfo {
+  display: none;
+  position: absolute;
+}
+.outerVideoContainer .audioOnly.playBtn {
+  display: none;
+}
+.outerVideoContainer .audioOnly.playBtn:hover {
+  text-decoration: none;
+}
+.outerVideoContainer:not(.hasCountdown) {
+  margin-bottom: 35px;
+}
+.outerVideoContainer.serviceLaunched {
+  min-height: auto;
+  margin-bottom: 15px;
+}
+.outerVideoContainer.serviceLaunched.audio .audioOnlyInfo {
+  display: block;
+}
+.outerVideoContainer.serviceLaunched.audio .audioOnly.playBtn {
+  -ms-flex-align: end;
+      align-items: flex-end;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+.outerVideoContainer.serviceLaunched.audio .audioOnly.playBtn span {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+.outerVideoContainer.showingAv .videoInfoContainer .messageInfo .btn {
+  bottom: 0;
+}
+.outerVideoContainer .backToggle {
+  display: none !important;
+  color: white;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  padding: 15px;
+  line-height: 12px;
+  font-size: 16px;
+}
+.outerVideoContainer:hover .backToggle {
+  display: block !important;
+}
+.outerVideoContainer .videoSwapToggle {
+  color: white;
+  display: block;
+  -webkit-transform: translateX(102%) rotateX;
+          transform: translateX(102%) rotateX;
+}
+.outerVideoContainer .jwplayer {
+  -webkit-overflow-scrolling: auto !important;
+}
+.outerVideoContainer .videocontainer, .outerVideoContainer .jwplayer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.5s ease-in;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: auto;
+  background-color: #bcbec0;
+}
+.outerVideoContainer .videocontainer .serviceContainer, .outerVideoContainer .videocontainer video, .outerVideoContainer .jwplayer .serviceContainer, .outerVideoContainer .jwplayer video {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+.outerVideoContainer .videocontainer .serviceImageContainer, .outerVideoContainer .videocontainer .playToggle, .outerVideoContainer .videocontainer .serviceImage, .outerVideoContainer .jwplayer .serviceImageContainer, .outerVideoContainer .jwplayer .playToggle, .outerVideoContainer .jwplayer .serviceImage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.outerVideoContainer .videocontainer.snapRight, .outerVideoContainer .jwplayer.snapRight {
+  height: 133px;
+  right: -14px;
+  top: -1px;
+  -webkit-transform: translateX(101%);
+          transform: translateX(101%);
+  width: 226px;
+}
+.outerVideoContainer .videocontainer.snapRight .serviceContainer, .outerVideoContainer .videocontainer.snapRight video, .outerVideoContainer .jwplayer.snapRight .serviceContainer, .outerVideoContainer .jwplayer.snapRight video {
+  margin: 0 0 0 auto;
+}
+.outerVideoContainer .videocontainer.jw-breakpoint-0 .jw-display-icon-container, .outerVideoContainer .jwplayer.jw-breakpoint-0 .jw-display-icon-container {
+  bottom: 25px;
+  position: relative;
+}
+.outerVideoContainer .audioVideoContainer {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #4d4d4f;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+}
+.outerVideoContainer .audioVideoContainer span, .outerVideoContainer .audioVideoContainer label {
+  display: inline-block;
+  font: 14px/16px "Lato", Arial;
+  letter-spacing: 1px;
+}
+.outerVideoContainer .audioVideoContainer input {
+  vertical-align: text-top;
+}
+.outerVideoContainer .audioVideoContainer div {
+  margin-bottom: 11px;
+}
+.outerVideoContainer .audioVideoContainer .btn {
+  background: transparent;
+  border: 1px solid white;
+}
+.outerVideoContainer .audioVideoContainer .btn:hover {
+  background: #0093c6;
+  border-color: #0093c6;
+}
+.outerVideoContainer .audioVideoContainer .btn:first-child {
+  margin-right: 22px;
+}
+.outerVideoContainer .audioVideoContainer .avNotice {
+  color: #bcbec0;
+  display: block;
+  font-size: 12px;
+  margin: 0 auto;
+  width: 50%;
+}
+.outerVideoContainer .videoInfoContainer {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.8) 0%, transparent 56%);
+  -ms-flex-align: end;
+      align-items: flex-end;
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  font-family: "Lato", Arial;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo {
+  padding-left: 22px;
+  max-width: 390px;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .upperLeftCorner {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  bottom: -80px;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 100%;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .upperLeftCorner span {
+  color: #00aeef;
+  font: 900 14px "Lato", Arial;
+  letter-spacing: 1px;
+  margin-right: 4px;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .upperLeftCorner .serviceCountdownTimespan {
+  margin-right: 0;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .upperLeftCorner .serviceCountdownTimespan span:last-child {
+  margin-right: 0;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .status {
+  text-transform: uppercase;
+  word-spacing: 1px;
+  color: #00aeef;
+  margin-bottom: 11px;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .current-message-label {
+  color: #ffffff;
+  display: inline-block;
+  font: 900 12px "Lato", Arial;
+  margin-bottom: 18px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .current-message-label:before {
+  border-top-color: #00aeef;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .current-message-label:after {
+  border-top-color: #00aeef;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo h2 {
+  color: white;
+  font: normal 20px/26px "Lato", Arial;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-bottom: 11px;
+  max-width: 200px;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .speaker-date-container {
+  margin-bottom: 33px;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .speaker-date-container .speaker, .outerVideoContainer .videoInfoContainer .messageInfo .speaker-date-container .date {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  word-spacing: 0px;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .btn {
+  bottom: -18px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 36px;
+  padding: 0;
+  width: 140px;
+  left: 50%;
+  margin-left: -70px;
+  position: absolute;
+  text-align: center;
+}
+.outerVideoContainer .videoInfoContainer .messageInfo .btn span:first-child {
+  font-size: 24px;
+  margin: 0 8px 0 0;
+}
+.outerVideoContainer .videoInfoContainer .serviceTimes {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  bottom: -90px;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.outerVideoContainer .videoInfoContainer .serviceTimes span {
+  color: #4d4d4f;
+  margin-right: 5px;
+}
+.outerVideoContainer .videoInfoContainer .serviceTimes .serviceTimeLabel {
+  color: #4d4d4f;
+  font: normal 14px "Lato", Arial;
+}
+.outerVideoContainer .videoInfoContainer .serviceTimes .serviceTimeDay, .outerVideoContainer .videoInfoContainer .serviceTimes .serviceTime {
+  font: normal 14px "Lato", Arial;
+}
+.outerVideoContainer .videoInfoContainer .serviceTimes .serviceTimeDay {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 767px) {
+  .outerVideoContainer .jwplayer.jw-breakpoint-1 .jw-display-icon-next {
+    display: none;
+  }
+  .outerVideoContainer .jwplayer.snapRight {
+    height: 100%;
+    right: 0;
+    top: 1px;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .outerVideoContainer {
+    margin-bottom: 55px;
+  }
+  .outerVideoContainer .videoInfoContainer .messageInfo {
+    margin-bottom: 30px;
+    padding-left: 30px;
+  }
+  .outerVideoContainer .videoInfoContainer .messageInfo .upperLeftCorner {
+    background: #00aeef;
+    bottom: -40px;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    left: 0;
+    padding: 0 0 0 30px;
+    width: 100%;
+  }
+  .outerVideoContainer .videoInfoContainer .messageInfo .upperLeftCorner span {
+    color: #ffffff;
+  }
+  .outerVideoContainer .videoInfoContainer .messageInfo .btn {
+    left: 30px;
+    margin-left: 0;
+    position: static;
+  }
+  .outerVideoContainer .videoInfoContainer .serviceTimes {
+    display: none;
+  }
+  .outerVideoContainer.serviceLaunched.audio .audioOnlyInfo {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .outerVideoContainer .videoInfoContainer .messageInfo {
+    margin-bottom: 60px;
+    padding-left: 60px;
+  }
+  .outerVideoContainer .videoInfoContainer .messageInfo .upperLeftCorner {
+    padding-left: 60px;
+  }
+  .outerVideoContainer .videoInfoContainer .messageInfo .current-message-label {
+    font-size: 14px;
+  }
+  .outerVideoContainer .videoInfoContainer .messageInfo h2 {
+    font-size: 26px;
+    line-height: 33px;
+    max-width: 300px;
+  }
+  .outerVideoContainer .videoInfoContainer .messageInfo .btn {
+    width: 160px;
+  }
+}
+/* Ellipsis Script */
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
+}
+
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+}
+
+/* End Ellipsis Script */
+#videoHiddenContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fluid-width-video-wrapper {
+  padding-top: 56.25% !important;
+}
+
+.tabs-nav-container {
+  margin-bottom: 16px;
+}
+.tabs-nav-container .tabs-links-container {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+.tabs-nav-container .tabs-links-container .tab {
+  font-size: 14px;
+  margin: 0 8px;
+  padding: 0;
+  padding: 17px;
+  border: solid 2px #bcbec0;
+  width: 33.333333%;
+  max-width: 200px;
+  text-align: center;
+  color: #4d4d4f;
+  cursor: pointer;
+}
+.tabs-nav-container .tabs-links-container .tab:hover {
+  text-decoration: underline;
+}
+.tabs-nav-container .tabs-links-container .tab .sk-ssm-select-container .dropdown-title-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.tabs-nav-container .tabs-links-container .tab .sk-ssm-select-container .dropdown-title-container .sk-ssm-dropdown-title {
+  margin: 0 10px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tabs-nav-container .tabs-links-container .tab .sk-ssm-select-container .dropdown-title-container svg {
+  fill: #000;
+}
+.tabs-nav-container .tabs-links-container .tab.highlight {
+  color: #fff;
+  font-weight: normal;
+  background: #56c4c4;
+  border: solid 2px #56c4c4 !important;
+}
+.tabs-nav-container .tabs-links-container .tab.highlight .sk-ssm-select-container svg {
+  fill: #fff;
+}
+.tabs-nav-container .tabs-links-container .tab.open {
+  border: solid 2px #56c4c4;
+  padding: 16px;
+}
+.tabs-nav-container .tabs-links-container .sk-ssm-select {
+  position: relative;
+}
+.tabs-nav-container .tabs-links-container .sk-ssm-select .sk-ssm-select-container .students-ministries, .tabs-nav-container .tabs-links-container .sk-ssm-select .sk-ssm-select-container .kids-ministries {
+  display: none;
+}
+.tabs-nav-container .tabs-links-container .sk-ssm-select .sk-ssm-select-container .sk-ssm-dropdown-list, .tabs-nav-container .tabs-links-container .sk-ssm-select .sk-ssm-select-container .sk-ssm-list {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  position: absolute;
+  top: 42px;
+  right: -2px;
+  z-index: 10000;
+  background: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 15px;
+  border: 2px solid #56c4c4;
+}
+.tabs-nav-container .tabs-links-container .sk-ssm-select .sk-ssm-select-container .sk-ssm-dropdown-list li, .tabs-nav-container .tabs-links-container .sk-ssm-select .sk-ssm-select-container .sk-ssm-list li {
+  display: inline-block;
+  margin: 0 0 30px;
+}
+.tabs-nav-container .tabs-links-container .sk-ssm-select .sk-ssm-select-container .sk-ssm-dropdown-list li:last-of-type, .tabs-nav-container .tabs-links-container .sk-ssm-select .sk-ssm-select-container .sk-ssm-list li:last-of-type {
+  margin-bottom: 0;
+}
+.tabs-nav-container .tabs-links-container .sk-ssm-select .sk-ssm-select-container .sk-ssm-dropdown-list li a, .tabs-nav-container .tabs-links-container .sk-ssm-select .sk-ssm-select-container .sk-ssm-list li a {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+}
+.tabs-nav-container.campus-select-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.tabs-nav-container.campus-select-nav .dk-select {
+  width: 100%;
+  height: 55px;
+  margin-bottom: 16px;
+  z-index: 10000;
+}
+.tabs-nav-container.campus-select-nav .dk-select .dk-selected {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.tabs-nav-container.campus-select-nav .dk-select .dk-selected:hover {
+  border-color: #56c4c4;
+}
+.tabs-nav-container.campus-select-nav .dk-select .dk-select-options {
+  min-height: 13.5em;
+}
+.tabs-nav-container.campus-select-nav .dk-select .dk-select-options .dk-option {
+  height: auto;
+  line-height: 32px;
+}
+.tabs-nav-container.campus-select-nav .dk-select .dk-select-options #dk0-select, .tabs-nav-container.campus-select-nav .dk-select .dk-select-options #dk2-select {
+  pointer-events: none;
+}
+.tabs-nav-container.campus-select-nav .dk-select-open-down .dk-selected {
+  border-color: #56c4c4;
+}
+.tabs-nav-container.campus-select-nav .dk-select-open-down .dk-select-options {
+  border-color: #56c4c4;
+}
+.tabs-nav-container.campus-select-nav .tabs-links-container {
+  margin: 0 -8px;
+}
+
+.sk-online .tabs-nav-container.campus-select-nav, .ssm-online .tabs-nav-container.campus-select-nav {
+  padding: 0 15px;
+}
+
+#ConnectionCard .formInfo h2 {
+  display: none !important;
+}
+
+.give-desktop-btn {
+  -ms-flex-align: center;
+      align-items: center;
+  border-radius: 15px;
+  display: none;
+  height: 40px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: auto;
+}
+
+.outerVideoContainer.serviceLaunched {
+  margin-bottom: 0;
+}
+
+.chatroll-messenger-frame #chatFrame {
+  min-height: 500px !important;
+}
+
+#chatroll-container-body .chatroll-launcher-open-icon, #chatroll-container-body .chatroll-launcher-close-icon {
+  display: none !important;
+}
+
+.chat-input-container {
+  background: red;
+}
+
+.chat-live {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.chat-live .campus-online-chat-item {
+  -ms-flex-order: 1;
+      order: 1;
+}
+
+.campus-page-online .accordion .message-details .accordion-content .service-info .staticHeightImageContainer {
+  background-position: center !important;
+}
+
+.accordion {
+  overflow: hidden;
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid #bcbec0;
+  margin: 0;
+  padding: 0;
+}
+.accordion .accordion-item > input:checked + .accordion-label {
+  padding: 15px;
+  color: #00aeef;
+  font-weight: 900;
+}
+.accordion .accordion-item > input:checked + .accordion-label::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-left: 0;
+  padding-right: 30px;
+}
+.accordion .accordion-item > input:checked ~ .accordion-content {
+  max-height: 100%;
+  padding: 15px 15px 30px;
+}
+.accordion .accordion-item.pastor-welcome .accordion-label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 60px;
+}
+.accordion .accordion-item.pastor-welcome .accordion-label span {
+  margin-right: 4px;
+}
+.accordion .accordion-item.pastor-welcome .accordion-label:after {
+  position: absolute;
+  right: 30px;
+}
+.accordion .accordion-label {
+  background: none;
+  color: #4d4d4f;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  letter-spacing: 1px;
+  line-height: 19px;
+  margin-bottom: 0;
+  padding: 15px;
+}
+.accordion .accordion-label::after {
+  color: #00aeef;
+  content: '\e946';
+  font: 12px 'SB-Icons';
+  padding-left: 30px;
+}
+.accordion .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  position: static;
+  transition: all 0.3s;
+}
+.accordion .accordion-content .accordion-header {
+  display: block;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.accordion .accordion-content .accordion-info {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  margin-bottom: 24px !important;
+}
+
+.mfp-content .accordion-radio {
+  display: none;
+}
+.mfp-content .popup {
+  padding-bottom: 60px;
+}
+.mfp-content .popup .popup-title {
+  margin-bottom: 60px;
+}
+.mfp-content .popup .popup-header {
+  display: block;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  padding: 0 15px;
+}
+.mfp-content .popup .accordion-info, .mfp-content .popup .embedTabsContainer, .mfp-content .popup .shareLinkContainer, .mfp-content .popup .shareEmbedContainer, .mfp-content .popup .shareEmailContainer {
+  padding: 0 15px;
+}
+.mfp-content .popup .shareEmbedPreview .fluid-width-video-wrapper {
+  padding-top: 56.25%;
+}
+.mfp-content .icon-close {
+  display: block !important;
+  cursor: pointer;
+}
+.mfp-content .icon-close:active {
+  top: 10px;
+}
+
+#shareMessageBtn {
+  display: none;
+}
+#shareMessageBtn .icon-share {
+  display: inline-block;
+}
+
+.share-message .embedTabsContainer {
+  display: -ms-flexbox;
+  display: flex;
+}
+.share-message .embedTabsContainer a {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  margin: 0 23px 11px 0;
+}
+.share-message .embedTabsContainer a.activeLink {
+  color: #00aeef;
+}
+.share-message .embedTabsContainer a.inactiveLink {
+  color: #bcbec0;
+}
+.share-message .shareLinkContainer label, .share-message .shareEmbedContainer label, .share-message .shareEmailContainer label {
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.share-message .shareLinkContainer input, .share-message .shareEmbedContainer input, .share-message .shareEmailContainer input {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 10px;
+}
+.share-message .shareLinkContainer .m-right, .share-message .shareEmbedContainer .m-right, .share-message .shareEmailContainer .m-right {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0 -15px 10px 0;
+}
+.share-message .shareLinkContainer .m-right .btn, .share-message .shareEmbedContainer .m-right .btn, .share-message .shareEmailContainer .m-right .btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  margin-right: 15px;
+  background: #00aeef;
+  color: #fff;
+}
+.share-message .shareLinkContainer .m-right .btn:hover, .share-message .shareEmbedContainer .m-right .btn:hover, .share-message .shareEmailContainer .m-right .btn:hover {
+  background: #0093c6;
+}
+.share-message .shareLinkContainer .m-right a, .share-message .shareEmbedContainer .m-right a, .share-message .shareEmailContainer .m-right a {
+  padding: 0 15px;
+}
+.share-message .shareLinkContainer .m-right .facebookBtn, .share-message .shareLinkContainer .m-right .twitterBtn, .share-message .shareEmbedContainer .m-right .facebookBtn, .share-message .shareEmbedContainer .m-right .twitterBtn, .share-message .shareEmailContainer .m-right .facebookBtn, .share-message .shareEmailContainer .m-right .twitterBtn {
+  font-size: 32px;
+}
+.share-message .shareLinkContainer .m-right .copySuccess, .share-message .shareEmbedContainer .m-right .copySuccess, .share-message .shareEmailContainer .m-right .copySuccess {
+  text-align: center;
+  padding: 0 15px;
+  width: 100%;
+  font-style: italic;
+  color: #bcbec0;
+}
+.share-message .shareEmbedPreview span {
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.share-message .shareEmbedPreview .fluid-width-video-wrapper {
+  padding-top: 56.25%;
+}
+.share-message .shareEmailContainer .emailShareSubmit {
+  border-radius: 15px;
+}
+.share-message .icon-close {
+  display: none;
+  font-size: 16px;
+  top: 10px;
+}
+.share-message .popup-header {
+  display: none;
+}
+
+.av-preferences .prefTitle {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  padding-bottom: 14px;
+  border-bottom: solid 1px #bcbec0;
+  margin-bottom: 15px;
+  display: block;
+}
+.av-preferences .preferencesList {
+  margin: 0;
+}
+.av-preferences .preferenceButtonContainer {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 27px;
+}
+.av-preferences .preferenceButtonContainer:last-of-type {
+  margin: 0;
+}
+.av-preferences .avPreferencesWarning {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.av-preferences .avPreferencesWarning .btn {
+  height: 40px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.next-steps-notification {
+  background: #00aeef;
+  display: none;
+  padding: 15px;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.next-steps-notification.active {
+  display: block;
+}
+.next-steps-notification .next-steps-notification-inner {
+  position: relative;
+}
+.next-steps-notification .next-steps-notification-inner span {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.next-steps-notification .next-steps-notification-inner .next-steps-notification-header {
+  margin-bottom: 8px;
+}
+.next-steps-notification .next-steps-notification-inner .next-steps-notification-header a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin: 0;
+  text-decoration-line: underline;
+}
+.next-steps-notification .next-steps-notification-inner .next-steps-notification-text {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 19px;
+  margin: 0;
+}
+.next-steps-notification .next-steps-notification-inner .btn {
+  display: none;
+}
+
+.campus-online-video-container {
+  margin-bottom: 0 !important;
+  min-height: 296px;
+  position: relative;
+}
+.campus-online-video-container:before {
+  background: rgba(77, 77, 79, 0.8);
+  content: '';
+  display: block;
+  height: 100%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  width: 100%;
+}
+.campus-online-video-container .aspectPlaceHolder169 {
+  display: block;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.campus-online-video-container .audioVideoContainer {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.campus-online-video-container .audioVideoContainer div {
+  padding: 0 16px;
+  text-align: center;
+  width: 100%;
+}
+.campus-online-video-container .audioVideoContainer .experence-choice-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 24px;
+}
+.campus-online-video-container .audioVideoContainer .experence-choice-container .btn {
+  width: 50%;
+  max-width: 75px;
+  border-radius: 8px;
+  border: solid 2px #56c4c4;
+  color: #fff;
+  background: transparent;
+  margin: 0 15px !important;
+  height: 40px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.campus-online-video-container .audioVideoContainer .preference-save-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.campus-online-video-container .audioVideoContainer .preference-save-container .av-checkbox-container {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.campus-online-video-container .audioVideoContainer .preference-save-container .av-checkbox-container label {
+  margin-left: 5px;
+}
+.campus-online-video-container .audioVideoContainer .preference-save-container .avNotice {
+  width: 60%;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 1px;
+}
+.campus-online-video-container .audioVideoContainer .avIntro, .campus-online-video-container .audioVideoContainer label {
+  color: #ffffff;
+}
+.campus-online-video-container .audioVideoContainer .avIntro {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 13px;
+}
+.campus-online-video-container .campus-stream-info-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  padding: 30px 5px 5px;
+  text-align: center;
+  transition: height 1s ease-in-out;
+}
+.campus-online-video-container .campus-stream-info-container .campus-stream-info-inner {
+  transition: height 1s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+.campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .ministry-logo {
+  width: 60px;
+  margin-bottom: 5px;
+}
+.campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .online-service-top {
+  height: 40px;
+  width: 150px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 1px;
+  display: none;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #56c4c4;
+  background: linear-gradient(to right, #56c4c4 0%, #6DCFF6 100%);
+  -webkit-background-clip: text;
+  color: #56c4c4;
+  border: 3px solid;
+  -o-border-image: linear-gradient(to right, #56c4c4 0%, #6DCFF6 100%);
+     border-image: linear-gradient(to right, #56c4c4 0%, #6DCFF6 100%);
+  border-image-slice: 1;
+  margin: 0 auto 15px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: font-size 1s ease-in-out;
+}
+.campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .campus-title {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 0.655172px;
+  line-height: 30px;
+  margin: 0 0 24px !important;
+  text-align: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: font-size 1s ease-in-out;
+}
+.campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .service-starts-subheader {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  text-align: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: font-size 1s ease-in-out;
+}
+.campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .service-starts-info {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  text-align: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: font-size 1s ease-in-out;
+}
+.campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .btn-container {
+  margin-top: 15px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: font-size 1s ease-in-out;
+}
+.campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .btn-container a {
+  background: linear-gradient(257.92deg, #56C4C4 -4.77%, #00AEEF 102.38000000000001%);
+  border-radius: 15px;
+  border: none;
+  font-size: 14px;
+  font-weight: 900;
+  height: 46px;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .btn-container a span {
+  font-size: 22px;
+  margin-right: 8px;
+}
+.campus-online-video-container .campus-stream-info-container .service-starts-sub-info {
+  display: none;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin: 0;
+  text-align: center;
+  transition: font-size 1s ease-in-out;
+  margin-top: auto;
+}
+.campus-online-video-container .service-countdown-container {
+  -ms-flex-align: center;
+      align-items: center;
+  background: #00aeef;
+  bottom: -35px;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 900;
+  height: 35px;
+  font-weight: 900;
+  font-size: 12px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  letter-spacing: 1px;
+  line-height: 19px;
+  position: absolute;
+  width: 100%;
+  transition: font-size 1s ease-in-out;
+}
+.campus-online-video-container .service-countdown-container .serviceCountdownDays, .campus-online-video-container .service-countdown-container .serviceCountdownHours, .campus-online-video-container .service-countdown-container .serviceCountdownMinutes, .campus-online-video-container .service-countdown-container .serviceCountdownSeconds {
+  margin-right: 2px;
+}
+.campus-online-video-container .service-countdown-container .serviceCountdownUnit {
+  margin-right: 5px;
+}
+.campus-online-video-container .service-end-container, .campus-online-video-container .no-video-container {
+  width: 100%;
+  height: 536px;
+  padding: 30px;
+  z-index: 1000;
+}
+.campus-online-video-container .service-end-container:after, .campus-online-video-container .no-video-container:after {
+  background: rgba(77, 77, 79, 0.8);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.campus-online-video-container .service-end-container .service-end-header, .campus-online-video-container .no-video-container .service-end-header {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 38px;
+  margin-bottom: 8px;
+}
+.campus-online-video-container .service-end-container .beta, .campus-online-video-container .no-video-container .beta {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+.campus-online-video-container .service-end-container .service-end-item, .campus-online-video-container .no-video-container .service-end-item {
+  -ms-flex-align: start;
+      align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-bottom: 24px;
+}
+.campus-online-video-container .service-end-container .service-end-item span, .campus-online-video-container .no-video-container .service-end-item span {
+  background: #00aeef;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 25px;
+  margin-right: 15px;
+  padding: 4px;
+}
+.campus-online-video-container .service-end-container .service-end-item .service-end-item-inner .service-end-sub-header, .campus-online-video-container .no-video-container .service-end-item .service-end-item-inner .service-end-sub-header {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.7px;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+.campus-online-video-container .service-end-container .service-end-item .service-end-item-inner .service-end-sub-header a, .campus-online-video-container .no-video-container .service-end-item .service-end-item-inner .service-end-sub-header a {
+  color: #fff;
+}
+.campus-online-video-container .service-end-container .service-end-item .service-end-item-inner .service-end-info, .campus-online-video-container .no-video-container .service-end-item .service-end-item-inner .service-end-info {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 22px;
+  margin: 0;
+}
+.campus-online-video-container .service-end-container .btn, .campus-online-video-container .no-video-container .btn {
+  display: none;
+  background: transparent;
+  border-radius: 15px;
+  border: solid 2px #fff;
+  color: #fff;
+  height: 40px;
+  width: 100%;
+}
+.campus-online-video-container .service-end-container .btn span, .campus-online-video-container .no-video-container .btn span {
+  margin-right: 15px;
+}
+
+.outerVideoContainer.hasCountdown {
+  margin-bottom: 35px !important;
+}
+
+.outerVideoContainer.message-started {
+  min-height: unset;
+}
+.outerVideoContainer.service-ended .fluid-width-video-wrapper {
+  display: none;
+}
+
+.campus-pastor-info .campus-pastor-name-container {
+  margin-bottom: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -7.5px;
+}
+.campus-pastor-info .campus-pastor-name-container .campus-pastor-info-desktop {
+  display: none;
+}
+.campus-pastor-info .campus-pastor-name-container .campus-pastor-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  padding: 7.5px;
+  margin: 0 auto 16px;
+}
+.campus-pastor-info .campus-pastor-name-container .campus-pastor-img.desktop {
+  display: none;
+}
+.campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner {
+  width: auto;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  padding: 0 15px;
+}
+.campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner .play-btn-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 10px;
+}
+.campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner .play-btn-link .pastor-play-btn-img {
+  width: 40px;
+}
+.campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner .campus-pastor-name {
+  margin-bottom: 0;
+}
+.campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner .campus-pastor-subtitle {
+  font-weight: normal;
+  margin: 0;
+}
+.campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-statement-container {
+  width: 100%;
+  padding: 0 15px;
+  margin-top: 15px;
+}
+.campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-statement-container .campus-pastor-statement {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.service-info .staticHeightImageContainer {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 24px;
+}
+.service-info .series-info-inner .series-title {
+  pointer-events: none;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  color: #878787;
+  margin-bottom: 8px;
+  display: none;
+}
+.service-info .series-info-inner h2 {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.service-info .series-info-inner .speaker-date-container {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.service-info .series-info-inner .speaker-date-container .speaker {
+  line-height: 19px;
+}
+.service-info .series-info-inner .speaker-date-container .date {
+  line-height: 19px;
+}
+.service-info .series-link {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.give-container .btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+.give-container .give-address-container .give-address-header {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.give-container .give-address-container .give-address-header span {
+  font-size: 22px;
+  margin-right: 17px;
+}
+.give-container .give-address-container .give-address-inner {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.give-container .give-address-container .give-address-inner .give-address-subheader {
+  color: #bcbec0;
+  margin: 0;
+}
+.give-container .give-address-container .give-address-inner .give-address {
+  margin: 0;
+}
+
+.notes-container .notes {
+  height: 400px;
+  overflow-y: auto;
+  border: 10px solid #f6f6f6;
+  margin-bottom: 24px;
+}
+.notes-container .notes-download {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.notes-container .notes-download #txtEmailNotesTo {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 24px;
+  padding: 10px;
+}
+.notes-container .notes-download #btnEmailNotes {
+  height: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+.notes-container .notes-download .downloadLink span {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0 10px 0 0;
+}
+.notes-container .notes-download #sendingStatus {
+  font-style: italic;
+  font-weight: 900;
+}
+.notes-container .notes-download #sendingStatus.error {
+  color: #F15B4E;
+}
+.notes-container .notes-download #sendingStatus.sending {
+  color: #fff;
+}
+.notes-container .notes-download #sendingStatus.sent {
+  color: #67c18c;
+}
+
+/* Sermon Notes */
+.notesContainer html, .notesContainer body, .notesContainer div, .notesContainer span, .notesContainer applet, .notesContainer object,
+.notesContainer iframe, .notesContainer h1, .notesContainer h2, .notesContainer h3, .notesContainer h4, .notesContainer h5, .notesContainer h6, .notesContainer p, .notesContainer blockquote,
+.notesContainer pre, .notesContainer a, .notesContainer abbr, .notesContainer acronym, .notesContainer address, .notesContainer big, .notesContainer cite,
+.notesContainer code, .notesContainer del, .notesContainer dfn, .notesContainer em, .notesContainer img, .notesContainer ins, .notesContainer kbd, .notesContainer q, .notesContainer s, .notesContainer samp,
+.notesContainer small, .notesContainer strike, .notesContainer strong, .notesContainer sub, .notesContainer sup, .notesContainer tt, .notesContainer var, .notesContainer b,
+.notesContainer u, .notesContainer i, .notesContainer center, .notesContainer dl, .notesContainer dt, .notesContainer dd, .notesContainer ol, .notesContainer ul, .notesContainer li, .notesContainer fieldset,
+.notesContainer form, .notesContainer label, .notesContainer legend, .notesContainer table, .notesContainer caption, .notesContainer tbody, .notesContainer tfoot,
+.notesContainer thead, .notesContainer tr, .notesContainer th, .notesContainer td, .notesContainer article, .notesContainer aside, .notesContainer canvas,
+.notesContainer details, .notesContainer embed, .notesContainer figure, .notesContainer figcaption, .notesContainer footer,
+.notesContainer header, .notesContainer hgroup, .notesContainer menu, .notesContainer nav, .notesContainer output, .notesContainer ruby, .notesContainer section,
+.notesContainer summary, .notesContainer time, .notesContainer mark, .notesContainer audio, .notesContainer video {
+  outline: none;
+}
+
+.redactorContainer:focus {
+  outline: none;
+}
+.redactorContainer .redactor-box, .redactorContainer .redactor_box {
+  border: none;
+}
+.redactorContainer .redactor-box:focus, .redactorContainer .redactor_box:focus {
+  outline: none;
+}
+.redactorContainer .redactor-box .redactor-editor, .redactorContainer .redactor-box .redactor_editor, .redactorContainer .redactor_box .redactor-editor, .redactorContainer .redactor_box .redactor_editor {
+  outline: none;
+  padding: 0;
+}
+
+.SBSNContainer {
+  text-align: left;
+  padding: 15px;
+}
+.SBSNContainer .redactor_toolbar {
+  display: none;
+}
+.SBSNContainer .redactor_small.redactor_editor {
+  height: auto;
+}
+
+.SBSNContainer p, .SBSNContainer h1, .SBSNContainer h2, .SBSNContainer h3, .SBSNContainer h4, .SBSNContainer h5, .SBSNContainer h6, .SBSNContainer blockquote, .SBSNContainer span {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #4d4d4f;
+}
+
+.SBSNContainer .title {
+  text-align: center;
+  font-size: 20px !important;
+  line-height: normal !important;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.SBSNContainer .series {
+  text-align: center;
+  font-size: 14px !important;
+  line-height: normal !important;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.SBSNContainer .pastor {
+  text-align: center;
+  font-size: 14px !important;
+  line-height: normal !important;
+  font-weight: normal;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.SBSNContainer .date {
+  text-align: center;
+  font-size: 12px !important;
+  line-height: normal !important;
+  font-weight: normal;
+  margin-bottom: 0;
+  border: none;
+  cursor: auto;
+}
+.SBSNContainer .date:hover {
+  background: transparent;
+  color: #4d4d4f;
+}
+
+.SBSNContainer h3 {
+  text-align: center;
+  font-size: 12px !important;
+  line-height: normal !important;
+  font-weight: normal;
+  margin-bottom: 0;
+  border: none;
+  cursor: auto;
+}
+.SBSNContainer h3:hover {
+  background: transparent;
+  color: #4d4d4f;
+}
+
+.SBSNContainer .sectiontitle {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.SBSNContainer .textblank {
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-weight: bold;
+  min-width: 150px;
+  margin-left: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 20px;
+  height: 22px;
+}
+
+.SBSNContainer .textblankcontainer {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.SBSNContainer .verse {
+  font-style: italic;
+  float: left;
+  text-align: left;
+}
+
+.SBSNContainer .reference {
+  font-style: italic;
+  float: right;
+}
+
+.SBSNContainer blockquote {
+  margin-left: 3%;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.SBSNContainer .center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.SBSNContainer .textbeforeblank {
+  float: left;
+}
+
+.SBSNContainer .versecontainer {
+  margin: 0.3em 5px 1.3em 3%;
+}
+
+.SBSNContainer .versecontainer:before, .SBSNContainer .versecontainer:after {
+  content: ' ';
+  display: table;
+}
+
+.SBSNContainer .versecontainer:after {
+  clear: both;
+}
+
+/* Sermon Notes END */
+#campusPastorVideo, #ministryPastorVideo {
+  max-width: 1015px;
+  margin: 0 auto;
+}
+#campusPastorVideo .mfp-close, #ministryPastorVideo .mfp-close {
+  top: -45px;
+  background: #fff;
+  color: #000 !important;
+  border-radius: 8px;
+}
+
+.campus-video-popup {
+  opacity: 1 !important;
+}
+
+.sk-online .campus-online-bottom-items > div, .ssm-online .campus-online-bottom-items > div {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.sk-online .campus-online-bottom-items .accordion-item, .ssm-online .campus-online-bottom-items .accordion-item {
+  border-bottom: 1px solid #bcbec0;
+}
+.sk-online .campus-online-bottom-items .service-info-social-container, .ssm-online .campus-online-bottom-items .service-info-social-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 30px;
+}
+.sk-online .campus-online-bottom-items .service-info-social-container a, .ssm-online .campus-online-bottom-items .service-info-social-container a {
+  margin: 0 12px;
+  text-decoration: none;
+}
+.sk-online .campus-online-bottom-items .service-info-social-container span, .ssm-online .campus-online-bottom-items .service-info-social-container span {
+  font-size: 32px;
+  color: #00aeef;
+}
+.sk-online .campus-online-bottom-items .service-info-social-container span:hover, .ssm-online .campus-online-bottom-items .service-info-social-container span:hover {
+  color: #0093c6;
+}
+
+.sk-online .sk-ssm-ad-desktop, .ssm-online .sk-ssm-ad-desktop {
+  display: none;
+}
+
+.sk-online .campus-online-kids-tabs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.sk-online .campus-online-kids-tabs .input {
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+
+.sk-online .campus-online-kids-tabs > input:checked + .accordion-label {
+  padding: 15px;
+  color: #00aeef;
+  font-weight: 900;
+  border: none;
+}
+.sk-online .campus-online-kids-tabs > input:checked + .accordion-label::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-left: 0;
+  padding-right: 30px;
+}
+.sk-online .campus-online-kids-tabs > input:checked ~ .accordion-content {
+  max-height: 100%;
+  padding: 15px 15px 30px;
+  width: 100%;
+}
+.sk-online .campus-online-kids-tabs .accordion-content {
+  width: 100%;
+}
+.sk-online .campus-online-kids-tabs .accordion-label {
+  width: 100%;
+  cursor: pointer;
+  background: none;
+  color: #4d4d4f;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 19px;
+  margin-bottom: 0;
+  padding: 15px;
+  border-bottom: 1px solid #bcbec0;
+}
+.sk-online .campus-online-kids-tabs .accordion-label::after {
+  color: #00aeef;
+  content: '\e946';
+  font: 12px 'SB-Icons';
+  padding-left: 30px;
+}
+.sk-online .campus-online-kids-tabs .input:focus + .label {
+  z-index: 1;
+}
+
+.ssm-online .sk-ssm-ad-desktop, .sk-online .sk-ssm-ad-desktop {
+  display: none;
+}
+.ssm-online .sk-ssm-ad-mobile, .sk-online .sk-ssm-ad-mobile {
+  margin-top: 40px;
+}
+
+.international-online .international-online-items .bulletin-info-container {
+  margin-bottom: 24px;
+}
+.international-online .international-online-items .bulletin-info-container .bulletin-info-header {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 16px;
+}
+.international-online .international-online-items .bulletin-info-container .bulletin-info-text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.international-online .international-online-items .service-item-container .service-item-inner-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-bottom: 24px;
+  border-bottom: solid 1px #bcbec0;
+  margin-bottom: 24px;
+}
+.international-online .international-online-items .service-item-container .service-item-inner-container:hover {
+  text-decoration: none;
+}
+.international-online .international-online-items .service-item-container .service-item-inner-container .service-item-info-container {
+  width: 65%;
+  padding-left: 16px;
+  margin-right: 24px;
+  height: 100%;
+  max-height: 145px;
+  overflow: hidden;
+}
+.international-online .international-online-items .service-item-container .service-item-inner-container .service-item-image {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  margin: 0;
+  border-radius: 50%;
+}
+.international-online .international-online-items .service-item-container .service-item-inner-container .service-item-title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding-left: 16px;
+  margin-right: 24px;
+}
+.international-online .international-online-items .service-item-container .service-item-inner-container .service-item-title:hover {
+  text-decoration: underline;
+}
+.international-online .international-online-items .service-item-container .service-item-inner-container .service-item-title.bulletin-title {
+  padding-left: 0;
+  margin-right: 0;
+}
+.international-online .international-online-items .service-item-container .service-item-inner-container .service-item-description {
+  margin-top: 8px;
+}
+.international-online .international-online-items .service-item-container .service-item-inner-container .arrow-icon-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: auto;
+  color: #00aeef;
+}
+.international-online .international-online-items .service-item-container .service-item-inner-container .arrow-icon-container:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .outerVideoContainer.service-ended .fluid-width-video-wrapper {
+    display: block;
+  }
+
+  .tabs-nav-container {
+    margin-bottom: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .tabs-nav-container .tabs-links-container {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tabs-nav-container .tabs-links-container .tab {
+    width: auto;
+    max-width: 100%;
+    padding: 16px 24px;
+  }
+  .tabs-nav-container.campus-select-nav {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .tabs-nav-container.campus-select-nav .tabs-links-container {
+    margin: 0 0 0 -8px;
+  }
+  .tabs-nav-container.campus-select-nav .tabs-buttons {
+    margin-left: auto;
+  }
+
+  #sidebarAccordion .give {
+    display: none;
+  }
+
+  .sk-online .campus-online-bottom-items .accordion-item, .ssm-online .campus-online-bottom-items .accordion-item {
+    border-bottom: none;
+  }
+
+  .ssm-online .campus-online-bottom-items .connection-card .accordion-content {
+    height: 1042px !important;
+  }
+  .ssm-online .campus-online-bottom-items.no-ad-slider .connection-card .accordion-content {
+    height: 862px !important;
+  }
+
+  .international-online .campus-online-bottom-items .campus-online-kids-items.no-ad-slider {
+    height: 1060px;
+  }
+
+  .sk-online .campus-online-bottom-items {
+    height: 1075px;
+  }
+  .sk-online .campus-online-bottom-items .campus-online-kids-items {
+    width: 65%;
+    height: 880px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: solid 2px #bcbec0;
+    overflow: auto;
+  }
+  .sk-online .campus-online-bottom-items .campus-online-kids-items.no-ad-slider {
+    height: 1075px;
+    margin-bottom: 0;
+  }
+  .sk-online .campus-online-bottom-items .campus-online-kids-items.no-ad-slider + .sk-ssm-ad-desktop {
+    display: none;
+  }
+  .sk-online .campus-online-bottom-items .connection-card .accordion-content {
+    height: 1017px !important;
+  }
+  .sk-online .accordion .campus-online-kids-tabs {
+    height: 50px;
+  }
+  .sk-online .accordion .campus-online-kids-tabs > input:checked + .accordion-label {
+    padding: 15px 0 4px 0;
+    border-bottom: solid 4px #56c4c4;
+    color: #4d4d4f;
+    font-weight: 900;
+  }
+  .sk-online .accordion .campus-online-kids-tabs > input:checked ~ .accordion-content {
+    padding: 15px;
+  }
+  .sk-online .accordion .campus-online-kids-tabs .accordion-label {
+    padding: 15px 0 4px 0;
+    margin: 0 7.5px;
+    font-size: 12px;
+    display: block;
+    pointer-events: auto;
+    width: auto;
+    border: none;
+    font-weight: normal;
+    color: #4d4d4f;
+  }
+  .sk-online .sk-ssm-ad-desktop {
+    display: block;
+    height: 150px;
+    margin: 0 30px 0 0;
+    width: 65%;
+  }
+
+  .ssm-online .campus-online-bottom-items {
+    height: 1090px;
+  }
+  .ssm-online .campus-online-bottom-items .campus-online-students-items {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .ssm-online .campus-online-bottom-items .campus-online-students-items.no-ad-slider {
+    height: 1085px;
+    margin-bottom: 0;
+  }
+  .ssm-online .campus-online-bottom-items .campus-online-students-items.no-ad-slider .notes-container .notes {
+    height: 1017px;
+  }
+  .ssm-online .campus-online-bottom-items .campus-online-students-items.no-ad-slider .notes-container .notes-download {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .ssm-online .campus-online-bottom-items .campus-online-students-items.no-ad-slider .notes-container .notes-download #btnEmailNotes {
+    font-size: 9px;
+    width: auto;
+    min-width: 130px;
+  }
+  .ssm-online .campus-online-bottom-items .campus-online-students-items.no-ad-slider .notes-container .notes-download .downloadLink {
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .ssm-online .campus-online-bottom-items .campus-online-students-items.no-ad-slider + .sk-ssm-ad-desktop {
+    display: none;
+  }
+  .ssm-online .campus-online-bottom-items .campus-online-students-items .notes-container {
+    padding-right: 0;
+  }
+  .ssm-online .sk-ssm-ad-desktop {
+    display: block;
+    height: 150px;
+    margin: 0 30px 0 0;
+  }
+
+  .ssm-online .sk-ssm-ad-mobile, .sk-online .sk-ssm-ad-mobile {
+    display: none !important;
+  }
+}
+.sk-online .panel {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sk-online .panel {
+    width: 100%;
+    -ms-flex-order: 99;
+        order: 99;
+  }
+}
+.sk-online .campus-online-kids-tabs .input:checked + .label + .panel {
+  display: block;
+}
+
+@media (min-width: 830px) {
+  .sk-online .accordion .campus-online-kids-tabs .accordion-label {
+    font-size: 14px;
+  }
+}
+@media (min-width: 950px) {
+  .sk-online .accordion .campus-online-kids-tabs .accordion-label {
+    font-size: 16px;
+  }
+}
+.youtube-playlist-container {
+  margin: 40px 0 60px;
+}
+.youtube-playlist-container .titleBar {
+  margin: 0 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.youtube-playlist-container .titleBar .btn {
+  width: 100%;
+  margin: 30px 0 30px;
+}
+.youtube-playlist-container .fourColumnMediaThumbs {
+  padding: 0 15px;
+}
+.youtube-playlist-container .fourColumnMediaThumbs .grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.youtube-playlist-container .fourColumnMediaThumbs .grid .thumbContainer {
+  margin: 0 0 30px;
+}
+.youtube-playlist-container .fourColumnMediaThumbs .grid .thumbContainer .thumb {
+  position: relative;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.youtube-playlist-container .fourColumnMediaThumbs .grid .thumbContainer .thumb .thumb-img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.youtube-playlist-container .fourColumnMediaThumbs .grid .thumbContainer .thumb .thumb-duration {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background: black;
+  color: #fff;
+  font-weight: 900;
+  border-radius: 8px;
+  padding: 1px 6px;
+}
+.youtube-playlist-container .fourColumnMediaThumbs .grid .thumbContainer .thumb .thumb-link {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.youtube-playlist-container .fourColumnMediaThumbs .grid .thumbContainer .thumb-title {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1.63265px;
+  color: #4d4d4f;
+}
+
+.accordion .accordion-content .parent-instructions .parent-instructions-outer-container .parent-instructions-inner-container .parent-instructions-header-container {
+  margin-bottom: 32px;
+}
+.accordion .accordion-content .parent-instructions .parent-instructions-outer-container .parent-instructions-inner-container .parent-instructions-header-container .parent-instructions-header {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+}
+.accordion .accordion-content .parent-instructions .parent-instructions-outer-container .parent-instructions-inner-container .parent-instructions-header-container .parent-instructions-info {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.accordion .accordion-content .parent-instructions .parent-instructions-outer-container .parent-instructions-inner-container .parent-instructions-content .parent-instructions-list {
+  list-style: none;
+  counter-reset: parent-item;
+}
+.accordion .accordion-content .parent-instructions .parent-instructions-outer-container .parent-instructions-inner-container .parent-instructions-content .parent-instructions-list .parent-instructions-item {
+  margin-bottom: 32px;
+  counter-increment: parent-item;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.accordion .accordion-content .parent-instructions .parent-instructions-outer-container .parent-instructions-inner-container .parent-instructions-content .parent-instructions-list .parent-instructions-item:before {
+  margin-right: 13px;
+  content: counter(parent-item);
+  background: #56c4c4;
+  border-radius: 100%;
+  color: #fff;
+  width: 32px;
+  min-width: 32px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  height: 32px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.accordion .accordion-content .parent-instructions .parent-instructions-outer-container .parent-instructions-inner-container .parent-instructions-content .parent-instructions-list .parent-instructions-item .parent-instructions-subheader {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.accordion .accordion-content .parent-instructions .parent-instructions-outer-container .parent-instructions-inner-container .parent-instructions-content .parent-instructions-list .parent-instructions-item .parent-instructions-description {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.accordion .accordion-content .media-item-custom-html .tio-header {
+  display: none;
+}
+.accordion .accordion-content .media-item-custom-html p, .accordion .accordion-content .media-item-custom-html li, .accordion .accordion-content .media-item-custom-html a {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  margin-bottom: 30px;
+}
+.accordion .accordion-content .media-item-custom-html p {
+  color: #4d4d4f;
+  line-height: 19px;
+  letter-spacing: 1px;
+}
+.accordion .accordion-content .media-item-custom-html ol {
+  padding: 0 17px;
+  margin: 0 0 30px;
+  list-style: decimal;
+}
+.accordion .accordion-content .media-item-custom-html ul {
+  padding: 0 17px;
+  margin: 0 0 30px;
+}
+.accordion .accordion-content .media-item-custom-html h3 {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  background: none;
+  color: #4d4d4f;
+  pointer-events: none;
+  border: none;
+  padding: 0;
+}
+.accordion .accordion-content .media-item-custom-html h5 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.accordion .accordion-content .activities-and-resources-container .resources-item {
+  margin-bottom: 30px;
+}
+.accordion .accordion-content .activities-and-resources-container .resources-item:last-of-type {
+  margin-bottom: 0;
+}
+.accordion .accordion-content .activities-and-resources-container .resources-item .media-resource-title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 16px;
+  display: block;
+}
+.accordion .accordion-content .activities-and-resources-container .resources-item .media-resource-description {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.accordion .accordion-content .activities-and-resources-container .resources-item a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.accordion .accordion-content .activities-and-resources-container .resources-item a .icon-download {
+  margin-right: 16px;
+  font-size: 24px;
+}
+
+#FirstTimeBanner {
+  background: linear-gradient(74.04deg, #00aeef 28.9%, #56c4c4 68.64%);
+  bottom: 0;
+  height: 186px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1001;
+}
+#FirstTimeBanner .first-time-close {
+  color: #ffffff;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+#FirstTimeBanner .first-time-container {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+#FirstTimeBanner .first-time-container span {
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+#FirstTimeBanner .first-time-container .first-time-header {
+  font: 900 28px/34px 'Lato';
+  letter-spacing: 1px;
+}
+#FirstTimeBanner .first-time-container .first-time-text {
+  font: 400 20px/26px 'Lato';
+  letter-spacing: 0.9px;
+}
+#FirstTimeBanner .first-time-container .first-time-btn {
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  width: 250px;
+}
+
+@media screen and (min-width: 450px) {
+  .campus-online-video-container .service-countdown-container {
+    font-size: 16px;
+  }
+  .campus-online-video-container .campus-stream-info-container {
+    padding: 30px 15px 10px;
+  }
+  .campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .campus-title {
+    font-size: 34px;
+  }
+
+  .SBSNContainer .title {
+    font-size: 22px !important;
+    margin-bottom: 5px;
+  }
+
+  .SBSNContainer .series {
+    font-size: 16px !important;
+    margin-bottom: 5px;
+  }
+
+  .SBSNContainer .pastor {
+    font-size: 16px !important;
+    margin-bottom: 5px;
+  }
+
+  .SBSNContainer .date {
+    font-size: 14px !important;
+    line-height: normal !important;
+  }
+
+  .SBSNContainer h3 {
+    font-size: 14px !important;
+    line-height: normal !important;
+  }
+
+  .youtube-playlist-container .fourColumnMediaThumbs .grid {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -12px;
+  }
+  .youtube-playlist-container .fourColumnMediaThumbs .grid .thumbContainer {
+    width: 50%;
+    padding: 0 12px;
+  }
+
+  .SBSNContainer .title {
+    font-size: 22px !important;
+    margin-bottom: 5px;
+  }
+
+  .SBSNContainer .series {
+    font-size: 16px !important;
+    margin-bottom: 5px;
+  }
+
+  .SBSNContainer .pastor {
+    font-size: 16px !important;
+    margin-bottom: 5px;
+  }
+
+  .SBSNContainer .date {
+    font-size: 14px !important;
+    line-height: normal !important;
+  }
+
+  .SBSNContainer h3 {
+    font-size: 14px !important;
+    line-height: normal !important;
+  }
+}
+@media screen and (min-width: 475px) {
+  .SBSNContainer .title {
+    font-size: 24px !important;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .tabs-nav-container {
+    padding: 0 38px;
+  }
+  .tabs-nav-container .tabs-links-container {
+    margin: 0 -16px;
+  }
+  .tabs-nav-container.campus-select-nav {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    padding: 0;
+  }
+  .tabs-nav-container.campus-select-nav .dk-select {
+    max-width: 225px;
+    margin: 0 16px 0 0;
+  }
+
+  .sk-online .tabs-nav-container.campus-select-nav, .ssm-online .tabs-nav-container.campus-select-nav {
+    padding: 0 30px;
+  }
+
+  .campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .campus-title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .accordion .accordion-item > input:checked + .accordion-label {
+    padding: 30px;
+  }
+  .accordion .accordion-item > input:checked ~ .accordion-content {
+    padding: 15px 30px 30px;
+  }
+  .accordion .accordion-label {
+    padding: 30px;
+  }
+  .accordion .accordion-content {
+    padding: 0 30px;
+  }
+
+  .sk-online .campus-online-kids-tabs .accordion-label {
+    padding: 30px;
+  }
+  .sk-online .campus-online-kids-tabs > input:checked + .accordion-label {
+    padding: 30px;
+  }
+  .sk-online .campus-online-kids-tabs > input:checked ~ .accordion-content {
+    padding: 15px 30px 30px;
+  }
+
+  .mfp-content .popup .popup-header {
+    padding: 0 30px;
+  }
+  .mfp-content .popup .accordion-info, .mfp-content .popup .embedTabsContainer, .mfp-content .popup .shareLinkContainer, .mfp-content .popup .shareEmbedContainer, .mfp-content .popup .shareEmailContainer {
+    padding: 0 30px;
+  }
+
+  .youtube-playlist-container .titleBar {
+    margin: 0 30px;
+  }
+  .youtube-playlist-container .fourColumnMediaThumbs {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .online-service-top {
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .SBSNContainer .title {
+    font-size: 30px !important;
+    margin-bottom: 5px;
+  }
+
+  .SBSNContainer .series {
+    font-size: 18px !important;
+    margin-bottom: 10px;
+  }
+
+  .SBSNContainer .pastor {
+    font-size: 18px !important;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .campus-page-online #aspectPlaceHolder {
+    display: block !important;
+  }
+
+  .SBSNContainer {
+    padding: 30px;
+  }
+
+  .international-online .international-online-items.no-ad-slider .notes-container .SBSNContainer {
+    height: 910px !important;
+  }
+  .international-online .international-online-items .notes-container .SBSNContainer {
+    padding: 30px;
+    height: 734px !important;
+  }
+
+  .international-online.espanol .international-online-items.no-ad-slider .notes-container .SBSNContainer {
+    margin: 0 -15px 0;
+    height: 991px !important;
+  }
+
+  .outerVideoContainer {
+    margin-bottom: 0 !important;
+  }
+
+  .outerVideoContainer.hasCountdown {
+    margin-bottom: 0 !important;
+  }
+
+  .campus-online-top-items .mfp-hide {
+    display: none !important;
+  }
+
+  .mfp-content .accordion-label {
+    display: none;
+  }
+  .mfp-content .popup .popup-header {
+    padding: 0 180px;
+  }
+  .mfp-content .popup .accordion-info, .mfp-content .popup .embedTabsContainer, .mfp-content .popup .shareLinkContainer, .mfp-content .popup .shareEmbedContainer, .mfp-content .popup .shareEmailContainer {
+    padding: 0 180px;
+  }
+
+  .chat-live {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  .chat-live #WidgetWorshipService {
+    width: calc(100% - 60px);
+    transition: width 1s ease;
+  }
+  .chat-live .campus-online-chat-item {
+    -ms-flex: 1;
+        flex: 1;
+    min-width: 60px;
+    max-width: 60px;
+    transition: max-width 1s ease;
+    -ms-flex-order: 0;
+        order: 0;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body {
+    height: 100%;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .accordion-content {
+    height: 100%;
+    padding: 0;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container .chat-icon {
+    background: url(http://sb-web.s3.amazonaws.com/saddleback.com/visit/locations/online/chat.svg) no-repeat top left;
+    background-size: contain;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    display: block !important;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container .chatroll-launcher-active {
+    -ms-flex-order: 1;
+        order: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background: #f6f6f6;
+    width: 60px;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container .chatroll-launcher-active #campus-chatroll {
+    text-align: center;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    cursor: pointer;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 145px;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container .chatroll-launcher-active #campus-chatroll:after {
+    color: #00aeef;
+    content: '\e949';
+    font: 12px 'SB-Icons';
+    padding-left: 16px;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container .chatroll-launcher-active #campus-chatroll .name {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    width: 145px;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container .chatroll-launcher-active #campus-chatroll .name:before {
+    content: 'Campus Chat';
+    display: block;
+    color: #4d4d4f;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container .chatroll-launcher-active #campus-chatroll.open {
+    width: 60px;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container .chatroll-launcher-active #campus-chatroll.open:after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    padding-left: 0;
+    padding-right: 16px;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container .chatroll-launcher-active #campus-chatroll.open .name:before {
+    content: 'Close';
+    color: #bcbec0;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body .campus-chat-btn-container .chatroll-messenger-frame {
+    width: 100%;
+  }
+  .chat-live .campus-online-chat-item #chatroll-container-body #chatFrame {
+    min-height: unset !important;
+  }
+  .chat-live .campus-online-top-items {
+    width: 100%;
+  }
+
+  .campus-chatroll-active #WidgetWorshipService {
+    width: calc(100% - 33.333333%);
+  }
+  .campus-chatroll-active #WidgetWorshipService .service-countdown-container {
+    font-size: 10px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .online-service-top {
+    margin: 0 auto 5px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .campus-title {
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0px !important;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .service-starts-subheader {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .service-starts-info {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .btn-container {
+    margin-top: 5px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .service-starts-sub-info {
+    display: block;
+    font-size: 10px;
+  }
+  .campus-chatroll-active .campus-online-chat-item {
+    max-width: calc(33.333333%);
+    transition: width 1s ease;
+  }
+
+  .give-desktop-btn {
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  #shareMessageBtn {
+    display: block;
+  }
+
+  .accordion {
+    overflow: visible;
+  }
+  .accordion .accordion-item {
+    border-bottom: none;
+  }
+  .accordion .accordion-item > input:checked + .accordion-label {
+    padding: 12px 24px;
+    color: #fff;
+  }
+  .accordion .accordion-item > input:checked ~ .accordion-content {
+    max-height: 100vh;
+    padding: 15px;
+  }
+  .accordion .sermon-notes > input:checked ~ .accordion-content {
+    padding: 0 30px 0 0;
+  }
+  .accordion .av-preferences > input:checked ~ .accordion-content {
+    padding: 0;
+  }
+  .accordion .message-details > input:checked ~ .accordion-content {
+    padding: 0;
+  }
+  .accordion .pastor-welcome > input:checked ~ .accordion-content {
+    padding: 0;
+  }
+  .accordion .accordion-label {
+    display: none;
+    pointer-events: none;
+  }
+  .accordion .accordion-label::after {
+    display: none;
+  }
+  .accordion .accordion-content {
+    overflow: visible;
+    max-height: 100%;
+  }
+  .accordion .accordion-content .accordion-header {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+  .accordion .accordion-content .accordion-info {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    margin-bottom: 24px !important;
+  }
+  .accordion .accordion-content .parent-instructions {
+    padding-top: 16px;
+  }
+  .accordion .accordion-content .parent-instructions .parent-instructions-outer-container .parent-instructions-inner-container .parent-instructions-content .parent-instructions-list .parent-instructions-item {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .accordion .accordion-content .parent-instructions .parent-instructions-outer-container .parent-instructions-inner-container .parent-instructions-content .parent-instructions-list .parent-instructions-item:before {
+    margin-bottom: 0;
+  }
+  .accordion .accordion-content .media-item-custom-html .tio-header {
+    display: block;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    margin-bottom: 16px;
+    border-bottom: solid 1px #979797;
+  }
+  .accordion .accordion-content .media-item-custom-html .tio-header p {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .accordion .accordion-content .activities-and-resources-container {
+    padding-top: 16px;
+  }
+
+  .campus-online-top-items {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .campus-online-top-items .accordion-item {
+    width: 50%;
+  }
+  .campus-online-top-items .pastor-welcome {
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .campus-online-top-items .message-details .accordion-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .campus-online-top-items .message-details .accordion-content .service-info-social-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin: -12px 0;
+  }
+  .campus-online-top-items .message-details .accordion-content .service-info-social-container a {
+    margin: 12px 0;
+    text-decoration: none;
+  }
+  .campus-online-top-items .message-details .accordion-content .service-info-social-container span {
+    font-size: 32px;
+    color: #00aeef;
+  }
+  .campus-online-top-items .message-details .accordion-content .service-info-social-container span:hover {
+    color: #0093c6;
+  }
+
+  .campus-online-bottom-items {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: end;
+        align-items: flex-end;
+    height: 1020px;
+    padding: 0 30px;
+  }
+  .campus-online-bottom-items .sermon-notes {
+    width: 65%;
+    overflow: visible;
+  }
+  .campus-online-bottom-items .sermon-notes .notes-container {
+    padding-left: 0;
+  }
+  .campus-online-bottom-items .sermon-notes .notes-container .notes {
+    height: 907px;
+    margin-bottom: 0;
+    border: none;
+    border: solid 1px #bcbec0;
+  }
+  .campus-online-bottom-items .sermon-notes .notes-container .notes .notification {
+    padding: 30px;
+  }
+  .campus-online-bottom-items .sermon-notes .notes-container .notes-download {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 5px;
+    background: #c4c4c4;
+  }
+  .campus-online-bottom-items .sermon-notes .notes-container .notes-download #txtEmailNotesTo {
+    margin: 0 7.5px 0 0;
+    width: 30%;
+  }
+  .campus-online-bottom-items .sermon-notes .notes-container .notes-download #btnEmailNotes {
+    margin: 0 0 0 7.5px;
+    max-width: 110px;
+  }
+  .campus-online-bottom-items .sermon-notes .notes-container .notes-download .downloadLink {
+    padding: 0 7.5px 0 0;
+    margin-left: auto;
+  }
+  .campus-online-bottom-items .sermon-notes .notes-container .notes-download #sendingStatus {
+    width: 100%;
+    -ms-flex-order: 1;
+        order: 1;
+    padding-left: 25px;
+  }
+  .campus-online-bottom-items .connection-card {
+    width: 35%;
+    margin-bottom: 15px;
+    padding-right: 0;
+  }
+  .campus-online-bottom-items .connection-card .accordion-label {
+    display: block;
+    padding: 12px 24px;
+    background: #56c4c4;
+    color: #fff;
+  }
+  .campus-online-bottom-items .connection-card .accordion-content {
+    padding: 15px;
+    border: solid 2px #bcbec0;
+    overflow-y: scroll;
+    height: 615px;
+  }
+  .campus-online-bottom-items .tithes-and-offerings {
+    display: none;
+  }
+  .campus-online-bottom-items .av-preferences {
+    width: 35%;
+    padding: 0;
+    border: solid 1px #bcbec0;
+  }
+  .campus-online-bottom-items .av-preferences .accordion-content {
+    padding: 0;
+  }
+  .campus-online-bottom-items .av-preferences .accordion-content .preferencesList .prefToggle .prefTitle {
+    padding: 12px 24px;
+    background: #56c4c4;
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 19px;
+    font-weight: 900;
+  }
+  .campus-online-bottom-items .av-preferences .accordion-content .preferencesList .prefToggle .prefContainer {
+    padding: 15px;
+  }
+  .campus-online-bottom-items .av-preferences .accordion-content .preferencesList .prefToggle .avPreferencesWarning {
+    margin-top: 0;
+    padding: 0 15px 5px;
+    text-align: center;
+  }
+
+  .ssm-online .campus-online-bottom-items .connection-card, .sk-online .campus-online-bottom-items .connection-card {
+    width: 32%;
+  }
+
+  .next-steps-notification {
+    padding: 15px 30px;
+  }
+  .next-steps-notification .next-steps-notification-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .next-steps-notification .next-steps-notification-inner .next-steps-notification-header {
+    display: none;
+    margin-right: auto;
+    margin-bottom: 0;
+    font-size: 28px;
+    min-width: 153px;
+  }
+  .next-steps-notification .next-steps-notification-inner .next-steps-notification-header a {
+    pointer-events: none;
+    text-decoration: none;
+  }
+  .next-steps-notification .next-steps-notification-inner .next-steps-notification-text {
+    max-width: 370px;
+    margin-right: auto;
+  }
+  .next-steps-notification .next-steps-notification-inner .btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    max-width: 180px;
+    margin-right: 30px;
+    background: transparent;
+    border: solid 2px #fff;
+    color: #fff;
+    height: 40px;
+    border-radius: 15px;
+  }
+
+  .campus-online-video-container .aspectPlaceHolder169 {
+    display: block !important;
+  }
+  .campus-online-video-container .campus-stream-info-container {
+    height: 100%;
+    z-index: 1;
+    padding: 30px;
+  }
+  .campus-online-video-container .campus-stream-info-container .campus-stream-info-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+  }
+  .campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .ministry-logo {
+    width: 115px;
+    margin-bottom: 10px;
+  }
+  .campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .campus-title {
+    font-size: 60px;
+    line-height: 50px;
+    max-width: 800px;
+    margin: 0 auto 15px !important;
+  }
+  .campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .service-starts-subheader {
+    font-size: 20px;
+  }
+  .campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .service-starts-info {
+    font-size: 28px;
+  }
+  .campus-online-video-container .campus-stream-info-container .service-starts-sub-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 10px;
+    height: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 100%;
+    background: #00aeef;
+    text-align: right;
+  }
+  .campus-online-video-container .service-countdown-container {
+    bottom: 0;
+    width: 100%;
+    padding: 0 10px;
+    height: 50px;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    background: transparent;
+    z-index: 1;
+  }
+  .campus-online-video-container .service-end-container, .campus-online-video-container .no-video-container {
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    position: absolute;
+    top: 0;
+  }
+  .campus-online-video-container .service-end-container .service-end-inner-container, .campus-online-video-container .no-video-container .service-end-inner-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .campus-online-video-container .service-end-container .service-end-inner-container .service-end-header, .campus-online-video-container .no-video-container .service-end-inner-container .service-end-header {
+    width: 100%;
+    text-align: center;
+  }
+  .campus-online-video-container .service-end-container .service-end-inner-container .beta, .campus-online-video-container .no-video-container .service-end-inner-container .beta {
+    width: 100%;
+    text-align: center;
+  }
+  .campus-online-video-container .service-end-container .service-end-inner-container .service-end-item, .campus-online-video-container .no-video-container .service-end-inner-container .service-end-item {
+    width: 33.33333%;
+    margin: 0;
+    padding: 0 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .campus-online-video-container .service-end-container .service-end-inner-container .service-end-item span, .campus-online-video-container .no-video-container .service-end-inner-container .service-end-item span {
+    -ms-flex-order: 1;
+        order: 1;
+    margin: 0 auto;
+  }
+  .campus-online-video-container .service-end-container .service-end-inner-container .service-end-item.respond, .campus-online-video-container .no-video-container .service-end-inner-container .service-end-item.respond {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .campus-online-video-container .service-end-container .service-end-inner-container .service-end-item.share, .campus-online-video-container .no-video-container .service-end-inner-container .service-end-item.share {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .campus-online-video-container .service-end-container .service-end-inner-container .service-end-item .service-end-item-inner, .campus-online-video-container .no-video-container .service-end-inner-container .service-end-item .service-end-item-inner {
+    text-align: center;
+  }
+  .campus-online-video-container .service-end-container .service-end-inner-container .service-end-item .service-end-item-inner .service-end-info, .campus-online-video-container .no-video-container .service-end-inner-container .service-end-item .service-end-item-inner .service-end-info {
+    margin-bottom: 10px;
+  }
+  .campus-online-video-container .service-end-container .service-end-inner-container .btn, .campus-online-video-container .no-video-container .service-end-inner-container .btn {
+    max-width: 180px;
+    font-size: 15px;
+    margin-top: 100px;
+  }
+
+  .campus-online-video-container {
+    margin-bottom: 0;
+  }
+
+  .campus-online-top-items {
+    margin-bottom: 37px;
+  }
+
+  .accordion .message-details {
+    background: #f6f6f6;
+    padding: 30px;
+  }
+  .accordion .message-details .accordion-content {
+    background: transparent;
+    padding: 0;
+  }
+  .accordion .message-details .accordion-content .service-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .accordion .message-details .accordion-content .service-info .staticHeightImageContainer {
+    width: 104px;
+    height: 104px;
+    margin: 0 0 24px;
+  }
+  .accordion .message-details .accordion-content .service-info .series-info-inner {
+    padding-right: 24px;
+  }
+  .accordion .message-details .accordion-content .service-info .series-info-inner .series-title {
+    pointer-events: unset;
+    color: #00aeef;
+    display: block;
+  }
+  .accordion .message-details .accordion-content .service-info .series-info-inner h2 {
+    margin-bottom: 8px;
+    max-width: 425px;
+  }
+  .accordion .message-details .accordion-content .service-info .series-info-inner .speaker-date-container {
+    margin-bottom: 26px;
+  }
+  .accordion .message-details .accordion-content .service-info .series-link {
+    display: none;
+  }
+  .accordion .message-details .accordion-content .service-info #shareMessageBtn {
+    width: 100%;
+  }
+  .accordion .message-details .accordion-content .service-info #shareMessageBtn span {
+    margin-right: 10px;
+  }
+  .accordion .pastor-welcome {
+    padding: 30px;
+  }
+  .accordion .pastor-welcome .accordion-content {
+    padding: 0;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-img {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-img.desktop {
+    display: block;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    padding-left: 15px;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-img.mobile {
+    display: none;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 0;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner .campus-pastor-subtitle {
+    padding: 0;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-statement-container {
+    margin-bottom: 24px;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  #campusPastorVideo, #ministryPastorVideo {
+    position: relative;
+  }
+  #campusPastorVideo .mfp-close, #ministryPastorVideo .mfp-close {
+    top: -21px;
+    right: -21px;
+  }
+
+  .campus-video-popup {
+    opacity: 0.8 !important;
+  }
+
+  .campus-video-popup + .mfp-wrap {
+    opacity: 1 !important;
+  }
+
+  .youtube-playlist-container .titleBar {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-bottom: 16px;
+  }
+  .youtube-playlist-container .titleBar .btn {
+    margin: 0;
+    background: none;
+    height: auto;
+    color: #00aeef;
+    text-transform: capitalize;
+    font-weight: normal;
+    text-decoration: underline;
+    border: none;
+    width: auto;
+    font-size: 16px;
+  }
+  .youtube-playlist-container .titleBar .btn:hover {
+    color: #0093c6;
+  }
+  .youtube-playlist-container .fourColumnMediaThumbs .grid {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .youtube-playlist-container .fourColumnMediaThumbs .grid .thumbContainer {
+    width: 25%;
+    padding: 0 12px;
+  }
+
+  #FirstTimeBanner {
+    height: 92px;
+  }
+  #FirstTimeBanner .first-time-close {
+    top: 6px;
+  }
+  #FirstTimeBanner .first-time-container {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  #FirstTimeBanner .first-time-container span {
+    margin-right: 24px;
+    width: auto;
+  }
+  #FirstTimeBanner .first-time-container .first-time-btn {
+    width: 200px;
+  }
+
+  .international-online .tabs-nav-container {
+    position: absolute;
+    top: 49px;
+    right: 0;
+  }
+  .international-online .international-online-items .bulletin-info-container {
+    margin-bottom: 54px;
+    width: 100%;
+  }
+  .international-online .international-online-items .bulletin-info-container .bulletin-info-header {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 1px;
+  }
+  .international-online .international-online-items .notes-container {
+    padding: 15px 0 !important;
+  }
+  .international-online .international-online-items .notes-container .SBSNContainer {
+    border: none;
+    margin: 0 -15px 24px;
+  }
+  .international-online .international-online-items .notes-container .notes-download {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    margin: 0 -15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 5px;
+    background: #4d4d4f;
+  }
+  .international-online .international-online-items .notes-container .notes-download #txtEmailNotesTo {
+    margin: 0 7.5px 0 0;
+    width: 30%;
+  }
+  .international-online .international-online-items .notes-container .notes-download #btnEmailNotes {
+    margin: 0 0 0 7.5px;
+  }
+  .international-online .international-online-items .notes-container .notes-download .downloadLink {
+    padding: 0 7.5px 0 0;
+    margin-left: auto;
+    color: #fff;
+  }
+  .international-online .international-online-items .notes-container .notes-download #sendingStatus {
+    width: 100%;
+    -ms-flex-order: -1;
+        order: -1;
+    padding-left: 25px;
+  }
+  .international-online #EventListEmbed {
+    margin-top: 60px;
+  }
+  .international-online.espanol .accordion .campus-online-kids-tabs {
+    display: block;
+  }
+  .international-online.espanol .accordion .campus-online-kids-tabs .accordion-label {
+    display: none;
+  }
+  .international-online.espanol .international-online-items.no-ad-slider {
+    height: 1075px;
+  }
+  .international-online.espanol .international-online-items .notes-container .notes-download {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .international-online.espanol .international-online-items .notes-container .notes-download #btnEmailNotes {
+    font-size: 9px;
+    width: auto;
+    min-width: 130px;
+  }
+  .international-online.espanol .international-online-items .notes-container .notes-download .downloadLink {
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+}
+@media screen and (min-width: 840px) {
+  .campus-online-bottom-items .sermon-notes .notes-container .notes {
+    height: 851px;
+  }
+  .campus-online-bottom-items .sermon-notes .notes-container .notes-download {
+    padding: 22px;
+  }
+  .campus-online-bottom-items .sermon-notes .notes-container .notes-download #txtEmailNotesTo {
+    width: 45%;
+  }
+
+  .campus-chatroll-active #WidgetWorshipService .service-countdown-container {
+    font-size: 12px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .online-service-top {
+    margin: 0 auto 5px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .campus-title {
+    font-size: 34px;
+    line-height: 34px;
+    margin: 0 auto 10px !important;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .service-starts-subheader {
+    margin-bottom: 8px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .btn-container {
+    margin-top: 8px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .service-starts-sub-info {
+    font-size: 12px;
+  }
+
+  .ssm-online .international-online-items .notes-container .notes-download #btnEmailNotes {
+    font-size: 12px;
+  }
+  .ssm-online .international-online-items .notes-container .notes-download .downloadLink {
+    padding: 0 7.5px 0 0;
+  }
+
+  .international-online .campus-online-bottom-items .sermon-notes .notes-container .notes {
+    height: 897px;
+  }
+  .international-online.espanol .international-online-items .notes-container .notes-download #btnEmailNotes {
+    font-size: 12px;
+  }
+  .international-online.espanol .international-online-items .notes-container .notes-download .downloadLink {
+    padding: 0 7.5px 0 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .campus-title {
+    font-size: 72px;
+    line-height: 65px;
+    margin: 0 auto 24px;
+  }
+  .campus-online-video-container .campus-stream-info-container .campus-stream-info-inner .btn-container {
+    margin-top: 30px;
+  }
+  .campus-online-video-container .campus-stream-info-container .service-starts-sub-info {
+    padding-right: 30px;
+  }
+  .campus-online-video-container .service-countdown-container {
+    padding: 0 30px;
+  }
+
+  .international-online .tabs-nav-container {
+    position: absolute;
+    top: 49px;
+    right: 0;
+  }
+  .international-online .international-online-items .notes-container .notes-download #sendingStatus {
+    width: auto;
+    -ms-flex-order: 0;
+        order: 0;
+    padding-left: 25px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .campus-online-bottom-items .sermon-notes .notes-container .notes {
+    height: 854px;
+  }
+  .campus-online-bottom-items .sermon-notes .notes-container .notes-download #txtEmailNotesTo {
+    width: 50%;
+  }
+
+  .campus-chatroll-active #WidgetWorshipService .service-countdown-container {
+    font-size: 14px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .online-service-top {
+    margin: 0 auto 15px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .campus-title {
+    font-size: 40px;
+    margin: 0 auto 15px !important;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .service-starts-info {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .btn-container {
+    margin-top: 15px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .service-starts-sub-info {
+    font-size: 14px;
+  }
+
+  .accordion .message-details .accordion-content .service-info .staticHeightImageContainer {
+    margin: 0 24px 0 0;
+  }
+  .accordion .message-details .accordion-content .service-info .series-info-inner {
+    width: 60%;
+  }
+
+  #FirstTimeBanner .first-time-close {
+    top: 16px;
+  }
+
+  .international-online .campus-online-bottom-items .international-online-items {
+    overflow: unset;
+  }
+  .international-online .campus-online-bottom-items .international-online-items .bulletin-info-container {
+    padding: 0 38.5px;
+  }
+  .international-online .campus-online-bottom-items .international-online-items .international-items-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    height: 340px;
+    margin: 0 -38.5px;
+  }
+  .international-online .campus-online-bottom-items .international-online-items .international-items-container .service-item-container {
+    width: 50%;
+    padding: 0 38.5px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .sk-online .accordion .campus-online-kids-tabs .accordion-label {
+    margin: 0 24px;
+  }
+  .sk-online .accordion .campus-online-kids-tabs .accordion-label:first-of-type {
+    margin-left: 16px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .tabs-nav-container {
+    padding: 0;
+  }
+  .tabs-nav-container .tabs-links-container {
+    margin: 0 -8px;
+  }
+  .tabs-nav-container .tabs-links-container .tab.active {
+    -ms-flex-order: 0;
+        order: 0;
+  }
+  .tabs-nav-container .tabs-buttons {
+    position: unset;
+    margin-left: auto;
+  }
+
+  .sk-online .tabs-nav-container.campus-select-nav, .ssm-online .tabs-nav-container.campus-select-nav {
+    padding: 0;
+  }
+
+  .campus-online-bottom-items {
+    padding: 0;
+  }
+  .campus-online-bottom-items .sermon-notes {
+    margin-right: 0;
+  }
+
+  .campus-chatroll-active #WidgetWorshipService .service-countdown-container {
+    font-size: 16px;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .campus-stream-info-inner .campus-title {
+    font-size: 65px;
+    line-height: 60px;
+    margin: 0 auto 24px !important;
+  }
+  .campus-chatroll-active #WidgetWorshipService .campus-stream-info-container .service-starts-sub-info {
+    font-size: 16px;
+  }
+
+  .accordion .message-details .accordion-content .service-info .series-info-inner {
+    width: 75%;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner #campusPastorVideoToggle {
+    width: 40px;
+    margin-right: 16px;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner .play-btn-link {
+    margin: 0;
+    padding-right: 24px;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner .campus-pastor-name {
+    padding-right: 5px;
+    padding-left: 0;
+    border-right: solid 1px #878787;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner .campus-pastor-subtitle {
+    padding-left: 5px;
+  }
+  .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner a {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .sk-online .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner .play-btn-link, .ssm-online .accordion .pastor-welcome .accordion-content .campus-pastor-info .campus-pastor-name-container .campus-pastor-info-inner .campus-pastor-name-inner .play-btn-link {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .youtube-playlist-container .titleBar {
+    margin: 0 0 16px;
+  }
+}

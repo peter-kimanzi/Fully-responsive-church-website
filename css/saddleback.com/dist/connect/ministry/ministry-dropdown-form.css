@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/********************************************
+    Ministry Page Dropdown-Form Styling 
+********************************************/
+.formSlider .sectionInner {
+  padding: 30px 15px 0;
+  text-align: center;
+}
+.formSlider .successContainer {
+  border: none;
+  background: #67c18c;
+  color: #fff;
+  margin: 0 auto 30px;
+  max-width: 720px;
+}
+
+.formInfo {
+  border-bottom: 1px solid #fff;
+  margin: 0 auto 0px;
+  max-width: 720px;
+  padding-bottom: 15px;
+}
+.formInfo h1, .formInfo p {
+  margin: 0 15px;
+}
+.formInfo h2 {
+  font-weight: 900 !important;
+}
+
+.widgetFormBtn {
+  margin: 0 auto;
+  display: block;
+  padding: 0;
+  text-align: center;
+  line-height: 36px;
+  font-size: 16px;
+}
+
+.widgetForm {
+  display: none;
+  text-align: left;
+}
+.widgetForm form {
+  margin: 45px auto 30px;
+  max-width: 720px;
+}
+.widgetForm form .formContainer .fieldContainer {
+  margin: 0 -15px;
+}
+.widgetForm form .formContainer .fieldContainer .grid-u-m-12 {
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+.widgetForm form .formContainer .fieldContainer .grid-u-m-12 label {
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 5px;
+}
+.widgetForm form .formContainer .fieldContainer .grid-u-m-12 input {
+  height: 36px;
+}
+.widgetForm form .formContainer .fieldContainer .grid-u-m-12 .grid {
+  margin: 0 -15px;
+}
+.widgetForm form .formContainer .fieldContainer .grid-u-m-12 .dk-select {
+  letter-spacing: 1px;
+  margin-bottom: 0px !important;
+  height: 36px !important;
+}
+.widgetForm form .SubmitForm {
+  width: 100%;
+}
+.widgetForm form .parsley-error {
+  border: 1px solid #F15B4E !important;
+}
+.widgetForm input[type=text] {
+  float: none !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+.widgetForm input[type=radio] {
+  display: inline-block;
+  margin: 0;
+}
+.widgetForm input[type=radio] + label {
+  display: inline-block;
+  width: auto;
+  margin: 0 11px;
+}
+.widgetForm .surveyTable {
+  width: 100%;
+}
+.widgetForm .surveyTable label {
+  text-indent: -9999px;
+}
+.widgetForm .rating {
+  display: -ms-flexbox;
+  display: flex;
+  justitfy-content: flex-start;
+}
+.widgetForm .rating > div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+}
+.widgetForm .rating > div:not(:checked) > input {
+  clip: rect(0, 0, 0, 0);
+  left: -9999px;
+  position: absolute;
+}
+.widgetForm .rating > div:not(:checked) > label {
+  clear: none;
+  color: #f6f6f6;
+  cursor: pointer;
+  font-size: 1.4em;
+  line-height: 1;
+  margin: 0 11px 0 0;
+  overflow: hidden;
+  text-indent: 0;
+  white-space: nowrap;
+  width: 20px;
+}
+.widgetForm .rating > div:not(:checked) > label:before {
+  content: 'Γÿà';
+}
+.widgetForm .rating > div > input:checked ~ label {
+  color: #00aeef;
+}
+.widgetForm .rating > div:not(:checked) > label:hover, .widgetForm .rating > div:not(:checked) > label:hover ~ label {
+  color: #00aeef;
+}
+.widgetForm .rating > div > input:checked + label:hover,
+.widgetForm .rating > div > input:checked + label:hover ~ label,
+.widgetForm .rating > div > input:checked ~ label:hover,
+.widgetForm .rating > div > input:checked ~ label:hover ~ label,
+.widgetForm .rating > div > label:hover ~ input:checked ~ label {
+  color: #00aeef;
+}
+.widgetForm .rating > div > label:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+.widgetForm .dk_container {
+  max-width: none !important;
+}
+.widgetForm .gridItem {
+  margin-bottom: 22px;
+}
+.widgetForm .gridItem.noMargin {
+  margin: 0;
+}
+
+#errorContainer {
+  background: #F15B4E;
+  color: #fff;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .widgetForm form .formContainer .fieldContainer .grid-u-m-12 {
+    margin-bottom: 30px;
+  }
+  .widgetForm form .SubmitForm {
+    display: block;
+    line-height: 36px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 200px;
+  }
+}

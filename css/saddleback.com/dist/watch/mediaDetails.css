@@ -1,0 +1,238 @@
+.campus-wrapper .content, .global-footer .content {
+  padding: 0 15px;
+}
+.campus-wrapper .content .breadcrumb, .global-footer .content .breadcrumb {
+  margin-left: 0;
+}
+
+section.content.sg-overlay-mobile {
+  z-index: 1000;
+}
+
+.videoContainer {
+  position: relative;
+}
+
+.smallGroupEngagementOverlay {
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  background: rgba(0, 0, 0, 0.8);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 110;
+}
+.smallGroupEngagementOverlay .overlayInner {
+  padding: 120px 15px;
+  text-align: center;
+}
+.smallGroupEngagementOverlay .overlayInner .back-link {
+  color: #ffffff;
+  left: 15px;
+  position: absolute;
+  top: 75px;
+}
+.smallGroupEngagementOverlay .overlayInner .back-link:hover {
+  color: #ffffff;
+}
+.smallGroupEngagementOverlay .overlayInner .alpha {
+  font-size: 38px;
+  line-height: normal;
+}
+.smallGroupEngagementOverlay .overlayInner .delta {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.smallGroupEngagementOverlay .overlayInner .dk-select {
+  margin-bottom: 60px;
+}
+.smallGroupEngagementOverlay span {
+  color: #ffffff;
+  font-weight: normal;
+  text-align: left;
+  width: 100%;
+}
+
+#VideoPlayer {
+  width: 100%;
+  z-index: 0;
+}
+
+.audioVideoContainer {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #4d4d4f;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  margin: 0;
+  min-height: 290px;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1001;
+}
+.audioVideoContainer span, .audioVideoContainer label {
+  display: inline-block;
+  font: 14px/16px "Lato", Arial;
+  letter-spacing: 1px;
+}
+.audioVideoContainer input {
+  vertical-align: text-top;
+}
+.audioVideoContainer div {
+  margin-bottom: 11px;
+}
+.audioVideoContainer .btn {
+  background: transparent;
+  border: 1px solid white;
+}
+.audioVideoContainer .btn:hover {
+  background: #0093c6;
+  border-color: #0093c6;
+}
+.audioVideoContainer .btn:first-child {
+  margin-right: 22px;
+}
+.audioVideoContainer .avNotice {
+  color: #bcbec0;
+  display: block;
+  font-size: 12px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.columnContainer {
+  padding: 0;
+}
+.columnContainer .leftColumn {
+  position: relative;
+}
+.columnContainer .rightColumn {
+  right: 0;
+}
+.columnContainer .rightColumn .mediaSeriesContainer .title {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+.columnContainer .rightColumn .mediaSeriesContainer .series {
+  display: block;
+  margin-bottom: 15px;
+}
+.columnContainer .rightColumn .mediaSeriesContainer .description {
+  max-height: 72px;
+  overflow: hidden;
+}
+.columnContainer .rightColumn .mediaSeriesContainer .description.open {
+  max-height: none;
+}
+
+.actionContainer.contentSlider {
+  margin-top: 15px;
+}
+
+.descriptionMoreToggle {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 575px) {
+  .campus-wrapper .content, .global-footer .content {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 650px) {
+  section.content.sg-overlay-mobile {
+    z-index: 0;
+  }
+
+  .smallGroupEngagementOverlay {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 110;
+  }
+  .smallGroupEngagementOverlay .overlayInner {
+    padding: 0;
+  }
+  .smallGroupEngagementOverlay .overlayInner .back-link {
+    display: none;
+  }
+  .smallGroupEngagementOverlay .overlayInner .alpha {
+    font-size: 58px;
+  }
+  .smallGroupEngagementOverlay .overlayInner .delta {
+    font-size: 20px;
+  }
+  .smallGroupEngagementOverlay .overlayInner .dk-select {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .smallGroupEngagementOverlay .overlayInner {
+    padding: 15px;
+  }
+  .smallGroupEngagementOverlay .overlayInner .alpha {
+    font-size: 38px;
+  }
+  .smallGroupEngagementOverlay .overlayInner .delta {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .audioVideoContainer .btn:first-child {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .audioVideoContainer .avIntro, .audioVideoContainer label {
+    color: #ffffff;
+  }
+  .audioVideoContainer .avNotice {
+    width: 60%;
+  }
+
+  .columnContainer .rightColumn {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .audioVideoContainer {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .smallGroupEngagementOverlay .overlayInner {
+    padding: 0;
+  }
+  .smallGroupEngagementOverlay .overlayInner .alpha {
+    font-size: 58px;
+  }
+  .smallGroupEngagementOverlay .overlayInner .delta {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .campus-wrapper .content, .global-footer .content {
+    padding: 0;
+  }
+}

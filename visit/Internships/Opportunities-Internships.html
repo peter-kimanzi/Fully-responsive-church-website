@@ -1,0 +1,1521 @@
+<!DOCTYPE html ><html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+<!-- Mirrored from saddleback.com/visit/internships/Opportunities-Internships by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Sep 2021 13:53:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><title>
+	Opportunities - Internships
+</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta name="msapplication-TileColor" content="#084d7e" /><meta name="msapplication-TileImage" content="../../Frontend/saddleback.com/images/win8_svcc_logo_white.png" /><meta property="og:url" content="Opportunities-Internships.html" /><meta property="og:title" content="Opportunities - Internships" /><meta property="og:image" content="../../Frontend/saddleback.com/images/facebook_tmb2.png" /><link rel="shortcut icon" href="../../kim\2bg.png" type="image/x-icon"></link><link rel="stylesheet" type="text/css" href="../../css/saddleback.com/dist/basic28e3.css?v=1391"></link><link rel="stylesheet" type="text/css" href="../../css/saddleback.com/dist/nav-menu-style.css"></link><link id="dropkick-css-include" rel="stylesheet" type="text/css" href="../../css/saddleback.com/dist/dropkick.css"></link><link rel="stylesheet" type="text/css" href="../../css/saddleback.com/dist/policies/policies.css"></link><link rel="stylesheet" href="../../css/saddleback.com/dist/visit/jobsandinternships/jobsandinternships.css" type="text/css"></link><script type="text/javascript"> window.v2sjwt = { "token": "", "idp": "sidp" }; </script><script id="sb-jquery-1.9.1" src="../../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script id="sb-jquery-ui-1.10.1" src="../../../code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script><script id="sb-jquery-cookie" src="../../Frontend/js/jquery.cookie.js"></script><script src="../../js/saddleback.com/dist/dropkick.min.js"></script><script src="../../js/saddleback.com/dist/global.min28e3.js?v=1391"></script><script src="../../Frontend/js/modernizr-3.6.js"></script><script type="text/javascript">
+        /*<![CDATA[ */
+        var individualId = -1;
+
+       
+        var ministryUserProfile = {
+            'individualId': -1,
+            'firstName': '',
+            'lastName': '',
+            "email": ''
+        };
+
+        $(document).ready(function () {
+            $('.subscriptionInput').focus(function () {
+                if ($(this).val() == "Enter your email address")
+                    $(this).val("");
+            });
+
+            $('.subscriptionInput').blur(function () {
+                if ($(this).val() == "")
+                    $(this).val("Enter your email address");
+            });
+
+            $('#SearchForm').submit(function () {
+                if ($("#TextSearch").val() == "") {
+                    $("#TextSearch").attr("placeholder", "Search");
+                    return false;
+                }
+
+                window.location = "/search/?q=" + encodeURIComponent($('#TextSearch').val());
+                return false;
+            });
+
+            
+
+            $('#SelectNavVenues').change(function()
+                {
+                    window.location = $(this).val();
+                })
+                .dropkick({
+                    theme: 'saddleback',
+                    width: '100%',
+                    mobile: true,
+                });
+
+            $('#languageSelectorHeader, #languageSelectorFooter').change(function() {
+                SB.i18n.swapPageByLanguage($(this).val());
+            }).dropkick({
+                mobile: true
+            });
+
+            var resized;
+
+            //check window size
+            resizeCheck();
+
+            // Windows 8 Snap feature
+            if (navigator.userAgent.match("NT")) {
+                var msViewportStyle = document.createElement("style");
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        "@-ms-viewport{width:device-width!important}"
+                    )
+                );
+                document.getElementsByTagName("head")[0].
+                    appendChild(msViewportStyle);
+            }
+
+            //mobile nav toggle
+            $('.menuBtn.mobile').click(function () {
+                $('.dropdown.open').slideUp().toggleClass("closed open");
+
+                toggleMainNav('mobile');
+            });
+
+            // Opted-in Desktop Nav Links
+            $('navRowWide div.navMiddle > a').click(function (e) {
+                var link = $(this);
+                var CampusId = -1;
+
+                if (link.text().toString().toLowerCase() == "give")
+                {
+                    if(CampusId == 22 && window.location.href.indexOf("zh-HK") > -1) {
+                        window.location = '/zh-HK' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 20 && window.location.href.indexOf("es-AR") > -1) {
+                        window.location = '/es-AR' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 19 && window.location.href.indexOf("de-DE") > -1) {
+                        window.location = '/de-DE' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    else {
+                        window.location = '../../give.html';
+                        e.preventDefault();
+                        return;
+                    }
+                }
+            });
+
+            // Opted-in Mobile Nav Links
+            $('ul .inner .primary-nav-links-container div.primary-nav-links-inner > .primary-nav-link').click(function (e) {
+                var link = $(this);
+                var CampusId = -1;
+
+                if (link.text().toString().toLowerCase() == "give")
+                {
+                    if(CampusId == 22 && window.location.href.indexOf("zh-HK") > -1) {
+                        window.location = '/zh-HK' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 20 && window.location.href.indexOf("es-AR") > -1) {
+                        window.location = '/es-AR' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 19 && window.location.href.indexOf("de-DE") > -1) {
+                        window.location = '/de-DE' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    else {
+                        window.location = '../../give.html';
+                        e.preventDefault();
+                        return;
+                    }
+                }
+            });
+
+            //mobile subnav toggles
+            $('nav > ul div.navItem > a').click(function (e) {
+                var link = $(this);
+                var CampusId = -1;
+
+                if (link.text().toString().toLowerCase() == "give")
+                {
+                    if(CampusId == 22 && window.location.href.indexOf("zh-HK") > -1) {
+                        window.location = '/zh-HK' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 20 && window.location.href.indexOf("es-AR") > -1) {
+                        window.location = '/es-AR' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 19 && window.location.href.indexOf("de-DE") > -1) {
+                        window.location = '/de-DE' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    else {
+                        window.location = '../../give.html';
+                        e.preventDefault();
+                        return;
+                    }
+                }
+                else if (link.text().toString().toLowerCase() == "grow") {
+                    window.location = '../../learn.html';
+                    e.preventDefault();
+                    return;
+                }
+                else if (link.text().toString().toLowerCase() == "watch") {
+                    window.location = '../../watch.html';
+                    e.preventDefault();
+                    return;
+                }
+                else if (link.text().toString().toLowerCase() == "care") {
+                    window.location = '../../care.html';
+                    e.preventDefault();
+                    return;
+                }
+
+                var dd = link.parents('li:first').find('.dropdown');
+                var navArrow = $('.navMiddle .arrow').detach();
+
+                if (dd.hasClass("open")) {
+                    //if the parent section is already open, close it and move along
+                    dd.slideUp(function () {
+                        scrollNav($('.searchContainer'));
+                    });
+                    dd.toggleClass("open closed");
+                }
+                else if ($('.dropdown.open').length > 0) {
+                    //close the *other* open section and animate the new one after that one finishes
+                    $('.dropdown.open').slideUp(function () {
+                        $(this).toggleClass("open closed");
+
+                        dd.slideDown(function () {
+                            scrollNav(link);
+                        });
+                        dd.toggleClass("open closed");
+                        $('.navMiddle a[data-nav=' + link.attr("data-nav") + ']').after('<div class="arrowContainer"><div class="arrow"></div></div>');
+                    });
+                }   
+                else {
+                    //nothing is open, so just animate normally
+                    dd.slideDown(function () {
+                        scrollNav(link);
+                    });
+                    dd.toggleClass("open closed");
+                    $('.navMiddle a[data-nav=' + link.attr("data-nav") + ']').after('<div class="arrowContainer"><div class="arrow"></div></div>');
+                }
+
+                if ($('.mobile .dropdown').hasClass("closed")) {
+                    $('li.nav-dropdown').removeClass("open-dropshadow");
+                }
+
+                if ($('.mobile .dropdown').hasClass("open")) {
+                    $(this).closest('li.nav-dropdown').addClass("open-dropshadow");
+                }
+            });
+
+            //standard navigation
+            $('.navMiddle > a').click(function (e) {
+                var link = $(this);
+                var CampusId = -1
+
+                if (link.text().toString().toLowerCase() == "give")
+                {
+                    if(CampusId == 22 && window.location.href.indexOf("zh-HK") > -1) {
+                        window.location = '/zh-HK' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 20 && window.location.href.indexOf("es-AR") > -1) {
+                        window.location = '/es-AR' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    if(CampusId == 19 && window.location.href.indexOf("de-DE") > -1) {
+                        window.location = '/de-DE' + '/give';
+                        e.preventDefault();
+                        return;
+                    }
+                    else {
+                        window.location = '../../give.html';
+                        e.preventDefault();
+                        return;
+                    }
+                }
+                else if (link.text().toString().toLowerCase() == "grow") {
+                    window.location = '../../learn.html';
+                    e.preventDefault();
+                    return;
+                }
+                else if (link.text().toString().toLowerCase() == "watch") {
+                    window.location = '../../watch.html';
+                    e.preventDefault();
+                    return;
+                }
+                else if (link.text().toString().toLowerCase() == "care") {
+                    window.location = '../../care.html';
+                    e.preventDefault();
+                    return;
+                }
+
+                var navArrow = $('.navMiddle .arrow').detach();
+                var li = $('li#Nav' + link.text());
+                var dd = $(li).find(".dropdown");
+
+                $('ul.standard > li').hide();
+                li.show();
+
+                if ($("ul.standard").hasClass("closed")) {
+                    //open the main nav and subsection
+                    dd.toggleClass("open closed");
+                    toggleMainNav("standard");
+                    link.after('<div class="arrowContainer"><div class="arrow"></div></div>');
+                }
+                else if ($("ul.standard").hasClass("open") && dd.hasClass("open")) {
+                    //existing link is already open, so close it and move on
+                    toggleMainNav("standard", function () { dd.toggleClass("open closed"); });
+                }
+                else {
+                    //just open the sub nav section
+                    $('.dropdown.open').toggleClass("open closed").attr("style", "");
+                    dd.toggleClass("open closed");
+                    link.after('<div class="arrowContainer"><div class="arrow"></div></div>');
+                }
+            });
+
+            $(window).resize(function () {
+                resized = true;
+            });
+
+            setInterval(function () {
+                if (resized) {
+                    resized = false;
+                    resizeCheck();
+
+                    if (window.matchMedia("(min-width: 750px)").matches) {
+                        $('.filterBar, .filterToggle').removeClass("active");
+                    }
+                }
+            }, 500);
+        });
+
+        $(document).ready(function () {
+            $('.navMiddle > a').click(function (e) {
+
+                if ($('li .dropdown').hasClass("open")) {
+                    $('li .dropdown').parent().addClass("dropdown-list-width");
+                }
+
+                if ($('li .dropdown').hasClass("closed")) {
+                    $('.dropdown.closed').parent().removeClass("dropdown-list-width");
+                }
+            });
+        });
+
+        $(document).ready(function () {
+
+            $('.navMiddle a').click(function (e) {
+                
+                $('.navMiddle a').addClass("navmiddle-deselected");
+                $(this).addClass("navmiddle-selected");
+
+                if ($('.navMiddle a').hasClass("navmiddle-selected")) {
+                    $('.navMiddle a').addClass("navmiddle-deselected");
+                    $(this).removeClass("navmiddle-deselected");
+                }
+                if ($('ul.standard').hasClass("closed")) {
+                    $('.navMiddle a').removeClass("navmiddle-deselected");
+                    $('.navMiddle a').removeClass("navmiddle-selected");
+                }
+            });
+        });
+
+        function toggleMainNav(navType, callback) {
+            var nav = $('ul.' + navType);
+
+            if (nav.hasClass("closed")) {
+                nav.slideDown(callback);
+            } else {
+                nav.slideUp(callback);
+            }
+
+            nav.toggleClass("closed open");
+        }
+
+        function scrollNav(sectionLink) {
+            $('html, body').animate({ scrollTop: sectionLink.offset().top }, 250, 'swing');
+        }
+
+        function resizeCheck() {
+            var mainNav = $('nav ul:first');
+                
+                if (window.matchMedia("(min-width: 575px)").matches) {
+                    transitionNav(mainNav, "mobile", "standard");
+                }
+                else {
+                    transitionNav(mainNav, "standard", "mobile");
+                }
+                
+        }
+
+        function transitionNav(navSection, fromStyle, toStyle) {
+            if (navSection.hasClass(fromStyle)) {
+                var searchContainer;
+                navSection.removeClass(fromStyle).addClass(toStyle);
+                if (fromStyle == "mobile") {
+                    searchContainer = $('nav .searchContainer');
+                    searchContainer.detach();
+                    $('.topLinks > li:last').before(searchContainer);
+                    searchContainer.wrap("<li>");
+                    $('.topLinks > div:last').before(searchContainer);
+                    searchContainer.wrap("<div class='campus-page-searchContainer' /></div>");
+
+                    if (navSection.hasClass("open") && navSection.find('li .dropdown.open').length < 1)
+                        navSection.toggleClass("open closed").hide();
+                }
+                else {
+                    searchContainer = $('.topLinks .searchContainer');
+                    searchContainer.unwrap();
+                    searchContainer.detach();
+                    $('nav ul.mobile > .inner').prepend(searchContainer);
+                }
+
+                //remove any leftover styling done by animations
+                $('ul.' + toStyle + ' li .dropdown[style*=display]').css("display", "");
+            }
+
+            navSection.find('.dropdown[style="display: none;"]').attr("style", "");
+        }
+
+        function toggleGrid() {
+            $('html').toggleClass("grid");
+        }
+        /*]]>*/
+    </script><script>
+        //<![CDATA[
+        (function () {
+            if (typeof window.SB === "undefined") {
+                window.SB = {};
+                window.SB.EventTracker = {};
+            }
+            else if (typeof window.SB.EventTracker === "undefined") {
+                window.SB.EventTracker = {};
+            }
+
+            window.SB.EventTracker.registerEvent = function (params) {
+                $(document).on(params.pageEvent, params.selector, function () {
+                    window.SB.EventTracker.trackEvent(params, this);
+                });
+            }
+
+            window.SB.EventTracker.registerEvents = function (params) {
+                for (var i = 0; i < params.length; i++) {
+                    window.SB.EventTracker.registerEvent(params[i]);
+                }
+            }
+
+            window.SB.EventTracker.trackEvent = function (params, element) {
+                params = $.extend({}, params);
+                var paramsToCalculate = ['label', 'gaEvent'];
+                var param;
+                for (var i = 0; i < paramsToCalculate.length; i++) {
+                    param = params[paramsToCalculate[i]];
+                    if ('function' === typeof (param)) {
+                        params[paramsToCalculate[i]] = param.call(element);
+                    }
+                };
+
+                gtag('event', 'event', {'event_category': params.gaEvent, 'event_action': location.pathname, 'event_label': params.label, 'value': 1});
+            }
+        })();
+        //]]></script><script async="true" src="https://www.googletagmanager.com/gtag/js?id=UA-1141682-7"></script><script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-1141682-7');
+
+    var eventTracking = setInterval(function () {
+        if ("object" === typeof window.SB) {
+            if ("object" === typeof window.SB.EventTracker) {
+                clearInterval(eventTracking);
+                $(document).ready(function () {
+                    window.SB.EventTracker.registerEvents([
+                    ])
+                })
+            }   
+        }
+    }, 100);
+    </script><script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','../../../connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '475241515997859'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script><script>!function(t){var e,a,n;t.attachEvent?(e="attachEvent",a="detachEvent",n="onreadystatechange"):(e="addEventListener",a="removeEventListener",n="readystatechange");var d=function(){var e=t.createElement("script");e.type="text/javascript",e.async=!0,e.src="../../../embed.gloo.us/scripts/online.js",e.id="__gloo-online-loader",e.setAttribute("data-ldid","2f0541cc-c791-11ea-ab3f-9fb693b3691f"),e.setAttribute("data-lid","463383fc-51b4-11ea-a311-5b00ee031de3"),e.setAttribute("data-oid","46323db2-51b4-11ea-a311-5be61e21d38a"),t.body.appendChild(e),t[a](n,d)};t[e](n,d)}(document)</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=GTM-KHXJPB2"></script><script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GTM-KHXJPB2');
+        gtag('config', 'AW-860179273');
+    </script><script id="sbw-config-script-include" type="text/javascript" src="../../js/sb-core/sbwidget-config-1.0.1.js"></script><script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbb00HGT1--A0SlEhXJ-fDf-vRojF5wOI&amp;sensor=true"></script><script>
+            //<![CDATA[   
+            //global for origin location
+            var originAddress;
+
+            //global for destination location
+            var destinationCampus;
+
+            //distance variables for mobile functionality
+            var distanceService = new google.maps.DistanceMatrixService();
+            var distanceArray = new Array();
+
+            //global variable for the tablet -> desktop locations
+            var map;
+
+            //global handle for the Geocoder
+            var geoCoderCampusSelect = new google.maps.Geocoder();
+
+            //handle for the InfoWindow
+            var campusInfoWindow = new google.maps.InfoWindow();
+            campusInfoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -44) });
+
+            //directions variables for tablet -> desktop functionality
+            var directionsService = new google.maps.DirectionsService();
+            var directionsRenderer = new google.maps.DirectionsRenderer();
+            directionsRenderer.suppressMarkers = true;
+
+            //global variable for campus locations
+            var campusLocations;
+            var campusLocationsUS = new Array();
+            var campusLocationsInternational = new Array();
+
+            //global variable for location markers for tablet -> desktop
+            var locationMarkers = new Array();
+
+            var windowResized = false;
+
+            $(document).ready(function () {
+                //initialize the location list
+                initializeLocations();
+
+                //AUTOMAGIC location search with geolocator button
+                $(window).on('load', function () {
+                //geolocation for origin
+                    $('#homeCampusName').on('click', function() {
+
+                        //destination array
+                        var destinationCampuses = createDestinationsArray();
+
+                        if (navigator.geolocation) {
+                            $('#ImageWait').show();                            
+
+                            navigator.geolocation.getCurrentPosition(function (position) {
+                                //geolocation is asynchronous so get the distances array AFTER it succeeds
+                                var latitude = position.coords.latitude;
+                                var longitude = position.coords.longitude;
+                                originAddress = new google.maps.LatLng(latitude, longitude);
+
+                                //convert the LatLng into an address(zipcode?) for the user's input
+                                geoCoderCampusSelect.geocode({ location: originAddress }, function (results) {
+                                    //mobile version finds distances and reorders the campuses
+                                    getDistancesArray(originAddress, getCountryName(results[0]), destinationCampuses);
+                                });
+                            },function (error) {
+                                switch(error.code) {
+                                    case error.PERMISSION_DENIED:
+                                        console.log('location services blocked');
+                                        $('#ImageWait').hide();
+                                        $('#locationSort').hide();
+                                    break;
+                                    case error.POSITION_UNAVAILABLE:
+                                        console.log('position unavailable');
+                                    break;
+                                    case error.TIMEOUT:
+                                        console.log('timeout');
+                                    break;
+                                    case error.UNKNOWN_ERROR:
+                                        console.log('unknown error');
+                                    break;
+                                }
+                            });
+                        }
+                        else {
+                            alert("Your browser does not support using GeoLocation services. Please enter an address manually");
+                        }
+                    });
+
+                    return false;
+                });
+            });
+
+            /************************
+            SHARED FUNCTIONS
+            ************************/
+            //creates the location listing after pulling the relevant information from the REST service
+            //DESKTOP AND MOBILE BOTH
+            function initializeLocations() {
+                $.get(
+                '//' + 'hc.saddleback.com/api' + '/churchentity',
+                function (campusListing) {
+                    var newCampus;
+                    
+                    campusLocations = campusListing;
+                    
+                    campusLocations.sort(function (a, b) {
+                        return a.name < b.name ? -1 : 1;
+                    });
+
+                    
+
+                    $.each(campusLocations, function (campus, campusData) {
+                        if (campusData.id > 0 && campusData.churchEntityTypeId != 2) {
+                            newCampus = $(
+                            '<li id="Campus_' + campusData.url.replace(" ", "_") + '" class="location-item">' +
+                                '<div class="campusInfoContainer">' +
+                                    '<div class="campusNameContainer">' +
+                                        '<p class="toggleInfo">' + campusData.name + '</p>' +
+                                    '</div>' +
+                                    '<span class="campusDistance"><!--contains distance value--></span>' +
+                                    '<input class="campus-url-hidden" style="display:none;" value="' + campusData.url.replace(" ", "_") +  '" />' + 
+                                    '<input class="campus-name-hidden" style="display:none;" value="' + campusData.name +  '" />' + 
+                                    '<input class="campus-id-hidden" style="display:none;" value="' + campusData.id +  '" />' + 
+                                    '<a href="javascript:;" class="sign-in-needed-btn btn">' + 'Set as Home Campus' + '</a>' + 
+                                    '<a href="/visit/locations/' +  campusData.url.replace(" ", "_") + '" class="campus-home-link">' + 'View Campus Page' + '</a>' + 
+                                '</div>' +
+                            '</li>');
+                        }
+                        else {
+                            newCampus = null;
+                        }
+
+                        if (newCampus != null && campusData.country.toUpperCase() == "UNITED STATES" || campusData.country == "US") {
+                            campusLocationsUS.push(campusData);
+                            newCampus.appendTo('#LocationListUS');
+                        }
+                        else if (newCampus != null) {
+                            newCampus.appendTo('#LocationListInternational');
+                            campusLocationsInternational.push(campusData);
+                        }
+
+                        if (newCampus != null) {
+                            newCampus.find('a.toggleInfo, a.arrow').click(function () {
+                                $(this).parent().toggleClass("active");
+                                $(this).parent().prev().find('.campusInfoLinksContainer').toggleClass("active");
+                            });
+                        }
+                    });
+                });
+            }
+
+            //helper function to get the country name from a geoCoded address
+            function getCountryName(geoAddress) {
+                var countryName;
+                $.each(geoAddress.address_components, function (componentIndex, componentData) {
+                    if (componentData.types[0] == "country") {
+                        countryName = componentData.long_name;
+                        return false;
+                    }
+                });
+
+                return countryName;
+            }
+            /*****************************
+            END SHARED FUNCTIONS
+            *****************************/
+
+            /****************************
+            MOBILE FUNCTIONS
+            ****************************/
+            //creates an array of destinations given a collection of campusLocation objects
+            //THIS IS FOR MOBILE ONLY
+            function createDestinationsArray() {
+                var destinations = new Array();
+
+                $.each(campusLocationsUS, function (campus, campusData) {
+                    //if no address, create a LatLng object instead           
+                    if (campusData.name != "Online Campus") {
+                        if (typeof campusData.address1 != "undefined") {
+                            destinations.push(campusData.address1);
+                        }
+                        else {
+                            if (typeof campusData.latitude != "undefined")
+                                destinations.push(new google.maps.LatLng(campusData.latitude, campusData.longitude));
+                        }
+                    }
+                    else {
+                        destinations.push('1 Saddleback Pkwy');
+                    }
+                });
+
+                $.each(campusLocationsInternational, function (campus, campusData) {
+                    //if no address, create a LatLng object instead           
+                    if (campusData.name != "Online Campus") {
+                        if (typeof campusData.address1 != "undefined") {
+                            destinations.push(campusData.address1);
+                        }
+                        else {
+                            if (typeof campusData.latitude != "undefined")
+                                destinations.push(new google.maps.LatLng(campusData.latitude, campusData.longitude));
+                        }
+                    }
+                    else {
+                        destinations.push('1 Saddleback Pkwy');
+                    }
+                });
+
+                return destinations;
+            }
+
+            //calculates distances for a single origin address with n destination addresses
+            //THIS IS FOR MOBILE ONLY
+            function getDistancesArray(origin, originCountry, destinations) {
+                var distances = new Array();
+
+                distanceService.getDistanceMatrix(
+                {
+                    origins: [origin],
+                    destinations: destinations,
+                    travelMode: google.maps.TravelMode.DRIVING,
+                    avoidHighways: false,
+                    avoidTolls: false,
+                    unitSystem: originCountry == "United States" ? google.maps.UnitSystem.IMPERIAL : google.maps.UnitSystem.METRIC
+                },
+                function (response, status) {
+                    //we only get one row back because there's only one origin
+                    $.each(response.rows[0].elements, function (distanceIndex, distanceData) {
+                        if (distanceIndex < campusLocationsUS.length) {
+                            //check each campus location until we find the address
+                            $.each(campusLocationsUS, function (campusIndex, campusData) {
+                                if (campusData.address1 == destinations[distanceIndex]) {
+                                    if (typeof distanceData.distance == "undefined") {
+                                        distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                        return false;
+                                    }
+                                    else {
+                                        distances.push({ campusName: campusLocationsUS[campusIndex].name, titleUrl: campusData.url, distance: distanceData.distance, address: campusData.address1 });
+                                        return false;
+                                    }
+                                }
+                                else {
+                                    if(campusData.id == 5) {
+                                        distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                    }
+                                    if (campusData.latitude && Object.prototype.toString.call(destinations[distanceIndex]) != "[object String]") {
+                                        if (campusData.latitude == destinations[distanceIndex].lat() && campusData.longitude == destinations[distanceIndex].lng()) {
+                                            if (typeof distanceData.distance == "undefined") {
+                                                distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                                return false;
+                                            }
+                                            else {
+                                                distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: distanceData.distance, address: campusData.address1 });
+                                                return false;
+                                            }
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                        else {
+                            $.each(campusLocationsInternational, function (campusIndex, campusData) {
+                                if (campusData.address1 == destinations[distanceIndex]) {
+                                    if (typeof distanceData.distance == "undefined") {
+                                        distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                        return false;
+                                    }
+                                    else {
+                                        distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: distanceData.distance, address: campusData.address1 });
+                                        return false;
+                                    }
+                                }
+                                else {
+                                    if(campusData.id == 5) {
+                                        distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                    }
+                                    if (campusData.latitude && Object.prototype.toString.call(destinations[distanceIndex]) != "[object String]") {
+                                        if (campusData.latitude == destinations[distanceIndex].lat() && campusData.longitude == destinations[distanceIndex].lng()) {
+                                            if (typeof distanceData.distance == "undefined") {
+                                                distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: { text: (originCountry == "United States" ? "100000 mi" : "100000 km"), value: 100000 }, address: campusData.address1 });
+                                                return false;
+                                            }
+                                            else {
+                                                distances.push({ campusName: campusData.name, titleUrl: campusData.url, distance: distanceData.distance, address: campusData.address1 });
+                                                return false;
+                                            }
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                    });
+
+                    //sort the distance array based on the distance object in each entry
+                    distances.sort(function (a, b) {
+                        if (originCountry == "United States")
+                            return parseFloat(a.distance.text.replace(/\smi|ft/, "")) < parseFloat(b.distance.text.replace(/\smi|ft/, "")) ? -1 : 1;
+                        else
+                            return parseFloat(a.distance.text.replace(/\skm|m/, "")) < parseFloat(b.distance.text.replace(/\skm|m/, "")) ? -1 : 1;
+                    });
+
+                    //sort locations with new distances array
+                    sortLocationList(distances, originCountry);
+
+                    
+                    $('#ImageWait').hide();
+                    $('#locationSort').hide();
+
+                    return distances;
+                });
+            }
+
+            //reorders the locations list based on distance from the origin address
+            //MOBILE ONLY
+            function sortLocationList(distances, originCountry) {
+                //put the existing locations into the sorting container
+                $('#LocationListUS li').detach().appendTo(".sortContainer");
+
+                //reorganize the locations based on distance
+                $.each(distances, function (idx, val) {
+                    $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.campusDistance').html(val.distance.text == "100000 mi" || val.distance.text == "100000 km" ? "No route available" : val.distance.text);
+                    $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.directions').attr("href", "http://maps.google.com/maps?f=d&hl=en&saddr=" + originAddress + "&daddr=" + encodeURIComponent(val.address) + "&ie=UTF8&z=7");
+                    $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).appendTo('#LocationListUS');
+                });
+
+                $('#LocationListInternational li').detach().appendTo(".sortContainer");
+                $.each(distances, function (idx, val) {
+                    if (originCountry != "United States") {
+                        if (idx < distances.length - campusLocationsUS.length) {
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.campusDistance').html(val.distance.text == "100000 mi" || val.distance.text == "100000 km" ? "No route available" : val.distance.text);
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.directions').attr("href", "http://maps.google.com/maps?f=d&hl=en&saddr=" + originAddress + "&daddr=" + encodeURIComponent(val.address) + "&ie=UTF8&z=7");
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).appendTo('#LocationListInternational');
+                        }
+                    }
+                    else {
+                        if (idx >= campusLocationsUS.length) {
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.campusDistance').html(val.distance.text == "100000 mi" || val.distance.text == "100000 km" ? "No route available" : val.distance.text);
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).find('.directions').attr("href", "http://maps.google.com/maps?f=d&hl=en&saddr=" + originAddress + "&daddr=" + encodeURIComponent(val.address) + "&ie=UTF8&z=7");
+                            $('.sortContainer li#Campus_' + val.titleUrl.replace(" ", "_")).appendTo('#LocationListInternational');
+                        }
+                    }
+                });
+
+                if (originCountry != "United States") {
+                    $('.locationsContainerInternational').detach().prependTo('.locationListsContainer');
+                }
+                else {
+                    $('.locationsContainerInternational').detach().appendTo('.locationListsContainer');
+                }
+            }
+            /****************************
+            END MOBILE FUNCTIONS
+            ****************************/
+
+            /****************************
+            DESKTOP FUNCTIONS
+            ****************************/
+            //Creates InfoWindow content and Marker objects to attach to the map and CampusLocations
+
+            //calculates the driving directions for the selected address from
+            //the input address (through geolocation or through manual input)
+            //if no destination address exists, then it finds the nearest marker
+            //to the origin address and sets that as the destination
+            function calcRoute() {
+
+                if (!destinationCampus) {
+                    findClosestMarker(originAddress, calcRoute);
+                }
+                else {
+                    var request =
+                    {
+                        origin: originAddress,
+                        destination: destinationCampus.address1,
+                        travelMode: google.maps.DirectionsTravelMode.DRIVING
+                    };
+
+                    directionsService.route(request, function (result, status) {
+                        if (status == google.maps.DirectionsStatus.OK) {
+                            directionsRenderer.setDirections(result);
+                        }
+                    });
+
+                    $('.directionsHeader').html('<h3 class="std">DRIVING DIRECTIONS TO<br />' + destinationCampus.address1 + '</h3>');
+                    directionsRenderer.setPanel(document.getElementById("DirectionsRenderer"));
+
+                    //allow the user to view the directions for the current campus in Google Maps
+                    $('#ButtonViewInGoogle').attr("href", "http://maps.google.com/maps?f=d&hl=en&saddr=" + originAddress + "&daddr=" + destinationCampus.address1 + "&ie=UTF8&z=7");
+
+                    if (parseInt($('#DirectionsSidebar').css("right")) < 0)
+                        toggleSidebar();
+                }
+
+                //geolocation will need to swap the icons
+                
+                $('#ImageWait').hide();
+                $('#locationSort').hide();
+            }
+
+            //helper functions for calculating nearest map marker to the position on the map
+            function rad(x) { return x * Math.PI / 180; }
+
+            function findClosestMarker(address, callback) {
+                if (!(address instanceof google.maps.LatLng)) {
+                    //geocode a temp address and use that for finding the nearest marker
+                    geoCoderCampusSelect.geocode({ 'address': address }, function (results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            map.setCenter(results[0].geometry.location);
+
+                            //set the temp address to the geocoded location
+                            address = new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng());
+
+                            findClosestMarkerHelper(address);
+                            if (callback) {
+                                callback.call();
+                            }
+                        }
+                        else {
+                            alert("Cannot find address entered");
+                        }
+                    });
+                }
+                else {
+                    //already in lat/long form, so just go with that
+                    findClosestMarkerHelper(address);
+                    if (callback) {
+                        callback.call();
+                    }
+                }
+            }
+
+            //internal helper function for finding the closest marker with a lat/long value
+            function findClosestMarkerHelper(position) {
+                var lat = position.lat();
+                var lng = position.lng();
+
+                var R = 6371;
+                var distances = [];
+                var closest = -1;
+                for (i = 0; i < locationMarkers.length; i++) {
+                    var mlat = locationMarkers[i].position.lat();
+                    var mlng = locationMarkers[i].position.lng();
+                    var dLat = rad(mlat - lat);
+                    var dLong = rad(mlng - lng);
+                    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                    Math.cos(rad(lat)) * Math.cos(rad(lat)) * Math.sin(dLong / 2) * Math.sin(dLong / 2);
+                    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                    var d = R * c;
+                    distances[i] = d;
+                    if (closest == -1 || d < distances[closest]) {
+                        closest = i;
+                    }
+                }
+
+                google.maps.event.trigger(locationMarkers[closest], 'click');
+            }
+
+            //helper function for displaying InfoWindow content
+            //DESKTOP ONLY
+            function showInfoWindow(index) {
+                campusInfoWindow.setContent(campusLocations[index].InfoWindowContent);
+                campusInfoWindow.setPosition(campusLocations[index].Marker.getPosition());
+                campusInfoWindow.open(map);
+                map.setCenter(campusLocations[index].Marker.getPosition());
+
+                destinationCampus = campusLocations[index];
+            }
+
+            //function to toggle the directions sidebar
+            function toggleSidebar() {
+                if (parseInt($('#DirectionsSidebar').css("right")) < 0) {
+                    $('#DirectionsSidebar').animate(
+                    {
+                        right: 0
+                    }, 500, function () {
+                        if ($('.toggleTab a').hasClass("rotate180")) {
+                            $('.toggleTab a').removeClass("rotate180");
+                        }
+                    });
+                }
+                else {
+                    $('#DirectionsSidebar').animate(
+                    {
+                        right: -335
+                    }, 500, function () {
+                        if (!$('.toggleTab a').hasClass("rotate180")) {
+                            $('.toggleTab a').addClass("rotate180");
+                        }
+                    });
+                }
+            }
+
+            //function to print directions
+            function printDirections() {
+                var windowObject = window.open('', 'PrintWindow', 'width=750,height=650,top=50,left=50,toolbars=no,scrollbars=yes,status=no,resizable=yes');
+                windowObject.document.writeln($("#DirectionsRenderer").html());
+                windowObject.document.close();
+                windowObject.focus();
+                windowObject.print();
+                windowObject.close();
+            }
+            /****************************
+            END DESKTOP FUNCTIONS
+            ****************************/
+            //]]></script><!-- Win8 Start Screen -->
+<!--Google Analytics-->
+<!-- Facebook Pixel Code -->
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=475241515997859&amp;ev=PageView&amp;noscript=1" /></noscript><!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+<!-- Gloo Pixel Code -->
+<!-- End Gloo Pixel Code -->
+<!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+ <script src="https://saddleback.v2sapi.co/script/APIScript?v2wsid=5901&amp;includeDemoCss=true" type="text/javascript"></script> <style id="loginStyle" type="text/css">
+        .signInInfo .name {
+            font-weight: bold;
+        }
+    </style><style>
+            .modal {
+                position: fixed; /* Stay in place */
+                z-index: 1000; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button */
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style><style>
+			.apply-now-button {
+				margin-top: 60px;
+			}
+			@media screen and (min-width: 768px) {
+				.apply-now-button {
+					margin-top: 90px;
+				}
+			}
+		</style></head><body><div id="campusHomeAnchor"></div><div class="cookies-notification-container" style="display: none"><div class="cookies-notification-inner-container"><p><span class="icon-alert"></span>Turn on your cookies for the best browsing experience.</p><div><a href="javascript:;" class="cookies-learnmore-link"><span class="icon-arrow-right"></span></a><a href="javascript:;" class="cookies-close-btn"><span class="icon-close"></span></a></div></div><div class="cookies-notification"><p>This site uses cookies to store information on your computer.</p><p>These cookies are essential to make our site work.  We use cookies for a variety of reasons, including giving and content preferences.</p><p>Instructions to turn on your browser cookies:</p><p><a href="https://www.whatismybrowser.com/guides/how-to-enable-cookies/auto" target="_blank">https://www.whatismybrowser.com/guides/how-to-enable-cookies/auto</a></p></div></div><div class="wrapper campus-wrapper global-footer "><section class="header campus-page-header"><div class="topLinksContainer"><div class="topLinks"><a href="../../index.html" class="logo-container guest"><img class="saddleback-logo cyan" src="https://s3-us-west-1.amazonaws.com/sb-web/saddleback.com/visit/locations/campus-logos/Primary-Saddleback-Logo.svg" /><img class="saddleback-logo white" src="https://sb-web.s3-us-west-1.amazonaws.com/saddleback.com/home/SaddlebackLogo_White.svg" /><!-- <span class="logoSlogan">one family, many locations</span> -->
+</a><div class="v2 v2Module" data-module="basketButton"></div><div class="campus-page-user-login guest-login"><span class="signInInfo guest-sign-in"><a href="https://identity.saddleback.com/connect/authorize?client_id=sb.com&amp;redirect_uri=https%3a%2f%2fsaddleback.com%2f&amp;response_mode=form_post&amp;response_type=code+id_token+token&amp;scope=openid+profile+vision-2.access-token+offline_access&amp;state=OpenIdConnect.AuthenticationProperties%3dyTHv7Beo10UMPgi50ubn9n0UF6e4PqFNH0O0H0BzlBXASRLjS6G6gvzM0uvzieLfKtMERgEBOms3hKlD1zZDB3_hAXy1Fi2aWWnQnNsHF73FBl2A-ywahktMEoBmNYtVXsP7RoA7OQ4XPdfQhRiVuwxn0DmChPLNFroFxR4GMU7iLND0nxlOqTBt3sfuNL-fNYYtpE70xmaqCDzyALcHmdMui4Kbp3fh-98Ara7sXEiDbnHZtUYNSfcMJno5R0uchzogCLfgBTfXpdWMW9fDalnLijI&amp;nonce=637680830128223622.MGYwMjRmZWItNmJjMy00OTdjLTgyMzMtOWE2ZWI4MzdhZmIwYjczMWVjYzktYzQ5NC00ZjJkLTgxMTQtYzA0YjNlMjdjZmRl&amp;post_logout_redirect_uri=https%3a%2f%2fsaddleback.com">Sign In</a></span><div id="signInNotification" class="toaster-ui" style="display: none;"><div class="toaster-inner"><img src="https://sb-web.s3.us-west-1.amazonaws.com/saddleback.com/home/Sign+IN+Profile.svg" /><p><a href="https://identity.saddleback.com/connect/authorize?client_id=sb.com&amp;redirect_uri=https%3a%2f%2fsaddleback.com%2f&amp;response_mode=form_post&amp;response_type=code+id_token+token&amp;scope=openid+profile+vision-2.access-token+offline_access&amp;state=OpenIdConnect.AuthenticationProperties%3dyTHv7Beo10UMPgi50ubn9n0UF6e4PqFNH0O0H0BzlBXASRLjS6G6gvzM0uvzieLfKtMERgEBOms3hKlD1zZDB3_hAXy1Fi2aWWnQnNsHF73FBl2A-ywahktMEoBmNYtVXsP7RoA7OQ4XPdfQhRiVuwxn0DmChPLNFroFxR4GMU7iLND0nxlOqTBt3sfuNL-fNYYtpE70xmaqCDzyALcHmdMui4Kbp3fh-98Ara7sXEiDbnHZtUYNSfcMJno5R0uchzogCLfgBTfXpdWMW9fDalnLijI&amp;nonce=637680830128223622.MGYwMjRmZWItNmJjMy00OTdjLTgyMzMtOWE2ZWI4MzdhZmIwYjczMWVjYzktYzQ5NC00ZjJkLTgxMTQtYzA0YjNlMjdjZmRl&amp;post_logout_redirect_uri=https%3a%2f%2fsaddleback.com">Sign in</a> for a personalized experience.</p><a id="closeToaster" class="close-btn" href="javascript:;"><span class="icon-close"></span></a></div></div><script type="text/javascript">
+        //<![CDATA[
+            if(typeof $.cookie('SignInToasterClosed') === 'undefined') {
+                $('.topLinks').addClass('toaster-relative');
+                setTimeout(function(){
+                    $("#signInNotification").show();
+                    $("#signInNotification").addClass('slide-in');
+                }, 2000);
+
+                setTimeout(function(){
+                    $("#signInNotification").removeClass('slide-in');
+                    setTimeout(function(){
+                        $("#signInNotification").hide();
+                    }, 500 );
+                }, 8000);
+            }
+
+            $(document).on('click', '#closeToaster', function(){
+                $("#signInNotification").removeClass('slide-in');
+                $.cookie('SignInToasterClosed', true, { expires: 90 });
+            });
+        //]]></script></div> 
+
+<nav id="navMoreBtn" class="menuBtn mobile nav-more-closed">
+    <div class="navTopRow">
+        <div id="nav-icon3" class="nav-icon-closed">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+    <div class="navRowWide table">
+        <div class="tableRow">
+            <div class="tableCell navMiddle"><a href="../about/new-here.html" data-nav="NavVisit">I'm New</a></div>
+            <div class="tableCell navMiddle"><a href="../../care.html" data-nav="NavConnect">Care</a></div>
+            <div class="tableCell navMiddle"><a href="../../learn.html" data-nav="NavAct">Grow</a></div>
+            <div class="tableCell navMiddle"><a href="../../connect/ministries.html#servingOppsSection" data-nav="NavWatch">Serve</a></div>
+            <div class="tableCell navMiddle"><a href="../../watch.html" data-nav="NavCare">Watch</a></div>
+            <div class="tableCell navMiddle"><a href="../../give.html" data-nav="NavGive">Give</a></div>
+        </div>
+    </div>
+    <ul class="mobile closed">
+        <div class="inner nav-dropdown-inner">
+            <div class="primary-nav-links-container">
+                <div class="primary-nav-links-inner">
+                    <a class="primary-nav-link" href="../about/new-here.html">I'm New</a>
+                    <a class="primary-nav-link" href="../../care.html">Care</a>
+                    <a class="primary-nav-link" href="../../learn.html">Grow</a>
+                    <a class="primary-nav-link" href="../../connect/ministries.html#servingOppsSection">Serve</a>
+                    <a class="primary-nav-link" href="../../watch.html">Watch</a>
+                    <a class="primary-nav-link" href="../../give.html">Give</a>
+                </div>
+            </div>
+            <li id="NavLocations" class="nav-dropdown first">
+                <div class="dropdown">
+                    <div class="inner">
+                        <div class="subNavContainer locations-container">
+                            <p class="subNavHeader">Locations</p>
+                            <ul class="subNav">
+                                <li><span class="subSubNavHeader">USA</span></li>
+                                <li><a href="../locations/anaheim.html">Anaheim, CA</a></li>
+                                <li><a href="../locations/brea.html">Brea, CA</a></li>
+                                <li><a href="../locations/corona.html">Corona, CA</a></li>
+                                <li><a href="../../es-mx/visit/locations/espanol.html">En Espa&ntilde;ol, CA</a></li>
+                                <li><a href="../locations/irvine-north.html">Irvine North, CA</a></li>
+                                <li><a href="../locations/irvine-south.html">Irvine South, CA</a></li>
+                                <li><a href="../locations/laguna-woods.html">Laguna Woods, CA</a></li>
+                                <li><a href="../locations/lake-forest.html">Lake Forest, CA</a></li>
+                                <li><a href="../locations/los-angeles.html">Los Angeles, CA</a></li>
+                                <li><a href="../locations/newport-mesa.html">Newport Mesa, CA</a></li>
+                                <li><a href="../locations/rancho-capistrano.html">Rancho Capistrano, CA</a></li>
+                                <li><a href="../locations/san-clemente.html">San Clemente, CA</a></li>
+                                <li><a href="../locations/san-diego.html">San Diego, CA</a></li>
+                                <li><a href="../locations/south-bay.html">South Bay, CA</a></li>                                
+                            </ul>
+                            <ul class="subNav padding-left">
+                                <li style="list-style: none"><span class="subNavHeader">&#160;</span></li>
+                                <li><span class="subSubNavHeader">International</span></li>
+                                <li><a href="https://saddleback.berlin/">Berlin, Germany</a></li>
+                                <li><a href="../locations/buenos-aires.html">Buenos Aires, Argentina</a></li>
+                                <li><a href="../locations/hong-kong.html">Hong Kong, China</a></li>
+                                <li><a href="../locations/santa-rosa.html">Santa Rosa, Philippines</a></li>
+                                <li>&#160;</li>
+
+                                <li><span class="subSubNavHeader">Venues</span></li>
+                                <li><a href="../locations/irvine-south-chinese-venue.html">Irvine South Chinese Venue</a></li>
+
+                                <li class="subsubnavheader-spacing-unit">&#160;</li>
+                                <li><span class="subSubNavHeader">Online</span></li>
+                                <li><a href="../locations/onlinecampus.html">Adult Service</a></li>
+                                <li><a href="../../watch/worship/student-ministries.html">Students Service</a></li>
+                                <li><a href="../../watch/worship/saddleback-kids.html">Kids Service</a></li>
+                                <li><div class="navButtonContainer locations-desktop"><a class="btn" href="../locations.html">Get Directions</a></div></li>
+                            </ul>
+                            
+                            <div class="navButtonContainer locations-mobile"><a class="btn" href="../locations.html">Get Directions</a></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="NavAbout" class="nav-dropdown">
+                <div class="dropdown">
+                    <div class="inner">
+                        <div class="subNavContainer smallgroups-container">
+                            <p class="subNavHeader">About</p>
+                            <ul class="subNav">
+                                <li><a href="../about/new-here.html">I'm New Here</a></li>
+                                <li><a href="../../connect/ministry/newstart.html">New Start with God</a></li>
+                                <li><a href="../about/jesus.html">About Jesus</a></li>
+                                <li><a href="../about/pastors/our-pastor.html">Our Pastor</a></li>
+                                <li><a href="../about/our-church.html">Our Church</a></li>
+                                <li><a href="../../events/class.html">Join Our Family</a></li>
+                                <li><a href="../../blog/home-at-saddleback.html">Home@Saddleback</a></li>
+                                <li><a href="../jobs/index.html">Career Opportunities</a></li>
+                                <li><a href="index.html">Internships</a></li>
+                                <li><a href="../about/contact-us.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="NavCare" class="nav-dropdown">
+                <div class="dropdown">
+                    <div class="inner">
+                        <div class="subNavContainer care-container">
+                            <p class="subNavHeader">Care</p>
+                            <ul class="subNav">
+                                <li><a href="../../care.html">Explore</a></li>
+                                <li><a href="../../connect/ministry/church-counselors/lake-forestd41d.html">Counseling</a></li>
+                                <li><a href="../../care/supportgroups.html">Support Groups</a></li>
+                                <li><a href="../../connect/ministry/celebrate-recovery.html">Celebrate Recovery</a></li>
+                                <li><a href="../../connect/ministry/peace-center.html">PEACE Center</a></li>
+                                <li><a href="../../connect/ministry/hospital-team/lake-forestd41d.html">Hospital Visitation</a></li>
+                                <li><a href="../../connect/ministry/career-coaching-and-counseling.html">Career Coaching</a></li>
+                                <li><a href="../../connect/ministry/mental-health-ministry.html">Mental Health</a></li>
+                                <li><a href="../../connect/ministry/financial-freedom-ministries.html">Personal Finances</a></li>
+                                <li><a href="../../connect/ministry/prayer-ministry.html">Prayer</a></li>
+                                <li><a href="http://bb.saddleback.com/">Bulletin Board</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="NavEvents" class="nav-dropdown">
+                <div class="dropdown">
+                    <div class="inner">
+                        <div class="subNavContainer events-container">
+                            <p class="subNavHeader">Events</p>
+                            <ul class="subNav">
+                                <li><a href="../../events.html">All Events</a></li>
+                                <li><a href="../../events82a2.html?categories=15">Baptism</a></li>
+                                <li><a href="../../events8b05.html?categories=16">CLASS 101 - 401</a></li>
+                                <li><a href="../../events5ad6.html?categories=17">Celebrate Recovery</a></li>
+                                <li><a href="../../events4598.html?categories=14">Adult Trainings</a></li>
+                                <li><a href="../../eventsbbda.html?categories=5">Care &amp; Support</a></li>
+                                <li><a href="../../events1f59.html?categories=11">Kids &amp; Parents</a></li>
+                                <li><a href="../../events5aac.html?categories=19">National &amp; Global</a></li>
+                                <li><a href="../../events21b3.html?categories=8">Local Community</a></li>
+                                <li><a href="../../eventsbb60.html?categories=13">Sports &amp; Physical Health</a></li>
+                                <li><a href="../../events39f5.html?categories=12">Special Events</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="NavMedia" class="nav-dropdown">
+                <div class="dropdown">
+                    <div class="inner">
+                        <div class="subNavContainer media-container">
+                            <p class="subNavHeader">Watch</p>
+                            <ul class="subNav">
+                                <li><a href="../../watch.html">All Media</a></li>
+                                <li><a href="../locations/onlinecampus.html">Adult Service</a></li>
+                                <li><a href="../../watch/worship/student-ministries.html">Students Service</a></li>
+                                <li><a href="../../watch/worship/saddleback-kids.html">Kids Service</a></li>
+                                <li><a href="../../watch/strategies-for-stressful-times.html">Current Series</a></li>
+                                <li><a href="https://identity.saddleback.com/connect/authorize?client_id=sb.com&amp;redirect_uri=https%3a%2f%2fsaddleback.com%2f&amp;response_mode=form_post&amp;response_type=code+id_token+token&amp;scope=openid+profile+vision-2.access-token+offline_access&amp;state=OpenIdConnect.AuthenticationProperties%3dAsD7XlEJzNgrmuF9ziAwV82zVWs7OxFh2MzUV2tUNXAIi3xFHDZ6giiHayUpyflC21w_GmPeX4rJGC2U9GHsWSaMeyemzVRX8sRRLTcCejPQ3vGMM79mLVzHEVVTmbyRtpQrP2_zAjKlickiZM_fM5rKl_9uW1gwjnaZE02WlE_Ftw6IgGlXMov-3LsAF8tNy2KOZ2e1QxG1RRsQcRx6bCDvO0y7V2-6PS0pesd9ZW9uIL3EtNM5KABHdmdq1eW-fvSnfNoge417YQlkoVG7puai7F4&amp;nonce=637680831459843305.YWY0NmJjNTctNmI1YS00YmM2LTg0YTUtOGZkNWVkZjdlMzA5MjIwNzA5MzQtYTI2Zi00NWFmLThjYTktNWQxMTFmNjYzYzMz&amp;post_logout_redirect_uri=https%3a%2f%2fsaddleback.com">Small Group Studies</a></li>
+                                <li><a href="http://drivetimedevotions.com/" target="_blank">DriveTime Devotionals</a></li>
+                                <li><a href="../../learn/the-well.html">The Well</a></li>
+                                <li><a href="../../learn/doable-discipleship.html" target="_blank">Doable Discipleship</a></li>
+                                <li><a href="../../campusphotos.html">Campus Photos</a></li>
+                                <li><a href="../../watch/Apps.html">Apps</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="NavSmallGroups" class="nav-dropdown">
+                <div class="dropdown">
+                    <div class="inner">
+                        <div class="subNavContainer smallgroups-container">
+                            <p class="subNavHeader">Small Groups</p>
+                            <ul class="subNav">
+                                <li><a href="../../connect/smallgroups.html">Explore</a></li>
+                                <li><a href="../../connect/smallgroups/join.html">Find a Group</a></li>
+                                <li><a href="../../connect/smallgroups/starter.html">Start a Group</a></li>
+                                <li><a href="https://identity.saddleback.com/connect/authorize?client_id=sb.com&amp;redirect_uri=https%3a%2f%2fsaddleback.com%2f&amp;response_mode=form_post&amp;response_type=code+id_token+token&amp;scope=openid+profile+vision-2.access-token+offline_access&amp;state=OpenIdConnect.AuthenticationProperties%3dvK23vMWD0xt97_1LLKUBCzOXZw3FY6GND5jJ09vy2CR8haPhcf_9TtfbfBiqNStidgkM2Lia8Hs4f8Y1U4iSB5kM1tB9QWPzxYNoMCTMFvd4IH1Ry2rkXEzE6iu76CcHCURBHS5xsaBIfOwf_wSaHQG-YWrBgFbis3pHIAc4Ulr4XQaVHjj9fldrRo5GM_6o32aCPE7gFq-feLVnnXmMdkLApx3UNHX5N6JXctR9nIqZjxUB&amp;nonce=637680831638249795.YmU4ZmUxZDctYzkyOC00ZWY0LTg3NzMtOTNiNDAwZmQzNGI4M2RmMzUwNDgtMjdhYi00OWVkLWFjYWYtZThmNzZkMzA1Nzdh&amp;post_logout_redirect_uri=https%3a%2f%2fsaddleback.com">Study Materials</a></li>
+                                <li><a href="../../connect/smallgroups/index.html">Manage My Groups</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="NavGrow" class="nav-dropdown">
+                <div class="dropdown">
+                    <div class="inner">
+                        <div class="subNavContainer grow-container">
+                            <p class="subNavHeader">Grow</p>
+                            <ul class="subNav">
+                                <li><a href="../../learn.html">Explore</a></li>
+                                <li><a href="../../events/class.html">CLASS</a></li>
+                                <li><a href="../../learn/the-well.html">The Well</a></li>
+                                <li><a href="../../learn/doable-discipleship.html">Doable Discipleship</a></li>
+                                <li><a href="../../event/1886/foundations5642.html?startDateTime=2021-02-22T18:00:00-08:00&amp;endDateTime=2021-02-22T19:00:00-08:00">Foundations</a></li>
+                                <li><a href="../../connect/Articles/MAP.html">Message Resources</a></li>
+                                <li><a href="../../connect/ministry/retreat-ministry/index.html">Retreat Ministry</a></li>
+                                <li><a href="../../learn/recommended-books.html">Recommended Books</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="NavServe" class="nav-dropdown">
+                <div class="dropdown">
+                    <div class="inner">
+                        <div class="subNavContainer serve-container">
+                            <p class="subNavHeader">Serve</p>
+                            <ul class="subNav">
+                                <li><a href="../../connect/ministries.html#servingOppsSection">All Opportunities</a></li>
+                                <li><a href="../../connect/ministries8f07.html?tagfilter=connection%20center,family,first%20impressions,greeters,kids,office%20administration,traffic,ushers,worship">Serve in the Church</a></li>
+                                <li><a href="../../connect/ministriesb762.html?tagfilter=events,baptisms,class,special%20events">Serve at an Event</a></li>
+                                <li><a href="../../connect/ministries2a19.html?tagfilter=community,food%20pantry,local%20peace,peace%20center,mission">Serve the Community</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="NavMinistries" class="nav-dropdown">
+                <div class="dropdown">
+                    <div class="inner">
+                        <div class="subNavContainer ministries-container">
+                            <p class="subNavHeader">Ministries</p>
+                            <ul class="subNav">
+                                <li><a href="../../connect/ministries.html">All Ministries</a></li>
+                                <li><a href="../../connect/ministries/ministry-quiz.html">Ministry Quiz</a></li>
+                                <li><a href="../../connect/ministry/mens-ministry.html">Men</a></li>
+                                <li><a href="../../connect/ministry/womens-ministry.html">Women</a></li>
+                                <li><a href="../../connect/ministry/singles.html">Singles</a></li>
+                                <li><a href="../../connect/ministry/marriages-ministry.html">Marriages</a></li>
+                                <li><a href="http://www.saddlebackkids.com/parents/">Parents</a></li>
+                                <li><a href="../../connect/ministry/college.html">College</a></li>
+                                <li><a href="../../connect/ministry/high-school-ministry.html">High School</a></li>
+                                <li><a href="../../connect/ministry/jhm.html">Jr. High</a></li>
+                                <li><a href="../../connect/ministry/saddleback-kids.html">Children</a></li>         
+                                <li><a href="../../connect/ministry/saddleback-works/lake-forestd41d.html">Workplace</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="NavMission" class="nav-dropdown">
+                <div class="dropdown">
+                    <div class="inner">
+                        <div class="subNavContainer mission-container">
+                            <p class="subNavHeader">Mission</p>
+                            <ul class="subNav">
+                                <li><a href="../../connect/mission.html">Explore</a></li>
+                                <li><a href="../../connect/mission.html#getInspired">Get Inspired</a></li>
+                                <li><a href="../../connect/mission.html#getInvolved">Get Involved</a></li>
+                                <li><a href="../../connect/mission.html#getEquipped">Get Equipped</a></li>
+                                <li><a href="../../connect/ministry/peace-center.html">PEACE Center</a></li>
+                                <li><a href="../../connect/ministry/saddleback-relief.html">Relief</a></li>
+                                <li><a href="../../connect/ministry/food-pantry.html#grocery-2">Grocery Distribution</a></li>
+                                <li><a href="../../connect/ministry/food-pantry.html">Food Pantry</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="NavGive" class="nav-dropdown">
+                <div class="dropdown">
+                    <div class="inner">
+                        <div class="subNavContainer give-container">
+                            <p class="subNavHeader">Give</p>
+                           <ul class="subNav">
+                                <li><a class="" href="../../give.html">Tithe</a></li>
+                                <li><a href="../../give.html#browse">Beyond the Tithe</a></li>
+                                <li><a href="../../give/annual-review/2020/a-year-in-review.html">2020 Annual Review</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="navSocial" class="nav-social-container">
+                <div class="nav-social-inner">
+                    <div class="nav-social-item">
+                        <a href="https://www.youtube.com/user/saddlebackchurch" target="_blank"><span class="icon-instagram-box"></span></a>
+                    </div>
+                    <div class="nav-social-item">
+                        <a href="https://www.facebook.com/saddlebackchurch" target="_blank"><span class="icon-facebook-box"></span></a>
+                    </div>
+                    <div class="nav-social-item">
+                        <a href="https://twitter.com/Saddleback" target="_blank"><span class="icon-twitter-box"></span></a>
+                    </div>
+                    <div class="nav-social-item">
+                        <a href="https://www.instagram.com/saddlebackchurch/" target="_blank"><span class="icon-youtube-box"></span></a>
+                    </div>
+                </div>
+            </li>
+        </div>
+    </ul>
+    
+ </div><div class="nav-campus-search"><div class="nav-campus-select-container"><div class="campus-select-inner-container"><p class="home-campus-subtitle">My home campus</p><a id="homeCampusSelect" class="home-campus-select" href="javascript:;"><span id="homeCampusName" class="home-campus-name">Select a Campus</span><span class="icon-arrow-down"></span></a></div><div id="campusSelect" class="modal" style="display: none;"><!-- Modal content -->
+<div class="modal-content"><span class="close">×</span><div class="locationSearchContainer"><div id="ImageWait" style="display: none;"><div id="floatingBarsG" class="small"><div id="rotateG_01" class="blockG"></div><div id="rotateG_02" class="blockG"></div><div id="rotateG_03" class="blockG"></div><div id="rotateG_04" class="blockG"></div><div id="rotateG_05" class="blockG"></div><div id="rotateG_06" class="blockG"></div><div id="rotateG_07" class="blockG"></div><div id="rotateG_08" class="blockG"></div></div></div></div><div class="locationListsContainer clearfix"><div class="locationsContainerUS"><ul id="LocationListUS" class="locations"></ul><ul id="LocationListInternational" class="locations"></ul></div><div class="sortContainer" style="display: none"></div></div></div></div><script>
+            /*<![CDATA[*/
+            // Get the modal
+            var modal = document.getElementById("campusSelect");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("homeCampusSelect");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            $('.home-campus-btn').on('click', function() {
+                modal.style.display = "none";
+            });
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+            
+            
+            console.log(document.location.pathname);
+
+            
+            $(document).on('click', ".sign-in-needed-btn", function(e) {
+                
+                    $('.sign-in-needed-btn').removeClass('sign-in');
+                    $('.sign-in-needed-btn').text('Set as Home Campus');
+                    $(e.currentTarget).text('Sign In');
+                    $(e.currentTarget).addClass('sign-in');
+                
+
+                
+
+                
+            });
+
+            $(document).on('click', ".sign-in", function(e) {
+                var homeCampusClicked = $(e.currentTarget);
+                var campusId = $(e.currentTarget).prev('.campus-id-hidden').val();
+                var campusTitle = $(e.currentTarget).prev().prev('.campus-name-hidden').val();
+                var campusUrl = $(e.currentTarget).prev().prev().prev('.campus-url-hidden').val();
+
+                $.cookie("DefaultLocationCampusId", campusId, { path: "/", domain: "saddleback.com" });
+                $.cookie("DefaultLocationCampusTitle", campusTitle, { path: "/", domain: "saddleback.com" });
+                $.cookie("DefaultLocationCampusUrl", campusUrl, { path: "/", domain: "saddleback.com" });
+                $.cookie("DefaultLocation", campusUrl, { path: "/", domain: "saddleback.com" });
+                
+                
+                console.log(campusId);
+
+                
+                //This will return the user to their new home campus page if they are on the home page or another campus page when they sign in or if they sign in and already have a campus assigned while on another campus page.
+                var page = window.location.pathname;
+                
+                if(page == '/' || window.location.href.indexOf("visit/locations")) {
+                    window.location.href = '/Login?returnurl=/visit/locations/' + campusUrl;
+                }
+                else {
+                    window.location = '/Login?returnurl=' + document.location.href;
+                }
+            });
+            /*]]>*/
+        </script></div><a id="CampusPageSearchToggle" href="javascript:;" class="searchIcon searchIconToggle"><span aria-hidden="true" class="icon-search"></span><span class="icon-close"></span></a><div class="searchContainer clearfix"><form id="SearchForm"><input id="TextSearch" type="text" class="searchInput" placeholder="Search Saddleback"></input><a id="searchCloseBtn" href="javascript:;" class="campus-search-close-btn"><span class="icon-close"></span></a><input id="SubmitSearch" type="submit" style="display: none;"></input></form></div></div></div></section><section class="content"><div class="sectionContainer"><div class="breadcrumb"><ul><li><a href="../../index.html">Home</a></li><li><span>&gt;</span></li><li><span>Visit</span></li><li><span>&gt;</span></li><li><span>About</span></li><li><span>&gt;</span></li><li><a href="../internships.html">Internships</a></li><li><span>&gt;</span></li><li><a href="Opportunities-Internships.html">Internship Opportunities</a></li></ul></div><div class="sectionInner"><h1>Internship Opportunities</h1><div class="copy"><p>Every intern has a unique learning and growth experience at Saddleback. We place our interns on ministry teams according to their vocational goals, learning objectives, and ministry interests! Check out our internships below and note that some have specific requirements and time commitments. If there is an area of ministry NOT listed that you're interested in, let us know! This list is not exhaustive and we love exploring new opportunities for interns. E-mail us at <a href="mailto:intern@saddleback.com">intern@saddleback.com</a> for more information.</p><h2>College Ministry Internship</h2><p>Are you passionate about seeing college students being exposed to, experiencing, and expressing Christ, His kingdom, and the biblical purposes of His church? Learn to meet the unique needs of college-aged young adults (18-25) as they navigate the challenges of this life-stage. A College Ministry internship is designed for current college students or recent graduates who are seeking hands-on ministry experience with Saddleback Church's Student Ministries Team. Assist in facilitating life groups and running Thursday night college-age gatherings and other events to build community, develop social media content and promotional strategies, mobilize college students to serve, assist in discipleship events and retreats, and contribute to the planning, programming, and facilitating of our college ministry. Learn more about CM at <a href="http://saddlebackcm.com/" target="_blank" rel="noreferrer nofollow">saddlebackcm.com</a>. (This internship requires full-time hours and is available as a summer internship or a 1-year internship starting in September, January, or May. Applicants must be 2 years removed from high school and have a high school diploma; year applicants must have a Bachelor's degree from an accredited university.)</p><h2>Connections Team Internship</h2><p>Learn to live and lead with purpose through our Saddleback Connections Team Internship! Our team helps people CONNECT TO GOD through our New Believer and Baptism ministries, CONNECT TO OUR CHURCH FAMILY through our 101 Membership Class, and CONNECT IN COMMUNITY through Small Groups. We live at what we call the "top of the funnel" – helping people who are new to church or new to faith to take their next steps to get more connected. This happens not only on the "front lines" of ministry with the people we are ministering to, but also behind the scenes with the multitude of ways we support and care for people. As an intern with our team, you'll learn how to recruit, develop, and care for volunteers; execute an effective assimilation process and healthy small group ministry; facilitate baptisms; communicate for life change; engage with church attenders during weekend services and help them get connected; and develop an effective process to move people to their next spiritual step. In addition, interns will develop and demonstrate skills in spiritual disciplines, leadership, pastoral care, and staff relationships. Minimum commitment: 20 hours per week for the semester (spring, summer, or fall).</p><h2>Film Production Internship (pre-production, shooting, editing)</h2><p>Saddleback Kids produces all of their own video curriculum, and you'll love learning what goes into production as you work on projects with our team. Gain experience filming as you develop your passion for all aspects of video production through hands-on experience, including pre-production, shooting, and post-production. From helping with equipment, cameras, and production to assisting with casting and organizing talent, from finding locations to editing scripts, you'll be in the thick of the on-set mayhem and be able to apply your talent to significant projects! Lead and serve in a dynamic ministry setting, and be exposed to industry professionals and their skills and expertise. Current college students or recent graduates. Minimum commitment: 15 hours per week for the semester (spring, summer, or fall).</p><h2>Global PEACE/Mission Internship</h2><p>Our Global PEACE internship is ideal for college students looking to make a global impact for Jesus Christ. PEACE interns will learn what sustainable and reproducible life change looks like in local churches around the world. Help develop curriculum, meet with pastors from around the world, network with global church members, serve alongside Saddleback members, support the team, and promote PEACE to our church family. For more information about the PEACE Plan and missions at Saddleback, visit <a href="../../connect/mission.html" target="_blank" rel="noreferrer nofollow">saddleback.com/missions</a>. Minimum commitment: 15 hours per week for the semester (spring, summer, or fall).</p><h2>Graphic Design Internship</h2><p>This internship is designed for college juniors or seniors who are majoring in a visual communication design or graphic design program. Gain hands-on experience with layouts and design for print, web, and interactive projects as you build graphics from concept to completion. Learn how to collaborate with project managers, marketing, production, and creative teams in an agency-type setting to support a dynamic, ministry-based organization. Applicants need to be comfortable working with Adobe programs, Google Docs, and Microsoft Word; have good oral and written communication skills and be organized and detail-oriented. If you have an online portfolio, please include the link in your application. Current college juniors or seniors only, please. Minimum commitment: 15-20 hours per week for the semester (spring, summer, or fall).</p><h2>Grocery Distribution Internship</h2><p>Be part of Saddleback's mission to give people hope, purpose, and food through an internship with the Saddleback Food Pantry. There are nearly 456,000 people at risk for hunger every month in Orange County. Hunger touches people of every age, race, ethnic group, and neighborhood. A Grocery Distribution intern will have a life-changing experience serving families in need in our community. Interns will help equip and learn different ways to mobilize and empower volunteers, assist in planning events, and anticipate what's needed to serve families. They will serve in the office and head out into the community to support our mobile food banks at Saddleback's various campuses. Learn how to evangelize and teach others to evangelize. Experience the power of prayer, see what it means to connect families with resources for a hand up rather than a hand out, train and encourage volunteers, and develop spiritually and personally as you meaningfully contribute to others' lives. Minimum commitment: 15-20 hours per week for the semester (spring, summer, or fall).<br /></p><h2>Guest Services/Weekend Experience Internship</h2><p>Learn the value and importance of why we focus on the experience for each guest here at Saddleback Church—we never want anything to get in the way of anyone hearing God's Word when they visit Saddleback! An internship with our Weekend Experience and Guest Service team is ideal for anyone seeking to be a pastor or part of a church launch, or is seeking experience with coordinating and training volunteers. This internship involves creating an amazing experience during events on-campus through our environment (look and feel) and our volunteers (Guest Services), and learning the processes and strategies that Saddleback uses to meet these goals. Our desire is to ensure that every guest has a positive and welcoming experience from the parking lot to the Worship Center. You will learn why it's important to have an appealing, clean, organized, safe, and well-marked campus. You will also learn how to lead, train, appreciate, love on, and serve with a team of volunteers. Minimum commitment: 20 hours per week for the semester (spring, summer, fall). Current college students or recent graduates.<br /></p><h2>High School Ministry Internship</h2><p>Do you love Jesus and like teenagers? Are you passionate about seeing high school students coming to know Jesus Christ as the Lord and Savior of their life? HSM is Saddleback's high school ministry and we are dedicated to helping teenagers experience a life-changing relationship with Jesus Christ! Training and coaching will make for a season of ministry experience you will value for your entire career as an intern with HSM. Our goal is to provide you with a transformational learning experience that you'll look back on with fond memories where you learned the basics of ministry, understood a youth ministry philosophy and learned how to work effectively with a team. HSM interns will shadow, co-lead, and help run events and programs, as well as actively coach, mentor, and recruit volunteers. To learn more about HSM, visit <a href="http://www.highschoolministry.com/" target="_blank" rel="noreferrer nofollow">www.highschoolministry.com</a>. (This internship requires full-time hours and is available as a summer internship or a 1-year internship starting in September, January, or May. Summer applicants must have a high school diploma; yearlong applicants must have a Bachelor's degree from an accredited university.)</p><h2>Human Resources Internship</h2><p>This internship is geared toward human resources or business-related majors who seek hands-on experience in Human Resources. Interns can expect to learn how each of the key areas of HR work together to support the Church in our ministry to our employees. An intern will learn strategic steps in hiring the right person for the job that God has called them to, how to make new employees feel welcome and valued as part of the on-boarding process, basic knowledge of benefits and leaves of absence, and other areas in HR. The HR Intern will interact directly with employees in all areas of the Church and will have the opportunity to participate in church staff leadership training sessions as well as specific HR training. Current college juniors or seniors or recent graduates. Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>Initiative for Vulnerable Children Internship</h2><p>Help make the Gospel visible by empowering people to care for vulnerable children through an internship with Saddleback Church's Initiative for Vulnerable Children. You will learn about our mission to find a family for every child and equip the Church to care for them. We work in the community both locally and globally through the PEACE Plan in partnership with other churches and agencies. Discover the latest research on trauma-informed care and how the church is best positioned to give relational interventions to families in crisis. You'll gain an understanding of how biblical values and evidence-based science can heal families experiencing the effects of trauma. Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>Junior High Ministry Internship</h2><p>Saddleback's Junior High Ministry helps students become exposed to, experience and express Christ, His Kingdom, and the biblical purposes of His church. Help this vision become a reality! Interning with JHM will give you a taste of everything Saddleback does in our Junior High Ministry, from helping plan events like Summer Camp to running weekend program meetings. JHM will fully expose you to every aspect of youth ministry at Saddleback. In addition to events, you will be involved with helping run weekend services, learn how to work on a team in a big church, mentor students and challenge them in their spiritual growth, lead a small group of junior highers each week, and receive one-on-one training on how to be the best youth worker possible. JHM is a junior high church experience like no other, connecting students to adult leaders and designed specifically to enhance 7th and 8th grade students to love Jesus, live differently, and lead the way. To learn more about our ministry, visit our website at <a href="http://saddlebackjhm.com/" target="_blank" rel="noreferrer nofollow">saddlebackjhm.com</a>. (This internship requires full-time hours and is available as a summer internship or a 1-year internship starting in September, January, or May. Summer applicants must have a high school diploma; year applicants must be working toward a Bachelor's degree and full time youth ministry.)</p><h2>Saddleback Kids Internship</h2><p>Be part of our vision to connect kids to God and others! Gain hands-on experience observing and practicing ministry skills through an internship with Saddleback Kids (birth through age 12). This internship includes learning the Saddleback Kids (SK) New Leader Process: screening, recruiting, interviewing, training and developing quality volunteers. You'll serve with the staff overseeing, implementing, and creating age-appropriate interactive activities, crafts, and programs that help to reinforce the curriculum provided by SK. You'll also help prepare the age-appropriate classrooms for weekend and Wednesday night services as well as special events for children/families. Additional experience may also include: shadowing staff and volunteer coaches, leading children's classes, assisting in writing curriculum, observing baptism and Child Dedication Classes, learning how the staff recruits, equips and encourages volunteers; and interacting with parents. Gain experience in this role with our Saddleback Kids Team. Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>Leadership Development Internship</h2><p>If you're passionate about leadership development and want to learn more about what leadership looks like at Saddleback Church, this internship is for you. Learn alongside our intern program minister as you become an ambassador of our program and church and help develop the next generation of leaders on our Central Intern Team. Help create leadership training content, develop and implement recruitment strategies, hone your own job interview skills by learning how to interview applicants and on-board interns; lead, teach and shepherd interns, train our staff, coordinate intern events, interface with academic institutions, and equip other churches all over the world to develop the next generation of leaders, inside and outside the Church. Students interested in organizational leadership, HR, &amp; PR will be a great fit for this internship! Minimum commitment: 15 hours per week for the semester (spring, summer, or fall). Current college students only.</p><h2>Local PEACE/Community Outreach Internship</h2><p>Do you have a heart for seeing churches engage their surrounding communities with the Gospel? As a Saddleback Local PEACE intern, you’ll gain on-the-ground experience in church-based local missions. Come engage in the “why” and the “how” behind our missional strategy known as “The PEACE Plan” and its local expression in our volunteer-led outreaches that range from serving the homeless, elderly, youth, military, neighborhoods, arts communities, and more! Come alongside our staff team as we teach you how we practically support, equip, and mobilize our members, and mentor YOU throughout your internship to help you develop your calling, gifts, and skills! Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>Saddleback Production Internship</h2><p>Saddleback Production’s goal, within the fabric of Saddleback Worship, is to train, equip, and release those who feel called to serve the local church through production. If you’re interested in diving deep into the world of live, pre-, and post-production, this is the internship for you! We constantly strive to create an environment focused on team building while also maintaining a high level of excellence in our field. Interns will serve alongside experienced Saddleback Production staff to gain experience with providing production support in a fast-paced environment. Additionally, they will be immersed in the day-to-day operations of Saddleback Worship to broaden their scope of ministry. Our internships are designed around the gifts and calling of each intern, so whether you’re focused on one area of production, or all of them, we will shape the internship experience that best equips you for your future. You’ll walk away from this internship with a solid understanding of the foundational principles of Saddleback Production: DEFINE, SERVE, CONTROL, DEVELOP, and BUILD. Minimum commitment: 15 hours per week for the semester (spring, summer, fall). Current college students or recent graduates.</p><h2>Marketing Team Internship</h2><p>This internship is geared toward marketing majors (current college students) who seek hands-on experience with creating and executing effective marketing strategies through various promotional channels. Interns can expect to learn how to assess marketing priorities, build promotional schedules, cultivate and manage client relationships, and create promotional campaign reports. An intern will learn and create marketing strategies across a variety of channels, overseeing and quality checking these channels as well. Marketing interns will directly interact with various Communications teams such as Art, Social Media, Editorial, and Creative Services. This internship will provide a holistic experience of the marketing profession. Current college juniors or seniors only, please. Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>Ministry Team Internship</h2><p>Here at Saddleback Church, we believe every member is a minister and our job on the Ministry Team is to help people discover their God-given S.H.A.P.E. (Spiritual Gifts, Heart, Abilities, Personality and Experiences) as they walk their Purpose Driven journey. As an intern with our team, you will experience a personal development mentorship to help you uncover what that looks both as a recipient and as a guide, through a hands-on ministry role within the church. This role involves both the personal development and discovery of your own S.H.A.P.E., as well as the engaging, equipping, and encouraging of church members, by guiding them into deeper stages of maturity and maximizing their skills within the context of the specific ministries God has called them to. As with all Saddleback internships, this role will strive to develop your skills in life-giving spiritual disciplines, ministry-specific leadership paradigms, pastoral care, and developing staff relationships. Get real life ministry experience, future-building networking opportunities, and the space to explore your unique calling through an internship with our team! Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>Mission Project Management Internship</h2><p>Do you love to get things organized and keep things on track? Our project management intern helps plan and monitor projects to ensure they are completed in a timely fashion. You'll help be responsible for organizing and planning the completion for various projects, from content planning for social media to all the moving parts for various online conferences for Purpose Driven, Finishing The Task, and The PEACE Plan. Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>Mission Video Internship</h2><p>Capture and share what God’s doing in our community in a powerful way! Cinema, film, and video arts majors will benefit from hands-on experience recording live events, running small-scale video productions, and editing final pieces. This could look like capturing a volunteer’s story, a community event, or one of our many conferences! Learn how to produce compelling stories of life change for social media channels, event promotion, and marketing. Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>Mission Graphic Design Internship</h2><p>Learn how to create compelling graphics to mobilize people to Kingdom work across 5 different ministries: Purpose Driven, Finishing The Task, and The PEACE Plan, Saddleback Mission, and Saddleback Relief. As a graphic design intern on the Mission Team, you'll utilize your love for missions as you gain insight into how to work with a marketing and communications team to collaboratively take an idea from conception to creative review to finalized piece. Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>Mission Marketing Internship</h2><p>Be part of mobilizing our church's members and churches around the world to Kingdom work! As a Mission Marketing Intern you'll learn how to develop and implement marketing strategies across 5 different ministries: Purpose Driven, Finishing The Task, and The PEACE Plan, Saddleback Mission, and Saddleback Relief. In our fast-paced environment, you'll gain a unique perspective of what it takes to support day-to-day operations and learn how to monitor and measure the effectiveness of marketing initiatives to drive engagement. In addition to hands-on implementation, you'll get great experience interfacing with marketing and digital agencies. Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>Mission Social Media Internship</h2><p>Do you believe social media platforms are a great way to connect people? Are you passionate about reaching others on social media with your creative skills? As a Mission Social Media Intern, you'll help manage our 13 social media pages for our various ministries, learn how to create and schedule content, and even design if you're interested! You'll get hands-on experience writing copy, engaging with members through social media channels, and executing high level marketing strategies. Gain insight into how to build a brand and engage a community. Minimum commitment: 15 hours per week for the semester (spring, summer, fall). </p><h2>Pastoral Care Internship</h2><p>Pastoral care interns will gain an overall understanding of Saddleback Church's Pastoral Care Ministries with the goal of participating or even creating a new pastoral care project. You'll learn what it takes to provide the members of our church with basic pastoral care needs. Observations will include support groups, hospital visits, funerals, and other pastoral care ministries. Training programs include church counseling training, support group leader training, Minister of the Day crisis training duties, and other programs as needed. You'll also gain a greater understanding of Saddleback Church's mission locally for the community. Current college students or recent graduates. Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>PEACE Community Resource Center internship</h2><p>PEACE addresses the global giants in the world that affect billions of people: Spiritual emptiness, Self-centered leadership, Poverty, Disease, and Illiteracy. PEACE is the antidote to these five global giants…Promote Reconciliation/Plant Churches, Equip Servant Leaders, Assist the Poor, Care for the Sick, and Educate the Next Generation. It's a lay movement designed to mobilize ordinary church members to do normal tasks that make a difference in the world. We embody PEACE as we serve the local community. Come alongside staff and volunteers and learn how the local church is bringing hope to the community by serving in our outreach ministries: Grocery Distribution, Homework Club, Resource Coaching, and English as a Second Language to name a few! The most important thing we do is share the Good News with each person we serve. Thousands of people have made decisions for Christ in these outreaches! You will learn not only how to serve and lead an outreach ministry but also learn about how to disciple volunteers. Minimum commitment: 15 hours per week for the semester (spring, summer, fall).</p><h2>Saddleback Worship Internship</h2><p>Gain experience in a variety of roles as you practice under the mentorship of a Worship Team staff member while concentrating on observation of, participation in, and leadership of various worship ministries of Saddleback Church. Gain experience with preparing and helping execute plans for weekly choir, vocal team, and worship band rehearsals and develop a working knowledge and understanding of biblical worship principles and worship planning and design in order to effectively apply these principles in various congregational and cultural contexts. Grow in your knowledge of music notation software, visual medial tools, lighting equipment, production, and sound system basics, and learn about long-range planning, facility/equipment scheduling and maintenance, copyright issues, music product resources, event promotion, and people management. This internship is designed to equip interns for future health and leadership at a church that is effectively reaching its community for Christ. Minimum commitment: 25-30 hours per week for the semester (spring, summer, fall). Current college students or recent graduates. </p><h2>Storytelling Internship</h2><p>This internship is for Journalism, and Creative Writing majors seeking hands-on, real-world experience. Hone your skills by writing human interest stories for our blog, newsletter, website, and social media channels. Assist with production of human interest story videos by conducting research and/or interviews to generate new content. As a storytelling intern in our agency-style setting, you’ll receive weekly assignments and feedback, learn what it looks like to be part of a church staff, and have the opportunity to publish your writing/videos. This is a chance to start or fill your portfolio, become a stronger communicator, and gain useful experience for your future career in multi-media journalism, video production, creative writing, and more. Current college students only, please. Minimum commitment: 15 hours per week for 12 weeks.</p><h2>Translations Team Intern</h2><p>Saddleback has 15 campuses in Southern California and 4 international campuses in Berlin, Buenos Aires, Hong Kong, and South Manila. Be part of the Global Church through the fascinating operations of the Translations Ministry at Saddleback Church. Join in the experience of international conference call meetings with Saddleback's global campus teams where you'll be able to listen and speak into current translation projects. Develop cross-cultural sensitivity as you take part in daily connections with our translators and ministry directors. Good English skills as well as computer proficiency (Mac) are required for this internship, as well as an interest in intercultural studies, mission, and international ministry. This internship collaborates with our Marketing and Graphics teams as a part of the Communications Team. Develop your communications skills and travel the world via a translations internship…no passport required! Current college students only, please. Minimum commitment: 15 hours per week for the semester (spring, summer, or fall). </p><h2>Visual Arts Ministry Internship</h2><p>Grow through an internship with Saddleback Visual Arts (SVA), Saddleback's community-focused arts initiative, with the goal of transforming community through creativity. An SVA intern will gain experience with designing and creating projects for the art studio, assisting with installations and interactive art pieces, engaging in social justice issues through art, gaining experience with event planning and coordinating, expanding our reach through marketing and social media, and discovering how to incorporate art into helping breathe life into our ministry's members. Be part of a movement using art as a vehicle to love and connect with people and with God! Fine arts majors will love this internship! Check out more about SVA on our website, SaddlebackVisualArts.com. Minimum requirement: 15 hours per week for the semester (spring, summer, or fall).</p><h2>Web Design Internship</h2><p>This internship is designed to give graphic and web design majors real world experience in the areas of interactive design, mobile app design, CSS, and Javascript development. Learn and collaborate on projects with graphic and web design professionals. You'll see your design and/or development efforts utilized by real users of our many traffics web properties. A well-equipped intern will have some experience in either the Sketch, Adobe, or CSS, HTML, and Javascript. Current college students only, please. Minimum requirement: 15 hours per week for the semester (spring, summer, or fall).</p></div></div><section class="apply-now-button"><p class="question">Ready to become an intern?</p><a class="question-button" href="https://phg.tbe.taleo.net/dispatcher/servlet/DispatcherServlet?act=redirectCws&amp;cws=4&amp;org=SADDLEBACK">Apply Now</a></section></div></section><!-- FOOTER -->
+<section class="footer"><nav><div class="backToTopContainer"><a href="#" class="btn">Back To Top</a></div><div class="subscriptionContainer"><div class="wideLogoContainer"><a href="../../index.html" class="logo"><img src="https://s3-us-west-1.amazonaws.com/sb-web/saddleback.com/home/Logo-SaddlebackValleyCommunityChurch-LogoRGB.svg" /></a></div></div><div class="logoContainer"><a href="../../index.html" class="campus-footer-logo logo"><img src="https://s3-us-west-1.amazonaws.com/sb-web/saddleback.com/home/Logo-SaddlebackValleyCommunityChurch-LogoRGB.svg" /></a></div><div class="footerBottomRow clearfix"><div class="footerBottomLinksContainer"><ul class="footerBottomLinks clearfix"><li><a href="https://identity.saddleback.com/connect/authorize?client_id=sb.com&amp;redirect_uri=https%3a%2f%2fsaddleback.com%2f&amp;response_mode=form_post&amp;response_type=code+id_token+token&amp;scope=openid+profile+vision-2.access-token+offline_access&amp;state=OpenIdConnect.AuthenticationProperties%3dr8rPieNCbtITod7oTsmCMcyFePyjDPgAbv5djySripjUixeqfuiXkQG8h-JSjrgz-dSA7FrVcSg3ZpgfNW48zBHuNY3qgsqoaOZc65QrWhcn7wjyPy_k9Bh3iuRqPoOjUMbxuBvmsFgim71uN5WqikIeYTGdJiuB4QZWNqIrDS8IrjkQua-p9PBPvGQGS4zoPmkuyw&amp;nonce=637680832664133016.ZThhZDllOGUtMTY0Ny00MmFiLTg4NDAtMzA3YjU2ZmNhMWZhMWMyNDNjOTQtMjcyYi00OTJjLWI3YWQtYWJiZGQyNzEyOTg3&amp;post_logout_redirect_uri=https%3a%2f%2fsaddleback.com" style="color:white">sign in</a></li><li><a href="../about/contact-us.html">contact us</a></li><li><a href="../../policies/privacy.html">privacy policy</a></li><li><a href="../jobs.html">career opportunities</a></li><li><a href="../internships.html">internships</a></li><li><a href="https://onelink.to/dwtqdt">mobile app</a></li></ul></div><div class="copyrightContainer">© <span>2021 Saddleback Valley Community Church</span></div></div><section id="campus-info" class="sectionContainer campusInfo"><div class="socialLinksContainer"><ul class="socialLinks"><li><a href="https://www.facebook.com/saddlebackchurch" title="Facebook" target="_blank"><span aria-hidden="true" class="icon-facebook-box"></span></a></li><li><a href="https://twitter.com/Saddleback" title="Twitter" target="_blank"><span aria-hidden="true" class="icon-twitter-box"></span></a></li><li><a href="https://www.youtube.com/saddlebackchurch" title="YouTube" target="_blank"><span aria-hidden="true" class="icon-youtube-box"></span></a></li><li><a href="https://www.instagram.com/saddlebackchurch" title="Instagram" target="_blank"><span aria-hidden="true" class="icon-instagram-box"></span></a></li></ul></div></section></nav></section><!-- END FOOTER -->
+</div><script type="text/javascript">
+        var $buoop = { vs: { i: 10 }, reminder: 24 };
+        $buoop.ol = window.onload;
+        window.onload = function () {
+            try { if ($buoop.ol) $buoop.ol(); } catch (e) { }
+            var e = document.createElement("script");
+            e.setAttribute("type", "text/javascript");
+            e.setAttribute("src", "../../../browser-update.org/update.js");
+            document.body.appendChild(e);
+        }
+    </script><script>
+//<![CDATA[
+        $(document).ready(function(){
+            var v2BasketCheck = setInterval(function() {
+                if($('.v2Module.loaded').length && $('#basketButtonid1').children().length && $('#basketButtonid1 basketbutton').children('a').length) {
+                        //once the children objects are rendered, if there is a link for the basket,
+                        //add a divider to the top links
+                        clearInterval(v2BasketCheck);
+                        $('#basketButtonid1').parents('li').before('<li class="topLinksDivider"></li>');
+                }
+            },100);
+
+            $('#CampusPageSearchToggle').on('click', function(){
+                $('.nav-campus-search').addClass('search-open');
+                $('#CampusPageSearchToggle .icon-close').css('display', 'flex');
+                $('#CampusPageSearchToggle .icon-search').hide();
+            });
+
+            $('#SearchForm #TextSearch').focus(function(){
+                $('#CampusPageSearchToggle .icon-search').css('display', 'flex').addClass('search-now');
+                $('#searchCloseBtn').show();
+                $('#CampusPageSearchToggle .icon-close').hide();
+            });
+
+            $(document).on('click', '#CampusPageSearchToggle .icon-close', function () {
+                $('.nav-campus-search').removeClass('search-open');
+                $('#searchCloseBtn').hide();
+                $('#CampusPageSearchToggle .icon-close').hide();
+                $('#CampusPageSearchToggle .icon-search').show();
+            });
+
+            $('#searchCloseBtn').on('click', function(){
+                $('#CampusPageSearchToggle .icon-search').removeClass('search-now');
+                $('#CampusPageSearchToggle .icon-search').hide();
+                $('#CampusPageSearchToggle .icon-close').css('display', 'flex');
+                $('#searchCloseBtn').hide();
+                $("#TextSearch").val('');
+            });
+
+            $(document).on('click', '#CampusPageSearchToggle .search-now', function () {
+                if ($("#TextSearch").val() == "") {
+                    $("#TextSearch").attr("placeholder", "Search");
+                    return false;
+                }
+
+                $('#SearchForm').submit();
+            });
+            
+            if (!Modernizr.cookies && $.cookie('CookieNotificationClosed') !== 'true') {
+                $('.cookies-notification-container').slideDown();
+            }
+            $('.cookies-learnmore-link').click(function() {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else {
+                    $(this).addClass('active');
+                }
+                $('.cookies-notification').toggleClass('active');
+            });
+            $('.cookies-close-btn').click(function() {
+                $('.cookies-notification-container').slideUp();
+                $.cookie('CookieNotificationClosed', 'true', { expires: 30 });
+            });
+            
+            //Hamburger menu animation
+            //Did not use toggle class so that I could control the speed of each class addition and removal
+            $(document).on('click', '#navMoreBtn.nav-more-closed', function(){
+                $(this).addClass('more-open');
+                $(this).removeClass('nav-more-closed');
+                // $('#nav-icon3').addClass('open');
+                // $('#nav-icon3').removeClass('nav-icon-closed');
+                $('.wrapper .header').addClass('nav-menu-open');
+            });
+            $(document).on('click', '#navMoreBtn.more-open', function(){
+                
+                $(this).addClass('nav-more-closed');
+                $(this).removeClass('more-open');
+                // $('#nav-icon3').removeClass('open');
+                // $('#nav-icon3').addClass('nav-icon-closed');    
+                $('.wrapper .header').removeClass('nav-menu-open');
+            });
+        });
+        //]]></script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHXJPB2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>//</noscript><!-- End Google Tag Manager (noscript) -->
+</body>
+<!-- Mirrored from saddleback.com/visit/internships/Opportunities-Internships by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Sep 2021 13:53:01 GMT -->
+</html>

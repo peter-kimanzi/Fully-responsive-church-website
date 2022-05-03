@@ -1,0 +1,93 @@
+/* Define some standard colors in variables */
+.SBSNContainer {
+  /*
+  Width of this is determined by the width of the page.  If the blank ends up too short, it will go to the next line.  
+  */
+  /*
+  This is to stop the text blank from running off the page when text is put in front of it .  (The Pixel width of the page goes here)
+  */
+  /*
+  Blockquote defines all indented text
+  */
+  /*
+  Centered Text
+  */
+    /*
+This section makes the margins act right with multiple Bible verses
+*/
+}
+.SBSNContainer p, .SBSNContainer h1, .SBSNContainer h2, .SBSNContainer h3, .SBSNContainer h4, .SBSNContainer h5, .SBSNContainer h6, .SBSNContainer blockquote, .SBSNContainer span {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.SBSNContainer .title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.SBSNContainer .series {
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+}
+.SBSNContainer .pastor {
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+}
+.SBSNContainer .date {
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+}
+.SBSNContainer .sectiontitle {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+.SBSNContainer .textblank {
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-weight: bold;
+  min-width: 150px;
+  margin-left: 10px;
+}
+.SBSNContainer .textblankcontainer {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.SBSNContainer .verse {
+  font-style: italic;
+}
+.SBSNContainer .reference {
+  font-style: italic;
+  float: right;
+}
+.SBSNContainer blockquote {
+  margin-left: 3%;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+.SBSNContainer .center {
+  margin: 0 auto;
+  text-align: center;
+}
+.SBSNContainer .textbeforeblank {
+  float: left;
+}
+.SBSNContainer .versecontainer {
+  margin: 0.3em 5px 1.3em 3%;
+}
+.SBSNContainer .versecontainer:before, .SBSNContainer .versecontainer:after {
+  content: " ";
+  display: table;
+}
+.SBSNContainer .versecontainer:after {
+  clear: both;
+}

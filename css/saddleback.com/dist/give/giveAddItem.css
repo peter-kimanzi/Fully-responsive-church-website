@@ -1,0 +1,299 @@
+.v2-addItem .input-small,
+.v2-givingGoalProgress .input-small {
+  width: 100% !important;
+  height: 33px !important;
+  padding: 0 0 0 5px !important;
+  border: 1px solid #00aeef;
+  margin-bottom: 22px !important;
+}
+.v2-addItem h3,
+.v2-givingGoalProgress h3 {
+  font-size: 16px;
+  font-style: normal;
+}
+.v2-addItem .content label,
+.v2-addItem .content p,
+.v2-addItem .content small,
+.v2-addItem .content span,
+.v2-givingGoalProgress .content label,
+.v2-givingGoalProgress .content p,
+.v2-givingGoalProgress .content small,
+.v2-givingGoalProgress .content span {
+  position: relative;
+  font: 1em/1.4 "Lato", Arial;
+  font-weight: normal !important;
+}
+.v2-addItem .glyphicon,
+.v2-givingGoalProgress .glyphicon {
+  display: none !important;
+}
+.v2-addItem p[style*='font-weight'],
+.v2-givingGoalProgress p[style*='font-weight'] {
+  margin-bottom: 0;
+}
+.v2-addItem small,
+.v2-givingGoalProgress small {
+  display: block;
+  margin-bottom: 11px;
+  font-size: 75%;
+}
+.v2-addItem select,
+.v2-givingGoalProgress select {
+  width: 100% !important;
+  height: 33px;
+}
+.v2-addItem .icon-close,
+.v2-addItem .icon-plus,
+.v2-addItem .icon-remove,
+.v2-addItem .icon-calculate,
+.v2-givingGoalProgress .icon-close,
+.v2-givingGoalProgress .icon-plus,
+.v2-givingGoalProgress .icon-remove,
+.v2-givingGoalProgress .icon-calculate {
+  display: block;
+  margin-left: -100px;
+  position: absolute;
+  top: 11px;
+  left: 50%;
+  font-size: 22px;
+  color: white;
+}
+.v2-addItem .icon-plus,
+.v2-givingGoalProgress .icon-plus {
+  margin-left: -100px;
+}
+.v2-addItem .icon-calculate,
+.v2-givingGoalProgress .icon-calculate {
+  margin-left: -100px;
+}
+.v2-addItem .giving-goal-progress .row[data-bind] .col-md-3,
+.v2-givingGoalProgress .giving-goal-progress .row[data-bind] .col-md-3 {
+  float: none;
+  margin-bottom: 11px;
+}
+.v2-addItem .giving-goal-progress .row[data-bind] .col-md-3.text-right,
+.v2-givingGoalProgress .giving-goal-progress .row[data-bind] .col-md-3.text-right {
+  text-align: left;
+  margin-bottom: 33px;
+}
+.v2-addItem .disclaimer,
+.v2-givingGoalProgress .disclaimer {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 22px;
+}
+.v2-addItem .titheContainer section.header,
+.v2-addItem .titheContainer section.footer,
+.v2-addItem .titheContainer .staticHeightImageContainer,
+.v2-addItem .titheContainer .breadcrumb,
+.v2-addItem .titheContainer .breadcrumb + section,
+.v2-addItem .titheContainer .disclaimer,
+.v2-givingGoalProgress .titheContainer section.header,
+.v2-givingGoalProgress .titheContainer section.footer,
+.v2-givingGoalProgress .titheContainer .staticHeightImageContainer,
+.v2-givingGoalProgress .titheContainer .breadcrumb,
+.v2-givingGoalProgress .titheContainer .breadcrumb + section,
+.v2-givingGoalProgress .titheContainer .disclaimer {
+  display: none;
+}
+.v2-addItem .titheContainer .sectionInner,
+.v2-givingGoalProgress .titheContainer .sectionInner {
+  margin: 0 11px;
+}
+.v2-addItem .titheContainer #v2AddItemActionButtons > .btn,
+.v2-givingGoalProgress .titheContainer #v2AddItemActionButtons > .btn {
+  display: none;
+}
+.v2-addItem .titheContainer #v2AddItemActionButtons span,
+.v2-givingGoalProgress .titheContainer #v2AddItemActionButtons span {
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 11px;
+  width: 100%;
+}
+.v2-addItem .titheContainer #v2AddItemActionButtons span input,
+.v2-givingGoalProgress .titheContainer #v2AddItemActionButtons span input {
+  margin: 0;
+}
+.v2-addItem .titheContainer .addItemContainer .askLadder input,
+.v2-givingGoalProgress .titheContainer .addItemContainer .askLadder input {
+  width: 100% !important;
+}
+.v2-addItem .titheContainer .addItemContainer #main > .span6:first-of-type,
+.v2-addItem .titheContainer .addItemContainer #main > .span6:nth-of-type(2),
+.v2-givingGoalProgress .titheContainer .addItemContainer #main > .span6:first-of-type,
+.v2-givingGoalProgress .titheContainer .addItemContainer #main > .span6:nth-of-type(2) {
+  width: 100%;
+}
+.v2-addItem .ask-ladder .col-md-12,
+.v2-givingGoalProgress .ask-ladder .col-md-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.v2-addItem .row .col-md-12,
+.v2-givingGoalProgress .row .col-md-12 {
+  width: 100%;
+  float: unset !important;
+}
+.v2-addItem .row.gift-schedule .col-md-12,
+.v2-givingGoalProgress .row.gift-schedule .col-md-12 {
+  padding-left: 15px;
+}
+.v2-addItem .row.gift-schedule .col-md-12 .col-md-8,
+.v2-givingGoalProgress .row.gift-schedule .col-md-12 .col-md-8 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.v2-addItem .delete-schedule-btn,
+.v2-givingGoalProgress .delete-schedule-btn {
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.mail-address-notification .mail-title {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.mail-address-notification .mail-title .icon-mail-check {
+  margin-right: 16px;
+}
+.mail-address-notification .meta {
+  color: #bcbec0;
+  font: 13px 'Lato';
+}
+.mail-address-notification .mail-address-line {
+  display: block;
+}
+
+.well-sm {
+  width: 100%;
+}
+.well-sm #v2AddItemActionButtons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.well-sm #v2AddItemActionButtons .btn-success {
+  width: 100%;
+}
+.well-sm #v2AddItemActionButtons .btn-success:first-of-type {
+  margin: 0 10px 30px 0 !important;
+}
+
+/**************************************
+SIMPLE GIVING
+*************************************/
+.addItemContainer .v2 .thumbnail .caption {
+  padding: 15px !important;
+}
+
+.v2 .btn-group > .btn, .btn, .blogBtn a {
+  width: none !important;
+}
+
+.v2 .btn-group > .btn:first-child {
+  width: none;
+}
+
+.addItemContainer .form-inline {
+  margin: 25px 0 0;
+}
+.addItemContainer .form-inline .input-group {
+  margin-left: 10px;
+}
+.addItemContainer .form-inline .input-group .btn {
+  max-width: 40px !important;
+  height: 34px !important;
+}
+.addItemContainer .form-inline .input-group .input-group-addon {
+  background: #00aeef !important;
+  color: white !important;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-close,
+  .icon-plus,
+  .icon-remove,
+  .icon-calculate {
+    top: 5px;
+  }
+
+  .addItemContainer {
+    max-width: 970px;
+    margin: 0 1% 22px;
+  }
+
+  .disclaimer-notification-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .disclaimer-notification-container .disclaimer {
+    width: 70%;
+  }
+  .disclaimer-notification-container .notification-container {
+    width: 20%;
+  }
+
+  .well-sm {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .well-sm #v2AddItemActionButtons {
+    display: block;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+  .well-sm #v2AddItemActionButtons .btn-success {
+    max-width: 200px !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .well-sm #v2AddItemActionButtons .btn-success:first-of-type {
+    margin: 0 10px 0 0 !important;
+  }
+
+  .v2-addItem .row {
+    margin: 30px 0 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+  .v2-addItem .row .col-md-12 {
+    max-width: 200px;
+  }
+  .v2-addItem .row.form-group {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .v2-addItem .row.gift-schedule .col-md-12 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .v2-addItem .row.gift-schedule .col-md-12 .col-md-8 {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  .v2-addItem .delete-schedule-btn {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 970px) {
+  .icon-close,
+  .icon-plus,
+  .icon-remove,
+  .icon-calculate {
+    top: 5px;
+  }
+
+  .addItemContainer {
+    margin: 0 auto 22px;
+  }
+}

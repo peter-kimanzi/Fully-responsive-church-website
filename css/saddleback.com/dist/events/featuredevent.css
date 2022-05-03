@@ -1,0 +1,174 @@
+.truncate-overflow {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: calc(1.5rem * 2);
+  overflow: hidden;
+  padding-right: 1rem;
+  position: relative;
+}
+.truncate-overflow::before {
+  content: '';
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.truncate-overflow::after {
+  background: #ffffff;
+  content: '';
+  height: 1rem;
+  right: 0;
+  position: absolute;
+  width: 1rem;
+}
+@supports (-webkit-line-clamp: 2) {
+  .truncate-overflow::before, .truncate-overflow::after {
+    content: none;
+  }
+}
+
+.featured-event {
+  background-image: linear-gradient(125deg, #00aeef 16%, #56c4c4 86%);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
+  padding: 60px 15px;
+}
+.featured-event:last-of-type {
+  margin-bottom: 0;
+}
+.featured-event .featured-event-inner-container {
+  backdrop-filter: blur(10px);
+  background-color: rgba(77, 77, 79, 0.8);
+  padding: 30px 15px;
+}
+.featured-event .featured-event-inner-container .event-date-container {
+  margin-bottom: 30px;
+}
+.featured-event .featured-event-inner-container .event-date-container .event-month {
+  border-right: solid 2px #ffffff;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 0.55px;
+  line-height: normal;
+  margin: 0 10px 0 0;
+  padding-right: 10px;
+}
+.featured-event .featured-event-inner-container .event-date-container .event-date {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 0.55px;
+  line-height: normal;
+  margin: 0;
+}
+.featured-event .featured-event-inner-container .event-title {
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: normal;
+  margin-bottom: 30px;
+  max-height: calc(35px * 1);
+}
+.featured-event .featured-event-inner-container .event-time-container .event-time {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.48px;
+  line-height: 1.86;
+  margin-bottom: 5px;
+}
+.featured-event .featured-event-inner-container .event-description {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.48px;
+  line-height: 1.86;
+  margin-bottom: 90px;
+  max-height: calc(1.5rem * 2);
+}
+.featured-event .featured-event-inner-container .event-description a {
+  color: #ffffff;
+}
+.featured-event .featured-event-inner-container .event-description a:hover {
+  color: #ffffff;
+}
+.featured-event .featured-event-inner-container .featured-event-btn {
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: 900;
+  height: 46px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  letter-spacing: 1px;
+  line-height: normal;
+  margin: 0 auto;
+  width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-event {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    height: 390px;
+    margin-bottom: 100px;
+    padding: 0;
+  }
+  .featured-event:last-of-type {
+    margin-bottom: 0;
+  }
+  .featured-event .featured-event-inner-container {
+    margin: 0 auto;
+    max-width: 615px;
+    padding: 30px;
+  }
+  .featured-event .featured-event-inner-container .event-date-container .event-month {
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+  }
+  .featured-event .featured-event-inner-container .event-date-container .event-date {
+    font-size: 36px;
+    letter-spacing: 1px;
+    line-height: 1.25;
+  }
+  .featured-event .featured-event-inner-container .event-title {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+  .featured-event .featured-event-inner-container .event-time-container .event-time {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  .featured-event .featured-event-inner-container .event-description {
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  .featured-event .featured-event-inner-container .featured-event-btn {
+    -ms-flex-align: center;
+        align-items: center;
+    border-radius: 15px;
+    border: solid 2px #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 auto 0 0;
+  }
+}

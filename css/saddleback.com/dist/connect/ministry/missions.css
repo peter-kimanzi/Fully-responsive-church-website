@@ -1,0 +1,794 @@
+.mfp-content {
+  max-width: 720px;
+  padding: 46px 0;
+}
+
+.breadcrumb-location-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: #4d4d4f;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+.breadcrumb-location-container .breadcrumb {
+  width: auto;
+  padding-left: 0;
+  margin: 7px 0 15px;
+}
+.breadcrumb-location-container .breadcrumb ul {
+  text-alin: center;
+}
+.breadcrumb-location-container .breadcrumb ul li span {
+  color: #fff;
+}
+.breadcrumb-location-container #coreApp {
+  width: 100%;
+  background: #4d4d4f;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb-location-container #coreApp h3 {
+  display: none;
+}
+.breadcrumb-location-container #coreApp .button {
+  display: none;
+}
+.breadcrumb-location-container #coreApp .ui.grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  max-width: 280px;
+  margin: 0 auto;
+}
+.breadcrumb-location-container #coreApp .ui.grid:before {
+  content: 'Campus';
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  margin-right: 7px;
+  margin-bottom: 0;
+  padding-left: 8px;
+}
+.breadcrumb-location-container #coreApp .ui.grid .ui.grid-row {
+  width: 100%;
+}
+.breadcrumb-location-container #coreApp .ui.grid .ui.grid-row .ui.grid-col {
+  padding: 0;
+}
+.breadcrumb-location-container #coreApp .ui.select div div {
+  cursor: pointer;
+  border: none;
+  color: #00aeef;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  background: none;
+  min-height: unset;
+}
+.breadcrumb-location-container #coreApp .ui.select div .css-15k3avv {
+  background: #fff;
+}
+.breadcrumb-location-container #coreApp .ui.select div .css-15k3avv div {
+  cursor: pointer;
+}
+.breadcrumb-location-container #coreApp .ui.select div .css-15k3avv div div {
+  cursor: pointer;
+}
+.breadcrumb-location-container #coreApp .ui.select div .css-15k3avv div div:hover {
+  background: #00aeef;
+  color: #fff;
+}
+
+.missions-next-steps-section .next-steps-options-container .next-steps-options.active {
+  background: #56c4c4;
+  color: #fff;
+}
+
+.missions-header-section .missions-header-image {
+  position: relative;
+  height: 480px;
+}
+.missions-header-section .missions-header-image:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4d4d4f;
+  background-blend-mode: multiply;
+  opacity: 0.4;
+}
+.missions-header-section .missions-header-image .missions-header-inner {
+  padding: 0 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+}
+.missions-header-section .missions-header-image .missions-header-inner .missions-header {
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 45px;
+  letter-spacing: 0.655172px;
+  color: #fff;
+  margin-bottom: 19px;
+}
+.missions-header-section .missions-header-image .missions-header-inner .missions-header-info {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.missions-header-section .missions-header-image .missions-header-inner .missions-video-btn {
+  width: 100%;
+  border-radius: 8px;
+  height: 46px;
+}
+.missions-header-section .missions-header-image .missions-header-inner .missions-video-btn .icon-play-circle {
+  color: #00aeef;
+  margin-right: 20px;
+  font-size: 24px;
+  position: relative;
+}
+.missions-header-section .missions-header-image .missions-header-inner .missions-video-btn .icon-play-circle:after {
+  content: '';
+  display: inline-block !important;
+  width: 0;
+  height: 0;
+  border-left: 9px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-37%) translateY(-55%);
+          transform: translateX(-37%) translateY(-55%);
+}
+.missions-header-section .missions-header-image .missions-header-inner .missions-video-btn:hover .icon-play-circle {
+  color: #fff;
+}
+.missions-header-section .missions-header-image .missions-header-inner .missions-video-btn:hover .icon-play-circle:after {
+  border-left: 9px solid #00aeef;
+}
+
+.missions-reach-section {
+  padding: 50px 16px;
+}
+.missions-reach-section .missions-reach-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.missions-reach-section .missions-reach-container .missions-reach-header-inner {
+  margin-bottom: 32px;
+}
+.missions-reach-section .missions-reach-container .missions-reach-header-inner .missions-reach-header {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 8px;
+}
+.missions-reach-section .missions-reach-container .missions-reach-header-inner .missions-reach-verse {
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  color: #f99e49;
+  margin: 0;
+}
+.missions-reach-section .missions-reach-container .missions-reach-header-inner.desktop {
+  display: none;
+}
+.missions-reach-section .missions-reach-container .missions-reach-image {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+.missions-reach-section .missions-reach-container .missions-reach-header-container {
+  margin-bottom: 32px;
+}
+.missions-reach-section .missions-reach-container .missions-reach-info-container .missions-reach-item {
+  margin-bottom: 32px;
+}
+.missions-reach-section .missions-reach-container .missions-reach-info-container .missions-reach-item:last-of-type {
+  margin: 0;
+}
+.missions-reach-section .missions-reach-container .missions-reach-info-container .missions-reach-item .missions-reach-item-header {
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  color: #f99e49;
+}
+.missions-reach-section .missions-reach-container .missions-reach-info-container .missions-reach-item:nth-of-type(3) .missions-reach-item-header {
+  color: #00aeef;
+}
+.missions-reach-section .missions-reach-container .missions-reach-info-container .missions-reach-item:last-of-type .missions-reach-item-header {
+  color: #56c4c4;
+}
+.missions-reach-section .missions-reach-container .missions-reach-info-container .missions-reach-item .missions-reach-item-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4d4d4f;
+  margin: 0 0 10px;
+}
+
+.missions-next-steps-section {
+  padding: 56px 16px;
+  background: #f6f6f6;
+}
+.missions-next-steps-section .next-steps-header-container {
+  padding-bottom: 48px;
+  margin-bottom: 32px;
+  border-bottom: solid 1px #D8D8D8;
+}
+.missions-next-steps-section .next-steps-header-container .next-steps-header {
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.655172px;
+  margin-bottom: 32px;
+  color: #4d4d4f;
+}
+.missions-next-steps-section .next-steps-header-container .next-steps-header-description {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #4d4d4f;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  height: 64px;
+  border-radius: 15px;
+  padding: 8px 24px;
+  background: #fff;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options:last-of-type {
+  margin-bottom: 0;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options p {
+  margin: 0;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #56c4c4;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options .options-image-container {
+  margin-right: 16px;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options .options-image-container .next-steps-options-image {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options.active {
+  background: linear-gradient(180deg, #56C4C4 50%, #329594 100%);
+}
+.missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options.active p {
+  color: #fff;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container {
+  margin: 0 -16px;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice {
+  padding-top: 48px;
+  margin-top: 32px;
+  border-top: solid 1px #D8D8D8;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item {
+  margin-bottom: 48px;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item:last-of-type {
+  margin-bottom: 0;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .next-steps-choice-image {
+  height: 134px;
+  position: relative;
+  margin: 0 0px 24px;
+  border-radius: 10px;
+  box-shadow: 0 12px 14px 0 rgba(77, 77, 79, 0.6);
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .next-steps-choice-image:before {
+  content: " ";
+  width: 100%;
+  height: 134px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4d4d4f;
+  background-blend-mode: multiply;
+  opacity: 0.4;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .next-steps-choice-image .next-steps-choice-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .next-steps-choice-description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+  color: #4d4d4f;
+  padding: 0 16px;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .next-steps-btn-container {
+  padding: 0 16px;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .btn {
+  height: 46px;
+  border-radius: 15px;
+  width: 100%;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .next-steps-choice-social {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .next-steps-choice-social a {
+  font-size: 32px;
+  line-height: 24px;
+  margin: 0 16px;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item #shareContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item #shareContainer .sharrre {
+  line-height: 24px;
+  margin: 0 16px;
+  width: 32px;
+  border-radius: 2px;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item #shareContainer .sharrre .box {
+  border-radius: 2px;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item #shareContainer .sharrre .box .share span:last-of-type {
+  display: none;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .subscription-container {
+  padding: 0 16px;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .subscription-container .subscription-label {
+  font-size: 13px;
+  line-height: 24px;
+  color: #4d4d4f;
+  margin-bottom: 0;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .subscription-container .subscription-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .subscription-container .subscription-form .subscription-input {
+  width: 75%;
+  margin: 0 8px 0 0;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .subscription-container .subscription-form .btn {
+  width: 25%;
+  height: 39px;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .subscription-container .subscription-feedback.failure {
+  color: #F15B4E;
+}
+.missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .subscription-container .subscription-feedback.success {
+  color: #67c18c;
+}
+
+.missions-events-section {
+  padding: 0 16px;
+}
+
+#EventListEmbed {
+  margin: 3em 16px !important;
+}
+
+.missions-stories-section {
+  padding: 0 16px;
+  margin-bottom: 60px;
+}
+
+.ministry-social-media-container .ministry-details-info-section .ministry-contact-inner-container .ministry-social-background .central-mission-contact-info, .ministry-social-media-container .ministry-details-info-section .ministry-social-inner-container .ministry-social-background .central-mission-contact-info {
+  margin-top: 16px;
+}
+.ministry-social-media-container .ministry-details-info-section .ministry-contact-inner-container .ministry-social-background .central-mission-contact-info p, .ministry-social-media-container .ministry-details-info-section .ministry-social-inner-container .ministry-social-background .central-mission-contact-info p {
+  color: #4d4d4f;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  margin: 0;
+}
+
+#coreApp {
+  margin-bottom: 32px;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 575px) {
+  .missions-header-section .missions-header-image .missions-header-inner {
+    padding: 0 32px;
+  }
+
+  .missions-reach-section {
+    padding: 50px 32px;
+  }
+
+  .missions-next-steps-section {
+    padding: 56px 32px;
+  }
+
+  #EventListEmbed {
+    margin: 3em 32px !important;
+  }
+
+  .missions-events-section {
+    padding: 0 32px;
+  }
+
+  .missions-stories-section {
+    padding: 0 32px;
+  }
+
+  #coreApp {
+    padding: 0 32px;
+  }
+  #coreApp .ministry-layout .ui.grid .grid-col .select {
+    width: 100%;
+    max-width: 250px;
+  }
+  #coreApp .ministry-layout .ui.grid .grid-col .button {
+    width: 100%;
+    max-width: 200px;
+  }
+  #coreApp .ministry-layout .ui.grid .grid-col div {
+    text-align: left !important;
+  }
+}
+@media screen and (min-width: 650px) {
+  .breadcrumb-location-container {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .breadcrumb-location-container .breadcrumb {
+    width: 100%;
+    padding-left: 15px;
+    margin: 0;
+  }
+  .breadcrumb-location-container .breadcrumb ul {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .breadcrumb-location-container #coreApp {
+    max-width: 300px;
+  }
+  .breadcrumb-location-container #coreApp .ui.grid {
+    max-width: 430px;
+  }
+
+  .missions-header-section .missions-header-image {
+    height: 600px;
+  }
+  .missions-header-section .missions-header-image .missions-header-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 95px;
+  }
+  .missions-header-section .missions-header-image .missions-header-inner .missions-header {
+    width: 50%;
+    max-width: 462px;
+    padding-right: 32px;
+    font-size: 72px;
+    line-height: 100px;
+    letter-spacing: 1.24138px;
+    margin-bottom: 56px;
+  }
+  .missions-header-section .missions-header-image .missions-header-inner .missions-header-info {
+    width: 50%;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
+  .missions-header-section .missions-header-image .missions-header-inner .missions-video-btn {
+    max-width: 200px;
+  }
+
+  .missions-reach-section {
+    padding: 76px 32px 116px;
+  }
+  .missions-reach-section .missions-reach-container {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .missions-reach-section .missions-reach-container .missions-reach-header-inner {
+    padding-bottom: 18px;
+    border-bottom: solid 1px #bcbec0;
+  }
+  .missions-reach-section .missions-reach-container .missions-reach-header-inner .missions-reach-header {
+    margin: 0 16px 16px 0;
+    font-size: 44px;
+    line-height: 48px;
+    letter-spacing: 1px;
+  }
+  .missions-reach-section .missions-reach-container .missions-reach-header-inner .missions-reach-verse {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .missions-reach-section .missions-reach-container .missions-reach-header-inner.mobile {
+    display: none;
+  }
+  .missions-reach-section .missions-reach-container .missions-reach-header-inner.desktop {
+    display: block;
+  }
+  .missions-reach-section .missions-reach-container .missions-reach-header-container {
+    width: 50%;
+  }
+  .missions-reach-section .missions-reach-container .missions-reach-info-container {
+    width: 50%;
+    padding-left: 60px;
+  }
+  .missions-reach-section .missions-reach-container .missions-reach-info-container .missions-reach-item {
+    max-width: 396px;
+  }
+
+  .missions-next-steps-section .next-steps-header-container {
+    max-width: 1264px;
+    margin: 0 auto 60px;
+    padding: 0;
+    border-bottom: none;
+  }
+  .missions-next-steps-section .next-steps-header-container .next-steps-header {
+    font-size: 72px;
+    line-height: 100px;
+  }
+  .missions-next-steps-section .next-steps-inner {
+    max-width: 1264px;
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-options-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background: none;
+    height: auto;
+    margin: 0;
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options p {
+    width: 178px;
+    height: 40px;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background: #fff;
+    border-radius: 15px;
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options .options-image-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 5px #56c4c4;
+    padding: 35px;
+    margin: 0 0 24px;
+    background: #fff;
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options .options-image-container .next-steps-options-image {
+    width: 100%;
+    height: 100%;
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options.active {
+    background: none;
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options.active p {
+    background: linear-gradient(180deg, #56C4C4 50%, #329594 100%);
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-options-container .next-steps-options.active .options-image-container {
+    background: linear-gradient(180deg, #56C4C4 50%, #329594 100%);
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 56px -40px 0;
+    padding-top: 80px;
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item {
+    width: 50%;
+    max-width: 475px;
+    padding: 0 40px;
+    margin: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .next-steps-choice-image {
+    margin: 0 0 24px;
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item .next-steps-choice-social {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    margin: 0 0 0 -16px;
+  }
+  .missions-next-steps-section .next-steps-inner .next-steps-choice-container .next-steps-choice .next-steps-choice-item #shareContainer {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+
+  #EventListEmbed {
+    margin: 4.5em 32px !important;
+  }
+
+  .blogpost-slim-section {
+    padding: 30px 0 54px 0 !important;
+  }
+
+  .missions-stories-section {
+    margin-bottom: 80px;
+  }
+
+  .ministry-social-media-container .ministry-details-info-section .ministryContactContainer, .ministry-social-media-container .ministry-details-info-section .ministrySocialContainer {
+    height: 290px;
+  }
+  .ministry-social-media-container .ministry-details-info-section .ministry-contact-inner-container, .ministry-social-media-container .ministry-details-info-section .ministry-social-inner-container {
+    height: 290px;
+  }
+  .ministry-social-media-container .ministry-details-info-section .ministry-contact-inner-container .ministry-social-background, .ministry-social-media-container .ministry-details-info-section .ministry-social-inner-container .ministry-social-background {
+    height: 280px;
+  }
+  .ministry-social-media-container .ministry-details-info-section .ministry-contact-inner-container .ministry-social-background .central-mission-contact-info, .ministry-social-media-container .ministry-details-info-section .ministry-social-inner-container .ministry-social-background .central-mission-contact-info {
+    margin-top: 32px;
+  }
+
+  #coreApp .ministry-layout .ui.grid {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .breadcrumb-location-container #coreApp .grid-col-laptop-six {
+    width: 100%;
+  }
+
+  .missions-next-steps-section {
+    padding: 104px;
+  }
+  .missions-next-steps-section .next-steps-header-container {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .missions-next-steps-section .next-steps-header-container .next-steps-header {
+    width: 100%;
+    max-width: 435px;
+    text-align: left;
+    margin: 0;
+  }
+  .missions-next-steps-section .next-steps-header-container .next-steps-header-description {
+    width: 100%;
+    max-width: 764px;
+    padding-left: 60px;
+    text-align: left;
+  }
+
+  .ministry-social-media-container .ministry-details-info-section .ministryContactContainer, .ministry-social-media-container .ministry-details-info-section .ministrySocialContainer {
+    height: 260px;
+  }
+  .ministry-social-media-container .ministry-details-info-section .ministry-contact-inner-container, .ministry-social-media-container .ministry-details-info-section .ministry-social-inner-container {
+    height: 260px;
+  }
+  .ministry-social-media-container .ministry-details-info-section .ministry-contact-inner-container .ministry-social-background, .ministry-social-media-container .ministry-details-info-section .ministry-social-inner-container .ministry-social-background {
+    height: 250px;
+  }
+  .ministry-social-media-container .ministry-details-info-section .ministry-contact-inner-container .ministry-social-background .central-mission-contact-info, .ministry-social-media-container .ministry-details-info-section .ministry-social-inner-container .ministry-social-background .central-mission-contact-info {
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .missions-reach-section .missions-reach-container .missions-reach-header-inner .missions-reach-header {
+    margin: 0 16px 0 0;
+    text-align: left;
+  }
+  .missions-reach-section .missions-reach-container .missions-reach-header-inner .missions-reach-verse {
+    text-align: left;
+  }
+  .missions-reach-section .missions-reach-container .missions-reach-header-inner.desktop {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+        align-items: flex-end;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .missions-reach-section {
+    padding: 76px 0 116px;
+  }
+
+  #EventListEmbed {
+    margin: 4.5em 0 !important;
+  }
+
+  .missions-events-section {
+    padding: 0;
+  }
+
+  .missions-stories-section {
+    padding: 0;
+  }
+
+  .ministry-social-media-container {
+    margin: 0 -30px 70px;
+  }
+
+  #coreApp {
+    padding: 0;
+  }
+  #coreApp .ministry-layout .ui.grid {
+    padding: 0;
+  }
+}

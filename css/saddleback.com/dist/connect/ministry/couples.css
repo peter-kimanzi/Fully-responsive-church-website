@@ -1,0 +1,260 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#emailSubscriptionAnchor {
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+.couples-page-container .couples-page-header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin-bottom: 30px;
+}
+.couples-page-container .couples-inner-container .couples-social-container {
+  margin-bottom: 0;
+}
+.couples-page-container .couples-inner-container .couples-social-container .couples-social-item {
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  background: #f6f6f6;
+}
+.couples-page-container .couples-inner-container .couples-social-container .couples-social-item:last-of-type {
+  margin-bottom: 0;
+}
+.couples-page-container .couples-inner-container .couples-social-container .couples-social-item .couples-social-inner-container h4 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin-bottom: 15px;
+}
+.couples-page-container .couples-inner-container .couples-social-container .couples-social-item .couples-social-inner-container p {
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.couples-page-container .couples-inner-container .couples-social-container .couples-social-item .couples-social-inner-container a {
+  width: 100%;
+}
+.couples-page-container .couples-inner-container .couples-social-container .couples-text-container .couples-social-inner-container p,
+.couples-page-container .couples-inner-container .couples-social-container .couples-instagram-container .couples-social-inner-container p {
+  margin-bottom: 0;
+}
+.couples-page-container .couples-inner-container .couples-social-container .couples-facebook-container .couples-social-inner-container .icon-facebook,
+.couples-page-container .couples-inner-container .couples-social-container .couples-facebook-container .couples-social-inner-container .icon-instagram,
+.couples-page-container .couples-inner-container .couples-social-container .couples-instagram-container .couples-social-inner-container .icon-facebook,
+.couples-page-container .couples-inner-container .couples-social-container .couples-instagram-container .couples-social-inner-container .icon-instagram {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 15px;
+}
+.couples-page-container .couples-inner-container .couples-social-container .couples-facebook-container .couples-social-inner-container h4,
+.couples-page-container .couples-inner-container .couples-social-container .couples-instagram-container .couples-social-inner-container h4 {
+  display: inline-block;
+}
+.couples-page-container .couples-inner-container .couples-social-container .couples-text-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.couples-page-container .couples-inner-container .couples-social-container .couples-text-container img {
+  margin-right: 16px;
+}
+.couples-page-container .couples-inner-container .sms-section {
+  margin-bottom: 0;
+  padding: 56px 32px;
+}
+.couples-page-container .couples-inner-container .sms-section .sms-inner img {
+  max-width: 115px;
+  display: block;
+  margin: 0 auto 32px;
+}
+.couples-page-container .couples-inner-container .sms-section .sms-inner p {
+  max-width: 399px;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  color: #4d4d4f;
+  margin: 0 auto;
+}
+.couples-page-container .couples-inner-container .couples-ministries-container {
+  margin-bottom: 30px;
+}
+.couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: solid 1px #bcbec0;
+}
+.couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-image-container {
+  margin-bottom: 15px;
+  max-height: 350px;
+  overflow: hidden;
+}
+.couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-image-container img {
+  width: 100%;
+}
+.couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info h4 {
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info p {
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.9px;
+  margin-bottom: 30px;
+}
+.couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info a {
+  width: 100%;
+}
+.couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info .couples-ministry-contact h5 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.3px;
+  margin-bottom: 15px;
+}
+.couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info .couples-ministry-contact p,
+.couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info .couples-ministry-contact a {
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info .couples-ministry-contact a {
+  margin: 0;
+}
+.couples-page-container .couples-inner-container .couples-connect-container .couples-prayer-ad .wideAdContainer {
+  height: 240px;
+}
+.couples-page-container .couples-inner-container .couples-connect-container .couples-prayer-ad .wideAdContainer a {
+  height: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .couples-page-container .couples-page-header {
+    font-size: 58px;
+    margin-bottom: 45px;
+  }
+  .couples-page-container .couples-inner-container .couples-social-container {
+    margin: 0 auto;
+    max-width: 720px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: #f6f6f6;
+  }
+  .couples-page-container .couples-inner-container .couples-social-container .couples-social-item {
+    padding: 0;
+    margin-bottom: 0;
+    border: solid 15px #fff;
+  }
+  .couples-page-container .couples-inner-container .couples-social-container .couples-social-item .couples-social-inner-container {
+    height: 100%;
+    padding: 30px;
+  }
+  .couples-page-container .couples-inner-container .couples-social-container .couples-social-item .couples-social-inner-container p {
+    margin-bottom: 30px;
+  }
+  .couples-page-container .couples-inner-container .couples-social-container .couples-social-item .couples-social-inner-container a {
+    max-width: 200px;
+  }
+  .couples-page-container .couples-inner-container .sms-section {
+    margin-bottom: 0;
+    padding: 120px 0;
+  }
+  .couples-page-container .couples-inner-container .sms-section .sms-inner .sms-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    max-width: 553px;
+    margin: 0 auto;
+  }
+  .couples-page-container .couples-inner-container .sms-section .sms-inner img {
+    max-width: 130px;
+    margin: 0 26px 0 0;
+  }
+  .couples-page-container .couples-inner-container .sms-section .sms-inner p {
+    text-align: left;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container {
+    margin-bottom: 100px;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -30px;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-image-container {
+    margin: 0 30px;
+    width: 50%;
+    margin-bottom: 0;
+    max-height: 400px;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-image-container img {
+    width: 100%;
+    min-height: 400px !important;
+    object-fit: cover;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info {
+    padding: 0 30px;
+    width: 50%;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info a {
+    width: 200px;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info .couples-ministry-contact p,
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info .couples-ministry-contact a {
+    display: inline-block;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info .couples-ministry-contact a {
+    width: auto;
+    display: inline-block;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info .couples-ministry-contact .couples-ministry-email {
+    padding-left: 7.5px;
+    margin-left: 7.5px;
+    border-left: solid 1px #bcbec0;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-dates .couples-ministry-inner-container .couples-ministry-image-container,
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-premarital-counseling .couples-ministry-inner-container .couples-ministry-image-container {
+    -ms-flex-order: 1;
+        order: 1;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .couples-page-container .couples-inner-container .couples-social-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    max-width: 100%;
+  }
+  .couples-page-container .couples-inner-container .couples-social-container .couples-social-item {
+    width: 50%;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info h4 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  .couples-page-container .couples-inner-container .couples-ministries-container .couples-ministry-item .couples-ministry-inner-container .couples-ministry-info p {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1.4px;
+    margin-bottom: 30px;
+  }
+}

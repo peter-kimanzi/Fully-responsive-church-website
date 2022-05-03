@@ -1,0 +1,50 @@
+/* Define some standard colors in variables */
+/* COMPASS IMPORTS */
+/* Define our base font size and line height */
+.instagram .title {
+  text-align: center;
+  margin-bottom: 11px;
+}
+.instagram .title h2 {
+  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+.instagram .title span {
+  font: 16px/22px "ProximaSemiBold";
+  text-transform: none;
+  font-style: normal;
+  margin: 0 0 0 -5px;
+  letter-spacing: 0.4px;
+}
+.instagram .instagramList {
+  list-style: none;
+  /* margin: 0 25px; */
+  padding: 0;
+  margin-bottom: 22px;
+}
+.instagram .instagramList li {
+  float: left;
+  width: 50%;
+  margin: 0;
+}
+.instagram .instagramList li a {
+  display: block;
+}
+.instagram .instagramList li img {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .instagram .instagramList li {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .instagram .instagramList li {
+    width: 16.66666666666667%;
+  }
+}

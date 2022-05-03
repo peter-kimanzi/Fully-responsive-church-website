@@ -1,0 +1,1204 @@
+/* Define some standard colors in variables */
+/* COMPASS IMPORTS */
+/* Import Icons for Singles Page */
+@font-face {
+  font-family: 'SB-Icons';
+  src: url("../../../../../fonts/rebrand/SB-Icons134c.eot?itbk42");
+  src: url("../../../../../fonts/rebrand/SB-Icons134c.eot?itbk42#iefix") format("embedded-opentype"), url("../../../../../fonts/rebrand/SB-Icons134c.ttf?itbk42") format("truetype"), url("../../../../../fonts/rebrand/SB-Icons134c.woff?itbk42") format("woff"), url("../../../../../fonts/rebrand/SB-Icons134c.svg?itbk42#SB-Icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'SB-Icons' !important;
+  speak: none !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1 !important;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-back-10:before {
+  content: "\e953";
+}
+
+.icon-forward-10:before {
+  content: "\e954";
+}
+
+.icon-share:before {
+  content: "\e97b";
+}
+
+.icon-more:before {
+  content: "\e97a";
+}
+
+.icon-respond:before {
+  content: "\e900";
+}
+
+.icon-view:before {
+  content: "\e901";
+}
+
+.icon-subscribe:before {
+  content: "\e902";
+}
+
+.icon-heart:before {
+  content: "\e903";
+}
+
+.icon-print-outline:before {
+  content: "\e904";
+}
+
+.icon-printer-glyph:before {
+  content: "\e905";
+}
+
+.icon-pdf:before {
+  content: "\e906";
+}
+
+.icon-email-glyph:before {
+  content: "\e907";
+}
+
+.icon-email-outline:before {
+  content: "\e908";
+}
+
+.icon-download:before {
+  content: "\e909";
+}
+
+.icon-cloud:before {
+  content: "\e90a";
+}
+
+.icon-settings:before {
+  content: "\e90b";
+}
+
+.icon-tools:before {
+  content: "\e90c";
+}
+
+.icon-phone-glyph:before {
+  content: "\e90d";
+}
+
+.icon-phone-outline:before {
+  content: "\e90e";
+}
+
+.icon-mobile-phone-glyph:before {
+  content: "\e90f";
+}
+
+.icon-mobile-phone-outline:before {
+  content: "\e910";
+}
+
+.icon-bible:before {
+  content: "\e911";
+}
+
+.icon-map:before {
+  content: "\e912";
+}
+
+.icon-computer-outline:before {
+  content: "\e913";
+}
+
+.icon-computer-glyph:before {
+  content: "\e914";
+}
+
+.icon-glasses:before {
+  content: "\e915";
+}
+
+.icon-info:before {
+  content: "\e916";
+}
+
+.icon-alert:before {
+  content: "\e917";
+}
+
+.icon-conversation:before {
+  content: "\e918";
+}
+
+.icon-chat:before {
+  content: "\e919";
+}
+
+.icon-location-glyph:before {
+  content: "\e91a";
+}
+
+.icon-location-outline:before {
+  content: "\e91b";
+}
+
+.icon-location-finder:before {
+  content: "\e93e";
+}
+
+.icon-controls:before {
+  content: "\e91c";
+}
+
+.icon-badge:before {
+  content: "\e91d";
+}
+
+.icon-search-big:before {
+  content: "\e91e";
+}
+
+.icon-search:before {
+  content: "\e91f";
+}
+
+.icon-copy:before {
+  content: "\e920";
+}
+
+.icon-television:before {
+  content: "\e921";
+}
+
+.icon-volunteer:before {
+  content: "\e922";
+}
+
+.icon-friends:before {
+  content: "\e923";
+}
+
+.icon-travel:before {
+  content: "\e924";
+}
+
+.icon-lock-opened:before {
+  content: "\e925";
+}
+
+.icon-lock:before {
+  content: "\e926";
+}
+
+.icon-curriculum:before {
+  content: "\e927";
+}
+
+.icon-calendar:before {
+  content: "\e928";
+}
+
+.icon-profile-incomplete:before {
+  content: "\e929";
+}
+
+.icon-profile-1-star:before {
+  content: "\e930";
+}
+
+.icon-profile-2-star:before {
+  content: "\e931";
+}
+
+.icon-profile-complete:before {
+  content: "\e932";
+}
+
+.icon-check-mark:before {
+  content: "\e93d";
+}
+
+.icon-close:before {
+  content: "\e942";
+}
+
+.icon-add:before {
+  content: "\e943";
+}
+
+.icon-add-item:before {
+  content: "\e944";
+}
+
+.icon-decline:before {
+  content: "\e93c";
+}
+
+.icon-add-outline:before {
+  content: "\e956";
+}
+
+.icon-subtract:before {
+  content: "\e945";
+}
+
+.icon-remove-outline:before {
+  content: "\e957";
+}
+
+.icon-resend:before {
+  content: "\e93b";
+}
+
+.icon-arrow-down:before {
+  content: "\e946";
+}
+
+.icon-arrow-left:before {
+  content: "\e947";
+}
+
+.icon-arrow-right:before {
+  content: "\e948";
+}
+
+.icon-arrow-up:before {
+  content: "\e949";
+}
+
+.icon-camera:before {
+  content: "\e940";
+}
+
+.icon-play-circle:before {
+  content: "\e94a";
+}
+
+.icon-play-big:before {
+  content: "\e94b";
+}
+
+.icon-play:before {
+  content: "\e94c";
+}
+
+.icon-pause:before {
+  content: "\e94d";
+}
+
+.icon-pause-circle:before {
+  content: "\e94e";
+}
+
+.icon-last-track:before {
+  content: "\e94f";
+}
+
+.icon-next-track:before {
+  content: "\e952";
+}
+
+.icon-full-screen-outline:before {
+  content: "\e959";
+}
+
+.icon-full-screen-glyph:before {
+  content: "\e95a";
+}
+
+.icon-volume-none:before {
+  content: "\e95b";
+}
+
+.icon-volume:before {
+  content: "\e95c";
+}
+
+.icon-volume-raise:before {
+  content: "\e95d";
+}
+
+.icon-facebook:before {
+  content: "\e960";
+}
+
+.icon-facebook-box:before {
+  content: "\e961";
+}
+
+.icon-googleplus:before {
+  content: "\e962";
+}
+
+.icon-googleplus-box:before {
+  content: "\e963";
+}
+
+.icon-instagram:before {
+  content: "\e964";
+}
+
+.icon-instagram-box:before {
+  content: "\e965";
+}
+
+.icon-linkedin:before {
+  content: "\e966";
+}
+
+.icon-linkedin-box:before {
+  content: "\e967";
+}
+
+.icon-pinterest:before {
+  content: "\e968";
+}
+
+.icon-pinterest-box:before {
+  content: "\e969";
+}
+
+.icon-podcast:before {
+  content: "\e96a";
+}
+
+.icon-podcast-box:before {
+  content: "\e96b";
+}
+
+.icon-rss:before {
+  content: "\e970";
+}
+
+.icon-rss-box:before {
+  content: "\e971";
+}
+
+.icon-skype:before {
+  content: "\e972";
+}
+
+.icon-skype-box:before {
+  content: "\e973";
+}
+
+.icon-twitter:before {
+  content: "\e974";
+}
+
+.icon-twitter-box:before {
+  content: "\e975";
+}
+
+.icon-whatsapp:before {
+  content: "\e976";
+}
+
+.icon-whatsapp-box:before {
+  content: "\e977";
+}
+
+.icon-youtube:before {
+  content: "\e978";
+}
+
+.icon-youtube-box:before {
+  content: "\e979";
+}
+
+.icon-email-box:before {
+  content: "\e93f";
+}
+
+.icon-delete:before {
+  content: "\e97c";
+}
+
+.icon-clock:before {
+  content: "\e97e";
+}
+
+.icon-building:before {
+  content: "\e97f";
+}
+
+.icon-language-select:before {
+  content: "\e955";
+}
+
+.icon-language:before {
+  content: "\e92d";
+}
+
+.icon-demographic:before {
+  content: "\e92e";
+}
+
+.icon-down-icon:before {
+  content: "\e92a";
+}
+
+.icon-copy-link:before {
+  content: "\e92b";
+}
+
+.icon-list-view:before {
+  content: "\e92c";
+}
+
+.icon-grid-view:before {
+  content: "\e92f";
+}
+
+.icon-cash:before {
+  content: "\e933";
+}
+
+.icon-check:before {
+  content: "\e934";
+}
+
+.icon-star:before {
+  content: "\e935";
+}
+
+.icon-blog:before {
+  content: "\e936";
+}
+
+.icon-events:before {
+  content: "\e937";
+}
+
+.icon-next-steps:before {
+  content: "\e938";
+}
+
+.icon-serve:before {
+  content: "\e939";
+}
+
+.icon-staff:before {
+  content: "\e93a";
+}
+
+.icon-shopping-cart:before {
+  content: "\e941";
+}
+
+.icon-resources:before {
+  content: "\e950";
+}
+
+.icon-steps:before {
+  content: "\e951";
+}
+
+.icon-sb-logo:before {
+  content: "\e958";
+}
+
+.icon-sk:before {
+  content: "\e96c";
+}
+
+.icon-jhm:before {
+  content: "\e95e";
+}
+
+.icon-hsm:before {
+  content: "\e96d";
+}
+
+.icon-cm:before {
+  content: "\e95f";
+}
+
+/* Define our base font size and line height */
+h1.ministryName {
+  margin-left: 1%;
+}
+
+span.serviceTimesLabel {
+  font: 1em/1.375em "Lato", Arial;
+  font-style: italic;
+}
+
+p {
+  margin-bottom: 0.6875em;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #819aa9;
+  width: 100%;
+  padding: 33px 0 0;
+  margin: 0 0 33px;
+}
+
+.staticHeightImageContainer,
+.ministryAdImg {
+  margin-bottom: 1.375em;
+}
+
+.titleShort {
+  display: block;
+}
+
+.titleFull {
+  display: none;
+}
+
+.purposeContainer {
+  margin-bottom: 1.375em;
+}
+.purposeContainer header h3 {
+  margin-bottom: 0;
+}
+.purposeContainer header span {
+  font-family: "Lato", Arial;
+}
+.purposeContainer .sectionInner {
+  max-width: 960px;
+}
+.purposeContainer .purposeStatement {
+  margin-bottom: 1.375em;
+}
+
+.description {
+  border-top-width: 0.0625em;
+  border-top-style: solid;
+  padding-top: 1.3125em;
+  border-bottom-width: 0.0625em;
+  border-bottom-style: solid;
+  padding-bottom: 1.3125em;
+  border-color: #dbdbdb;
+  margin-top: 22px;
+  padding-top: 11px;
+  padding-bottom: 0px;
+}
+
+.threeColumn {
+  list-style: none;
+  margin: 0 -33px 33px -44px;
+  padding: 0;
+}
+.threeColumn li {
+  width: 100%;
+  vertical-align: top;
+  display: inline-block;
+  padding: 0 44px 22px;
+  text-align: center;
+}
+.threeColumn li a span {
+  display: block;
+  font-family: "Lato", Arial;
+  font-style: normal;
+  font-size: 13px;
+}
+
+.threeColumn:last-of-type {
+  margin-bottom: 0;
+}
+
+.connectContainer {
+  margin-bottom: 22px;
+}
+.connectContainer .sectionContainer .sectionInner {
+  position: relative;
+}
+.connectContainer .sectionContainer .sectionInner .ministryContactContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.connectContainer .sectionContainer .sectionInner .ministryContactContainer .campusInfo {
+  margin-bottom: 15px;
+}
+.connectContainer .sectionContainer .sectionInner .ministryContactContainer .campuslink {
+  margin-bottom: 5px;
+}
+.connectContainer .sectionContainer .sectionInner .ministryContactContainer .address {
+  -ms-flex-order: 1;
+      order: 1;
+  margin-top: 10px;
+}
+.connectContainer .sectionContainer .sectionInner .ministryContactContainer div a:hover span {
+  text-decoration: none;
+}
+.connectContainer .sectionContainer .sectionInner .ministryContactContainer div a span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.connectContainer .sectionContainer .sectionInner .ministryContactContainer div a span:hover {
+  text-decoration: none;
+}
+
+#defaultSection {
+  padding-top: 6px;
+  margin-bottom: 15px;
+}
+
+.dk-select {
+  margin-bottom: 0px !important;
+  height: 38px !important;
+}
+.dk-select .dk-selected {
+  font-size: 16px !important;
+}
+
+.readMoreToggle {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.serviceTimesLabel,
+.ministryContactContainer h2 {
+  font-size: 26px;
+}
+.serviceTimesLabel sup,
+.ministryContactContainer h2 sup {
+  font-size: 15px;
+}
+
+.ministryContactContainer {
+  margin-bottom: 30px;
+}
+.ministryContactContainer .contactName p {
+  margin-bottom: 5px;
+  display: block;
+}
+.ministryContactContainer .email {
+  margin-bottom: 10px;
+}
+.ministryContactContainer .phone {
+  margin-bottom: 10px;
+}
+
+.serviceTimesContainer sup {
+  font-size: 16px;
+}
+.serviceTimesContainer .serviceTimesLabel {
+  font: 1em/1.375em "Lato", Arial;
+  font-style: italic;
+  color: black;
+}
+.serviceTimesContainer .serviceTimesDay {
+  display: inline-block;
+  width: 100%;
+  max-width: 260px;
+  vertical-align: top;
+  color: black;
+  font-style: normal;
+}
+.serviceTimesContainer .serviceTimesDay h3 {
+  font-size: 1em;
+}
+.serviceTimesContainer .serviceTimesDay .serviceTimesRow {
+  font-family: "Lato", Arial;
+  font-size: 1em;
+  line-height: 1.375em;
+  margin-bottom: 11px;
+}
+.serviceTimesContainer .serviceTimesDay .serviceTimesRow .serviceTimesColumn {
+  display: inline-block;
+  margin-right: 10%;
+  vertical-align: top;
+  font-style: normal;
+}
+.serviceTimesContainer .serviceTimesDay .serviceTimesRow .serviceTimesColumn:last-of-type {
+  margin-right: 0;
+}
+.serviceTimesContainer .serviceTimesDay .serviceTimesRow .serviceTimesTag {
+  font-size: 0.875em;
+  line-height: 1.5714285714285714em;
+  font-style: italic;
+}
+
+#contact {
+  margin-bottom: 1.375em;
+}
+#contact .contactName {
+  font-family: "Lato", Arial;
+  font-style: italic;
+}
+
+#shareContainer .sharrre {
+  display: block;
+  width: 200px;
+  float: none;
+  text-align: center;
+}
+
+.websiteContainer {
+  padding: 33px 10px;
+  border-top: 1px solid #acacac;
+  border-bottom: 1px solid #acacac;
+  margin-bottom: 1.375em;
+  background: #f5f5f5;
+}
+.websiteContainer .websiteInfoContainer a {
+  display: inline-block;
+  margin-bottom: 0.6875em;
+}
+.websiteContainer .websiteImage {
+  display: block;
+  width: 100%;
+  border: 10px solid #ffffff;
+}
+
+.instagram .title h2 {
+  overflow: hidden;
+}
+
+.eventCalendarContainer {
+  height: auto;
+}
+
+.buttonsContainer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.volunteerContainer .iconButton.tan > span:last-of-type {
+  /* line-height: 22px; */
+  /* height: 100%; */
+  /* padding: 11px 0; */
+}
+.volunteerContainer .iconButton.tan span[class*=icon] {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.ministry-layout .grid .grid-row .grid-col div .checkbox .checkbox-label .icon-check {
+  display: none;
+}
+
+.mfp-content
+ {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.mfp-content
+#GroupInfo h3 {
+  line-height: 2.4444444444444444444444444444444em;
+  margin-bottom: 0;
+  text-align: center;
+  background: black;
+  color: white;
+}
+.mfp-content
+#GroupInfo .dk-select {
+  float: none;
+  margin-bottom: 0;
+}
+.mfp-content
+#GroupInfo .groupDetails,
+.mfp-content
+#GroupInfo .successContainer p,
+.mfp-content
+#GroupInfo .errorContainer p {
+  padding: 11px;
+}
+.mfp-content
+#GroupInfo label,
+.mfp-content
+#GroupInfo span {
+  font-family: "Lato", Arial;
+}
+.mfp-content
+#GroupInfo .opportunityInnerContainer {
+  padding: 11px;
+}
+.mfp-content
+#GroupInfo input[type=checkbox],
+.mfp-content
+#GroupInfo input[type=radio] {
+  width: 15px;
+  margin: 0 -100% 0 0;
+  float: left;
+}
+.mfp-content
+#GroupInfo input[type=checkbox] + label,
+.mfp-content
+#GroupInfo input[type=radio] + label {
+  width: 90%;
+  margin: -5px -100% 0 20px;
+  float: left;
+  clear: none;
+}
+.mfp-content
+#GroupInfo .recurringOpportunitiesContainer,
+.mfp-content
+#GroupInfo .oneTimeOpportunitiesContainer {
+  margin-top: 11px;
+}
+
+.staffProfile {
+  margin-bottom: 0.6875em;
+}
+
+.footerAdContainer {
+  padding: 44px 10px;
+  background: #f99e49;
+  margin-bottom: 22px;
+}
+.footerAdContainer img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  width: 100%;
+  max-width: 155px;
+}
+.footerAdContainer .signupInfo {
+  text-align: center;
+}
+.footerAdContainer .signupInfo h2 {
+  width: 70%;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 37px;
+}
+.footerAdContainer .signupInfo p {
+  color: #ffffff;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget {
+  width: 100%;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget #RegistrationSuccessContainer,
+.footerAdContainer #EmailSubscriptionSignupWidget #RegistrationFailureContainer {
+  height: 220px;
+  padding-top: 85px;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget input[type=text] {
+  display: block;
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+  border: 0;
+  margin-bottom: 1.375em;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget input[type=text]:last-of-type {
+  margin-bottom: 1.375em;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget label {
+  font-family: "Lato", Arial;
+  color: white;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget #SubmitRegistration {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  height: 36px;
+  background: #00aeef;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget #SubmitRegistration:hover {
+  background: #0093c6;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget #SubmitRegistration > span {
+  font-size: 14px;
+  line-height: 36px;
+  background: none;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget #SubmitRegistration > span:hover {
+  background: none;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget #SubmitRegistration .arrowOuterContainer .icon-arrow-right {
+  font-size: 32px;
+}
+.footerAdContainer #EmailSubscriptionSignupWidget p {
+  font-family: "Lato", Arial;
+  color: white;
+}
+
+.ministrySectionInner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.ministrySectionInner .ministryInfoContainer {
+  margin-bottom: 30px;
+}
+.ministrySectionInner .ministryInfoContainer .serviceTimesLabel {
+  margin-bottom: 0;
+}
+.ministrySectionInner .ministryInfoContainer .serviceTimesContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.ministrySectionInner .ministryInfoContainer .serviceTimesContainer .serviceTimesDay {
+  margin-top: 15px;
+}
+.ministrySectionInner .ministryInfoContainer .serviceTimesContainer .serviceTimesDay h4 {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  line-height: 1.63;
+}
+.ministrySectionInner .ministryInfoContainer .serviceTimesContainer .serviceTimesDay .serviceTimesRow {
+  margin-bottom: 0;
+}
+.ministrySectionInner .ministryInfoContainer .serviceTimesContainer .serviceTimesDay .serviceTimesRow:last-of-type {
+  margin-bottom: 0;
+}
+.ministrySectionInner .ministryInfoContainer .serviceTimesContainer .serviceTimesDay .serviceTimesRow .serviceTimesColumn {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 1.63;
+}
+.ministrySectionInner .ministryContactContainer {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.ministrySectionInner .ministryContactContainer h2 {
+  margin-bottom: 15px;
+}
+.ministrySectionInner .ministryContactContainer .contactName p {
+  color: #4d4d4f;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  line-height: 1.63;
+  margin-bottom: 5px;
+}
+.ministrySectionInner #shareContainer {
+  margin: 0;
+}
+
+@media screen and (min-width: 568px) {
+  .selectCampusSection {
+    width: 60%;
+    float: left;
+  }
+  .selectCampusSection .dk-select {
+    max-width: 250px;
+    margin-bottom: 0;
+    float: left;
+  }
+  .selectCampusSection #defaultSection {
+    display: block;
+    margin-left: 10px;
+    float: left;
+  }
+
+  .threeColumn li {
+    width: 50%;
+  }
+
+  .volunteerContainer {
+    margin: 0;
+  }
+
+  .ministryInfoContainer sup {
+    font-size: 14px;
+  }
+
+  #contact {
+    width: 48%;
+    float: right;
+  }
+
+  .connectContainer .sectionContainer #coreApp .ministry-layout .ui .grid-col .select {
+    width: 100%;
+    max-width: 250px;
+  }
+  .connectContainer .sectionContainer #coreApp .ministry-layout .ui .grid-col .button {
+    width: 100%;
+    max-width: 200px;
+  }
+  .connectContainer .sectionContainer #coreApp .ministry-layout .ui .grid-col div {
+    text-align: left !important;
+  }
+
+  #shareContainer {
+    /* clear: left;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    margin: 0; */
+  }
+  #shareContainer .sharrre {
+    display: block;
+    width: 170px;
+    float: none;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .footerAdContainer .appImageContainer {
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+  .footerAdContainer .signupInfo {
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    height: 324px;
+    margin-bottom: 22px;
+    float: right;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: left;
+  }
+  .footerAdContainer .signupInfo h2 {
+    width: 60%;
+    margin: 0;
+  }
+  .footerAdContainer .signupInfo p {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .selectCampusSection {
+    width: 65%;
+  }
+
+  .dk-select {
+    max-width: 350px;
+    margin-bottom: 22px;
+    float: left;
+  }
+
+  #GroupInfo .dk-select {
+    max-width: 100%;
+  }
+
+  #defaultSection {
+    display: block;
+    padding-top: 4px;
+    margin-left: 10px;
+    float: left;
+  }
+
+  .titleShort {
+    display: none;
+  }
+
+  .titleFull {
+    display: block;
+  }
+
+  .volunteerContainer {
+    width: 30%;
+    min-width: 175px;
+    max-width: 245px;
+    float: right;
+  }
+
+  #contact {
+    width: 33%;
+    float: left;
+  }
+  #contact .sectionInner {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  #shareContainer {
+    clear: inherit;
+    float: right;
+    margin: 15px auto 0 !important;
+  }
+
+  #shareContainer .sharrre {
+    display: block;
+    width: 170px;
+    float: none;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .websiteContainer {
+    padding: 33px 2.8865979381443298969072164948454%;
+  }
+  .websiteContainer .websiteInfoContainer {
+    width: 59.340206185567010309278350515464%;
+    margin-right: 2%;
+    float: left;
+  }
+  .websiteContainer .websiteImage {
+    width: 38.659793814432989690721649484536%;
+    float: right;
+  }
+
+  .footerAdContainer {
+    padding: 44px 4%;
+  }
+  .footerAdContainer .appImageContainer {
+    width: 25%;
+    float: left;
+    text-align: left;
+  }
+  .footerAdContainer .signupInfo {
+    width: 30%;
+    margin: 0 2%;
+    float: left;
+  }
+  .footerAdContainer .signupInfo h2 {
+    width: 100%;
+    margin: 0;
+  }
+  .footerAdContainer .signupInfo p {
+    width: 100%;
+  }
+  .footerAdContainer #EmailSubscriptionSignupWidget {
+    width: 40%;
+    float: right;
+  }
+  .footerAdContainer #EmailSubscriptionSignupWidget #SubmitRegistration {
+    margin: 0 0 0 auto;
+  }
+
+  .ministrySectionInner {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .ministrySectionInner .ministryInfoContainer {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+  .ministrySectionInner .ministryContactContainer {
+    margin-bottom: 0;
+  }
+  .ministrySectionInner #shareContainer {
+    margin: 0 0 0 auto !important;
+    float: unset;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+}
+@media screen and (min-width: 960px) {
+  .purposeContainer .sectionInner {
+    margin: 0 auto;
+  }
+
+  .threeColumn li {
+    width: 33.33333333333333%;
+  }
+}

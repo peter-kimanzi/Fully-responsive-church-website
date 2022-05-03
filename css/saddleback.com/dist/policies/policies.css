@@ -1,0 +1,34 @@
+.content {
+  padding: 0 15px;
+}
+.content .sectionInner h1 {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 575px) {
+  .content {
+    padding: 0 30px;
+  }
+  .content .sectionInner {
+    margin: 0;
+  }
+  .content .sectionInner .copy {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 0;
+  }
+  .content .sectionInner {
+    margin: 0;
+  }
+  .content .sectionInner .copy, .content .sectionInner h1 {
+    margin: 0 auto;
+    max-width: 720px;
+    width: 100%;
+  }
+  .content .sectionInner h1 {
+    margin-bottom: 30px;
+  }
+}

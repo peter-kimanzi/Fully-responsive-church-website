@@ -1,0 +1,64 @@
+.css-accordion {
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.css-accordion label.css-accordion-label {
+  display: block;
+  font-family: ProximaBold, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 120%;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  color: #542437;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.css-accordion > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.css-accordion > ul li {
+  overflow: hidden;
+  margin: 0 0 1px;
+}
+
+.css-accordion > ul li label.css-accordion-label {
+  padding: 10px;
+}
+
+.css-accordion > ul li label.css-accordion-label:hover {
+  border: 1px solid #542437;
+}
+
+.css-accordion [type="radio"].css-accordion-radio, .css-accordion [type="checkbox"].css-accordion-checkbox {
+  display: none;
+}
+
+.css-accordion > ul li label.css-accordion-label:hover, .css-accordion [type="radio"].css-accordion-radio:checked ~ label.css-accordion-label, .css-accordion [type="checkbox"].css-accordion-checkbox:checked ~ label.css-accordion-label {
+  background: #a9c1cf;
+  color: #FFF;
+}
+
+.css-accordion [type="radio"].css-accordion-radio:checked ~ label.css-accordion-label, .css-accordion [type="checkbox"].css-accordion-checkbox:checked ~ label.css-accordion-label {
+  border-bottom: 0;
+}
+
+.css-accordion > ul li .css-accordion-content {
+  max-height: 0px;
+  border-top: 0;
+  padding: 0 22px;
+  border: 1px solid #fff;
+  transition: all 1s ease;
+}
+
+.css-accordion [type="checkbox"].css-accordion-checkbox:checked ~ label.css-accordion-label ~ .css-accordion-content, .css-accordion [type="radio"].css-accordion-radio:checked ~ label.css-accordion-label ~ .css-accordion-content {
+  max-height: 700px;
+  padding: 22px;
+  border: 1px solid #542437;
+  overflow: auto;
+}

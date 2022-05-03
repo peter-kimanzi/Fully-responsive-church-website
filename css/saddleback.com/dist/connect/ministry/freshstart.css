@@ -1,0 +1,206 @@
+/* Define some standard colors in variables */
+/* COMPASS IMPORTS */
+/* Define our base font size and line height */
+.titleBar.tan {
+  height: 40px;
+  padding: 0 11px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.titleBar.tan .sectionTitle {
+  /* line-height: 40px; */
+}
+
+.purposeContainer + section {
+  margin: 0;
+}
+.purposeContainer + section .sectionInner {
+  width: 100% !important;
+}
+
+.stepsSection {
+  margin: 0 11px 22px;
+}
+.stepsSection .step {
+  color: white;
+  padding: 10%;
+  margin-bottom: 11px;
+  text-align: center;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  padding: 60px;
+}
+.stepsSection .step .rickVideoToggle {
+  display: block;
+}
+.stepsSection .step .rickVideoToggle .playButtonCircle {
+  position: relative;
+  display: block;
+  margin: 0 0 0 -40px;
+  height: 80px;
+  width: 80px;
+  top: 0;
+}
+.stepsSection .step .rickVideoToggle .playButtonCircle .playButtonTriangle {
+  margin: -20px 0 0 -10px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid white;
+}
+.stepsSection .step a.btn {
+  background: transparent;
+  border: 2px solid;
+  border-radius: 2px;
+  /* New */
+  font-family: "Lato", Arial;
+  /* New */
+  font-size: 20px;
+  font-style: italic;
+  min-width: 220px;
+  padding: 11px 16px;
+  position: relative !important;
+  top: 0;
+}
+.stepsSection .step a.btn:hover {
+  background: #0093c6;
+  color: #fff;
+  border: 2px solid #0093c6;
+}
+.stepsSection .step h3 {
+  font-family: "Lato", Arial;
+  font-size: 34px;
+  line-height: 32px;
+  font-weight: bold;
+  font-style: normal;
+  color: #fff;
+}
+.stepsSection .step h3 span {
+  display: block;
+  font-family: "Lato", Arial;
+  /* New */
+  font-size: 30px;
+  line-height: 1em;
+  font-weight: normal;
+  /* font-style: italic; */
+  color: #fff;
+  /* New */
+  margin-bottom: 11px;
+}
+
+.resourcesSection .resourcesContainer {
+  margin: 0 11px 22px;
+}
+.resourcesSection .resourcesContainer .resource {
+  margin-bottom: 11px;
+  display: block;
+}
+
+.mfp-content {
+  padding: 0 !important;
+}
+.mfp-content #introVideo, .mfp-content .mfp-content .popup-video {
+  position: absolute;
+}
+.mfp-content .mfp-close {
+  text-shadow: black 0px 0px 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .resourcesSection, .stepsSection {
+    margin: 0 1% 22px;
+  }
+  .resourcesSection .resourcesContainer, .stepsSection .resourcesContainer {
+    margin: 0 0 22px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .resourcesSection .resourcesContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -11px;
+    margin-bottom: 22px;
+  }
+  .resourcesSection .resourcesContainer .resource {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    height: 100% !important;
+    padding-right: 11px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .stepsSection .step a.btn {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .stepsSection {
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: 33px;
+  }
+  .stepsSection .step {
+    padding: 60px 60px 83px;
+  }
+  .stepsSection .step a.btn {
+    position: absolute;
+    display: inline-table;
+    bottom: 33px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .stepsSection .step.one {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    margin-right: 11px;
+    margin-bottom: 22px;
+  }
+  .stepsSection .step.one:after {
+    content: " " width;
+  }
+  .stepsSection .step.two {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    margin-left: 11px;
+    margin-right: -22px;
+    margin-bottom: 22px;
+    padding-bottom: 85px;
+  }
+  .stepsSection .step.three {
+    font-size: 26px;
+    margin-right: -22px;
+    padding-bottom: 85px;
+  }
+  .stepsSection .step.three .btn {
+    bottom: 15px;
+    /* New */
+  }
+  .stepsSection .step.three {
+    width: 102%;
+  }
+  .stepsSection h3 {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 870px) {
+  .resourcesSection .resourcesContainer .resource {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+  }
+}

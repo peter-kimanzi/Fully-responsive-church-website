@@ -1,0 +1,1185 @@
+#holidayCampusSlider {
+  width: 100%;
+}
+
+/* Responsive Video Styling */
+.holiday-video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.holiday-video-container .holiday-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*Header Slider New Button*/
+.campus-slide-link .icon-down-icon {
+  color: #9bb4c5 !important;
+}
+.campus-slide-link .icon-down-icon:hover {
+  text-decoration: none;
+}
+.campus-slide-link .icon-down-icon:after {
+  background: #4d4d4f !important;
+}
+
+/*See More Toggle*/
+.holiday-story-container .see-more-toggle {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #dfb434;
+}
+.holiday-story-container .see-more-toggle:hover {
+  text-decoration: underline;
+}
+.holiday-story-container .see-more-toggle:before {
+  display: none;
+}
+.holiday-story-container .see-more-toggle:after {
+  content: "See More";
+}
+.holiday-story-container .see-more-toggle.open:before {
+  display: none;
+}
+.holiday-story-container .see-more-toggle.open:after {
+  content: "See Less";
+}
+.holiday-story-container .flip {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.holiday-story-container .icon-arrow-down {
+  display: inline-block;
+  margin-right: 5px;
+  color: #dfb434;
+}
+.holiday-story-container .icon-arrow-down:hover {
+  text-decoration: none;
+}
+.holiday-story-container .see-more-none {
+  display: none !important;
+}
+
+/*Video Popup Styling*/
+.holiday-popup-arrows {
+  opacity: 0.5 !important;
+  top: 45%;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff !important;
+}
+.holiday-popup-arrows:hover {
+  opacity: 1 !important;
+}
+.holiday-popup-arrows:before {
+  opacity: 1;
+  font-family: 'SB-Icons' !important;
+  color: #4d4d4f;
+  font-size: 18px;
+  line-height: 38px;
+  width: 38px;
+  height: 38px;
+  position: unset;
+  margin: 0 !important;
+  border: none !important;
+}
+.holiday-popup-arrows:after {
+  display: none;
+}
+
+.holiday-popup-arrows.mfp-arrow-right:before {
+  content: '\e948';
+}
+
+.holiday-popup-arrows.mfp-arrow-left:before {
+  content: '\e947';
+}
+
+.mfp-content {
+  max-width: 870px;
+}
+.mfp-content .holiday-video-slide {
+  padding: 60px 15px 30px;
+  background: #291b41;
+  border-radius: 20px;
+  position: relative;
+}
+.mfp-content .holiday-video-slide .mfp-close {
+  width: auto;
+  height: auto;
+  top: 15px;
+  right: 15px;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: 900;
+}
+.mfp-content .holiday-video-slide .holiday-video-inner-container .holiday-video-container .holiday-video-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.mfp-content .holiday-video-slide .holiday-video-inner-container .holiday-video-container .coming-soon-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin: 0;
+  color: #fff;
+}
+.mfp-content .holiday-video-slide .holiday-video-share-icons {
+  text-align: center;
+  margin: 30px 0;
+}
+.mfp-content .holiday-video-slide .holiday-video-share-icons a {
+  padding: 0 15px;
+  font-size: 24px;
+  color: #9bb4c5;
+}
+.mfp-content .holiday-video-slide .holiday-video-share-icons a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.mfp-content .holiday-video-slide .holiday-video-share-icons a:hover span {
+  text-decoration: none;
+}
+.mfp-content .holiday-video-slide .holiday-video-share-icons .copySuccess {
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: normal;
+  margin: 5px 0 0;
+}
+.mfp-content .holiday-video-slide .holiday-video-info h4 {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.mfp-content .holiday-video-slide .holiday-video-info p {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.56;
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+
+.mfp-arrow {
+  opacity: 0;
+}
+
+/*Online Campus Popup Styling*/
+#holidayServiceTimes {
+  max-width: 870px;
+  margin: 0 auto;
+  position: relative;
+}
+#holidayServiceTimes .mfp-close {
+  width: auto;
+  height: auto;
+  top: 15px;
+  right: 15px;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: 900;
+}
+#holidayServiceTimes .holiday-online-service-times {
+  padding: 30px;
+  background: #291b41;
+  border-radius: 20px;
+}
+#holidayServiceTimes .holiday-online-service-times .holiday-online-popup-header {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #bda876;
+  width: 100%;
+  margin-bottom: 30px;
+}
+#holidayServiceTimes .holiday-online-service-times .online-times-inner-container {
+  margin-bottom: 60px;
+}
+#holidayServiceTimes .holiday-online-service-times .online-times-inner-container .online-service-times {
+  margin-bottom: 30px;
+}
+#holidayServiceTimes .holiday-online-service-times .online-times-inner-container .online-service-times:last-of-type {
+  margin-bottom: 0;
+}
+#holidayServiceTimes .holiday-online-service-times .online-times-inner-container .online-service-times .online-time-day {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #fff;
+}
+#holidayServiceTimes .holiday-online-service-times .online-times-inner-container .online-service-times .online-time-container {
+  margin-bottom: 15px;
+}
+#holidayServiceTimes .holiday-online-service-times .online-times-inner-container .online-service-times .online-time-container:last-of-type {
+  margin-bottom: 0;
+}
+#holidayServiceTimes .holiday-online-service-times .online-times-inner-container .online-service-times .online-time-container .online-time {
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+}
+#holidayServiceTimes .holiday-online-service-times .online-times-inner-container .online-service-times .online-time-container .online-special-info {
+  margin-top: 5px;
+  color: #bda876;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+#holidayServiceTimes .holiday-online-service-times .holiday-popup-logo-container .holiday-popup-logo {
+  width: 120px;
+  margin: 0 auto;
+  height: 100%;
+  display: block;
+}
+
+.campus-slide-content-container div .custom-slide-header-btn:before {
+  content: '\e946';
+  font-family: 'SB-Icons' !important;
+  background: #dfb434;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  font-style: normal;
+  margin-right: 5px;
+  color: #4d4d4f;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+.campus-slide-content-container div .custom-slide-header-btn:before:hover {
+  text-decoration: none;
+}
+
+.campus-page-holiday-section .holiday-background-container {
+  padding: 30px 15px;
+}
+.campus-page-holiday-section .holiday-background-container .holiday-top-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: -145px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #fff;
+  max-width: 1080px;
+  margin: 0 auto -145px;
+}
+.campus-page-holiday-section .holiday-background-container .holiday-top-container .holiday-logo {
+  width: 120px;
+  height: 100%;
+}
+.campus-page-holiday-section .holiday-background-container .holiday-top-container .holiday-social-media-container {
+  width: 90px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.campus-page-holiday-section .holiday-background-container .holiday-top-container .holiday-social-media-container a {
+  font-size: 30px;
+  line-height: 30px;
+  color: #9bb4c5;
+}
+.campus-page-holiday-section .holiday-background-container .holiday-top-container .holiday-social-media-container a:hover {
+  color: #ebe3d2;
+  text-decoration: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  height: 760px;
+  padding-top: 160px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsNav {
+  overflow: visible;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsNav .rsThumbsContainer {
+  width: 100% !important;
+  -webkit-transform: unset !important;
+          transform: unset !important;
+  transition-property: unset !important;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsNav .rsThumbsContainer .rsNavItem {
+  margin: 0 !important;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsNav .rsThumbsContainer .rsNavItem .rsTmb {
+  color: #9bb4c5;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  text-shadow: 0 0 10px #0000008a;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsNav .rsThumbsContainer .rsNavSelected .rsTmb {
+  font-weight: 900;
+  color: #ebe3d2;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow {
+  margin-top: 30px;
+  overflow-y: auto;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide {
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-header {
+  font-weight: 900;
+  font-size: 38px;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-see-more {
+  max-height: 90px;
+  overflow: hidden;
+  transition: max-height 0.25s;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-see-more.open {
+  max-height: 2000px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-text-image {
+  max-width: 476px;
+  margin: 0 auto 30px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-text-container {
+  margin-bottom: 15px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-text-container .holiday-story-text {
+  font-size: 17px;
+  line-height: 1.71;
+  letter-spacing: 0.7px;
+  color: #ebe3d2;
+  margin-bottom: 15px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-text-container .holiday-story-text:last-of-type {
+  margin-bottom: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-text-container .holiday-story-verse {
+  margin-top: 60px;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-text-container .holiday-story-reference {
+  font-size: 17px;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-align: right;
+  color: #fff;
+  margin-bottom: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-video-thumbnail-container {
+  margin-top: 60px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-video-thumbnail-container .video-desktop-flex-container .video-thumbnail-outer-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-video-thumbnail-container .video-desktop-flex-container .video-thumbnail-outer-container .coming-soon-text, .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-video-thumbnail-container .video-desktop-flex-container .video-thumbnail-outer-container .icon-play-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin: 0;
+  color: #fff;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-video-thumbnail-container .video-desktop-flex-container .video-thumbnail-outer-container .icon-play-circle {
+  font-size: 40px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-video-thumbnail-container .video-desktop-flex-container .video-thumbnail-outer-container:hover span {
+  opacity: 1;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-video-thumbnail-container .holiday-video-info h4 {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: -15px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container {
+  margin-bottom: 30px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container .service-time-day {
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container .service-time-day .service-time-day-header {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #ebe3d2;
+  margin-bottom: -5px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container .service-time-day .holiday-service-times .service-time-hour {
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #ebe3d2;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container .service-time-day .holiday-service-times .service-time-special-info {
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #bda876;
+  margin-bottom: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container .service-time-day .holiday-service-times .service-time-special-info a {
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #bda876;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container .service-time-day .holiday-service-times .service-time-special-info a:hover {
+  color: #ebe3d2;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container .service-time-day:last-of-type {
+  margin-bottom: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-availability-info-container .holiday-campus-availability-info {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.7px;
+  color: #bda876;
+  margin-bottom: 15px;
+  text-shadow: 0px 0px 15px #4d4d4f;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-availability-info-container .holiday-campus-availability-info:last-of-type {
+  margin-bottom: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget {
+  margin-bottom: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer {
+  margin: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer h2 {
+  display: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList {
+  border: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventsDateContainer {
+  width: 30px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventsDateContainer .eventsMonth {
+  display: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventsDateContainer .eventsDate {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 5px 0;
+  border-bottom: solid 5px #bda876;
+  border-top: solid 5px #bda876;
+  text-align: center;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate {
+  padding-left: 50px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer {
+  padding: 0;
+  margin: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer a {
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #9bb4c5;
+  margin-bottom: 10px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer a:hover {
+  color: #ebe3d2;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventTimeContainer {
+  display: block;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventTimeContainer .eventTimeLabel {
+  display: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventTimeContainer .eventTime {
+  display: block;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventTimeContainer .eventTime:before {
+  display: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventTimeContainer .eventTime:after {
+  display: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventDescription {
+  display: block;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.9px;
+  color: #bda876;
+  margin-bottom: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventDescription a {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #bda876;
+  margin-bottom: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventDescription a:after {
+  content: ' Details';
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .arrowOuterContainer {
+  display: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer div .seeMoreBtn {
+  background: transparent;
+  border: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer div .seeMoreBtn:hover {
+  text-decoration: underline;
+  color: #9bb4c5;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer div .seeMoreBtn .icon-add {
+  display: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-info-container {
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-info-container .holiday-share-hashtag {
+  -ms-flex-order: 1;
+      order: 1;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.63;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #ebe3d2;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-info-container .holiday-share-subtitle {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  color: #ebe3d2;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-info-container .holiday-share-description {
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.7px;
+  color: #bda876;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-downloads-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 -7px -30px -15px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-downloads-container .holiday-individual-download-container {
+  height: 130px;
+  width: 185px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-downloads-container .holiday-individual-download-container .holiday-share-download .holiday-share-thumbnail-container {
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-downloads-container .holiday-individual-download-container .holiday-share-download .holiday-share-thumbnail-container .holiday-share-thumbnail {
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-downloads-container .holiday-individual-download-container .holiday-share-download .holiday-share-download-btn {
+  display: block;
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  color: #9bb4c5;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-downloads-container .holiday-individual-download-container .holiday-share-download .holiday-share-download-btn .icon-download {
+  margin-right: 10px;
+  display: inline-block;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-downloads-container .holiday-individual-download-container .holiday-share-download .holiday-share-download-btn .icon-download:hover {
+  text-decoration: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-downloads-container .holiday-individual-download-container .holiday-share-download:hover {
+  color: #ebe3d2;
+  text-decoration-color: #ebe3d2;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-downloads-container .holiday-individual-download-container .holiday-share-download:hover .holiday-share-download-btn {
+  color: #ebe3d2;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-downloads-container .holiday-individual-download-container .holiday-share-download:hover .holiday-share-download-btn .icon-download {
+  color: #ebe3d2;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-no-serve-times {
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .easter-volunteers-description {
+  font-size: 17px;
+  line-height: 1.71;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .easter-volunteers-cta {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.45;
+  letter-spacing: 0.9px;
+  color: #fff;
+  text-align: center;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container {
+  margin: 0 auto;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item {
+  text-align: center;
+  margin: 0 auto 30px;
+  width: 100%;
+  max-width: 300px;
+  /*border-top: solid 2px #bda876;
+  padding: 10px 0 0;*/
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item:last-of-type {
+  margin-bottom: 30px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-day {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  color: #fff;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-buttons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-buttons a {
+  width: 248px;
+  background-size: cover;
+  margin: 0 auto;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px 0 rgba(77, 77, 79, 0.9);
+  border: none;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.4px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-buttons a:last-of-type {
+  margin-bottom: 0;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-buttons a:hover {
+  box-shadow: 0 4px 10px 0 rgba(239, 64, 96, 0.6);
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-buttons .service-times-all {
+  text-align: center;
+  margin: 60px auto 0;
+  width: 100%;
+  max-width: 300px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-buttons .service-times-all a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  background: none;
+  box-shadow: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-buttons .service-times-all a:hover {
+  box-shadow: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .general-support-item .service-time-buttons {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .general-support-item .service-time-buttons .service-times-all a {
+  height: auto;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .general-support-item .service-time-buttons .service-times-all .icon-arrow-right {
+  margin-left: 15px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  color: #00a4c4;
+  font-size: 12px;
+  padding: 5px;
+  width: 22px;
+  height: 22px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .general-support-item .service-time-buttons .service-times-all .icon-arrow-right:hover {
+  text-decoration: none;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container .holiday-serve-text-image {
+  max-width: 310px;
+  margin: 0 auto;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container .holiday-serve-subtitle {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.81px;
+  text-align: center;
+  color: #ebe3d2;
+  margin-bottom: 15px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container .holiday-serve-description {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #bda876;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container .holiday-serve-btn {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1.9px;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0 auto;
+  background: #9bb4c5;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container .holiday-serve-btn:hover {
+  text-decoration: underline;
+  color: #ebe3d2;
+}
+.campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsActiveSlide .holiday-info-slide {
+  opacity: 1;
+}
+
+/*Scrollbar Styles*/
+.rsOverflow::-webkit-scrollbar {
+  width: 8px;
+}
+
+.rsOverflow::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #ebe3d2;
+  border-radius: 8px;
+}
+
+.rsOverflow::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgba(189, 168, 118, 0.5);
+}
+
+/*End Scrollbar Styles*/
+@media screen and (min-width: 568px) {
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer a {
+    font-weight: normal;
+    margin-top: 0;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventVenueContainer .eventVenueLabel {
+    display: none;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventVenueContainer .eventVenue {
+    display: none;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventOrganizerContainer .eventOrganizerLabel {
+    display: none;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .eventInfoContainer .eventOrganizerContainer .eventOrganizer {
+    display: none;
+  }
+}
+@media screen and (min-width: 575px) {
+  .campus-page-holiday-section .holiday-background-container {
+    padding: 30px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider {
+    height: 736px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsNav .rsThumbsContainer .rsNavItem .rsTmb {
+    font-size: 16px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-header {
+    font-size: 58px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container {
+    position: relative;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 500px;
+    margin-bottom: 0;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container .service-time-day:last-of-type {
+    min-height: 300px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-availability-info-container {
+    position: absolute;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-availability-info-container .holiday-campus-availability-info {
+    padding: 0 15px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-availability-info-container .holiday-campus-availability-info:last-of-type {
+    margin-bottom: 0;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-info-container .holiday-share-hashtag {
+    margin-bottom: 30px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  /*Online Campus Popup Styling*/
+  #holidayServiceTimes .holiday-online-service-times .holiday-online-popup-header {
+    font-size: 58px;
+  }
+  #holidayServiceTimes .holiday-online-service-times .online-times-inner-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 275px;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    margin: 0 -50px;
+  }
+  #holidayServiceTimes .holiday-online-service-times .online-times-inner-container .online-service-times {
+    margin-bottom: 20px;
+    max-width: 300px;
+    padding: 0 50px;
+  }
+
+  /*Video Popup Styling*/
+  .mfp-content .holiday-video-slide {
+    padding: 60px;
+  }
+  .mfp-content .holiday-video-slide .holiday-video-inner-container .holiday-video-container .coming-soon-text {
+    font-size: 20px;
+  }
+  .mfp-content .holiday-video-slide .holiday-video-share-icons {
+    text-align: right;
+  }
+  .mfp-content .holiday-video-slide .holiday-video-share-icons a:last-of-type {
+    padding-right: 0;
+  }
+  .mfp-content .holiday-video-slide .holiday-video-info h4 {
+    text-align: left;
+  }
+  .mfp-content .holiday-video-slide .holiday-video-info p {
+    text-align: left;
+  }
+
+  .campus-page-holiday-section .holiday-background-container .holiday-top-container {
+    margin: 0 auto -175px;
+  }
+  .campus-page-holiday-section .holiday-background-container .holiday-top-container .holiday-logo {
+    width: 185px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider {
+    padding-top: 190px;
+    height: 766px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-header {
+    text-align: center;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-text-container {
+    padding: 0 30px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-story-text-container .holiday-story-text p {
+    margin-bottom: 30px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-video-thumbnail-container {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 60px -15px 0;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-story-container .holiday-video-thumbnail-container .video-desktop-flex-container {
+    padding: 0 15px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    margin: 0 -50px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-times-container .holiday-days-container .service-time-day {
+    padding: 0 50px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container {
+    max-width: 100%;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection {
+    padding: 0 30px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .easter-volunteers-description, .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .easter-volunteers-cta {
+    text-align: left;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item {
+    max-width: 100%;
+    padding: 10px 0 0;
+    margin-bottom: 30px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-day {
+    text-align: left;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-buttons {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    margin: 0 -20px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-buttons a {
+    width: 248px;
+    margin: 0 20px 30px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .service-time-item .service-time-buttons a:last-of-type {
+    margin: 0 20px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .general-support-item .service-time-buttons {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .general-support-item .service-time-buttons .service-times-all {
+    width: 50%;
+    border: none;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    margin: 0;
+    padding-right: 20px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .general-support-item .service-time-buttons .service-times-all a {
+    margin: 0;
+    max-width: 100%;
+    text-align: right;
+    height: auto;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container #VolunteersSection .service-times-container .general-support-item .service-time-buttons .service-times-all .icon-arrow-right {
+    margin-top: 5px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-no-serve-times {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 800px) {
+  /*Online Campus Popup Styling*/
+  #holidayServiceTimes .holiday-online-service-times .holiday-online-popup-header {
+    font-size: 58px;
+  }
+  #holidayServiceTimes .holiday-online-service-times .online-times-inner-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 275px;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    margin: 0 -50px;
+  }
+  #holidayServiceTimes .holiday-online-service-times .online-times-inner-container .online-service-times {
+    margin-bottom: 20px;
+    max-width: 300px;
+    padding: 0 50px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .mfp-container {
+    max-width: 870px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsGCaption {
+    display: none;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsNav {
+    width: 200px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsNav .rsThumbsContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    height: 270px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsNav .rsThumbsContainer .rsNavItem {
+    padding: 15px 0;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsNav .rsThumbsContainer .rsNavItem .rsTmb {
+    font-size: 20px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow {
+    margin-top: 15px;
+    height: 515px !important;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventsDateContainer {
+    padding-top: 0;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer {
+    padding: 0 0 30px 0;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-event-calendar-container .eventListWidget .sectionContainer #eventListEmbeddedWidgetContainer .eventListContent .eventDateList .eventListByDate .eventContainer .registerContainer {
+    display: none;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-info-container {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-info-container .holiday-share-hashtag {
+    -ms-flex-order: 0;
+        order: 0;
+    font-size: 58px;
+    font-weight: 300;
+    line-height: 1.07;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-info-container .holiday-share-subtitle {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-share-container .holiday-share-info-container .holiday-share-description {
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.9px;
+    margin-bottom: 30px;
+  }
+  .campus-page-holiday-section .holiday-background-container #holidayCampusSlider .rsOverflow .rsContainer .rsSlide .holiday-info-slide .holiday-serve-container .holiday-serve-inner-container .holiday-serve-btn {
+    font-size: 26px;
+  }
+}

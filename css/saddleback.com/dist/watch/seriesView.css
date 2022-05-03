@@ -1,0 +1,309 @@
+.series-tag-section {
+  margin-bottom: 15px;
+  position: relative;
+}
+.series-tag-section .series-tag-btn-mobile {
+  font-size: 12px;
+  width: 68px;
+  height: 27px;
+  line-height: 21px;
+  margin-left: auto;
+  display: block;
+  text-align: center;
+}
+.series-tag-section .series-tag-btn-mobile:after {
+  display: block;
+  content: 'Tags';
+}
+.series-tag-section .series-tag-btn-mobile:before {
+  display: none;
+}
+.series-tag-section .series-tag-btn-mobile.active {
+  background: #fff;
+  color: #0093c6;
+}
+.series-tag-section .series-tag-btn-mobile.active:after {
+  display: none;
+}
+.series-tag-section .series-tag-btn-mobile.active:before {
+  display: block;
+  content: 'X';
+}
+.series-tag-section .series-tag-container {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background: #4d4d4f;
+  padding: 20px;
+  width: 100%;
+  max-width: 290px;
+}
+.series-tag-section .series-tag-container .series-tag-inner-container .series-tag-list {
+  margin: 0;
+}
+.series-tag-section .series-tag-container .series-tag-inner-container .series-tag-list .series-tag {
+  max-width: 220px;
+  padding-left: 5px;
+  line-height: 28px;
+  border-radius: 8px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+.series-tag-section .series-tag-container .series-tag-inner-container .series-tag-list .series-tag:last-of-type {
+  margin-bottom: 0;
+}
+.series-tag-section .series-tag-container .series-tag-inner-container .series-tag-list .series-tag:hover {
+  background: #67c18c;
+  cursor: pointer;
+}
+.series-tag-section .series-tag-container .series-tag-inner-container .series-tag-list .series-tag.active {
+  background: #67c18c;
+}
+.series-tag-section .series-tag-container .series-tag-inner-container .series-tag-list .series-tag .series-tag-item {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.7px;
+  text-transform: capitalize;
+  margin: 0;
+  color: #fff;
+}
+.series-tag-section .series-tag-container .series-tag-inner-container .series-tag-list .series-tag .series-tag-item:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*List View*/
+.series-list-view .grid {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.series-list-view .grid .thumbContainer {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  border-top: solid 1px #979797;
+}
+.series-list-view .grid .thumbContainer.active {
+  border-right: none;
+  margin-bottom: 380px;
+  padding: 15px 0 15px 15px;
+}
+.series-list-view .grid .thumbContainer.active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  height: 60px;
+  width: 100%;
+  background: rgba(77, 77, 79, 0.5);
+  z-index: 100;
+  top: 0;
+}
+.series-list-view .grid .thumbContainer.active .seriesInfoContainer {
+  top: 0;
+  height: 410px;
+  padding: 0px 45% 22px 22px;
+}
+.series-list-view .grid .thumbContainer.active .seriesInfoContainer .seriesInfoImg {
+  height: 410px;
+  padding: 22px 45% 22px 22px;
+}
+.series-list-view .grid .thumbContainer.active .seriesInfoContainer .seriesInfoInnerContainer {
+  padding-top: 70px;
+  max-width: 365px;
+}
+.series-list-view .grid .thumbContainer.active .seriesInfoContainer .seriesInfoInnerContainer .close-btn {
+  display: none;
+}
+.series-list-view .grid .thumbContainer.active .seriesInfoContainer .seriesInfoInnerContainer .btn-container .addToList, .series-list-view .grid .thumbContainer.active .seriesInfoContainer .seriesInfoInnerContainer .btn-container .removeFromList, .series-list-view .grid .thumbContainer.active .seriesInfoContainer .seriesInfoInnerContainer .btn-container .playMessage {
+  max-width: 150px;
+}
+.series-list-view .grid .thumbContainer.active .seriesInfoContainer .seriesInfoInnerContainer .btn-container .removeFromList {
+  max-width: 200px;
+}
+.series-list-view .grid .thumbContainer.active .thumb {
+  z-index: 1000;
+}
+.series-list-view .grid .thumbContainer.active .thumb:before {
+  display: none;
+}
+.series-list-view .grid .thumbContainer.active .thumbTitle {
+  z-index: 1000;
+  background: none;
+  color: #fff;
+}
+.series-list-view .grid .thumbContainer.active .thumbTitle:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.series-list-view .grid .thumbContainer.active .thumbTitle:after {
+  content: '\e942';
+  font-family: 'SB-Icons' !important;
+  font-size: 10px;
+  display: inline-block;
+  line-height: 19px;
+}
+.series-list-view .grid .thumbContainer .thumb {
+  width: 100%;
+  max-width: 30px;
+  height: 30px;
+}
+.series-list-view .grid .thumbContainer .thumb.series-list-thumb-active {
+  z-index: 1000;
+}
+.series-list-view .grid .thumbContainer .thumb .newNotification {
+  display: none;
+}
+.series-list-view .grid .thumbContainer .thumbTitle {
+  height: auto;
+  line-height: normal;
+  white-space: normal;
+  overflow: visible;
+  color: #00aeef;
+  font-size: 14px;
+  letter-spacing: 0.9px;
+  padding: 0 0 0 10px;
+}
+.series-list-view .grid .thumbContainer .thumbTitle:after {
+  margin-left: auto;
+  content: '\e946';
+  font-family: 'SB-Icons' !important;
+}
+.series-list-view .grid .thumbContainer .thumbTitle:hover {
+  color: #0093c6;
+}
+.series-list-view .grid .thumbContainer .thumbTitle.series-list-thumbtitle-active {
+  z-index: 1000;
+}
+.series-list-view .grid .thumbContainer .thumbTitle.series-list-thumbtitle-active:after {
+  content: 'x';
+}
+
+.shareablesContainer {
+  margin-top: 30px;
+}
+
+.seriesInfoInnerContainer .btn-container .series-download-btn {
+  vertical-align: bottom;
+  box-shadow: 0 1px 2px 0 rgba(77, 77, 79, 0.2);
+  border-radius: 2px;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  background: #004970;
+  border: solid 1px #004970;
+  display: inline-block;
+  text-align: center;
+  margin-left: 15px;
+}
+.seriesInfoInnerContainer .btn-container .series-download-btn span {
+  display: inline-block;
+}
+.seriesInfoInnerContainer .btn-container .series-download-btn span:hover {
+  text-decoration: none;
+}
+.seriesInfoInnerContainer .btn-container .series-download-btn:hover {
+  text-decoration: none;
+  border: solid 1px #4d4d4f;
+  background: #4d4d4f;
+}
+
+.series-view-switch-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .series-view-switch-container {
+    display: block;
+    margin-left: auto;
+  }
+  .series-view-switch-container .series-list-view-btn {
+    margin-right: 30px;
+  }
+  .series-view-switch-container a {
+    color: #4d4d4f;
+    cursor: pointer;
+  }
+  .series-view-switch-container a span {
+    display: inline-block;
+  }
+  .series-view-switch-container a:hover {
+    color: #4d4d4f;
+  }
+  .series-view-switch-container a:hover span {
+    text-decoration: none;
+  }
+  .series-view-switch-container .series-block-view-active, .series-view-switch-container .series-list-view-active {
+    color: #00aeef;
+  }
+  .series-view-switch-container .series-block-view-active:hover, .series-view-switch-container .series-list-view-active:hover {
+    color: #00aeef;
+  }
+
+  /*List View*/
+  .series-list-view .grid .thumbContainer .thumbTitle {
+    font-weight: 900;
+    font-size: 16px;
+    padding: 0 30px;
+  }
+
+  /*Block View*/
+  .series-block-view .grid {
+    position: relative;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .series-block-view .grid .thumbContainer {
+    display: block;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 33.333333333333333333333333333333%;
+    margin-bottom: 25px;
+    padding-top: 0;
+    border-top: none;
+  }
+  .series-block-view .grid .thumbContainer.active {
+    margin-bottom: 380px;
+  }
+  .series-block-view .grid .thumbContainer .thumb {
+    width: auto;
+    max-width: 100%;
+    height: 150px;
+  }
+  .series-block-view .grid .thumbContainer .thumb .newNotification {
+    display: block;
+  }
+  .series-block-view .grid .thumbContainer .thumbTitle {
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #4d4d4f;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 10px;
+  }
+  .series-block-view .grid .thumbContainer .thumbTitle:hover {
+    color: #0093c6;
+  }
+}
+@media screen and (min-width: 64em) {
+  /*Block View*/
+  .series-block-view .grid {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .series-block-view .grid .thumbContainer {
+    width: 25%;
+  }
+}

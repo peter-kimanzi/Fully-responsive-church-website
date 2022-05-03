@@ -1,0 +1,809 @@
+.select2-container--default {
+  width: 100%;
+}
+.select2-container--default .select2-selection--single {
+  background: #ffffff;
+  border: 1px solid #4d4d4f;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #4d4d4f;
+  font-size: 16px;
+  line-height: 36px;
+  min-height: 36px;
+  padding: 0 10px;
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: #4d4d4f;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+  color: #00aeef;
+  float: none;
+  font-size: 20px;
+  position: absolute;
+  right: 36px;
+  top: 3px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  right: 10px;
+  width: 14px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  background: none !important;
+  border: none;
+  color: #00aeef;
+  font-family: 'SB-Icons';
+  font-size: 12px;
+  font-weight: 700;
+  left: 0;
+  margin-left: 0;
+  margin-top: 0;
+  position: static;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b:before {
+  content: '\e946';
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  height: 100%;
+  line-height: 33px;
+  padding: 0;
+}
+.select2-container--default .select2-search--inline .select2-search__field {
+  margin-top: 8px;
+}
+.select2-container--default .select2-search--inline .select2-search__field::-webkit-input-placeholder {
+  color: #4d4d4f;
+}
+.select2-container--default .select2-search--inline .select2-search__field::-moz-placeholder {
+  color: #4d4d4f;
+}
+.select2-container--default .select2-search--inline .select2-search__field:-ms-input-placeholder {
+  color: #4d4d4f;
+}
+.select2-container--default .select2-search--inline .select2-search__field::placeholder {
+  color: #4d4d4f;
+}
+.select2-container--default .select2-results__option {
+  color: #4d4d4f;
+  font: normal 16px/24px 'Lato';
+  margin-bottom: 0;
+  padding: 8px 15px;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: rgba(0, 174, 239, 0.3);
+  color: #4d4d4f;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected=true], .select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: rgba(0, 174, 239, 0.3);
+}
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid #4d4d4f;
+  border-radius: 2px;
+  min-height: 36px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: none;
+  font-size: 16px;
+  line-height: 33px;
+  overflow: visible;
+  padding: 0 0 0 10px;
+  text-overflow: initial;
+  white-space: normal;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+  margin-bottom: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+  background: #00aeef;
+  border: 0;
+  color: #ffffff;
+  min-height: 22px;
+  padding-right: 15px;
+  position: relative;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+  color: #ffffff;
+  font-size: 16px;
+  position: absolute;
+  right: 1px;
+  top: -5px;
+}
+.select2-container--default.select2-container--disabled .select2-selection--single, .select2-container--default.select2-container--disabled .select2-selection--multiple, .select2-container--default.select2-container--disabled .select2-selection__rendered {
+  background: #f6f6f6;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b:before {
+  content: '\e949';
+}
+
+.datepicker {
+  color: #4d4d4f;
+  font: normal 16px/24px 'Lato', 'Arial';
+  width: 280px;
+  z-index: 9999;
+}
+
+.datepicker--pointer {
+  display: none;
+}
+
+.datepicker--nav {
+  background: #00aeef;
+}
+
+.datepicker--nav-title {
+  color: #ffffff;
+  font-weight: 900;
+}
+.datepicker--nav-title i {
+  color: #ffffff;
+}
+.datepicker--nav-title:hover {
+  background: #0093c6;
+}
+
+.datepicker--nav-action:hover {
+  background: #0093c6;
+}
+.datepicker--nav-action svg path {
+  stroke: #ffffff;
+}
+
+.datepicker--day-name {
+  color: #4d4d4f;
+  font-weight: 900;
+  text-transform: none;
+}
+
+.datepicker--cell {
+  border-radius: 50%;
+  height: 38px;
+}
+
+.datepicker--cell.-focus-, .datepicker--cell.-selected- {
+  background: #00aeef;
+  color: #ffffff;
+}
+
+.datepicker--cell.-selected- {
+  background: #00aeef;
+}
+
+.datepicker--cell.-range-from- {
+  border-radius: 50% 0 0 50%;
+}
+
+.datepicker--cell.-range-to- {
+  border-radius: 0 50% 50% 0;
+}
+
+.datepicker--cell.-in-range- {
+  background: #6DCFF6;
+  color: #4d4d4f;
+}
+
+.back-to-results-btn {
+  display: none;
+  max-width: 150px;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0.63px;
+  margin: 0 0 60px 0;
+}
+
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-name {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.81px;
+  margin: 0 15px 15px;
+  color: #4d4d4f;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-location {
+  display: block;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin: 0 15px 30px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .share-icons-container-mobile {
+  display: none;
+  margin: 0 15px 60px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .share-icons-container-mobile a {
+  font-size: 32px;
+  margin-right: 15px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-name-desktop {
+  display: none;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container {
+  padding: 30px 15px;
+  background: #f6f6f6;
+  margin-bottom: 15px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-inner-info {
+  padding-left: 15px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-subheader {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-when-container {
+  margin-bottom: 30px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-when-container .serving-opportunity-time {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1.14px;
+  color: #878787;
+  margin-bottom: 15px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-when-container .serving-opportunity-time:last-of-type {
+  margin: 0;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-location-container {
+  margin-bottom: 30px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-location-container .serving-opportunity-sub-header {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: #878787;
+  margin-bottom: 15px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-location-container .serving-opportunity-campus {
+  color: #878787;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1.14px;
+  margin-bottom: 15px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-location-container .serving-opportunity-venue {
+  color: #878787;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1.14px;
+  margin-bottom: 15px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-location-container .serving-opportunity-address-container {
+  display: -ms-flexbox;
+  display: flex;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-location-container .serving-opportunity-address-container .serving-opportunity-address {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1.14px;
+  color: #878787;
+  margin: 0 0 0 10px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-location-container .serving-opportunity-address-container .serving-opportunity-address p {
+  margin: 0 0 5px 0;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-location-container .serving-opportunity-address-container .serving-opportunity-address .serving-opportunity-city-state-zip {
+  display: -ms-flexbox;
+  display: flex;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-location-container .serving-opportunity-address-container .serving-opportunity-address .serving-opportunity-city-state-zip p {
+  margin: 0 5px 0 0;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-location-container .serving-opportunity-address-container .icon-location-glyph {
+  color: #00aeef;
+  margin-top: 5px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-contact-container .serving-opportunity-leader, .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-contact-container .serving-opportunity-email, .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-contact-container .serving-opportunity-phone {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1.14px;
+  margin-bottom: 15px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-contact-container .serving-opportunity-email {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-contact-container .serving-opportunity-leader {
+  color: #4d4d4f;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container .serving-opportunity-contact-container .serving-opportunity-phone {
+  margin: 0;
+  color: #878787;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-signup-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 0;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-signup-container .serving-opportunity-signups-text, .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-signup-container .serving-opportunity-signups {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: #878787;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-signup-container .serving-opportunity-signups {
+  font-weight: 900;
+  color: #f99e49;
+  margin-left: 5px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-location {
+  display: none;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-btn-container {
+  margin: 30px 15px 60px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-btn-container .btn {
+  width: 100%;
+  border-radius: 8px;
+  height: 46px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description {
+  margin: 0 15px 60px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description .serving-opportunity-description-header {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 15px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description .share-icons-container {
+  margin-bottom: 15px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description .share-icons-container a {
+  font-size: 32px;
+  margin-right: 15px;
+}
+.serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description .serving-opportunity-description-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1.14px;
+  color: #4d4d4f;
+  margin: 0;
+}
+
+.related-serving-opporunities-header {
+  margin: 0 15px 60px;
+  text-align: center;
+}
+
+.servingopp-signup-popup .popup-title {
+  text-transform: capitalize;
+}
+.servingopp-signup-popup .popup-inner .serving-opportunity-expression {
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.8px;
+  color: #878787;
+  margin-bottom: 30px;
+}
+.servingopp-signup-popup .popup-inner .serving-opportunity-duplicate .duplicate-message {
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 1px;
+  color: #F15B4E;
+  margin-bottom: 15px;
+}
+.servingopp-signup-popup .popup-inner .serving-opportunity-successful-signup .success-message {
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 1px;
+  color: #67c18c;
+}
+.servingopp-signup-popup .popup-inner .serving-opportunity-name {
+  font-size: 26px;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+  margin-bottom: 15px;
+}
+.servingopp-signup-popup .popup-inner .serving-opportunity-location {
+  display: block;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin-bottom: 30px;
+}
+.servingopp-signup-popup .popup-inner .btn {
+  display: block;
+  width: 100%;
+  max-width: 290px;
+  height: 46px;
+  border-radius: 8px;
+  margin: 0 auto 30px;
+}
+.servingopp-signup-popup .popup-inner .member-login-container {
+  margin-bottom: 30px;
+}
+.servingopp-signup-popup .popup-inner .member-login-container .servingopp-member-info {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+}
+.servingopp-signup-popup .popup-inner .member-login-container .servingopp-member-info:last-of-type {
+  margin-bottom: 0;
+}
+.servingopp-signup-popup .popup-inner .member-login-container .member-login {
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #00aeef;
+  cursor: pointer;
+}
+.servingopp-signup-popup .popup-inner .member-login-container .member-login:hover {
+  color: #0093c6;
+}
+.servingopp-signup-popup .popup-inner .serving-opportunity-member-info .signed-in-info-container {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.servingopp-signup-popup .popup-inner .serving-opportunity-member-info .signed-in-info-container .signed-in-notification {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: #bcbec0;
+  margin-bottom: 5px;
+}
+.servingopp-signup-popup .popup-inner .serving-opportunity-member-info .signed-in-info-container .servingopp-member-info {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+}
+.servingopp-signup-popup .popup-inner .serving-opportunity-member-info .signed-in-info-container .servingopp-member-info:last-of-type {
+  margin-bottom: 0;
+}
+.servingopp-signup-popup .popup-inner .interested-help-container .servingopp-member-info {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  color: #4d4d4f;
+}
+.servingopp-signup-popup .popup-inner-before-submit {
+  border-bottom: solid 1px #bcbec0;
+  margin-bottom: 30px;
+}
+.servingopp-signup-popup .popup-inner-after-submit {
+  border-bottom: solid 1px #bcbec0;
+  margin-bottom: 30px;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-name {
+  text-align: left;
+  color: #4d4d4f;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-location {
+  display: block;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-venue {
+  color: #4d4d4f;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1.14px;
+  margin-bottom: 15px;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-address-container {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-address-container .serving-opportunity-address {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1.14px;
+  color: #4d4d4f;
+  margin: 0 0 0 10px;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-address-container .serving-opportunity-address a {
+  display: block;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-address-container .serving-opportunity-address p {
+  margin: 0 0 5px 0;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-address-container .serving-opportunity-address .serving-opportunity-city-state-zip {
+  display: -ms-flexbox;
+  display: flex;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-address-container .serving-opportunity-address .serving-opportunity-city-state-zip p {
+  margin: 0 5px 0 0;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-address-container .icon-location-glyph {
+  color: #00aeef;
+  margin-top: 5px;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-inner-info .serving-opportunity-time {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: #4d4d4f;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-inner-description {
+  margin-bottom: 60px;
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-inner-description .serving-opportunity-description-text {
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.8px;
+  color: #878787;
+  margin-bottom: 15px;
+  max-height: 4.8em;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.servingopp-signup-popup .popup-inner-after-submit .serving-opportunity-inner-description .serving-opportunity-description-text.open {
+  max-height: 2000px;
+  transition: max-height 1s ease-in-out;
+}
+
+.view-more-toggle {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.71;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #f99e49;
+}
+.view-more-toggle:hover {
+  color: #c96d20;
+}
+.view-more-toggle:before {
+  content: "VIEW MORE";
+}
+.view-more-toggle.open:before {
+  content: "VIEW LESS";
+}
+
+.datepicker {
+  z-index: 9999;
+}
+
+.parsley-errors-list {
+  margin: 0;
+}
+.parsley-errors-list li {
+  margin: 0;
+}
+
+.parsley-required {
+  color: #F15B4E;
+}
+
+.custom-field-container .custom-field-item {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.custom-field-container .custom-field-item input, .custom-field-container .custom-field-item textarea {
+  margin-bottom: 0;
+}
+.custom-field-container .custom-field-item input[type=checkbox], .custom-field-container .custom-field-item input[type=radio] {
+  display: inline-block;
+  float: none;
+  margin: 0 10px 0 0;
+}
+.custom-field-container .custom-field-item input[type=checkbox] + label, .custom-field-container .custom-field-item input[type=radio] + label {
+  clear: none;
+  float: none;
+  margin: 0;
+  vertical-align: text-bottom;
+  width: auto;
+}
+.custom-field-container .custom-field-item label {
+  display: inline-block;
+  width: auto;
+}
+.custom-field-container .custom-field-item select {
+  width: 100%;
+}
+.custom-field-container .custom-field-item .custom-checkbox-container {
+  width: 100%;
+}
+.custom-field-container .custom-field-item .custom-radio-choices {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  width: 100%;
+}
+.custom-field-container .custom-field-item .custom-radio-choices div {
+  margin: 0 0 8px 0;
+  width: 100%;
+}
+
+.serving-opportunity-info-header {
+  font-size: 26px;
+  line-height: normal;
+  letter-spacing: 1.3px;
+  color: #f99e49;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 575px) {
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-name {
+    margin: 0 30px 15px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-location {
+    margin: 0 30px 30px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .share-icons-container-mobile {
+    margin: 0 30px 60px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container {
+    padding: 30px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-btn-container {
+    margin: 30px 30px 60px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description {
+    margin: 0 30px 60px;
+  }
+
+  .related-serving-opporunities-header {
+    margin: 0 30px 60px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .back-to-results-btn {
+    display: block;
+    margin-left: 30px;
+  }
+
+  .serving-opportunity-container .serving-opportunity-inner-container {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-name-mobile {
+    display: none;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-name-desktop {
+    display: block;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-location {
+    display: none;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .share-icons-container-mobile {
+    display: none;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container {
+    width: 50%;
+    max-width: 552px;
+    margin: 0 30px;
+    padding: 60px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 50%;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-name {
+    font-size: 32px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-location {
+    display: block;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description .serving-opportunity-description-header {
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description .share-icons-container-desktop {
+    display: block;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description .share-icons-container {
+    margin-bottom: 30px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description .share-icons-container a {
+    font-size: 32px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description .serving-opportunity-description-text {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-signup-desktop {
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-signup-desktop .serving-opportunity-signup-container {
+    margin-bottom: 30px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-signup-desktop .serving-opportunity-btn-container {
+    margin: 0 30px 60px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container {
+    width: 55%;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-signup-desktop {
+    -ms-flex-order: 1;
+        order: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-left: 30px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-signup-desktop .serving-opportunity-signup-container {
+    width: 50%;
+    margin: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-signup-desktop .serving-opportunity-btn-container {
+    width: 200px;
+    margin: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    margin-right: 30px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-signup-desktop .serving-opportunity-btn-container .btn {
+    max-width: 200px;
+  }
+}
+@media only screen and (min-width: 1330px) {
+  .back-to-results-btn {
+    margin-left: 0px;
+  }
+
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-info-container {
+    margin: 0 30px 0 0;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-name-desktop {
+    margin: 0 0 15px 30px;
+  }
+  .serving-opportunity-container .serving-opportunity-inner-container .serving-opportunity-description-container .serving-opportunity-description {
+    margin: 0 0 30px 30px;
+  }
+}

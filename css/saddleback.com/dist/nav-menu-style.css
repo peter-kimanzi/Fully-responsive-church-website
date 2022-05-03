@@ -1,0 +1,1145 @@
+.campus-wrapper {
+  position: relative;
+}
+.campus-wrapper .campus-page-header {
+  background: #fff;
+  height: auto;
+  margin: 0 0 24px;
+  transition: all 0.75s ease;
+}
+.campus-wrapper .campus-page-header .topLinksContainer {
+  height: auto;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .user-profile-menu-container.open {
+  z-index: 100000;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks {
+  height: auto;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks.toaster-relative {
+  position: relative;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks div span .name a {
+  color: #00aeef;
+  transition: all 0.75s ease;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow .tableCell a {
+  text-decoration: none;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-logo-container, .campus-wrapper .campus-page-header .topLinksContainer .topLinks .logo-container {
+  padding-top: 5px;
+  margin-right: auto;
+  margin-top: 0;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-logo-container a, .campus-wrapper .campus-page-header .topLinksContainer .topLinks .logo-container a {
+  padding: 0;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-logo-container .campus-page-sb-logo.cyan, .campus-wrapper .campus-page-header .topLinksContainer .topLinks .logo-container .campus-page-sb-logo.cyan {
+  display: block;
+  transition: all 0.75s ease;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-logo-container .campus-page-sb-logo.white, .campus-wrapper .campus-page-header .topLinksContainer .topLinks .logo-container .campus-page-sb-logo.white {
+  display: none;
+  transition: all 0.5s ease;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .v2 {
+  padding: 0;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .v2 #basketButtonid1 .btn {
+  padding: 0 !important;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .v2 #basketButtonid1 .btn span {
+  color: #00aeef;
+  transition: all 0.75s ease;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-user-login .signInInfo .text .name {
+  margin: 0 0 0 auto;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-user-login .signInInfo a {
+  color: #00aeef;
+  transition: all 0.75s ease;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-user-login .signInInfo.guest-sign-in a {
+  color: #4d4d4f;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 1px;
+  transition: all 0.75s ease;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks nav .navTopRow {
+  margin-top: 4px;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .logo-container.guest {
+  padding: 0;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .logo-container.guest .saddleback-logo.cyan {
+  display: block;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .logo-container.guest .saddleback-logo.white {
+  display: none;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner {
+  padding: 0 16px 32px;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .primary-nav-links-container .primary-nav-links-inner {
+  padding: 24px 0;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 24px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .primary-nav-links-container .primary-nav-links-inner .primary-nav-link {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  padding: 0;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .primary-nav-links-container .primary-nav-links-inner .primary-nav-link:last-of-type {
+  margin: 0;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown#NavLocations .navButtonContainer.locations-desktop {
+  display: none;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown#NavLocations .navButtonContainer.locations-mobile {
+  display: block;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown#NavLocations .dropdown .inner .subNavContainer.locations-container .subNav {
+  width: auto;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown#NavLocations .dropdown .inner .subNavContainer.locations-container .subNav.padding-left .subNavHeader {
+  display: none;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner {
+  padding: 0;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer {
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer .subNav {
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer .subNav.nav-padding-left {
+  padding: 0 0 32px 12px;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer .subNav.nav-padding-right {
+  padding: 0 16px 32px 0;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer .subNav li {
+  width: 50%;
+  min-width: 154px;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer .subNav li .subSubNavHeader {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #004970;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer .subNav li a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 0 16px 0 0;
+  margin-bottom: 0;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer.locations-container .subNav {
+  width: 50%;
+  padding: 0 0 32px;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer.locations-container .subNav li {
+  width: 100%;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer.locations-container .subNav li .subSubNavHeader {
+  width: 100%;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer .subNavHeader {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer .navButtonContainer {
+  width: 100%;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer .navButtonContainer .btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0;
+  height: 46px;
+  border-radius: 15px;
+  background: #00aeef;
+  border: solid 2px #fff;
+  color: #fff;
+  width: 100%;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-social-container {
+  margin-top: 80px;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-social-container .nav-social-inner {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -20px;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-social-container .nav-social-inner .nav-social-item {
+  padding: 0 20px;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-social-container .nav-social-inner .nav-social-item a {
+  font-size: 32px;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search {
+  padding: 8px 15px;
+  background: #f6f6f6;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: 64px;
+  position: relative;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container .campus-select-inner-container .home-campus-subtitle {
+  font-size: 13px;
+  line-height: 24px;
+  color: #4D4D4F;
+  margin: 0;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container .campus-select-inner-container .home-campus-select {
+  text-decoration: none;
+  cursor: pointer;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container .campus-select-inner-container .home-campus-select .home-campus-name {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4D4D4F;
+  margin: 0 16px 0 0;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search #CampusPageSearchToggle {
+  color: #fff;
+  min-width: 46px;
+  width: 46px;
+  height: 46px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-decoration: none;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search #CampusPageSearchToggle span {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search #CampusPageSearchToggle .icon-search {
+  display: -ms-flexbox;
+  display: flex;
+  background: #00aeef;
+  color: #fff;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search #CampusPageSearchToggle .icon-close {
+  display: none;
+  background: #bcbec0;
+  color: #4d4d4f;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search #CampusPageSearchToggle.search-close-btn {
+  background: #bcbec0;
+  display: -ms-flexbox;
+  display: flex;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search #CampusPageSearchToggle.search-close-btn .icon-search {
+  display: none;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search #CampusPageSearchToggle.search-close-btn .icon-close {
+  display: none;
+  color: #4d4d4f;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .searchContainer {
+  display: none;
+  -ms-flex-order: -1;
+      order: -1;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .searchContainer #SearchForm #searchCloseBtn {
+  display: none;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .searchContainer #SearchForm .campus-search-close-btn {
+  text-decoration: none;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search.search-open .nav-campus-select-container {
+  display: none;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search.search-open #CampusPageSearchToggle .icon-search {
+  display: none;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search.search-open #CampusPageSearchToggle .icon-close {
+  display: -ms-flexbox;
+  display: flex;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search.search-open .searchContainer {
+  -ms-flex-order: -1;
+      order: -1;
+  display: block;
+  width: 100%;
+  margin-right: 15px;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search.search-open .searchContainer #SearchForm {
+  position: relative;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search.search-open .searchContainer #SearchForm #TextSearch {
+  margin: 0;
+  border: 1px solid #4d4d4f;
+  border-radius: 8px;
+  padding: 11px 15px;
+}
+.campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search.search-open .searchContainer #SearchForm .campus-search-close-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #4d4d4f;
+  font-size: 16px;
+  line-height: 16px;
+}
+.campus-wrapper .campus-page-header .mobile {
+  top: 55px;
+  left: 0;
+}
+.campus-wrapper .nav-menu-open {
+  background: #00aeef;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks div span .name a {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks .campus-page-logo-container .campus-page-sb-logo.cyan {
+  display: none;
+  transition: all 0.75s ease;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks .campus-page-logo-container .campus-page-sb-logo.white {
+  display: block;
+  transition: all 0.5s ease;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks .v2 {
+  pointer-events: none;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks .v2 #basketButtonid1 .btn span {
+  pointer-events: none;
+  color: #6ACCF4 !important;
+  transition: all 0.5s ease;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks .logo-container.guest .saddleback-logo.cyan {
+  display: none;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks .logo-container.guest .saddleback-logo.white {
+  display: block;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks .campus-page-user-login {
+  pointer-events: none;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks .campus-page-user-login .signInInfo.guest-sign-in a {
+  color: #6ACCF4 !important;
+  transition: all 0.5s ease;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks .campus-page-user-login .signInInfo .text .name {
+  border: solid 1px #6ACCF4;
+  opacity: 0.3;
+  box-shadow: none;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks .campus-page-user-login .signInInfo .text .name a {
+  color: #6ACCF4;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.campus-wrapper .nav-menu-open .topLinksContainer .topLinks ul.mobile.open {
+  border-top: solid 1px #fff;
+}
+
+#leftad-container {
+  margin-bottom: 32px;
+}
+
+#campusChangeNote {
+  padding: 16px 11px 16px 23px;
+  box-shadow: 0px 3px 6px rgba(77, 77, 79, 0.196303);
+  border: 2px solid #f99e49;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 237px;
+  min-width: 237px;
+  position: absolute;
+  -webkit-transform: translate(-6px, 8px);
+          transform: translate(-6px, 8px);
+  z-index: 1000;
+}
+#campusChangeNote .campus-change-note {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  color: #4d4d4f;
+  margin: 0;
+  text-align: left;
+}
+
+.toaster-ui {
+  position: absolute;
+  left: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: 1s;
+}
+.toaster-ui.slide-in {
+  transition: 1s;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.toaster-ui .toaster-inner {
+  background: #E6F9F9;
+  border: 1px solid #56C4C4;
+  border-radius: 8px;
+  padding: 8px 50px 8px 16px;
+  margin: 0 8px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.toaster-ui .toaster-inner img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+  box-shadow: 0px 4px 4px rgba(86, 196, 196, 0.25);
+}
+.toaster-ui .toaster-inner p {
+  color: #4d4d4f;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+.toaster-ui .toaster-inner p a {
+  vertical-align: unset;
+  display: inline;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: normal !important;
+  text-decoration: underline;
+  padding: 0;
+}
+.toaster-ui .toaster-inner .close-btn {
+  padding: 0;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.toaster-ui .toaster-inner .close-btn:hover {
+  text-decoration: none;
+}
+
+#campusSelect .modal-content {
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  border: 2px solid #00aeef;
+}
+#campusSelect .modal-content .close {
+  font-size: 32px;
+  font-weight: normal;
+}
+#campusSelect .modal-content .locationSearchContainer {
+  position: relative;
+}
+#campusSelect .modal-content .locationSearchContainer #ImageWait {
+  position: absolute;
+  right: 0;
+  top: 35px;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item {
+  position: relative;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+  border-bottom: solid 1px #878787;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .campus-home-dropdown-btn, #campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .sign-in-needed-btn {
+  width: 100%;
+  margin-bottom: 16px;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .campus-home-dropdown-btn:hover, #campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .sign-in-needed-btn:hover {
+  background: #0093c6;
+  color: #fff;
+  border: solid 2px #0093c6;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .campus-home-link {
+  width: 100%;
+  text-align: center;
+  font: 900 14px "Lato", Arial;
+  letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .campusNameContainer .toggleInfo {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 24px;
+  color: #4d4d4f;
+  margin-bottom: 24px;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .campusDistance {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  margin: 0;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .btn {
+  border-radius: 8px;
+  background: #fff;
+  color: #00aeef;
+  border: solid 2px #00aeef;
+  height: 46px;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .btn.sign-in {
+  background: #00aeef;
+  color: #fff;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item.home-campus {
+  -ms-flex-order: -1;
+      order: -1;
+}
+#campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item.home-campus .campusInfoContainer .btn {
+  background: #67c18c;
+  border: solid 2px #67c18c;
+  color: #fff;
+  pointer-events: none;
+}
+
+#navMoreBtn {
+  z-index: 0;
+}
+
+#navMoreBtn #nav-icon3 {
+  width: 20px;
+  height: 18px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#navMoreBtn #nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #00aeef;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+#navMoreBtn #nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#navMoreBtn #nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+  top: 6px;
+}
+
+#navMoreBtn #nav-icon3 span:nth-child(4) {
+  top: 12px;
+}
+
+#navMoreBtn.more-open #nav-icon3 span {
+  background: #fff;
+}
+
+#navMoreBtn.more-open #nav-icon3 span:nth-child(1) {
+  top: 6px;
+  width: 0%;
+  left: 50%;
+}
+
+#navMoreBtn.more-open #nav-icon3 span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #fff;
+}
+
+#navMoreBtn.more-open #nav-icon3 span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background: #fff;
+}
+
+#navMoreBtn.more-open #nav-icon3 span:nth-child(4) {
+  top: 6px;
+  width: 0%;
+  left: 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks div .campus-page-sb-logo {
+    height: 26px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .v2 {
+    margin-right: 8px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .v2 #basketButtonid1 .btn span {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-user-login {
+    margin-right: 20px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown#NavLocations .dropdown .inner .subNavContainer.locations-container .subNav {
+    width: 50%;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown#NavLocations .dropdown .inner .subNavContainer.locations-container .subNav.padding-left .subNavHeader {
+    display: none;
+  }
+}
+@media screen and (min-width: 400px) {
+  .toaster-ui .toaster-inner {
+    padding: 8px 50px 8px 46px;
+  }
+}
+@media screen and (min-width: 450px) {
+  #campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  #campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .campus-home-dropdown-btn, #campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .sign-in-needed-btn {
+    width: 200px;
+    margin: 0;
+  }
+  #campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .campus-home-link {
+    width: auto;
+  }
+  #campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations .location-item .campusInfoContainer .campusNameContainer {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 575px) {
+  .toaster-ui {
+    bottom: 64px;
+  }
+
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks {
+    min-height: 135px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile {
+    top: 119px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile.open {
+    background: rgba(0, 174, 239, 0.95);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .primary-nav-links-container {
+    display: none;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown {
+    margin: 32px 0;
+    max-width: 100%;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-user-login .signInInfo.guest-sign-in a {
+    color: #4d4d4f;
+  }
+  .campus-wrapper .campus-page-header.nav-menu-open .topLinksContainer .topLinks .navRowWide .tableRow .tableCell a {
+    pointer-events: none;
+    color: #6ACCF4;
+    transition: all 0.5s ease;
+    text-decoration: none;
+  }
+  .campus-wrapper .campus-page-header.nav-menu-open .topLinksContainer .topLinks .navRowWide .tableRow .tableCell a, .campus-wrapper .campus-page-header.nav-menu-open .topLinksContainer .topLinks .navRowWide .tableRow .tableCell a:hover, .campus-wrapper .campus-page-header.nav-menu-open .topLinksContainer .topLinks .navRowWide .tableRow .tableCell a:active, .campus-wrapper .campus-page-header.nav-menu-open .topLinksContainer .topLinks .navRowWide .tableRow .tableCell a:visited, .campus-wrapper .campus-page-header.nav-menu-open .topLinksContainer .topLinks .navRowWide .tableRow .tableCell a:focus {
+    text-decoration: none;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks {
+    padding: 16px 32px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner {
+    padding: 0 32px 32px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-user-login {
+    margin-right: 30px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide {
+    margin: 0;
+    padding: 0px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow .tableCell {
+    display: block;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow .tableCell a {
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding: 24px 0 8px;
+    color: #00aeef;
+    transition: all 0.75s ease;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow .tableCell a:hover {
+    text-decoration: underline;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks nav .navTopRow {
+    margin: 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search {
+    padding: 8px 32px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .toaster-ui {
+    bottom: 84px;
+  }
+
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks {
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 32px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile {
+    top: 145px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer {
+    max-width: 400px;
+    margin: 0 auto 0 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-user-login {
+    padding-top: 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-logo-container, .campus-wrapper .campus-page-header .topLinksContainer .topLinks .logo-container {
+    -ms-flex-order: -5;
+        order: -5;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks #basketButtonid1.loaded {
+    padding-top: 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks #basketButtonid1.loaded .v2style {
+    height: auto;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks #basketButtonid1.loaded .v2style .btn span {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow .tableCell a {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container {
+    display: block !important;
+    -ms-flex-order: -1;
+        order: -1;
+    position: relative;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container #campusSelect {
+    position: absolute;
+    min-height: 3000px;
+    min-width: 100vw;
+    width: auto;
+    background-color: transparent;
+    overflow: unset;
+    top: -170px;
+    left: -32px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container #campusSelect .modal-content {
+    width: 468px;
+    margin-top: 225px;
+    margin-left: 32px;
+    max-height: calc(100vh - 225px);
+    overflow: auto;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .searchContainer {
+    -ms-flex-order: -1;
+        order: -1;
+    width: 100%;
+    margin-right: 15px;
+    max-width: 331px;
+    margin-left: auto;
+    display: block !important;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .searchContainer #SearchForm {
+    position: relative;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .searchContainer #SearchForm #TextSearch {
+    margin: 0;
+    border: 1px solid #4d4d4f;
+    border-radius: 8px;
+    padding: 11px 15px;
+    height: 46px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .searchContainer #SearchForm .campus-search-close-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #4d4d4f;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search #CampusPageSearchToggle .icon-search {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search #CampusPageSearchToggle .icon-close {
+    display: none !important;
+  }
+  .campus-wrapper .campus-page-header.nav-menu-open {
+    background: #00aeef;
+  }
+  .campus-wrapper .campus-page-header.nav-menu-open .topLinksContainer .topLinks .campus-page-logo-container .campus-page-sb-logo.cyan {
+    display: none !important;
+    transition: all 0.75s ease;
+  }
+  .campus-wrapper .campus-page-header.nav-menu-open .topLinksContainer .topLinks .campus-page-logo-container .campus-page-sb-logo.white {
+    display: block !important;
+    transition: all 0.5s ease;
+  }
+}
+@media screen and (min-width: 768px) {
+  .toaster-ui {
+    max-width: 425px;
+    top: 25px;
+    left: unset;
+    right: -100%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .toaster-ui.slide-in {
+    transition: 1s;
+    left: unset;
+    right: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .toaster-ui .toaster-inner {
+    padding: 8px 55px 8px 16px;
+    margin: 0;
+  }
+
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown {
+    max-width: 50%;
+    padding: 0 32px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer .subNav {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown .dropdown .inner .subNavContainer .subNav li a {
+    padding: 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-social-container {
+    padding: 0 32px;
+    width: 100%;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .nav-dropdown-inner {
+    margin: 0 -32px;
+  }
+
+  #leftad-container {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .campus-wrapper .campus-page-header {
+    padding: 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks {
+    padding: 32px;
+    min-height: 105px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile {
+    top: 89px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin: 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown {
+    max-width: 225px;
+    margin: 32px 0 32px;
+    padding: 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown#NavLocations {
+    max-width: 350px;
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown#NavLocations .navButtonContainer.locations-desktop {
+    display: block;
+    margin-top: 32px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown#NavLocations .navButtonContainer.locations-mobile {
+    display: none;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown#NavLocations.first {
+    -ms-flex-order: -1;
+        order: -1;
+    max-width: 430px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner #navSocial {
+    display: none;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide {
+    -ms-flex-order: -4;
+        order: -4;
+    width: auto;
+    padding: 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    margin: 0;
+    max-width: 100%;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow .tableCell {
+    padding: 0 12px;
+    white-space: nowrap;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow .tableCell:last-of-type {
+    padding: 0 0 0 12px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow .tableCell a {
+    padding: 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks #basketButtonid1.loaded {
+    margin-right: 0px !important;
+    margin-left: 24px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks nav {
+    -ms-flex-order: 0;
+        order: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    width: auto;
+    margin-left: 12px;
+    padding-left: 12px;
+    cursor: pointer;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks nav:before {
+    content: "More";
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #00aeef;
+    transition: all 0.75s ease;
+    margin: 0 8px 0 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks nav .navTopRow #nav-icon3 {
+    width: 12px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks nav.more-open:before {
+    color: #fff;
+    transition: all 0.5s ease;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks nav.more-open .navTopRow {
+    margin-top: 4px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-user-login {
+    -ms-flex-order: 1;
+        order: 1;
+    margin: 0 0 0 14px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search {
+    margin: 0;
+    padding: 8px 32px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container {
+    position: relative;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container .campus-select-inner-container {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container .campus-select-inner-container .home-campus-subtitle {
+    margin: 0 8px 0 0;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container #campusSelect {
+    top: -125px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container #campusSelect .modal-content {
+    margin-top: 169px;
+    padding: 32px 24px;
+    position: relative;
+    max-height: calc(100vh - 170px);
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container #campusSelect .modal-content .close {
+    top: 8px;
+    right: 24px;
+    position: absolute;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search .nav-campus-select-container #campusSelect .modal-content .locationListsContainer .locationsContainerUS .locations {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown {
+    max-width: 200px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow .tableCell {
+    padding: 0 20px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .navRowWide .tableRow .tableCell:last-of-type {
+    padding: 0 0 0 20px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks #basketButtonid1.loaded {
+    margin-left: 40px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks nav {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-user-login {
+    margin: 0 0 0 30px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .campus-wrapper .campus-page-header.nav-menu-open .topLinksContainer .topLinks {
+    padding: 32px 0 32px 32px;
+    transition: all 0.75s ease;
+  }
+  .campus-wrapper .campus-page-header.nav-menu-open .topLinksContainer .topLinks .campus-page-user-login {
+    padding: 0 15px 0 0;
+    margin: 0 0 0 15px;
+    max-width: 65px;
+    transition: all 0.75s ease;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks {
+    padding: 32px 0;
+    transition: all 0.5s ease;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .mobile .inner .nav-dropdown {
+    max-width: 200px;
+    margin: 32px 0 32px;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .topLinks .campus-page-user-login {
+    transition: all 0.5s ease;
+  }
+  .campus-wrapper .campus-page-header .topLinksContainer .nav-campus-search {
+    margin: 0;
+    padding: 0px 32px;
+  }
+}

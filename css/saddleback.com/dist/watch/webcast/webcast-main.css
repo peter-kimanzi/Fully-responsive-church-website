@@ -1,0 +1,539 @@
+/* Define some standard colors in variables */
+/* COMPASS IMPORTS */
+/* Define our base font size and line height */
+.videoContainer {
+  margin-bottom: 22px;
+  position: relative;
+}
+.videoContainer img {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.videoContainer #EventCheckinWidget > div {
+  width: 100%;
+  max-width: 320px;
+  padding: 33px 22px;
+  margin-top: -125px;
+  margin-left: -160px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 300;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+.videoContainer #EventCheckinWidget > div label, .videoContainer #EventCheckinWidget > div span, .videoContainer #EventCheckinWidget > div input, .videoContainer #EventCheckinWidget > div a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.videoContainer #EventCheckinWidget > div label, .videoContainer #EventCheckinWidget > div span {
+  font: 16px/22px Georgia;
+  font-style: italic;
+  color: #ffffff;
+}
+.videoContainer #EventCheckinWidget > div label {
+  line-height: 33px;
+}
+.videoContainer #EventCheckinWidget > div span {
+  margin: 11px 0;
+}
+.videoContainer #EventCheckinWidget > div .barcodeHintToggle {
+  position: relative;
+  font-size: 12px;
+  line-height: 11px;
+  color: #819aa9;
+  cursor: pointer;
+}
+.videoContainer #EventCheckinWidget > div .barcodeHintToggle:hover {
+  color: #a9c1cf;
+}
+.videoContainer #EventCheckinWidget > div .closeButton {
+  width: 40px;
+  height: 40px;
+  padding: 14.5px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  font-family: "ProximaSemiBold";
+  font-size: 30px;
+  background: rgba(194, 193, 192, 0.9);
+  color: #ffffff;
+  cursor: pointer;
+}
+.videoContainer #EventCheckinWidget > div .btn:last-of-type {
+  margin-bottom: 11px;
+}
+.videoContainer #EventCheckinWidget > div #confirmationMessage {
+  margin: 0;
+  font: 16px/22px Georgia;
+}
+.videoContainer #EventCheckinWidget > div #confirmationMessage.error {
+  color: red;
+}
+.videoContainer #EventCheckinWidget > div #confirmationMessage.success {
+  color: green;
+}
+
+#WebcastPlayer video {
+  width: 100%;
+  height: auto;
+  /*position: absolute;
+  top: 0;
+  left: 0;*/
+}
+
+.webcastDescriptionSection {
+  text-align: center;
+}
+.webcastDescriptionSection p {
+  display: inline-block;
+}
+.webcastDescriptionSection .more p {
+  display: none;
+}
+.webcastDescriptionSection .more.visible p {
+  display: inline;
+}
+.webcastDescriptionSection .descriptionToggle {
+  display: block;
+}
+
+.registrationSection {
+  text-align: center;
+}
+
+form label {
+  color: #4d4d4f;
+}
+
+.webcastDate {
+  text-align: center;
+}
+
+hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid #809aaa;
+  margin: 0 11px 33px 11px;
+}
+
+.shareContainer {
+  width: 310px;
+  margin: 0 auto;
+}
+.shareContainer #shareContainer {
+  display: block;
+  max-width: 300px;
+  height: inherit;
+  margin: 0 auto 11px auto;
+}
+
+.jwplayer .jw-controls .jw-icon-cc {
+  display: none !important;
+}
+
+.archiveSection {
+  clear: both;
+}
+
+.accordion {
+  display: block;
+}
+
+#chat {
+  margin-bottom: 33px;
+  clear: both;
+}
+
+.interactive.tabs {
+  display: none;
+}
+
+.interactive.tabs .tabsContent {
+  overflow-y: scroll;
+}
+
+#divNotes > .sendingContainer {
+  margin-bottom: 11px;
+  position: relative;
+}
+#divNotes > .sendingContainer input#txtEmailNotesTo {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1.8333333em;
+  padding-left: 10px;
+  border: 1px solid #819aa9;
+  border-radius: 0;
+  font: 18px Georgia;
+  line-height: 1.6333em;
+  font-style: italic;
+  text-align: left;
+  color: #819aa9;
+}
+#divNotes > .sendingContainer #btnEmailNotes {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100px;
+}
+
+#divNotes > .outlineContainer .downloadButton {
+  width: 100%;
+  height: 33px;
+  margin-right: 1%;
+  float: left;
+}
+#divNotes > .outlineContainer .downloadButton > span:first-of-type {
+  font-size: 23px;
+}
+#divNotes > .outlineContainer .downloadButton > span:last-of-type {
+  padding-top: 2px;
+  line-height: 18px;
+  font-size: 18px;
+}
+#divNotes > .outlineContainer .downloadButton:last-of-type {
+  margin-right: 0;
+}
+
+.speaker {
+  position: relative;
+  margin-bottom: 22px;
+  padding: 1%;
+}
+.speaker:last-of-type {
+  margin-bottom: 0;
+}
+.speaker .speakerClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  padding: 12px 10px;
+  font-family: "ProximaSemiBold";
+  font-size: 30px;
+  background: #c2c1c0;
+  color: white;
+  cursor: pointer;
+}
+.speaker .speakerName {
+  margin: 0;
+}
+.speaker img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 11px;
+  cursor: pointer;
+}
+.speaker .popup {
+  width: 100%;
+  padding: 44px 11px 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #303030;
+}
+.speaker .popup .speakerSocialMediaContainer {
+  margin-bottom: 11px;
+  text-align: center;
+}
+.speaker .popup .speakerSocialMediaContainer a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 32px;
+}
+.speaker .popup .speakerSocialMediaContainer a:hover {
+  color: #a9c1cf;
+  text-decoration: none;
+}
+.speaker .popup .speakerSocialMediaContainer a span {
+  display: block;
+}
+.speaker .popup .speakerBio {
+  color: white;
+  font-style: italic;
+}
+.speaker .popup .speakerName {
+  display: block;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
+  margin-bottom: 11px;
+}
+.speaker .popup .speakerWebsiteContainer {
+  text-align: center;
+}
+
+.scheduleSection {
+  margin-bottom: 33px;
+}
+.scheduleSection h2 {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 50px;
+  text-align: center;
+}
+.scheduleSection .scheduleTime, .scheduleSection .scheduleItem {
+  float: left;
+}
+.scheduleSection .scheduleTime {
+  width: 25%;
+  margin-right: 8.3333333333333333%;
+}
+.scheduleSection .scheduleItem {
+  width: 66.6666666666666666667%;
+}
+.scheduleSection .tabs > ul.ui-tabs-nav {
+  height: auto;
+  border-bottom: none;
+  text-align: center;
+}
+.scheduleSection .tabs > .tabsContent {
+  padding: 11px 0 0 0;
+  border: none;
+}
+.scheduleSection .tabs > ul.ui-tabs-nav li {
+  display: inline-block;
+  height: auto;
+  padding: 0 10px;
+  margin: 0 1px 0 0;
+  float: none;
+  background: transparent;
+}
+.scheduleSection .tabs > ul.ui-tabs-nav li.ui-tabs-active {
+  height: auto;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+}
+.scheduleSection .tabs > ul.ui-tabs-nav li a {
+  font: inherit;
+  font-style: italic;
+  text-transform: inherit;
+  color: #303030;
+}
+.scheduleSection .tabs > ul.ui-tabs-nav li.ui-tabs-active a {
+  color: #819aa9;
+}
+
+.sponsorsSection .sectionInner {
+  text-align: center;
+}
+.sponsorsSection .sponsorContainer {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.shareablesContainer .staticHeightImageContainer {
+  margin-bottom: 22px;
+}
+.shareablesContainer > .sectionInner > .shareablesOverlayContainer > .closeButton {
+  width: 40px;
+  height: 40px;
+  padding: 14.5px 10px;
+}
+
+.hashtagSection {
+  margin-bottom: 33px;
+}
+
+.resourcesSection {
+  margin-bottom: 33px;
+  text-align: center;
+}
+.resourcesSection .resourceContainer {
+  margin-bottom: 33px;
+  text-align: center;
+}
+.resourcesSection .resourceContainer .resourceImage {
+  margin-bottom: 11px;
+}
+.resourcesSection .resourceContainer .resourceImage img {
+  display: inline-block;
+  height: 252px;
+  max-width: 100%;
+}
+.resourcesSection .resourceContainer .resourceName {
+  height: 44px;
+  margin-bottom: 11px;
+}
+.resourcesSection .resourceContainer .resourceName span {
+  font: 20px Georgia;
+}
+
+.eventContact span {
+  font: 16px/22px Georgia;
+}
+
+@media screen and (min-width: 480px) {
+  .scheduleSection {
+    max-width: 460px;
+    margin: 0 auto 33px auto;
+  }
+}
+@media screen and (min-width: 575px) {
+  .accordion {
+    display: none;
+  }
+
+  .interactive.tabs {
+    display: block;
+  }
+
+  .webcastDate {
+    width: 50%;
+    float: left;
+  }
+
+  .webcastDescriptionSection {
+    padding: 0 11px;
+    margin: 0 0 22px 0;
+  }
+  .webcastDescriptionSection h3 {
+    display: block;
+    margin: 0 auto 11px auto;
+  }
+  .webcastDescriptionSection .more {
+    display: inline !important;
+  }
+  .webcastDescriptionSection .more p {
+    display: inline !important;
+  }
+  .webcastDescriptionSection .descriptionToggle {
+    display: none;
+  }
+
+  .registrationSection {
+    display: block;
+    width: 100%;
+    padding: 0 11px;
+    margin: 0;
+  }
+
+  .registrationSection {
+    margin-bottom: 11px;
+  }
+
+  .speakersSection {
+    clear: both;
+  }
+  .speakersSection .speaker {
+    width: 49%;
+    margin-right: 1%;
+    float: left;
+  }
+  .speakersSection .speaker:nth-of-type(2n) {
+    margin-right: 0;
+    float: right;
+  }
+  .speakersSection .speaker:nth-of-type(2n+1) {
+    clear: left;
+  }
+
+  .sponsorsSection .sponsorContainer {
+    display: inline-block;
+    width: 49%;
+    margin-right: 1%;
+    vertical-align: middle;
+  }
+  .sponsorsSection .sponsorContainer:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  .resourcesSection .resourceContainer {
+    display: inline-block;
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 11px;
+  }
+  .resourcesSection .resourceContainer:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  #divNotes > .sendingContainer #btnEmailNotes {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 770px) {
+  .webcastDescriptionSection p {
+    font-size: 1.2em;
+  }
+
+  .speakersSection .speaker {
+    width: 32.6%;
+    margin-right: 1%;
+    float: left;
+  }
+  .speakersSection .speaker:nth-of-type(2n) {
+    margin-right: 1%;
+    float: left;
+  }
+  .speakersSection .speaker:nth-of-type(2n+1) {
+    clear: none;
+  }
+  .speakersSection .speaker:nth-of-type(3n) {
+    margin-right: 0%;
+    float: right;
+  }
+  .speakersSection .speaker:nth-of-type(3n+1) {
+    clear: left;
+  }
+
+  .sponsorsSection .sponsorContainer {
+    width: 30%;
+    margin-right: 3%;
+  }
+  .sponsorsSection .sponsorContainer:nth-of-type(2n) {
+    margin-right: 3%;
+  }
+  .sponsorsSection .sponsorContainer:nth-of-type(3n) {
+    margin-right: 0%;
+  }
+
+  .resourcesSection .resourceContainer {
+    width: 30%;
+    margin-right: 3%;
+  }
+  .resourcesSection .resourceContainer:nth-of-type(2n) {
+    margin-right: 3%;
+  }
+  .resourcesSection .resourceContainer:nth-of-type(3n) {
+    margin-right: 0%;
+  }
+
+  #divNotes > .outlineContainer .downloadButton {
+    max-width: 200px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .speakersSection .speaker {
+    width: 24.2%;
+    margin-right: 1%;
+    float: left;
+  }
+  .speakersSection .speaker:nth-of-type(3n) {
+    margin-right: 1%;
+    float: left;
+  }
+  .speakersSection .speaker:nth-of-type(3n+1) {
+    clear: none;
+  }
+  .speakersSection .speaker:nth-of-type(4n) {
+    margin-right: 0%;
+    float: right;
+  }
+  .speakersSection .speaker:nth-of-type(4n+1) {
+    clear: left;
+  }
+}

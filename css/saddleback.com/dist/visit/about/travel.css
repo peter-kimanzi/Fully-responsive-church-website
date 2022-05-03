@@ -1,0 +1,312 @@
+/* Define some standard colors in variables */
+/* COMPASS IMPORTS */
+/* Define our base font size and line height */
+.content {
+  margin-bottom: 0 !important;
+}
+.content .sectionContainer .sectionInner h1 {
+  margin-left: 0;
+}
+
+.campus-wrapper .content {
+  margin-bottom: 60px !important;
+}
+
+#mapCanvas {
+  height: 320px;
+  width: 100%;
+  display: none;
+}
+
+.map {
+  height: 320px;
+  width: 100%;
+}
+
+.contentColumn {
+  position: relative;
+}
+
+.staticHeightImageContainer {
+  margin-bottom: 0px;
+}
+
+.blueBar {
+  background-color: #819aa9;
+  color: white;
+  display: table;
+  margin: 0 0 22px;
+  width: 100%;
+}
+.blueBar li {
+  display: table-cell;
+  text-align: center;
+  padding: 23px 0;
+}
+.blueBar a {
+  color: white;
+  display: block;
+}
+
+.travelNav {
+  z-index: 100;
+  position: relative;
+}
+.travelNav a:hover {
+  text-decoration: none;
+}
+.travelNav [class^="sb-icon-"],
+.travelNav [class*=" sb-icon-"] {
+  display: block;
+  font-size: 30px;
+}
+
+#travelInfoContainer,
+#airportsContainer,
+#hotelsContainer,
+#carRentalsContainer {
+  background-color: white;
+}
+#travelInfoContainer span,
+#airportsContainer span,
+#hotelsContainer span,
+#carRentalsContainer span {
+  display: block;
+}
+#travelInfoContainer span.icon-phone-glyph,
+#travelInfoContainer span.icon-screen,
+#airportsContainer span.icon-phone-glyph,
+#airportsContainer span.icon-screen,
+#hotelsContainer span.icon-phone-glyph,
+#hotelsContainer span.icon-screen,
+#carRentalsContainer span.icon-phone-glyph,
+#carRentalsContainer span.icon-screen {
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.bottomHR {
+  border-bottom: 1px solid #819aa9;
+  padding-bottom: 17px;
+  margin-bottom: 30px;
+}
+
+span.icon-phone-glyph,
+.agencyPhone {
+  margin-right: 11px;
+}
+
+.locationContainer {
+  margin-bottom: 33px;
+}
+
+.addressName,
+.agencyName {
+  padding-bottom: 11px;
+}
+
+.locationData {
+  padding: 33px;
+}
+
+.locationInstructions,
+.agencyPhone {
+  margin-top: 22px;
+}
+
+.locationCityStateZip {
+  margin-bottom: 22px;
+}
+
+.mapContainer {
+  transition: -webkit-transform .5s ease-in-out, height .5s ease-in-out;
+  transition: transform .5s ease-in-out, height .5s ease-in-out;
+  overflow: hidden;
+  height: 0;
+  background-color: #eee;
+}
+
+.mapOpen {
+  -webkit-transform: none;
+          transform: none;
+  height: auto;
+  height: 450px;
+}
+
+.mapList a {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+#airportsContainer {
+  transition: padding .8s ease-in-out;
+}
+#airportsContainer .localAirportContainer {
+  background-color: #eee;
+}
+
+#airportsContainer .localAirportContainer {
+  padding: 35px 11px 22px;
+}
+#airportsContainer .otherAirportsContainer {
+  padding: 22px 11px 35px;
+}
+#airportsContainer .locationData {
+  display: none;
+}
+
+#carRentalsContainer .rentalName a {
+  font-size: 20px;
+}
+#carRentalsContainer .rentalPhone {
+  margin-bottom: 11px;
+}
+#carRentalsContainer .rentalDiscount {
+  margin-bottom: 22px;
+}
+#carRentalsContainer .rentalTip {
+  margin-bottom: 33px;
+}
+
+@media screen and (min-width: 768px) {
+  #mapCanvas {
+    height: 100%;
+    width: 100%;
+  }
+
+  .map {
+    height: 100%;
+    width: 100%;
+  }
+
+  #travelInfoContainer,
+  #hotelsContainer,
+  #carRentalsContainer {
+    min-height: 520px;
+    padding: 35px 40px;
+  }
+  #travelInfoContainer span,
+  #hotelsContainer span,
+  #carRentalsContainer span {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  #travelInfoContainer .discoountedHotelList,
+  #hotelsContainer .discoountedHotelList,
+  #carRentalsContainer .discoountedHotelList {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 22px;
+    -moz-column-gap: 22px;
+    column-gap: 22px;
+  }
+
+  #airportsContainer .localAirportContainer {
+    padding: 35px 8% 22px;
+  }
+  #airportsContainer .otherAirportsContainer {
+    padding: 22px 8% 35px;
+  }
+  #airportsContainer span {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .mapOpenContainer {
+    min-height: 780px;
+    padding-right: 44% !important;
+  }
+  .mapOpenContainer .discoountedHotelList {
+    -webkit-column-count: 1 !important;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1 !important;
+    /* Firefox */
+    column-count: 1 !important;
+  }
+
+  .travelNav {
+    float: left;
+    width: 137px;
+  }
+  .travelNav .blueBar {
+    margin: 0;
+  }
+  .travelNav .blueBar li {
+    display: block;
+  }
+  .travelNav [class^="sb-icon-"],
+  .travelNav [class*=" sb-icon-"] {
+    font-size: 45px;
+  }
+
+  .contentColumn {
+    padding-left: 137px;
+    background-color: #819aa9;
+  }
+
+  .locationData {
+    position: absolute;
+    z-index: 100;
+    background-color: #eee;
+    width: 100%;
+  }
+
+  .agencyPhoneInstructions,
+  .agencyPhone {
+    font-size: 18px;
+    display: inline-block !important;
+  }
+
+  #carRentalsContainer .rentalName a {
+    font-size: 22px;
+  }
+
+  .mapContainer {
+    transition: -webkit-transform .8s ease-in-out, opacity .8s ease-in-out;
+    transition: transform .8s ease-in-out, opacity .8s ease-in-out;
+    position: absolute;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 40%;
+    opacity: 0;
+    max-width: 340px;
+  }
+
+  .mapOpen {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+
+  .gmnoprint {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contentColumn {
+    text-align: center;
+    margin: 0 11px 33px;
+  }
+
+  .navLabel {
+    display: none;
+  }
+
+  .mapContainer {
+    margin: 0 -11px 22px;
+    background-color: white;
+  }
+
+  #airportsContainer .mapOpen {
+    height: 320px;
+  }
+  #airportsContainer .localAirportContainer {
+    margin: -22px -11px 0;
+  }
+}

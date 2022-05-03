@@ -1,0 +1,331 @@
+.dd-header-section .dd-header-image {
+  margin-bottom: 30px;
+}
+.dd-header-section .dd-header-image .dd-header-text {
+  width: 100%;
+  padding: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.dd-header-section .dd-header-image .dd-header-text .dd-picture-header {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.63;
+  letter-spacing: 6px;
+  margin: 0 auto 15px;
+  max-width: 150px;
+}
+.dd-header-section .dd-header-image .dd-header-text .dd-picture-header span {
+  font-size: 36px;
+  margin: 0;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 1px;
+  display: block;
+}
+.dd-header-section .dd-header-image .dd-header-text .dd-header-description {
+  display: none;
+}
+.dd-header-section .dd-header-image .dd-header-text .playButtonContainer {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.dd-header-section .dd-header-image .dd-header-text .playButtonContainer .dd-sub-header {
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: normal;
+  line-height: 28px;
+  padding-left: 15px;
+  letter-spacing: normal;
+  border-left: solid 2px #00aeef;
+  height: 60px;
+  /* vertical-align: middle; */
+}
+.dd-header-section .dd-header-image .dd-header-text .playButtonContainer a {
+  text-align: center;
+  font-size: 30px;
+  padding-right: 25px;
+}
+.dd-header-section .dd-header-image .dd-header-text .playButtonContainer a:hover span {
+  text-decoration: none;
+}
+.dd-header-section .dd-header-image .dd-header-text .playButtonContainer a span {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+.dd-header-section .dd-header-image .dd-header-text .playButtonContainer a span:before {
+  padding-left: 7px;
+}
+.dd-header-section .dd-header-image .dd-header-text .playButtonContainer a span:after {
+  content: '';
+  display: block;
+  z-index: -1;
+  background: #4d4d4f;
+  opacity: 0.7;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.the-well-header-section .dd-header-image .dd-header-text {
+  width: 265px;
+  bottom: 40px;
+  padding: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: unset;
+}
+.the-well-header-section .dd-header-image .dd-header-text .playButtonContainer a {
+  height: 70px;
+  width: 265px !important;
+}
+.the-well-header-section .dd-header-image .dd-header-text .playButtonContainer a .icon-play {
+  display: none;
+}
+
+.fluid-width-video-wrapper {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  padding-top: 56.25%;
+}
+.fluid-width-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dd-intro-section {
+  margin: 0 15px 60px;
+}
+.dd-intro-section .dd-intro-container .dd-intro-aside {
+  width: 250px;
+  margin-bottom: 30px;
+}
+.dd-intro-section .dd-intro-container .dd-intro-aside p {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.4px;
+}
+.dd-intro-section .dd-intro-container .dd-intro-description p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.63;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  font-size: 30px;
+}
+.dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-itunes-link {
+  margin-bottom: 30px;
+}
+.dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-itunes-link:hover span {
+  text-decoration: none;
+}
+.dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-itunes-link span {
+  display: inline-block;
+  margin-right: 15px;
+}
+.dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-youtube-link {
+  margin-bottom: 30px;
+}
+.dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-youtube-link:hover span {
+  text-decoration: none;
+}
+.dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-youtube-link span {
+  display: inline-block;
+  margin-right: 15px;
+}
+.dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-rss-link {
+  margin: 0;
+}
+.dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-rss-link:hover span {
+  text-decoration: none;
+}
+.dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-rss-link span {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.latestPodcast {
+  margin-bottom: 60px;
+}
+.latestPodcast .grid .podcastInfoContainer .podcastDescription {
+  margin: 0;
+}
+.latestPodcast .grid .podcastInfoContainer .podcast-links-container {
+  display: none;
+}
+
+.dd-new-media-section {
+  margin: 0 15px 30px;
+}
+.dd-new-media-section .SBW .titleBar .sectionTitle {
+  margin-bottom: 0;
+}
+.dd-new-media-section .SBW .fourColumnMediaThumbs .thumbCOntainer {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 450px) {
+  .the-well-header-section .dd-header-image .dd-header-text {
+    bottom: 47px;
+  }
+}
+@media screen and (min-width: 475px) {
+  .dd-header-section .dd-header-text {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .dd-header-section .dd-header-image .dd-header-text .dd-picture-header {
+    margin: 0 auto 30px;
+  }
+
+  .dd-intro-section {
+    margin: 0 30px 60px;
+  }
+
+  .dd-new-media-section {
+    margin: 0 30px 30px;
+  }
+  .dd-new-media-section .SBW .titleBar {
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
+}
+@media screen and (min-width: 650px) {
+  .the-well-header-section .dd-header-image .dd-header-text {
+    bottom: 54px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dd-header-section .dd-header-image {
+    margin-bottom: 60px;
+  }
+  .dd-header-section .dd-header-image .dd-header-text .dd-picture-header {
+    font-size: 20px;
+    letter-spacing: 9.5px;
+    max-width: 240px;
+  }
+  .dd-header-section .dd-header-image .dd-header-text .dd-picture-header span {
+    font-size: 58px;
+    line-height: 58px;
+  }
+  .dd-header-section .dd-header-image .dd-header-text .playButtonContainer a {
+    text-align: right;
+    padding-right: 30px;
+    width: 175px;
+  }
+
+  .dd-intro-section {
+    margin: 0 30px 100px;
+  }
+  .dd-intro-section .dd-intro-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .dd-intro-section .dd-intro-container .dd-intro-aside {
+    width: 350px;
+    margin: 0 30px 0 0;
+  }
+  .dd-intro-section .dd-intro-container .dd-intro-aside p {
+    font-size: 58px;
+    line-height: 1.07;
+    letter-spacing: 1px;
+  }
+  .dd-intro-section .dd-intro-container .dd-intro-description {
+    margin-left: 30px;
+    max-width: 600px;
+  }
+  .dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-youtube-link, .dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-rss-link {
+    margin-left: 30px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-itunes-link {
+    margin: 0;
+    text-align: center;
+  }
+
+  .latestPodcast {
+    margin: 0 30px 100px;
+  }
+  .latestPodcast .titleBar {
+    margin: 0 0 30px;
+  }
+
+  .dd-new-media-section .SBW .titleBar .btn {
+    position: absolute;
+    display: inline-table;
+    padding: 0px 0px 0px 11px;
+    text-align: right;
+  }
+  .dd-new-media-section .SBW .titleBar .sectionTitle {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .the-well-header-section .dd-header-image .dd-header-text {
+    bottom: 57px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .dd-header-section .dd-header-image .dd-header-text .playButtonContainer {
+    position: unset;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .dd-intro-section {
+    margin: 0 auto 100px;
+  }
+  .dd-intro-section .dd-intro-container .dd-intro-description {
+    margin-left: 90px;
+  }
+  .dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-youtube-link, .dd-intro-section .dd-intro-container .dd-intro-description .dd-podcast-links-container .dd-rss-link {
+    margin-left: 100px;
+  }
+
+  .latestPodcast {
+    margin: 0 auto 100px;
+  }
+
+  .dd-new-media-section {
+    margin: 0 auto 100px;
+  }
+}

@@ -1,0 +1,211 @@
+h1 {
+  color: #ffffff;
+  margin-left: 0;
+}
+
+.group-roster-information {
+  -ms-flex-order: 2;
+      order: 2;
+}
+.group-roster-information .group-roster-inner {
+  background: #f6f6f6;
+  padding: 30px 30px 0 30px;
+}
+.group-roster-information .group-roster-info-subtitle {
+  color: #878787;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.group-roster-information .group-roster-info-direction {
+  border-bottom: solid 1px #f6f6f6;
+  color: #878787;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  line-height: normal;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.group-roster-information .group-roster-members {
+  margin-bottom: 0;
+}
+.group-roster-information .group-roster-members .group-member {
+  border-bottom: solid 1px #efeff4;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+}
+.group-roster-information .group-roster-members .group-member:first-of-type {
+  padding-top: 0;
+}
+.group-roster-information .group-roster-members .group-member p,
+.group-roster-information .group-roster-members .group-member a {
+  margin-bottom: 0;
+}
+.group-roster-information .group-roster-members .group-member .smallgroup-position {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1.1px;
+  line-height: normal;
+  padding-right: 15px;
+  width: 30%;
+}
+.group-roster-information .group-roster-members .group-member .smallgroup-position.accepted {
+  color: #f99e49;
+}
+.group-roster-information .group-roster-members .group-member .smallgroup-position.invited {
+  color: #878787;
+}
+.group-roster-information .group-roster-members .group-member .smallgroup-member-name {
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  line-height: normal;
+  overflow: hidden;
+  padding: 0 15px;
+  position: relative;
+  width: 65%;
+}
+.group-roster-information .group-roster-members .group-member .remove-member-btn {
+  color: #F15B4E;
+  width: 5%;
+}
+.group-roster-information .group-roster-members .group-member .remove-member-btn:hover {
+  color: #c2241a;
+  text-decoration: none;
+}
+.group-roster-information .invite-group-members-form {
+  margin-bottom: 30px;
+  -ms-flex-order: 1;
+      order: 1;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-form-container {
+  background: #f6f6f6;
+  padding: 30px;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-form-container div {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 15px;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-form-container div input {
+  margin-bottom: 0;
+  -ms-flex-order: 1;
+      order: 1;
+  width: 90%;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-form-container div a {
+  -ms-flex-order: 2;
+      order: 2;
+  width: 5%;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-form-container div .icon-close {
+  color: #F15B4E;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-form-container div .icon-close:hover, .group-roster-information .invite-group-members-form .invite-group-members-form-container div .icon-close:active {
+  text-decoration: none;
+}
+.group-roster-information .invite-group-members-form *.parsley-required {
+  color: #F15B4E;
+}
+.group-roster-information .invite-group-members-form *.parsley-success + .parsley-errors-list {
+  display: none;
+}
+.group-roster-information .invite-group-members-form .parsley-errors-list {
+  margin: 5px 0 0 0;
+  -ms-flex-order: 3;
+      order: 3;
+}
+.group-roster-information .invite-group-members-form .parsley-errors-list li {
+  color: #F15B4E;
+  font: 12px "Lato", Arial;
+  font-style: italic;
+  letter-spacing: 1.3px;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-subtitle {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: #878787;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-description {
+  font-weight: 13px;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #bcbec0;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-btn-container {
+  margin-top: 30px;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-btn-container h4 {
+  display: none;
+  font: 900 12px/1 'Lato';
+  letter-spacing: 1px;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-btn-container .btn {
+  border-radius: 8px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 46px;
+  width: 150px;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-btn-container .btn span[class*=icon] {
+  font-size: 24px;
+  margin-right: 3px;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-btn-container .btn .btn-label.desktop, .group-roster-information .invite-group-members-form .invite-group-members-btn-container .btn .btn-label.tablet {
+  display: none;
+}
+.group-roster-information .invite-group-members-form .invite-group-members-btn-container .invite-btn-email {
+  margin: 0 10px 30px 0;
+}
+.group-roster-information .invite-group-members-form .submit-btn {
+  display: block;
+  margin: 15px auto 0 auto;
+  width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .smallgroup-starter-container .smallgroup-starter-info-container {
+    margin: 0;
+  }
+
+  .group-roster-information .invite-group-members-form .invite-group-members-btn-container h4 {
+    display: block;
+  }
+  .group-roster-information .invite-group-members-form .invite-group-members-btn-container .btn {
+    width: 80px;
+  }
+  .group-roster-information .invite-group-members-form .invite-group-members-btn-container .btn:first-child {
+    margin-right: 10px;
+  }
+  .group-roster-information .invite-group-members-form .invite-group-members-btn-container .btn .btn-label.tablet {
+    display: inline-block;
+  }
+  .group-roster-information .invite-group-members-form .invite-group-members-btn-container .btn .btn-label.mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .group-roster-information .invite-group-members-form .invite-group-members-btn-container .btn {
+    padding: 0;
+    width: 150px;
+  }
+  .group-roster-information .invite-group-members-form .invite-group-members-btn-container .btn .btn-label.desktop {
+    display: inline-block;
+  }
+  .group-roster-information .invite-group-members-form .invite-group-members-btn-container .btn .btn-label.tablet {
+    display: none;
+  }
+}

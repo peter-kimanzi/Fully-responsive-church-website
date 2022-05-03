@@ -1,0 +1,555 @@
+/* Define some standard colors in variables */
+/* COMPASS IMPORTS */
+/* Define our base font size and line height */
+.sectionContainer .sectionInner h1 {
+  margin-left: 0;
+}
+
+.appsHeaderContainer {
+  background-image: url(../../../../../s3-us-west-1.amazonaws.com/sb-web/saddleback.com/watch/apps/CoffeeTablets_edit.jpg);
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  padding: 10% 22px;
+  margin-bottom: 0;
+}
+.appsHeaderContainer .appsHeader {
+  max-width: 700px;
+  margin: auto;
+}
+.appsHeaderContainer .appsHeader h1 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.appsHeaderContainer .appsHeader p {
+  max-width: 540px;
+  margin: auto;
+}
+
+.coreAppsSectionContainer h2 {
+  text-align: center;
+}
+
+.coreAppsSectionContainer,
+.setTopAppsSectionContainer,
+.seasonalAppsSectionContainer {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIvPjxzdG9wIG9mZnNldD0iMTQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: linear-gradient(to bottom, #f4f4f4 0%, #ffffff 14%, #ffffff 100%);
+  padding-top: 44px;
+}
+.coreAppsSectionContainer h2,
+.setTopAppsSectionContainer h2,
+.seasonalAppsSectionContainer h2 {
+  font-size: 2em;
+  line-height: 1.203125em;
+  font-style: normal;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.coreAppsSectionContainer h2 img,
+.setTopAppsSectionContainer h2 img,
+.seasonalAppsSectionContainer h2 img {
+  display: none;
+}
+.coreAppsSectionContainer img,
+.setTopAppsSectionContainer img,
+.seasonalAppsSectionContainer img {
+  display: block;
+}
+.coreAppsSectionContainer .deviceImg,
+.setTopAppsSectionContainer .deviceImg,
+.seasonalAppsSectionContainer .deviceImg {
+  display: none;
+}
+.coreAppsSectionContainer .coreAppsSection,
+.setTopAppsSectionContainer .coreAppsSection,
+.seasonalAppsSectionContainer .coreAppsSection {
+  margin-bottom: 44px;
+}
+.coreAppsSectionContainer .coreAppsRow,
+.coreAppsSectionContainer .setTopAppsRow,
+.setTopAppsSectionContainer .coreAppsRow,
+.setTopAppsSectionContainer .setTopAppsRow,
+.seasonalAppsSectionContainer .coreAppsRow,
+.seasonalAppsSectionContainer .setTopAppsRow {
+  max-width: 980px;
+  margin: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  text-align: center;
+  margin-bottom: 44px;
+}
+.coreAppsSectionContainer .coreAppsRow .appInfoTop,
+.coreAppsSectionContainer .coreAppsRow .appInfoBottom,
+.coreAppsSectionContainer .setTopAppsRow .appInfoTop,
+.coreAppsSectionContainer .setTopAppsRow .appInfoBottom,
+.setTopAppsSectionContainer .coreAppsRow .appInfoTop,
+.setTopAppsSectionContainer .coreAppsRow .appInfoBottom,
+.setTopAppsSectionContainer .setTopAppsRow .appInfoTop,
+.setTopAppsSectionContainer .setTopAppsRow .appInfoBottom,
+.seasonalAppsSectionContainer .coreAppsRow .appInfoTop,
+.seasonalAppsSectionContainer .coreAppsRow .appInfoBottom,
+.seasonalAppsSectionContainer .setTopAppsRow .appInfoTop,
+.seasonalAppsSectionContainer .setTopAppsRow .appInfoBottom {
+  display: none;
+}
+.coreAppsSectionContainer .coreAppsRow .appIntroSection,
+.coreAppsSectionContainer .setTopAppsRow .appIntroSection,
+.setTopAppsSectionContainer .coreAppsRow .appIntroSection,
+.setTopAppsSectionContainer .setTopAppsRow .appIntroSection,
+.seasonalAppsSectionContainer .coreAppsRow .appIntroSection,
+.seasonalAppsSectionContainer .setTopAppsRow .appIntroSection {
+  width: 100%;
+  margin-bottom: 22px;
+}
+.coreAppsSectionContainer .coreAppsRow .appIntroSection a.btn,
+.coreAppsSectionContainer .setTopAppsRow .appIntroSection a.btn,
+.setTopAppsSectionContainer .coreAppsRow .appIntroSection a.btn,
+.setTopAppsSectionContainer .setTopAppsRow .appIntroSection a.btn,
+.seasonalAppsSectionContainer .coreAppsRow .appIntroSection a.btn,
+.seasonalAppsSectionContainer .setTopAppsRow .appIntroSection a.btn {
+  margin: 0 auto;
+  display: block;
+  line-height: 46px;
+  padding: 0;
+  height: 46px;
+  border-radius: 15px;
+}
+.coreAppsSectionContainer .coreAppsRow .appDownloadsSection,
+.coreAppsSectionContainer .setTopAppsRow .appDownloadsSection,
+.setTopAppsSectionContainer .coreAppsRow .appDownloadsSection,
+.setTopAppsSectionContainer .setTopAppsRow .appDownloadsSection,
+.seasonalAppsSectionContainer .coreAppsRow .appDownloadsSection,
+.seasonalAppsSectionContainer .setTopAppsRow .appDownloadsSection {
+  width: 50%;
+  padding: 0 15px 0 8%;
+}
+.coreAppsSectionContainer .coreAppsRow .appDownloadsSection img,
+.coreAppsSectionContainer .setTopAppsRow .appDownloadsSection img,
+.setTopAppsSectionContainer .coreAppsRow .appDownloadsSection img,
+.setTopAppsSectionContainer .setTopAppsRow .appDownloadsSection img,
+.seasonalAppsSectionContainer .coreAppsRow .appDownloadsSection img,
+.seasonalAppsSectionContainer .setTopAppsRow .appDownloadsSection img {
+  margin-bottom: 11px;
+}
+.coreAppsSectionContainer .coreAppsRow .appDownloadsSection img:first-of-type,
+.coreAppsSectionContainer .setTopAppsRow .appDownloadsSection img:first-of-type,
+.setTopAppsSectionContainer .coreAppsRow .appDownloadsSection img:first-of-type,
+.setTopAppsSectionContainer .setTopAppsRow .appDownloadsSection img:first-of-type,
+.seasonalAppsSectionContainer .coreAppsRow .appDownloadsSection img:first-of-type,
+.seasonalAppsSectionContainer .setTopAppsRow .appDownloadsSection img:first-of-type {
+  margin-bottom: 22px;
+}
+.coreAppsSectionContainer .coreAppsRow .appIcon,
+.coreAppsSectionContainer .setTopAppsRow .appIcon,
+.setTopAppsSectionContainer .coreAppsRow .appIcon,
+.setTopAppsSectionContainer .setTopAppsRow .appIcon,
+.seasonalAppsSectionContainer .coreAppsRow .appIcon,
+.seasonalAppsSectionContainer .setTopAppsRow .appIcon {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.coreAppsSectionContainer .coreAppsRow .appPreviewImgSection,
+.coreAppsSectionContainer .setTopAppsRow .appPreviewImgSection,
+.setTopAppsSectionContainer .coreAppsRow .appPreviewImgSection,
+.setTopAppsSectionContainer .setTopAppsRow .appPreviewImgSection,
+.seasonalAppsSectionContainer .coreAppsRow .appPreviewImgSection,
+.seasonalAppsSectionContainer .setTopAppsRow .appPreviewImgSection {
+  width: 50%;
+}
+.coreAppsSectionContainer .coreAppsRow .appPreviewImgSection img,
+.coreAppsSectionContainer .setTopAppsRow .appPreviewImgSection img,
+.setTopAppsSectionContainer .coreAppsRow .appPreviewImgSection img,
+.setTopAppsSectionContainer .setTopAppsRow .appPreviewImgSection img,
+.seasonalAppsSectionContainer .coreAppsRow .appPreviewImgSection img,
+.seasonalAppsSectionContainer .setTopAppsRow .appPreviewImgSection img {
+  width: 100%;
+  max-width: 280px;
+}
+.coreAppsSectionContainer .coreAppsRow .setTopAppPreviewImgSection,
+.coreAppsSectionContainer .setTopAppsRow .setTopAppPreviewImgSection,
+.setTopAppsSectionContainer .coreAppsRow .setTopAppPreviewImgSection,
+.setTopAppsSectionContainer .setTopAppsRow .setTopAppPreviewImgSection,
+.seasonalAppsSectionContainer .coreAppsRow .setTopAppPreviewImgSection,
+.seasonalAppsSectionContainer .setTopAppsRow .setTopAppPreviewImgSection {
+  margin: 0 auto;
+}
+.coreAppsSectionContainer .coreAppsRow .setTopAppPreviewImgSection img,
+.coreAppsSectionContainer .setTopAppsRow .setTopAppPreviewImgSection img,
+.setTopAppsSectionContainer .coreAppsRow .setTopAppPreviewImgSection img,
+.setTopAppsSectionContainer .setTopAppsRow .setTopAppPreviewImgSection img,
+.seasonalAppsSectionContainer .coreAppsRow .setTopAppPreviewImgSection img,
+.seasonalAppsSectionContainer .setTopAppsRow .setTopAppPreviewImgSection img {
+  width: 100%;
+}
+.coreAppsSectionContainer .setTopAppsRow h2,
+.setTopAppsSectionContainer .setTopAppsRow h2,
+.seasonalAppsSectionContainer .setTopAppsRow h2 {
+  font-size: 2.5em;
+  line-height: 1.1em;
+  line-height: 80px;
+}
+.coreAppsSectionContainer .setTopAppsRow h2 img,
+.setTopAppsSectionContainer .setTopAppsRow h2 img,
+.seasonalAppsSectionContainer .setTopAppsRow h2 img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-right: 22px;
+}
+
+.setTopAppsSectionContainer {
+  padding: 15px;
+}
+.setTopAppsSectionContainer h2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.setTopAppsSectionContainer img {
+  margin-bottom: 15px;
+}
+
+.seasonalAppsSectionContainer {
+  text-align: center;
+}
+.seasonalAppsSectionContainer h1 {
+  font-size: 40px;
+}
+.seasonalAppsSectionContainer .seasonalAppIntroSection p {
+  max-width: 475px;
+  margin: auto;
+}
+.seasonalAppsSectionContainer .seasonalAppPreview {
+  display: none;
+  margin: 0 auto 40px;
+}
+
+@media screen and (min-width: 575px) {
+  .coreAppsSectionContainer h2,
+  .setTopAppsSectionContainer h2 {
+    font-size: 2.5em;
+    line-height: 1.1em;
+    line-height: 80px;
+  }
+
+  .setTopAppsSectionContainer {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .setTopAppsSectionContainer {
+    padding: 60px 60px;
+  }
+
+  .coreAppsSectionContainer h2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(odd) .coreAppsRow .appIntroSection, .coreAppsSectionContainer .coreAppsSection:nth-child(odd) .coreAppsRow .appDownloadsSection {
+    padding-right: 30px;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(even) .coreAppsRow .appIntroSection, .coreAppsSectionContainer .coreAppsSection:nth-child(even) .coreAppsRow .appDownloadsSection {
+    padding-left: 30px;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(even) .coreAppsRow .appIntroSection.drivetime-info-section, .coreAppsSectionContainer .coreAppsSection:nth-child(even) .coreAppsRow .appIntroSection.drivetime-download, .coreAppsSectionContainer .coreAppsSection:nth-child(even) .coreAppsRow .appDownloadsSection.drivetime-info-section, .coreAppsSectionContainer .coreAppsSection:nth-child(even) .coreAppsRow .appDownloadsSection.drivetime-download {
+    padding-left: 60px;
+  }
+
+  .coreAppsSectionContainer .coreAppsSection,
+  .setTopAppsSectionContainer .coreAppsSection {
+    min-height: 530px;
+  }
+  .coreAppsSectionContainer .coreAppsRow,
+  .coreAppsSectionContainer .setTopAppsRow,
+  .setTopAppsSectionContainer .coreAppsRow,
+  .setTopAppsSectionContainer .setTopAppsRow {
+    position: relative;
+    text-align: left;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appIntroSection,
+  .coreAppsSectionContainer .setTopAppsRow .appIntroSection,
+  .setTopAppsSectionContainer .coreAppsRow .appIntroSection,
+  .setTopAppsSectionContainer .setTopAppsRow .appIntroSection {
+    -ms-flex-order: 1;
+        order: 1;
+    width: 60%;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appIntroSection h2 img,
+  .coreAppsSectionContainer .setTopAppsRow .appIntroSection h2 img,
+  .setTopAppsSectionContainer .coreAppsRow .appIntroSection h2 img,
+  .setTopAppsSectionContainer .setTopAppsRow .appIntroSection h2 img {
+    display: inline-block;
+    margin-right: 22px;
+    height: 85px;
+    width: 85px;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appInfoTop,
+  .coreAppsSectionContainer .coreAppsRow .appInfoBottom,
+  .coreAppsSectionContainer .setTopAppsRow .appInfoTop,
+  .coreAppsSectionContainer .setTopAppsRow .appInfoBottom,
+  .setTopAppsSectionContainer .coreAppsRow .appInfoTop,
+  .setTopAppsSectionContainer .coreAppsRow .appInfoBottom,
+  .setTopAppsSectionContainer .setTopAppsRow .appInfoTop,
+  .setTopAppsSectionContainer .setTopAppsRow .appInfoBottom {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appInfoBottom,
+  .coreAppsSectionContainer .setTopAppsRow .appInfoBottom,
+  .setTopAppsSectionContainer .coreAppsRow .appInfoBottom,
+  .setTopAppsSectionContainer .setTopAppsRow .appInfoBottom {
+    color: #00aeef;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appDownloadsSection,
+  .coreAppsSectionContainer .setTopAppsRow .appDownloadsSection,
+  .setTopAppsSectionContainer .coreAppsRow .appDownloadsSection,
+  .setTopAppsSectionContainer .setTopAppsRow .appDownloadsSection {
+    -ms-flex-order: 2;
+        order: 2;
+    width: 60%;
+    padding: 0;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appDownloadsSection .appIcon,
+  .coreAppsSectionContainer .setTopAppsRow .appDownloadsSection .appIcon,
+  .setTopAppsSectionContainer .coreAppsRow .appDownloadsSection .appIcon,
+  .setTopAppsSectionContainer .setTopAppsRow .appDownloadsSection .appIcon {
+    display: none;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appDownloadsSection img,
+  .coreAppsSectionContainer .setTopAppsRow .appDownloadsSection img,
+  .setTopAppsSectionContainer .coreAppsRow .appDownloadsSection img,
+  .setTopAppsSectionContainer .setTopAppsRow .appDownloadsSection img {
+    height: 42px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 11px;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appPreviewImgSection,
+  .coreAppsSectionContainer .setTopAppsRow .appPreviewImgSection,
+  .setTopAppsSectionContainer .coreAppsRow .appPreviewImgSection,
+  .setTopAppsSectionContainer .setTopAppsRow .appPreviewImgSection {
+    -ms-flex-order: 3;
+        order: 3;
+    position: absolute;
+    width: 40%;
+    max-width: 285px;
+    top: 0;
+    right: 0;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appPreviewImgSection.notes-app-img-container,
+  .coreAppsSectionContainer .setTopAppsRow .appPreviewImgSection.notes-app-img-container,
+  .setTopAppsSectionContainer .coreAppsRow .appPreviewImgSection.notes-app-img-container,
+  .setTopAppsSectionContainer .setTopAppsRow .appPreviewImgSection.notes-app-img-container {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .coreAppsSectionContainer .coreAppsRow .appPreviewImgSection img,
+  .coreAppsSectionContainer .setTopAppsRow .appPreviewImgSection img,
+  .setTopAppsSectionContainer .coreAppsRow .appPreviewImgSection img,
+  .setTopAppsSectionContainer .setTopAppsRow .appPreviewImgSection img {
+    width: 100%;
+    min-width: 280px;
+    height: 530px;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appPreviewImgSection img.notes-app-img,
+  .coreAppsSectionContainer .setTopAppsRow .appPreviewImgSection img.notes-app-img,
+  .setTopAppsSectionContainer .coreAppsRow .appPreviewImgSection img.notes-app-img,
+  .setTopAppsSectionContainer .setTopAppsRow .appPreviewImgSection img.notes-app-img {
+    height: 100%;
+    min-width: 280px;
+  }
+  .coreAppsSectionContainer .coreAppsSection,
+  .setTopAppsSectionContainer .coreAppsSection {
+    margin-bottom: 100px;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(odd) .appPreviewImgSection,
+  .setTopAppsSectionContainer .coreAppsSection:nth-child(odd) .appPreviewImgSection {
+    right: 0;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(even),
+  .setTopAppsSectionContainer .coreAppsSection:nth-child(even) {
+    min-height: 100%;
+    margin-bottom: 115px;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(even) .coreAppsRow,
+  .setTopAppsSectionContainer .coreAppsSection:nth-child(even) .coreAppsRow {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(even) .appPreviewImgSection,
+  .setTopAppsSectionContainer .coreAppsSection:nth-child(even) .appPreviewImgSection {
+    left: 0;
+    text-align: right;
+    max-width: 100%;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(even) .appPreviewImgSection img,
+  .setTopAppsSectionContainer .coreAppsSection:nth-child(even) .appPreviewImgSection img {
+    height: 100%;
+    max-width: 100%;
+  }
+  .coreAppsSectionContainer .setTopAppsRow,
+  .setTopAppsSectionContainer .setTopAppsRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    max-width: none;
+    margin-bottom: 90px;
+  }
+  .coreAppsSectionContainer .setTopAppsRow .setTopAppPreviewImgSection,
+  .coreAppsSectionContainer .setTopAppsRow .appIntroSection,
+  .setTopAppsSectionContainer .setTopAppsRow .setTopAppPreviewImgSection,
+  .setTopAppsSectionContainer .setTopAppsRow .appIntroSection {
+    width: 50%;
+  }
+  .coreAppsSectionContainer .setTopAppsRow .appInfoTop,
+  .coreAppsSectionContainer .setTopAppsRow a.btn,
+  .setTopAppsSectionContainer .setTopAppsRow .appInfoTop,
+  .setTopAppsSectionContainer .setTopAppsRow a.btn {
+    text-align: center;
+  }
+  .coreAppsSectionContainer .setTopAppsRow .appInfoTop,
+  .setTopAppsSectionContainer .setTopAppsRow .appInfoTop {
+    margin-bottom: 30px;
+  }
+  .coreAppsSectionContainer .setTopAppsSection,
+  .setTopAppsSectionContainer .setTopAppsSection {
+    margin: 0 -30px;
+  }
+  .coreAppsSectionContainer .setTopAppsSection:nth-child(odd) .setTopAppPreviewImgSection,
+  .setTopAppsSectionContainer .setTopAppsSection:nth-child(odd) .setTopAppPreviewImgSection {
+    padding-right: 80px;
+  }
+  .coreAppsSectionContainer .setTopAppsSection:nth-child(odd) .deviceImg,
+  .setTopAppsSectionContainer .setTopAppsSection:nth-child(odd) .deviceImg {
+    display: block;
+    width: 45% !important;
+    margin: -30px -80px 0 auto;
+    max-width: 170px;
+  }
+  .coreAppsSectionContainer .setTopAppsSection:nth-child(odd) .appIntroSection,
+  .setTopAppsSectionContainer .setTopAppsSection:nth-child(odd) .appIntroSection {
+    padding: 0 30px;
+  }
+  .coreAppsSectionContainer .setTopAppsSection:nth-child(even) .setTopAppPreviewImgSection,
+  .setTopAppsSectionContainer .setTopAppsSection:nth-child(even) .setTopAppPreviewImgSection {
+    -ms-flex-order: 2;
+        order: 2;
+    padding-left: 40px;
+  }
+  .coreAppsSectionContainer .setTopAppsSection:nth-child(even) .deviceImg,
+  .setTopAppsSectionContainer .setTopAppsSection:nth-child(even) .deviceImg {
+    display: block;
+    width: 25% !important;
+    margin: -30px auto 0 -40px;
+  }
+  .coreAppsSectionContainer .setTopAppsSection:nth-child(even) .appIntroSection,
+  .setTopAppsSectionContainer .setTopAppsSection:nth-child(even) .appIntroSection {
+    padding: 0 30px;
+  }
+
+  .seasonalAppsSectionContainer {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .seasonalAppsSectionContainer .coreAppsSection {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 50%;
+    padding: 0 4%;
+  }
+  .seasonalAppsSectionContainer .seasonalAppPreview {
+    display: block;
+  }
+  .seasonalAppsSectionContainer .appPreviewImgSection {
+    display: none;
+  }
+  .seasonalAppsSectionContainer .appIntroSection h2 {
+    line-height: 80px;
+  }
+  .seasonalAppsSectionContainer .appIntroSection h2 img {
+    display: inline-block;
+    margin-right: 22px;
+  }
+  .seasonalAppsSectionContainer .appDownloadsSection {
+    width: 100% !important;
+  }
+  .seasonalAppsSectionContainer .appDownloadsSection .appIcon {
+    display: none;
+  }
+  .seasonalAppsSectionContainer .appDownloadsSection img {
+    height: 42px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 11px;
+  }
+  .seasonalAppsSectionContainer .appDownloadsSection .appInfoTop,
+  .seasonalAppsSectionContainer .appDownloadsSection .appInfoBottom {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 8px;
+  }
+  .seasonalAppsSectionContainer .appDownloadsSection .appInfoTop {
+    margin-bottom: 30px;
+  }
+  .seasonalAppsSectionContainer .appDownloadsSection .appInfoBottom {
+    color: #00aeef;
+  }
+}
+@media screen and (min-width: 900px) {
+  .setTopAppsSectionContainer {
+    padding: 60px 90px;
+  }
+
+  .coreAppsSectionContainer h2 {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(odd) .coreAppsRow .appIntroSection, .coreAppsSectionContainer .coreAppsSection:nth-child(odd) .coreAppsRow .appDownloadsSection {
+    padding-right: 0;
+  }
+  .coreAppsSectionContainer .coreAppsSection:nth-child(even) .coreAppsRow .appIntroSection, .coreAppsSectionContainer .coreAppsSection:nth-child(even) .coreAppsRow .appDownloadsSection {
+    padding-left: 0;
+  }
+
+  .coreAppsSectionContainer .coreAppsSection:nth-child(odd) .appPreviewImgSection {
+    right: 30px;
+  }
+  .coreAppsSectionContainer .coreAppsRow .appPreviewImgSection img.notes-app-img {
+    min-width: 350px;
+  }
+
+  .coreAppsSectionContainer .coreAppsRow h2,
+  .coreAppsSectionContainer .setTopAppsRow h2,
+  .setTopAppsSectionContainer .coreAppsRow h2,
+  .setTopAppsSectionContainer .setTopAppsRow h2 {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 900px) {
+  .coreAppsSectionContainer .coreAppsSection:nth-child(odd) .appPreviewImgSection {
+    right: 60px;
+  }
+}

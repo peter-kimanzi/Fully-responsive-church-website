@@ -1,0 +1,77 @@
+/* Define some standard colors in variables */
+/* COMPASS IMPORTS */
+/* Define our base font size and line height */
+h1.ministryName {
+  margin-left: 1%;
+}
+
+span.serviceTimesLabel {
+  font: 1em/1.375em Georgia;
+  font-style: italic;
+}
+
+p {
+  margin-bottom: 0.6875em;
+}
+
+.staticHeightImageContainer, .ministryAdImg {
+  margin-bottom: 1.375em;
+}
+
+.purposeContainer {
+  margin-bottom: 1.375em;
+}
+.purposeContainer header h3 {
+  margin-bottom: 0;
+}
+
+.description {
+  border-top-width: 0.0625em;
+  border-top-style: solid;
+  padding-top: 1.3125em;
+  border-bottom-width: 0.0625em;
+  border-bottom-style: solid;
+  padding-bottom: 1.3125em;
+  border-color: #dbdbdb;
+  margin-top: 22px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+#defaultSection {
+  margin-bottom: 22px;
+}
+
+#lnkSaveLocation {
+  line-height: 33px;
+  margin-left: 10px;
+}
+
+#contact {
+  margin-bottom: 1.375em;
+}
+#contact .contactName {
+  font-family: Georgia;
+  font-style: italic;
+}
+
+@media screen and (min-width: 568px) {
+  .ministryServiceTimesContainer .dk_container {
+    max-width: 250px;
+    margin-bottom: 0;
+    float: left;
+  }
+
+  .meetingContainer {
+    width: 48%;
+    margin: 0 2% 0 0;
+    float: left;
+    clear: left;
+  }
+
+  #contact {
+    width: 45%;
+    margin: 0;
+    float: right;
+  }
+}

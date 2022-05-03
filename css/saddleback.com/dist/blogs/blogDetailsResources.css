@@ -1,0 +1,23 @@
+.content .resources-section {
+  margin: 0 15px 60px;
+}
+.content .resources-section .resources-grid {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px 60px;
+}
+.content .resources-section .resources-grid .resource {
+  max-width: 290px;
+  margin: 0 15px 32px;
+}
+
+@media screen and (min-width: 575px) {
+  .content .resources-section {
+    margin: 0 30px 60px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .content .resources-section {
+    margin: 0 0 60px;
+  }
+}

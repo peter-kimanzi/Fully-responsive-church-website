@@ -1,0 +1,59 @@
+/* CSS Styling for Small Subscription Function */
+/* Define some standard colors in variables */
+/* COMPASS IMPORTS */
+.subscriptionWidgetContainer {
+  vertical-align: top;
+  margin-bottom: 22px;
+}
+.subscriptionWidgetContainer h4 {
+  position: absolute;
+  top: 0;
+  background: white;
+  text-align: center;
+  margin: -11px 0 0;
+  height: 100%;
+  padding: 11px;
+  z-index: 100;
+}
+.subscriptionWidgetContainer .subscriptionFieldsContainer {
+  height: 44px;
+  margin: 0 11px;
+}
+.subscriptionWidgetContainer .subscriptionFieldsContainer input {
+  z-index: -100;
+  opacity: 0;
+  transition: opacity 0.25s ease-in, z-index 0.25s ease-in;
+  position: absolute;
+  width: 75%;
+}
+.subscriptionWidgetContainer .subscriptionFieldsContainer ::-webkit-input-placeholder {
+  color: black;
+  font-style: italic;
+}
+.subscriptionWidgetContainer .subscriptionFieldsContainer :-moz-placeholder {
+  /* Firefox 18- */
+  color: black;
+  font-style: italic;
+}
+.subscriptionWidgetContainer .subscriptionFieldsContainer ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+  font-style: italic;
+}
+.subscriptionWidgetContainer .subscriptionFieldsContainer :-ms-input-placeholder {
+  color: black;
+  font-style: italic;
+}
+.subscriptionWidgetContainer .subscriptionFieldsContainer input.subscriptionSubmitW {
+  opacity: 1;
+  z-index: 100;
+  right: 0;
+  margin: 0;
+  width: 20%;
+  border: none;
+}
+.subscriptionWidgetContainer .subscriptionFieldsContainer input.active {
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+  z-index: 100;
+}

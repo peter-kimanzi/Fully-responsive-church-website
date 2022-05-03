@@ -1,0 +1,394 @@
+/* COMPASS IMPORTS */
+.select2-container--default {
+  width: 100%;
+}
+.select2-container--default .select2-selection--single {
+  background: #ffffff;
+  border: 1px solid #4d4d4f;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #4d4d4f;
+  font-size: 16px;
+  line-height: 36px;
+  min-height: 36px;
+  padding: 0 10px;
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: #4d4d4f;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+  color: #00aeef;
+  float: none;
+  font-size: 20px;
+  position: absolute;
+  right: 36px;
+  top: 3px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  right: 10px;
+  width: 14px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  background: none !important;
+  border: none;
+  color: #00aeef;
+  font-family: 'SB-Icons';
+  font-size: 12px;
+  font-weight: 700;
+  left: 0;
+  margin-left: 0;
+  margin-top: 0;
+  position: static;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b:before {
+  content: '\e946';
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  height: 100%;
+  line-height: 33px;
+  padding: 0;
+}
+.select2-container--default .select2-search--inline .select2-search__field {
+  margin-top: 8px;
+}
+.select2-container--default .select2-search--inline .select2-search__field::-webkit-input-placeholder {
+  color: #4d4d4f;
+}
+.select2-container--default .select2-search--inline .select2-search__field::-moz-placeholder {
+  color: #4d4d4f;
+}
+.select2-container--default .select2-search--inline .select2-search__field:-ms-input-placeholder {
+  color: #4d4d4f;
+}
+.select2-container--default .select2-search--inline .select2-search__field::placeholder {
+  color: #4d4d4f;
+}
+.select2-container--default .select2-results__option {
+  color: #4d4d4f;
+  font: normal 16px/24px 'Lato';
+  margin-bottom: 0;
+  padding: 8px 15px;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: rgba(0, 174, 239, 0.3);
+  color: #4d4d4f;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected=true], .select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: rgba(0, 174, 239, 0.3);
+}
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid #4d4d4f;
+  border-radius: 2px;
+  min-height: 36px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: none;
+  font-size: 16px;
+  line-height: 33px;
+  overflow: visible;
+  padding: 0 0 0 10px;
+  text-overflow: initial;
+  white-space: normal;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+  margin-bottom: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+  background: #00aeef;
+  border: 0;
+  color: #ffffff;
+  min-height: 22px;
+  padding-right: 15px;
+  position: relative;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+  color: #ffffff;
+  font-size: 16px;
+  position: absolute;
+  right: 1px;
+  top: -5px;
+}
+.select2-container--default.select2-container--disabled .select2-selection--single, .select2-container--default.select2-container--disabled .select2-selection--multiple, .select2-container--default.select2-container--disabled .select2-selection__rendered {
+  background: #f6f6f6;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b:before {
+  content: '\e949';
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+.head-img {
+  background: url("../../../../../../sb-web.s3-us-west-1.amazonaws.com/saddleback.com/visit/about/our-church/what-to-expect/header.jpg") no-repeat center center;
+  background-size: cover;
+  height: 375px;
+  margin-bottom: 65px;
+}
+
+.content-wte {
+  max-width: 800px;
+  margin: 0 auto 100px;
+  padding: 0 3%;
+}
+
+ul.list {
+  list-style-type: disc;
+  list-style-position: initial;
+  margin-left: 30px;
+}
+ul.list li {
+  margin-bottom: 24px;
+  line-height: 24px;
+}
+
+ol.list {
+  list-style-type: decimal;
+  list-style-position: initial;
+  margin-left: 30px;
+}
+ol.list li {
+  margin-bottom: 24px;
+  line-height: 24px;
+}
+
+ul.list ul, ol.list ul {
+  list-style-type: circle;
+  list-style-position: initial;
+  margin-left: 15px;
+}
+
+ol.list ol, ul.list ol {
+  list-style-type: lower-latin;
+  list-style-position: initial;
+  margin-left: 15px;
+}
+
+.header-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 100px;
+}
+.header-section .sun {
+  width: 100%;
+  max-width: 70px;
+  margin-bottom: 57px;
+}
+.header-section .title-img {
+  width: 100%;
+  max-width: 530px;
+  margin-bottom: 20px;
+}
+.header-section .sub-title {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+}
+
+.expectations h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  margin-left: 0;
+}
+.expectations p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.expectations a {
+  color: white;
+  text-decoration: underline;
+}
+.expectations .before-you-attend {
+  text-align: center;
+  padding: 36px 60px 56px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.reservations-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.reservations-section h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 7.2px;
+  text-transform: uppercase;
+}
+.reservations-section p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.reservations-section .select2-selection__rendered {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.lakeForestBtnContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex: 100%;
+      flex: 100%;
+  width: 100%;
+  padding: 32px 0 0;
+}
+.lakeForestBtnContainer .btn {
+  padding: 11px 0;
+  margin: 16px;
+  height: auto;
+  background: #00AEEF;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  border-radius: 16px;
+}
+
+.faq-title {
+  margin: 80px 0 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.accordion {
+  border-bottom: 1px solid #BCBEC0;
+}
+.accordion h3 {
+  background: transparent;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 30px 45px 30px 15px;
+  border: 0;
+  border-top: 1px solid #BCBEC0;
+  transition: background 0.5s;
+}
+.accordion h3.ui-accordion-header-active {
+  background: #00AEEF;
+}
+.accordion h3 .ui-accordion-header-icon:before {
+  color: #00AEEF;
+}
+.accordion .ui-widget-content {
+  border: 0;
+}
+.accordion > div {
+  border: 0;
+}
+
+.footer-wte {
+  padding: 100px 0 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.select2 {
+  max-width: 257px;
+  margin: 0 auto;
+  display: block;
+}
+.select2 .select2-selection {
+  border: 1px solid black;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  background: none;
+  height: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.select2 .select2-selection:focus {
+  outline: 0;
+}
+.select2 .select2-selection .select2-selection__arrow b {
+  display: none;
+}
+.select2 .select2-selection .select2-selection__arrow:after {
+  content: "\e946";
+  transition: -webkit-transform 150ms ease;
+  transition: transform 150ms ease;
+  color: #1DB0E9;
+  font-size: 12px;
+  font-family: 'SB-Icons' !important;
+  display: block;
+}
+.select2 .select2-selection .select2-selection__rendered {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: black;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.select2.select2-container--open .select2-selection .select2-selection__arrow:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  transition: -webkit-transform 150ms ease;
+  transition: transform 150ms ease;
+}
+
+.select2-dropdown {
+  background: #f1f1f1;
+  padding: 0 0 12px 0;
+  border: 1px solid black;
+}
+.select2-dropdown .select2-results__options .select2-results__option {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 1px;
+  color: black;
+  height: 42px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 12px 24px;
+}
+.select2-dropdown .select2-results__options .select2-results__option.select2-results__option--highlighted {
+  background: white;
+}

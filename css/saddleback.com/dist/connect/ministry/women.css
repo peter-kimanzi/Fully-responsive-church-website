@@ -1,0 +1,490 @@
+.purposeContainer {
+  display: none;
+}
+
+.ministry-custom-content-container {
+  margin: 0 0 60px;
+}
+
+.titleSection {
+  margin-bottom: 32px;
+  display: none;
+}
+
+.womens-info-section {
+  margin-bottom: 40px;
+  padding: 0 16px;
+}
+.womens-info-section .womens-info-inner .womens-info-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #4d4d4f;
+}
+.womens-info-section .womens-info-inner .womens-info {
+  font-size: 20px;
+  line-height: 35px;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0;
+  color: #4d4d4f;
+}
+
+#womensAdSlider {
+  height: 240px !important;
+  width: 100%;
+  margin-bottom: 80px;
+}
+#womensAdSlider .wideAdContainer {
+  height: 240px;
+}
+
+.womens-connect-section {
+  margin-bottom: 64px;
+  padding: 0 16px;
+}
+.womens-connect-section .womens-connect-inner .connect-items-container .connect-item {
+  margin-bottom: 40px;
+}
+.womens-connect-section .womens-connect-inner .connect-items-container .connect-item:last-of-type {
+  margin: 0;
+}
+.womens-connect-section .womens-connect-inner .connect-items-container .connect-item.active .connect-item-image:before {
+  background: #56c4c4;
+}
+.womens-connect-section .womens-connect-inner .connect-items-container .connect-item .connect-item-image {
+  position: relative;
+  height: 208px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 32px;
+  display: block;
+}
+.womens-connect-section .womens-connect-inner .connect-items-container .connect-item .connect-item-image:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4d4d4f;
+  background-blend-mode: multiply;
+  opacity: 0.4;
+  border-radius: 10px;
+}
+.womens-connect-section .womens-connect-inner .connect-items-container .connect-item .connect-item-image p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+  width: 260px;
+}
+.womens-connect-section .womens-connect-inner .connect-items-container .connect-item .connect-item-info {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #4d4d4f;
+}
+.womens-connect-section .womens-connect-inner .connect-items-container .connect-item .btn {
+  max-width: 178px;
+  border-radius: 15px;
+  height: 40px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested {
+  padding-bottom: 32px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item {
+  position: relative;
+  padding-top: 32px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .nested-header {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #4d4d4f;
+  margin: 0 0 32px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item.connect:before {
+  display: none;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item img {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 20px;
+  display: block;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item img.desktop {
+  display: none;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item {
+  max-width: 530px;
+  margin: 0 auto 48px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item:last-of-type {
+  margin: 0 auto;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .service-header {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  color: #4d4d4f;
+  margin-bottom: 8px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .service-time {
+  margin-bottom: 8px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .service-time span {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f99e49;
+  padding-right: 5px;
+  border-right: solid 2px #f99e49;
+  margin-right: 5px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .service-time span:last-of-type {
+  padding-right: 0;
+  margin-right: 0;
+  border: none;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .service-info {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #4d4d4f;
+  margin-bottom: 24px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .btn {
+  height: 40px;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .service-item-btns {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .service-item-btns a {
+  display: block;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration-line: underline;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .service-item-btns a:first-of-type {
+  margin-bottom: 24px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section {
+  margin-bottom: 0;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-social-icons-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 60px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-social-icons-container .sms-social-icon a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.8px;
+  color: #4d4d4f;
+  text-decoration: none;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-social-icons-container .sms-social-icon a:hover {
+  text-decoration: none;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-social-icons-container .sms-social-icon a span {
+  color: #00aeef;
+  font-size: 32px;
+  margin-right: 16px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-social-icons-container .sms-social-icon a:first-of-type {
+  margin-bottom: 24px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-img {
+  max-width: 115px;
+  display: block;
+  margin: 0 auto 32px;
+}
+.womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner p {
+  max-width: 399px;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  color: #4d4d4f;
+  margin: 0 auto;
+}
+
+.womens-prayer-section {
+  background: linear-gradient(259.13deg, #56C4C4 0%, #6DCFF6 87.91%);
+  padding: 64px 15px;
+  margin: 0 auto 80px;
+}
+.womens-prayer-section .womens-prayer-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.womens-prayer-section .womens-prayer-inner .womens-prayer-header {
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 7.2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.womens-prayer-section .womens-prayer-inner .womens-prayer-info {
+  font-size: 20px;
+  line-height: 35px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.womens-prayer-section .womens-prayer-inner .womens-prayer-reference {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.womens-help-section {
+  padding: 0 15px;
+  margin: 0 auto 80px;
+}
+.womens-help-section .titleBar {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.womens-help-section .womens-help-container .womens-help-item .womens-help-item-inner {
+  background: #00aeef;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 32px;
+  width: 100%;
+  padding: 30px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-decoration: none;
+}
+.womens-help-section .womens-help-container .womens-help-item .womens-help-item-inner:hover {
+  text-decoration: none;
+  background: #0093c6;
+}
+.womens-help-section .womens-help-container .womens-help-item .womens-help-item-inner .womens-help-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.womens-help-section .womens-help-container .womens-help-item .womens-help-item-inner .womens-help-title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 32px;
+  color: #fff;
+  margin: 0;
+}
+
+.womens-stories-section {
+  margin: 0 0 80px;
+}
+.womens-stories-section .titleBar {
+  padding: 20px 15px 0;
+  margin: 0 15px 30px;
+}
+.womens-stories-section .view-all-blogs-btn {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 575px) {
+  .ministryImg {
+    margin-bottom: 24px;
+  }
+
+  .womens-info-section {
+    padding: 0 32px;
+    margin-top: 24px;
+  }
+
+  .womens-connect-section {
+    padding: 0 32px;
+  }
+  .womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .service-item-btns {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .service-item-btns a:first-of-type {
+    margin: 0 45px 0 0;
+  }
+  .womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .womens-service-item .womens-service-inner .service-item-btns a:last-of-type {
+    margin: 0 0 0 45px;
+  }
+  .womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-social-icons-container {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-social-icons-container .sms-social-icon a {
+    margin: 0;
+  }
+  .womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-social-icons-container .sms-social-icon a:first-of-type {
+    margin: 0;
+  }
+  .womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-social-icons-container .sms-social-icon a:last-of-type {
+    margin: 0;
+  }
+  .womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-social-icons-container .sms-social-icon:first-of-type {
+    margin: 0 40px 0 0;
+  }
+  .womens-connect-section .womens-connect-inner .growth-items-nested .nested-item .sms-section .sms-inner .sms-social-icons-container .sms-social-icon:last-of-type {
+    margin: 0 0 0 40px;
+  }
+
+  .womens-prayer-section {
+    padding: 64px 30px;
+  }
+
+  .womens-help-section {
+    padding: 0 30px;
+  }
+
+  .womens-stories-section .titleBar {
+    padding: 20px 30px 0;
+    margin: 0 30px 30px;
+  }
+
+  .online-connect-section .online-connect-inner {
+    padding: 48px 32px 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .womens-info-section {
+    margin-bottom: 80px;
+  }
+  .womens-info-section .womens-info-inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .womens-info-section .womens-info-inner .womens-info {
+    text-align: center;
+  }
+
+  .womens-help-section .womens-help-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  .womens-help-section .womens-help-container .womens-help-item {
+    width: 50%;
+    padding: 0 16px;
+  }
+
+  .womens-prayer-section .womens-prayer-inner .womens-prayer-header {
+    margin-bottom: 48px;
+  }
+
+  .womens-stories-section .view-all-blogs-btn {
+    margin: 60px auto 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .womens-connect-section .womens-connect-inner .connect-items-container {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .womens-connect-section .womens-connect-inner .connect-items-container .connect-item {
+    width: 33.3333333%;
+    margin: 0;
+  }
+  .womens-connect-section .womens-connect-inner .connect-items-container .connect-item:first-of-type {
+    margin: 0 32px 0 0;
+  }
+  .womens-connect-section .womens-connect-inner .connect-items-container .connect-item:last-of-type {
+    margin: 0 0 0 32px;
+  }
+
+  .womens-help-section .womens-help-container .womens-help-item {
+    width: 33.3333333%;
+  }
+}
+@media screen and (min-width: 1130px) {
+  .womens-stories-section .view-all-blogs-btn {
+    margin: 90px auto 0;
+  }
+
+  .womens-help-section {
+    padding: 0;
+  }
+  .womens-help-section .titleBar {
+    margin: 0 30px 30px;
+  }
+  .womens-help-section .womens-help-container {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .womens-info-section {
+    padding: 0;
+  }
+
+  .womens-connect-section {
+    padding: 0;
+  }
+
+  .womens-stories-section .titleBar {
+    margin: 0 0 30px;
+  }
+}

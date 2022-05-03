@@ -1,0 +1,37 @@
+/**********************
+  MEDIA LISTING 
+***********************/
+.mediaImage {
+  overflow: hidden;
+}
+.mediaImage a img {
+  width: 177%;
+  margin-left: -40%;
+  position: relative;
+}
+
+.blogInfoContainer {
+  z-index: 200 !important;
+}
+
+.blogItem .blogHeadlineShort a {
+  height: inherit;
+  line-height: 24px;
+}
+
+.mediaInfoContainer {
+  height: 30%;
+  /*stops the transparency section from shrinking on small titles*/
+}
+.mediaInfoContainer .mediaDate {
+  padding-top: 3px;
+}
+
+.mediaTitle {
+  height: 2.8em;
+}
+
+.mediaItem {
+  display: inline-block;
+  /*always show all media listings*/
+}
